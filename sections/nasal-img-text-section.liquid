@@ -1,19 +1,19 @@
 <div class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md-5 py-md-5">
+  <div class="row py-5">
+    <div class="col-12 col-md-5 mb-5">
       <div class="mb-4 nasal-img-text-section_title">{{ section.settings.title }}</div>
       <div class="mb-5 nasal-img-text-section_caption px-3">{{ section.settings.caption }}</div>
       <div class="nasal-img-text-section_text">{{ section.settings.text }}</div>
     </div>
-    <div class="col-12 col-md-7 p-md-5">
+    <div class="col-12 col-md-7">
 
-      <img
+     <div class="nasal-img-text-section_img-wrapper">
+        <img
         loading="lazy"
         class="rounded img-fluid"
         src="{{section.settings.img | img_url: 'master'}}"
-        height="514"
-        width="1034"
         alt="How  Bibo Nasal Sprays  Works">
+     </div>
     </div>
 
   </div>
@@ -41,7 +41,7 @@
     font-weight: 500;
     line-height: normal;
     background: #F4A26F;
-    width: max-content;
+    max-width: max-content;
   }
   .nasal-img-text-section_text {
     color: #000;
@@ -50,6 +50,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+  .nasal-img-text-section_img-wrapper{
+    max-height:415px;
+    width:100%;
+  }
+  .nasal-img-text-section_img-wrapper img{
+     max-height:415px;
+    width:100%;
+    height:auto;
+    border-radius: 12px;
+    border: 2px solid #000;
   }
   @media(min-width:768px) {
     .nasal-img-text-section_title {

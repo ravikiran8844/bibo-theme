@@ -1,0 +1,229 @@
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+
+<div class="container py-5">
+  <div class="col-12 my-5">
+    <div class="types-of-sprays_heading px-5 py-2">
+      {{ section.settings.title }}
+    </div>
+  </div>
+  <div class="row my-5 owl-carousel" id="owl-slider-types">
+
+    {% for block in section.blocks %}
+      <div class="px-3">
+        <div class="types-of-sprays_item mb-3 d-flex flex-column">
+          <div class="types-of-sprays_item-card text-center">
+            <div class="types-of-sprays_item-card_img-wrapper">
+              <img
+                class="img-fluid"
+                height="340"
+                width="340"
+                src="{{block.settings.img |img_url: 'master'}}"
+                alt="">
+            </div>
+            <div class="types-of-sprays_item-card_title mb-3">{{ block.settings.card-title }}</div>
+            <div class="types-of-sprays_item-card_text mb-4">{{ block.settings.card-title }}</div>
+          </div>
+          <div class="types-of-sprays_item-border my-5 text-start">
+            <div class="types-of-sprays_item-title mb-3">{{ block.settings.title }}</div>
+            <div class="types-of-sprays_item-text">{{ block.settings.text }}</div>
+          </div>
+
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+
+<style>
+
+
+  .types-of-sprays .owl-carousel {
+    position: relative;
+  }
+  .types-of-sprays .owl-nav {
+    position: absolute;
+    top: 98%;
+    text-align: center;
+  }
+  .types-of-sprays .owl-prev {
+    position: relative;
+  }
+
+  .types-of-sprays .owl-next {
+    position: relative;
+  }
+  @media(min-width:998px) {
+    .types-of-sprays .owl-nav {
+      position: absolute;
+      top: 100%;
+    }
+    .types-of-sprays .owl-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+    .types-of-sprays .owl-prev {
+      position: absolute;
+      left: 0;
+    }
+
+    .types-of-sprays .owl-next {
+      position: absolute;
+
+      right: 0;
+    }
+  }
+
+
+
+  .types-of-sprays {}
+  .types-of-sprays_item {}
+  .types-of-sprays_item-card_img-wrapper {
+    max-width: 340px;
+    max-height: 340px;
+    margin: auto;
+  }
+  .types-of-sprays_item-card_img-wrapper img {
+    max-width: 340px;
+    max-height: 340px;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin: auto;
+  }
+  .types-of-sprays .center .types-of-sprays_item-card {
+    order: 1;
+  }
+  .types-of-sprays .center .types-of-sprays_item-border {
+    order: 0;
+  }
+  .types-of-sprays_item-card {
+    border-radius: 18.477px;
+    border: 2px solid #E9E6E6;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 rgba(102, 102, 102, 0.25);
+  }
+  .types-of-sprays_item-border {
+    border-left: 6px solid #EB752C;
+    padding-left: 10px;
+  }
+  .types-of-sprays_heading {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 4px;
+    background: #CDECE8;
+    max-width: max-content;
+    margin: auto;
+    text-align: center;
+  }
+  .types-of-sprays_item-card_title {
+    color: #181818;
+    font-family: Poppins;
+    font-size: 20.887px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.5%; /* 25.795px */
+  }
+  .types-of-sprays_item-card_text {
+    color: #666;
+    font-family: Poppins;
+    font-size: 16.067px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.5%; /* 23.859px */
+  }
+  .types-of-sprays_item-title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .types-of-sprays_item-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Types of sprays",
+    "class": "types-of-sprays section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Types of nasal sprays"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": " Card Image"
+          },
+          {
+            "type": "text",
+            "id": "card-title",
+            "label": "Card Title",
+            "default": "Nasal Irrigants"
+          },
+          {
+            "type": "text",
+            "id": "card-text",
+            "label": "Card Text",
+            "default": "Fortified with tulsi & xylitol"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Nasal Irrigants"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Delivers a saline solution to cleanse and moisturize nasal passages, relieving dryness and congestion without medication."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Types of sprays"
+      }
+    ]
+  }
+{% endschema %}

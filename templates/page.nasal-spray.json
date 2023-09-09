@@ -1,5 +1,16 @@
 {
   "sections": {
+    "fb75aaba-2df3-4033-9455-edf94bf37dee": {
+      "type": "nasal-main-banner",
+      "settings": {
+        "main_bg_img": "shopify:\/\/shop_images\/Group_14708.png",
+        "bg_img": "shopify:\/\/shop_images\/Vector_114.png",
+        "overlay_img": "shopify:\/\/shop_images\/Vector_115_2.png",
+        "heading": "Tailored formulations for all your needs.",
+        "text": "Unmatched Coverage For All Your Needs.",
+        "link1": "shopify:\/\/products\/bibo-saline-tulsi-nasal-spray"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -148,13 +159,90 @@
       "settings": {
         "title": "How  Bibo Nasal Sprays  Works?",
         "caption": "Direct pathway to deliver drug to lungs.",
-        "text": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief."
+        "text": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief.",
+        "img": "shopify:\/\/shop_images\/8_3d4be72a-4bda-45d7-b438-c52ef3bb25e5.png"
+      }
+    },
+    "4328ca8e-f473-4a27-abcf-63c689e746f2": {
+      "type": "types-of-sprays",
+      "blocks": {
+        "0909af97-e557-48de-a176-87f5505756a7": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Coldlyte_1.png",
+            "card-title": "Decongestant Nasal Spray",
+            "card-text": "Reduces nasal swelling",
+            "title": "Decongestant Nasal Spray",
+            "text": "Provides quick relief by constricting blood vessels, reducing nasal swelling, and improving airflow. Commonly used for short-term congestion."
+          }
+        },
+        "27611df5-9989-49b3-a942-b873f9103653": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Bibonase_1.png",
+            "card-title": "Steroid and Antihistamine",
+            "card-text": "Reduces inflammation",
+            "title": "Steroid and Antihistamine",
+            "text": "Alleviates allergies by reducing inflammation (steroid) and blocking histamine reactions, offering comprehensive symptom relief."
+          }
+        },
+        "2914270b-a2c3-4c6f-bd1d-bcab930b5f13": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/61FLjB18NZL_3.png",
+            "card-title": "Nasal Irrigants",
+            "card-text": "Reduces mucus production",
+            "title": "Anticholinergic nasal spray",
+            "text": "Eases nasal congestion by blocking muscarinic receptors, reducing mucus production, and improving breathing in non-allergic rhinitis."
+          }
+        },
+        "a353fa8b-dea2-4e58-b47d-f4a87d235f4b": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/61FLjB18NZL_3.png",
+            "card-title": "Steroidal Nasal Spray",
+            "card-text": "Contains corticosteroids",
+            "title": "Steroidal Nasal Spray",
+            "text": "Contains corticosteroids that reduce inflammation in the nasal passages, offering long-term relief from allergies and chronic congestion."
+          }
+        },
+        "5bb23d0e-9f36-4936-97fb-a1bad9aac1c1": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/61FLjB18NZL_3.png",
+            "card-title": "Nasal Antihistamine",
+            "card-text": "Blocks histamine receptors",
+            "title": "Nasal Antihistamine",
+            "text": "Blocks histamine receptors, reducing allergy symptoms like sneezing, itching, and runny nose by inhibiting histamine's effects."
+          }
+        },
+        "ec74293b-c979-4798-b21c-0a8a25ff0dc7": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_14716_1.png",
+            "card-title": "Nasal Irrigants",
+            "card-text": "Fortified with tulsi & xylitol",
+            "title": "Nasal Irrigants",
+            "text": "Delivers a saline solution to cleanse and moisturize nasal passages, relieving dryness and congestion without medication."
+          }
+        }
+      },
+      "block_order": [
+        "0909af97-e557-48de-a176-87f5505756a7",
+        "27611df5-9989-49b3-a942-b873f9103653",
+        "2914270b-a2c3-4c6f-bd1d-bcab930b5f13",
+        "a353fa8b-dea2-4e58-b47d-f4a87d235f4b",
+        "5bb23d0e-9f36-4936-97fb-a1bad9aac1c1",
+        "ec74293b-c979-4798-b21c-0a8a25ff0dc7"
+      ],
+      "settings": {
+        "title": "Types of nasal sprays"
       }
     },
     "d0a30081-9ed5-4e24-906b-16bdcad3520f": {
       "type": "nasal-text-section",
       "settings": {
-        "title": "Find your Bibo Spray",
+        "title": "Find your <span>Bibo Spray<\/span>",
         "caption": "BREATHING DIFFICULTIES? LET’S FIX THAT!"
       }
     },
@@ -239,10 +327,12 @@
     }
   },
   "order": [
+    "fb75aaba-2df3-4033-9455-edf94bf37dee",
     "main",
     "df43f6f2-1b36-4768-8835-9f178f16a07d",
     "32de4bb4-4b99-4a5d-bef8-43bc57ddeb50",
     "07d447ae-5085-46d3-915f-f9aedf078b25",
+    "4328ca8e-f473-4a27-abcf-63c689e746f2",
     "d0a30081-9ed5-4e24-906b-16bdcad3520f",
     "6e72a770-4759-46be-bbab-07dd74b541ef",
     "a151528b-c5c2-4b40-a284-d4a007e62874",
