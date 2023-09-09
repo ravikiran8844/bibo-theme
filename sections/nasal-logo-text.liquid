@@ -1,0 +1,150 @@
+<div class="container py-5">
+  <div class="col-12 text-center mb-5">
+    <div class="nasal-logo-text_heading">
+      ‘Nasal Spray Redefining Drug Delivery!’
+    </div>
+    <div>
+      <svg
+        width="113"
+        height="6"
+        viewBox="0 0 113 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M3 3H109.5"
+          stroke="#EB752C"
+          stroke-width="6"
+          stroke-linecap="round" />
+      </svg>
+    </div>
+
+  </div>
+  <div class="row">
+
+    {% for block in section.blocks %}
+      <div class="col-12 col-sm-6 col-md-4 px-3 mb-5 text-center">
+        <div>
+          <div class="nasal-logo-text_img-warpper">
+            <img
+              src="{{block.settings.img | img_url: 'master'}}"
+              class="img-fluid"
+              alt="">
+          </div>
+          <div class="nasal-logo-text_title mb-3">{{ block.settings.title }}</div>
+          <div class="nasal-logo-text_content">{{ block.settings.text }}</div>
+
+        </div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+
+
+<style>
+  .nasal-logo-text {
+    background-image: url("{{section.settings.bg_image | img_url: 'master'}}");
+  }
+  .nasal-logo-text_img-warpper {
+    width: 120px;
+    height: 100px;
+    margin: auto;
+  }
+  .nasal-logo-text_heading {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .nasal-logo-text_title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .nasal-logo-text_content {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media(min-width:768px) {
+    .nasal-logo-text_heading {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .nasal-logo-text_title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .nasal-logo-text_content {
+      color: #000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+
+    "name": "Nasal Logo Text",
+    "class": "section nasal-logo-text",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+      }
+    ],
+    "blocks": [
+      {
+        "limit": 6,
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Logo"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Congestion Relief: "
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "They quickly alleviate nasal congestion caused by colds, allergies, or sinusitis, improving breathing and comfort."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nasal Logo Text"
+      }
+    ]
+  }
+{% endschema %}

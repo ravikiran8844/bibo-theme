@@ -8,6 +8,70 @@
         "padding_bottom": 36
       }
     },
+    "df43f6f2-1b36-4768-8835-9f178f16a07d": {
+      "type": "nasal-logo-text",
+      "blocks": {
+        "3b89650b-22f0-41f9-be4e-3984e710df5e": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_77.png",
+            "title": "Congestion Relief:",
+            "text": "They quickly alleviate nasal congestion caused by colds, allergies, or sinusitis, improving breathing and comfort."
+          }
+        },
+        "023b3c09-fae4-4e85-ae3c-cf5d2f2df5f1": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_14.png",
+            "title": "Allergy Management:",
+            "text": "Nasal sprays with antihistamines or steroids help manage allergy symptoms like sneezing, itching, and runny nose."
+          }
+        },
+        "bf1f9232-478a-4dfc-8c0a-156f8e4b27af": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/drop_1.png",
+            "title": "Moisturization:",
+            "text": "Saline sprays hydrate dry nasal passages, preventing irritation and nosebleeds."
+          }
+        },
+        "abae01ee-9941-45a8-ae1c-7dfdf7f19c87": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_46.png",
+            "title": "Preventive Care:",
+            "text": "Nasal sprays tap into the rich vascular network of the nasal passages, ensuring rapid absorption and quick onset of medication action."
+          }
+        },
+        "8aee4cff-82f4-4e1e-8ab0-620d8b2ecc3d": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_10.png",
+            "title": "Postoperative Care:",
+            "text": "They aid in healing after nasal surgeries by reducing inflammation and promoting drainage."
+          }
+        },
+        "aa7dac0d-5e20-48e1-92f5-659f57c4fc6c": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/6_11_16c688c5-6573-4a9a-894a-b7af91bd6642.png",
+            "title": "Enhanced Medication Delivery:",
+            "text": "Nasal sprays directly target affected areas, avoiding the need for oral medication and reducing side effects."
+          }
+        }
+      },
+      "block_order": [
+        "3b89650b-22f0-41f9-be4e-3984e710df5e",
+        "023b3c09-fae4-4e85-ae3c-cf5d2f2df5f1",
+        "bf1f9232-478a-4dfc-8c0a-156f8e4b27af",
+        "abae01ee-9941-45a8-ae1c-7dfdf7f19c87",
+        "8aee4cff-82f4-4e1e-8ab0-620d8b2ecc3d",
+        "aa7dac0d-5e20-48e1-92f5-659f57c4fc6c"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Group_14708.png"
+      }
+    },
     "32de4bb4-4b99-4a5d-bef8-43bc57ddeb50": {
       "type": "reviews-section",
       "blocks": {
@@ -90,12 +154,15 @@
     "d0a30081-9ed5-4e24-906b-16bdcad3520f": {
       "type": "nasal-text-section",
       "settings": {
-        "title": "Find your <span>Bibo Spray<\/span>",
+        "title": "Find your Bibo Spray",
         "caption": "BREATHING DIFFICULTIES? LET’S FIX THAT!"
       }
     },
     "6e72a770-4759-46be-bbab-07dd74b541ef": {
       "type": "products-slider",
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "",
         "products": [
@@ -163,15 +230,23 @@
       "settings": {
         "title": "Tailored formulations for all your needs."
       }
+    },
+    "d7542212-656e-4732-952d-0fbbf7e0faa9": {
+      "type": "nasal-spray-compare",
+      "settings": {
+        "compare-img": "shopify:\/\/shop_images\/Group_14353.png"
+      }
     }
   },
   "order": [
     "main",
+    "df43f6f2-1b36-4768-8835-9f178f16a07d",
     "32de4bb4-4b99-4a5d-bef8-43bc57ddeb50",
     "07d447ae-5085-46d3-915f-f9aedf078b25",
     "d0a30081-9ed5-4e24-906b-16bdcad3520f",
     "6e72a770-4759-46be-bbab-07dd74b541ef",
     "a151528b-c5c2-4b40-a284-d4a007e62874",
-    "39dc5ec7-df60-4be5-9bed-71f3e3a4f695"
+    "39dc5ec7-df60-4be5-9bed-71f3e3a4f695",
+    "d7542212-656e-4732-952d-0fbbf7e0faa9"
   ]
 }
