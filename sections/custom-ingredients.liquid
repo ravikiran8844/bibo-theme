@@ -1,0 +1,112 @@
+<div class="container py-5">
+  <div class="col-12 mb-5 cis_item-title">{{ section.settings.heading }}</div>
+  <div class="row gx-4">
+    {% for block in section.blocks %}
+      <div class="col-12 col-md-6 mb-3 ingredient-item-{{forloop.index}}">
+        <div class="cis_item d-flex justify-content-between align-items-center">
+          <div>
+            <img
+              loading="lazy"
+              width="108"
+              height="119"
+              src="{{block.settings.logo | img_url: 'master'}}"
+              alt="ingredient">
+          </div>
+          <div class="px-3 cis_item-text">
+            {{ block.settings.text }}
+          </div>
+          <div>
+            <div class="cis_overlay">i</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .ingredients-section {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  .ingredients-section b {
+    font-weight: 700 !important;
+  }
+  .ingredients-section .row .col-md-6 {
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  .cis_item-title {
+    color: #535353;
+    font-family: Urbanist;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+  }
+  .cis_item-text {
+    color: #535353;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.5px;
+    letter-spacing: 0.32px;
+  }
+
+  .cis_overlay {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.38px;
+    text-transform: lowercase;
+    height: 26px;
+    width: 26px;
+    background: #275C5C;
+    border-radius: 50px;
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Ingredients Section",
+    "class": "section ingredients-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Heading",
+        "label": "Heading"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "ingredient",
+        "type": "ingredient-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "label": "Text",
+            "id": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Ingredients Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,254 @@
+<style>
+  .grid-conatiner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    padding: 10px 105px;
+  }
+  .map {
+    margin-top: 15rem
+  }
+  .icon {
+    margin-right: 13px;
+
+  }
+  @media only screen and (max-width: 800px) {
+    .grid-conatiner {
+      grid-template-columns: auto;
+      gap: 50px;
+      padding: 10px 15px;
+    }
+    .map {
+      margin-top: 7rem
+    }
+  }
+</style>
+
+
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
+    }
+  }
+{%- endstyle -%}
+
+<style>
+  .contact-heading {
+    color: #254E4E;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+  }
+</style>
+
+<div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding gradient py-5">
+
+  <div class="text-center">
+    <h2 class="mb-4 contact-heading">{{ section.settings.heading }}</h2>
+  </div>
+  <div class="grid-conatiner page-width">
+
+    <div class="msgcontainer justify-content-center" style="margin:auto; ">
+      <div>
+        <div>
+          <div>
+            <p>
+              <strong>Name:</strong>
+              Bibo Health</p>
+            <p>
+              <i class="fa-solid fa-square-phone-flip icon fa-xl"></i>
+              <strong>+91 8297104012</strong>
+            </p>
+            <p>(Monday to Friday - 10 Am to 7PM)</p>
+            <p>
+              <i class="fa-solid fa-square-envelope icon fa-xl"></i>
+              <strong>Breathe.free@bibo.health</strong>
+            </p>
+            <p>
+              <strong>CIN:</strong>
+              U24230KA2019PTC125004</p>
+
+          </div>
+          <div class="container-address" style="display:flex ;">
+            <div>
+              <i class="fa-solid fa-address-card icon fa-xl"></i>
+            </div>
+            <div>
+              <strong>Hilt Brands India Private Limited</strong><br/>#1489, 5th Cross Road, 29th Main Road<br/>BTM
+              Layout 2nd
+                                                                                                                                                            Stage<br/>Bengaluru, Karnataka, 560076, India
+            </div>
+          </div>
+          <br>
+          <!--         <p><strong>Or contact us using the form</strong></p>
+          -->
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+ 
+
+
+
+
+
+
+    <div class="formconatiner">
+      <div class="contact">
+        <form
+        action="https://formsubmit.co/bibocontactform@gmail.com"
+        method="POST">
+          <div class="field">
+            <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="name" placeholder="Name">
+            <label class="field__label" for="ContactForm-name">Name</label>
+          </div>
+          <div class="field field--with-error">
+            <input autocomplete="email" type="email" id="ContactForm-email" class="field__input" name="email" spellcheck="false" autocapitalize="off" value="" aria-required="true" placeholder="Email">
+            <label class="field__label" for="ContactForm-email">Email <span aria-hidden="true">*</span></label></div>
+        </div>
+        <div class="field mb-4">
+          <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="phone" pattern="[0-9\-]*" value="" placeholder="Phone number">
+          <label class="field__label" for="ContactForm-phone">Phone number</label>
+        </div>
+        <div class="field">
+          <textarea rows="10" id="ContactForm-body" class="text-area field__input" name="comment" placeholder="Message"></textarea>
+          <label class="form__label field__label" for="ContactForm-body">Message</label>
+        </div>
+        <input
+        type="hidden"
+        name="_cc"
+        value="pooja@bibo.health,vikash@bibo.health">
+      <!-- <input
+        type="hidden"
+        name="_captcha"
+        value="false"> -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Contact form submission!">
+      <input
+        type="hidden"
+        name="_next"
+        value="https://bibo.health">
+        <div class="contact__button">
+          <button type="submit" class="button">
+            Send
+          </button>
+        </div></form>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <!--   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7777.983982201241!2d77.61132188081494!3d12.908236088106245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe013344caa3275f6!2sHilt%20Brands%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1656963959269!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+  --></div>
+
+{% schema %}
+  {
+    "name": "Custom Contact Form",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Contact form",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Contact Form"      }
+    ]
+  }
+{% endschema %}

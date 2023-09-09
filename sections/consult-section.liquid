@@ -1,0 +1,133 @@
+<div class="container py-5">
+  <div class="col-12 col-md-10 col-lg-6 mx-auto">
+    <div class="text-center">
+      <h2 class="mb-4 consult-section-title">{{ section.settings.title }}</h2>
+      <div class="mb-4 consult-section-caption">{{ section.settings.caption }}</div>
+      <div class="my-5">
+        <img
+          width="180"
+          height="180"
+          loading="lazy"
+          class="img-fluid consult-section-img"
+          src="{{section.settings.img |img_url: 'master'}}"
+          alt="">
+      </div>
+      <div class="mb-4 consult-section-text">{{ section.settings.text }}</div>
+      <div>
+        <a class="consult-section-button btn btn-outline px-5 py-3 mb-4" href="{{ section.settings.link-url }}">{{ section.settings.link-text }}</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<style>
+  .consult-section-title {
+    color: #385B5F;
+    text-align: center;
+    font-size: 30px;
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .consult-section-caption {
+    color: #535353;
+    text-align: center;
+    font-size: 21px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+  }
+  .consult-section-text {
+    color: #535353;
+    text-align: center;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+  }
+  .consult-section-img {
+    border-radius: 254.621px;
+    background: #54B5A9;
+    max-width: 180px;
+    max-height: 180px;
+    width: 100%;
+    height: auto;
+    box-shadow: 29px 4px 25px 0 rgba(0, 0, 0, 0.12) inset;
+  }
+  .consult-section-button {
+    border-radius: 10px;
+    border: 4px solid #54B5A9;
+    box-shadow: 3px 4px 13px 0 rgba(0, 0, 0, 0.20);
+    color: #385B5F;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.34px;
+  }
+  .consult-section-button:hover {
+    border-radius: 10px;
+    border: 4px solid #54B5A9;
+    box-shadow: 3px 4px 13px 0 rgba(0, 0, 0, 0.20);
+    color: #385B5F;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.34px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Consult Now",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Still have questions lingering?"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Let us be your wellness partner!"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Unlock your personalized plan, designed just for you, blending seamlessly with your taste and lifestyle. Take that step towards better health today!"
+      }, {
+        "type": "text",
+        "id": "link-text",
+        "label": "Link Text",
+        "default": "Consult Now"
+      }, {
+        "type": "url",
+        "id": "link-url",
+        "label": "Link"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Consult Now"
+      }
+    ]
+  }
+{% endschema %}

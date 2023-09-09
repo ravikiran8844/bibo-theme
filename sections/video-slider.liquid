@@ -1,0 +1,131 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.4/dist/js/splide-extension-video.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.4/dist/css/splide-extension-video.min.css">
+
+
+<div id="video-section" class="container-fluid py-5">
+  <div class="col-12">
+    <div class="video-section_heading mb-3">{{ section.settings.heading }}</div>
+  </div>
+  <div class="row g-0 video-slider-item">
+    <div class="col-12 col-lg-8 m-auto">
+      <div id="video-slider-section" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              <li class="splide__slide" data-splide-youtube="{{block.settings.video_url}}">
+                <img
+                  loading="lazy"
+                  width="750"
+                  height="421"
+                  src="{{block.settings.cover_image | img_url: 'master'}}">
+              </li>
+            {% endfor %}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<style>
+  .video-section_heading {
+    color: #254E4E;
+    text-align: center;
+  font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%;
+  }
+  .video-slider b {
+    color: #254E4E;
+    text-align: center;
+  font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117%;
+  }
+  .video-slider{
+background: #F9F9F9;
+  }
+     .video-slider-item {
+  width: 100%;
+  height: 100%;
+/*   background: linear-gradient(to bottom, #FFFFFF 70%, #E0E9E8 30%);
+        */
+}
+</style>
+
+{% schema %}
+  {
+    "name": "video slider",
+    "class": "section video-slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Hear what our <b>customers</b> have to say about us"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "video",
+        "type": "video-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "cover_image",
+            "label": "t:sections.video.settings.cover_image.label"
+          }, {
+            "type": "video_url",
+            "id": "video_url",
+            "accept": [
+              "youtube", "vimeo"
+            ],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "label": "t:sections.video.settings.video_url.label",
+            "placeholder": "t:sections.video.settings.video_url.placeholder",
+            "info": "t:sections.video.settings.video_url.info"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "video slider"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new Splide('#video-slider-section', {
+      type: 'loop',
+      heightRatio: 0.5625,
+      cover: true,
+      updateOnMove: true,
+      pagination: false,
+      padding: {
+        left: 0,
+        right: 0
+      },
+      arrows: true,
+      width: '100%',
+      wheel: true,
+      gap: '1rem',
+      video: {
+        loop: false
+      }
+    }).mount(window.splide.Extensions);
+  });
+</script>

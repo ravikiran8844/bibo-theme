@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "16620463560443c7d2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<a href=\"https:\/\/bibo.health\/products\/yoga-consultation-with-hasti\"> <img\n        src=\"\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/YogaBanner.jpg?v=1660290833&width=1500\"\n        class=\"d-block w-100 desktop\" alt=\"banner1\">\n<\/a>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1657860903526e6608": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/YogaBanner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1660294532b5ebdc5c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<\/style> \n<!-----------------------------------------Yoga------------------------------------------------------->\n<div class=\"container\">\n<h2>Yoga is Core of Healthy You<\/h2>\n        <div class=\"container-accordion mt-0 p-0\">\n<\/div>\n<div style=\"text-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Focussed_Approach.jpg?v=1660304041\" alt=\"Saline Nasal Spray\" style=\"float: none;\" width=\"100%\" \/><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "1658745494e3a18e7f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<style>\n        .faq {\n            padding: 100px;\n        }\n\n        .faq .faq-item {\n            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n            padding: 10px 15px;\n            border-radius: 10px;\n            margin-bottom: 10px;\n        }\n\n        .faq-item {\n            margin-top: 10px;\n        }\n\n        .faq-question {\n            font-size: 15px;\n            letter-spacing: 0.8px;\n        }\n\n        \/*Profile Card 3*\/\n        .profile-card-3 {\n\n            position: relative;\n            float: left;\n            overflow: hidden;\n            width: 100%;\n            text-align: center;\n            height: 368px;\n            border: none;\n        }\n\n        .profile-card-3 .background-block {\n            float: left;\n            width: 100%;\n            height: 200px;\n            overflow: hidden;\n\n        }\n\n        .profile-card-3 .background-block .background {\n            width: 100%;\n            vertical-align: top;\n            opacity: 0.9;\n            -webkit-filter: blur(0.5px);\n            filter: blur(0.5px);\n            -webkit-transform: scale(1.8);\n            transform: scale(2.8);\n\n        }\n\n        .profile-card-3 .card-content {\n            width: 100%;\n            padding: 15px 25px;\n            color: #232323;\n            float: left;\n            background: #efefef;\n            height: 50%;\n            border-radius: 0 0 5px 5px;\n            position: relative;\n            z-index: 9999;\n        }\n\n        .profile-card-3 .card-content::before {\n            content: '';\n            background: #efefef;\n            width: 120%;\n            height: 100%;\n            left: 11px;\n            bottom: 51px;\n            position: absolute;\n            z-index: -1;\n            transform: rotate(-13deg);\n        }\n\n        .profile-card-3 .profile {\n            border-radius: 50%;\n            position: absolute;\n            bottom: 50%;\n            left: 50%;\n            width: 35%;\n            opacity: 1;\n            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);\n            border: 2px solid rgba(255, 255, 255, 1);\n            -webkit-transform: translate(-50%, 0%);\n            transform: translate(-50%, 0%);\n            z-index: 99999;\n        }\n\n        .profile-card-3 h2 {\n            margin: 0 0 5px;\n            font-weight: 600;\n            font-size: 25px;\n        }\n\n        .profile-card-3 h2 small {\n            display: block;\n            font-size: 15px;\n            margin-top: 10px;\n        }\n\n\n\n        .profile-card-3 .icon-block {\n            float: left;\n            width: 100%;\n            margin-top: 15px;\n        }\n\n        .icon-block a {\n            border: 1px solid black;\n            width: 130px;\n            height: fit-content;\n            text-align: center;\n            background-color: lightgray;\n            font-size: 20px;\n        }\n\n        .flex-container {\n            display: flex;\n            flex-direction: row;\n            text-align: center;\n            justify-content: center;\n            align-items: center;\n            vertical-align: middle;\n            margin-bottom: auto;\n            margin-top: auto;\n        }\n\n        .flex-child {\n            vertical-align: middle;\n            padding-top: auto;\n            padding-bottom: auto;\n            margin-left: 15px;\n            margin-right: 15px;\n        }\n\n        .img-right {\n            width: 80%;\n        }\n\n        .img-box {\n            width: 100%;\n        }\n\n        .img-box1 {\n            width: 100%;\n            border-radius: 15px;\n        }\n\n        .blue-text {\n            color: cornflowerblue;\n        }\n\n        .text-align-left {\n            font-size: 35px;\n            font-weight: 500;\n        }\n\n        .bordered {\n            background-color: #fff6ea;\n            border-radius: 15px;\n        }\n\n        .bordered h5 {\n            margin-top: 20px;\n            margin-bottom: 20px;\n            font-size: 25px;\n            font-weight: 500;\n        }\n\n        .why-bibo h1 {\n            font-size: 50px;\n            color: cornflowerblue;\n        }\n\n        .why-bibo p {\n            font-size: 25px;\n            color: darkcyan;\n        }\n\n        .talk-to-team h1 {\n            color: darkgray;\n            margin-bottom: 20px;\n        }\n\n        .info-text {\n            font-size: 35px;\n            font-weight: 500;\n        }\n\n        .info-text-header {\n            font-size: 40px;\n            font-weight: 500;\n        }\n\n        .accordion-header {\n            font-weight: 600;\n        }\n\n\n\n        .gradient-custom {\n            background-color: grey;\n        }\n\n        .profile-container {\n            display: grid;\n            padding: 1rem;\n            grid-template-columns: 300px 1fr;\n            gap: 1rem;\n            align-items: center;\n            max-width: 800px;\n            margin: 0 auto;\n            background-color: #efefef;\n            border-radius: 15px;\n\n        }\n\n        .img-fluid {\n            max-width: 80%;\n            height: auto;\n            margin: auto;\n            display: block;\n            border-radius: 15px;\n            width: 80%;\n        }\n\n        @media (max-width: 800px) {\n            .flex-container {\n                flex-direction: column;\n                text-align: center;\n                justify-content: center;\n                align-items: center;\n                vertical-align: middle;\n                margin-bottom: auto;\n                margin-top: auto;\n            }\n\n            .flex-child {\n                vertical-align: middle;\n                padding-top: auto;\n                padding-bottom: auto;\n                margin-top: 15px;\n                margin-bottom: 15px;\n            }\n\n            .img-right {\n                width: 100%;\n            }\n\n            .img-box {\n                width: 100%;\n            }\n\n            .img-box1 {\n                width: 100%;\n                border-radius: 10px;\n            }\n\n            .blue-text {\n                color: cornflowerblue;\n            }\n\n            .text-align-left {\n                font-size: 30px;\n                font-weight: 400;\n            }\n\n            .bordered {\n                background-color: #fff6ea;\n                border-radius: 10px;\n            }\n\n            .bordered h5 {\n                padding-top: 10px;\n                margin-bottom: 10px;\n                font-size: 20px;\n                font-weight: 400;\n            }\n\n            .why-bibo h1 {\n                font-size: 40px;\n                color: cornflowerblue;\n            }\n\n            .why-bibo p {\n                font-size: 20px;\n                color: darkcyan;\n            }\n\n            .talk-to-team h1 {\n                color: darkgray;\n                margin-bottom: 10px;\n            }\n\n            .info-text {\n                font-size: 30px;\n                font-weight: 500;\n            }\n\n            .info-text-header {\n                font-size: 35px;\n                font-weight: 500;\n            }\n\n            .faq {\n                padding: 8px;\n            }\n\n            .profile-container {\n                display: block;\n\n            }\n\n            .info-container {\n                position: relative;\n                margin: -3rem 0 2rem 1rem;\n                padding: 1rem;\n                background: #CDF0EA;\n                text-align: center;\n                border: 0.5px solid beige;\n                border-radius: 15px;\n            }\n        }\n    <\/style>\n\n   <section>\n        <div class=\"container\">\n            <div class=\"row\">\n\n\n\n                <!--Profile Card 3-->\n                <div class=\"col-md-4 mb-4\">\n                    <div class=\"card profile-card-3\">\n                        <div class=\"background-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/matt-gross-9aCkSl6YcXg-unsplash.jpg?v=1657411590\"\n                                alt=\"profile-sample1\" class=\"background\" \/>\n                        <\/div>\n                        <div class=\"profile-thumb-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/10.png?v=1657048887\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <div class=\"card-content\">\n                            <h2>Dr Aishwarya Sridhar<small>Consultant ENT<\/small><\/h3>\n                                <div class=\"icon-block\">\n                                    <a href=\"https:\/\/www.getbibo.com\/pages\/dr-aishwarya-sridhar\" class=\"btn\">Profile<\/a>\n                                    <a href=\"https:\/\/www.getbibo.com\/products\/dr-aishwarya-sridhar\"\n                                        class=\"btn\">Consult<\/a>\n                                <\/div>\n                        <\/div>\n                    <\/div>\n\n                <\/div>\n                <div class=\"col-md-4 mb-4\">\n                    <div class=\"card profile-card-3\">\n                        <div class=\"background-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/matt-gross-9aCkSl6YcXg-unsplash.jpg?v=1657411590\"\n                                alt=\"profile-sample1\" class=\"background\" \/>\n                        <\/div>\n                        <div class=\"profile-thumb-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Vybhav.png?v=1656056541\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <div class=\"card-content\">\n                            <h2>Dr. Vybhav Vijendra<small>Pulmonologist<\/small><\/h3>\n                                <div class=\"icon-block\"><a href=\"https:\/\/www.getbibo.com\/pages\/dr-vybhav-vijyendra\"\n                                        class=\"btn\">Profile<\/a>\n                                    <a href=\"https:\/\/www.getbibo.com\/products\/dr-vybhav-vijendra\"\n                                        class=\"btn\">Consult<\/a>\n                                <\/div>\n                        <\/div>\n                    <\/div>\n\n                <\/div>\n                <div class=\"col-md-4 mb-4\">\n                    <div class=\"card profile-card-3\">\n                        <div class=\"background-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/matt-gross-9aCkSl6YcXg-unsplash.jpg?v=1657411590\"\n                                alt=\"profile-sample1\" class=\"background\" \/>\n                        <\/div>\n                        <div class=\"profile-thumb-block\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Adimalla.png?v=1656056541\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <div class=\"card-content\">\n                            <h2>Dr. Adimalla Raja Kumar<small>Pulmonologist, General Physician<\/small><\/h3>\n                                <div class=\"icon-block\"><a href=\"https:\/\/www.getbibo.com\/pages\/dr-adimalla-rajakumar\"\n                                        class=\"btn\">Profile<\/a>\n                                    <a href=\"https:\/\/www.getbibo.com\/products\/dr-adimalla-rajakumar\"\n                                        class=\"btn\">Consult<\/a>\n                                <\/div>\n                        <\/div>\n                    <\/div>\n\n                <\/div>\n\n\n\n            <\/div>\n        <\/div>\n    <\/section>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16588428228b80af9e": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<style>\n        .profile-grid-container {\n            display: grid;\n            grid-template-columns: 1fr 1fr 1fr;\n            gap: 10px;\n        }\n\n        .card-container {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n        }\n\n        .outer-conatiner {\n            border: transparent;\n            height: 400px;\n            min-width: 450px;\n            border-radius: 30px;\n\n        }\n\n        .first-half {\n            background-color: #DBDFFE;\n            height: 40%;\n            border-top-left-radius: 30px;\n            border-top-right-radius: 30px;\n\n        }\n\n        @keyframes upperpart {\n            50% {\n                -webkit-box-shadow: 0px -10px 10px 5px rgba(180, 221, 237, 1);\n                -moz-box-shadow: 0px -10px 10px 5px rgba(180, 221, 237, 1);\n                box-shadow: 0px -10px 10px 5px rgba(180, 221, 237, 1);\n            }\n        }\n\n        .second-half {\n            background-color: antiquewhite;\n            height: 60%;\n            border-bottom-right-radius: 30px;\n            border-bottom-left-radius: 30px;\n\n        }\n\n        @keyframes lowerpart {\n            50% {\n                -webkit-box-shadow: 0px 10px 10px 5px rgba(54, 66, 71, 1);\n                -moz-box-shadow: 0px 10px 10px 5px rgba(54, 66, 71, 1);\n                box-shadow: 0px 10px 10px 5px rgba(54, 66, 71, 1);\n            }\n        }\n\n        .img-box {\n\n            height: 100%;\n            width: fit-content;\n            margin: 0 auto;\n        }\n\n        .profile {\n            width: 180px;\n            height: 180px;\n            border-radius: 50%;\n            margin-top: 50px;\n            border: 3px solid black;\n        }\n\n        .info-container {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            flex-direction: column;\n        }\n\n        .btn-consult {\n            display: inline-block;\n            outline: 0;\n            border: 0;\n            cursor: pointer;\n            border-radius: 8px;\n            padding: 14px 24px 16px;\n            font-size: 18px;\n            font-weight: 700;\n            line-height: 1;\n            transition: transform 200ms, background 200ms;\n            background: #2C5C60;\n            color: white;\n            text-decoration: none;\n        }\n\n        .btn-consult:hover {\n            transform: translateY(-2px);\n            color: white;\n        }\n\n        @media (max-width: 800px) {\n            .profile-grid-container {\n                grid-template-columns: auto;\n                gap: 20px\n            }\n\n            .outer-conatiner {\n                border: transparent;\n                min-width: 350px;\n            }\n\n        }\n    <\/style>\n\n\n    <div class=\"profile-grid-container\">\n\n        <div class=\"card-container \">\n            <div class=\"outer-conatiner\">\n                <div class=\"first-half\">\n                    <div class=\"info-container\">\n                        <div class=\"img-box\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/3_d7837365-e308-424f-8135-1dc9768dba16.png?v=1659116019\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <h3 class=\"mt-3\">Dr Vybhav Vijendra<\/h3>\n                        <h5>Consultant Pulmonologist<\/h5>\n                        <a class=\"btn-consult mt-2\" href=\"https:\/\/www.getbibo.com\/products\/dr-vybhav-vijendra\">Book a\n                            Consultation<\/a>\n\n                    <\/div>\n                <\/div>\n                <div class=\"second-half\">\n                <\/div>\n            <\/div>\n        <\/div>\n        <div class=\"card-container \">\n            <div class=\"outer-conatiner\">\n                <div class=\"first-half\">\n                    <div class=\"info-container\">\n                        <div class=\"img-box\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/1_e4718c25-88d1-48db-9553-f82db3c48178.png?v=1659116020\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <h3 class=\"mt-3\">Dr. Adimalla Raja Kumar<\/h3>\n                        <h5>Consultant Pulmonologist <\/h5>\n                        <a class=\"btn-consult mt-2\" href=\"https:\/\/www.getbibo.com\/products\/dr-adimalla-rajakumar\">Book a\n                            Consultation<\/a>\n\n                    <\/div>\n                <\/div>\n                <div class=\"second-half\">\n                <\/div>\n            <\/div>\n        <\/div>\n        <div class=\"card-container \">\n            <div class=\"outer-conatiner\">\n                <div class=\"first-half\">\n                    <div class=\"info-container\">\n                        <div class=\"img-box\">\n                            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_456eb25a-3661-49b0-9d6c-d58f476b68d9.png?v=1659116019\"\n                                alt=\"profile-image\" class=\"profile\" \/>\n                        <\/div>\n                        <h3 class=\"mt-3\">Dr Aishwarya Sridhar<\/h3>\n                        <h5>Consultant ENT<\/h5>\n                        <a class=\"btn-consult mt-2\" href=\"https:\/\/www.getbibo.com\/products\/dr-aishwarya-sridhar\">Book a\n                            Consultation<\/a>\n\n                    <\/div>\n                <\/div>\n                <div class=\"second-half\">\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 40
+      }
+    },
+    "1657918381e65a6cf9": {
+      "type": "multicolumn",
+      "blocks": {
+        "16579183813ebc7f22-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_0608e424-15bb-45a8-a953-7c0c197c6505.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16579183813ebc7f22-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Asanas2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16579183813ebc7f22-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_7293bd62-34eb-4f06-96f3-61d9e0735b1c.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16579183813ebc7f22-0",
+        "16579183813ebc7f22-1",
+        "16579183813ebc7f22-2"
+      ],
+      "settings": {
+        "title": "How Bibo Yoga Consultation is different?",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16602979506d3b88b9": {
+      "type": "featured-product",
+      "blocks": {
+        "166029794950b1ea41-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "166029794950b1ea41-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "166029794950b1ea41-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "166029794950b1ea41-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "166029794950b1ea41-4": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "166029794950b1ea41-5": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "166029794950b1ea41-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "166029794950b1ea41-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "166029794950b1ea41-0",
+        "166029794950b1ea41-1",
+        "166029794950b1ea41-2",
+        "166029794950b1ea41-3",
+        "166029794950b1ea41-4",
+        "166029794950b1ea41-5",
+        "166029794950b1ea41-6",
+        "166029794950b1ea41-7"
+      ],
+      "settings": {
+        "product": "yoga-consultation-with-hasti",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "166029580292db5e3e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n        .img-grid-main {\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            column-gap: 10px;\n        }\n\n        @media (max-width: 800px) {\n            .img-grid-main {\n\n                grid-template-columns: auto;\n            }\n\n        }\n    <\/style>\n\n\n   \n    <div style=\"text-align: center;\">\n        <h2 class=\"mb-4\">Clinically Proven Benefits of Yoga on Respiratory Conditions<\/h2>\n        <div class=\"img-grid-main\">\n            <div class=\"img-grid\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/1_a648897e-f06e-4a2b-8202-d95e68c5a768.png?v=1663399016\"\n                    alt=\"Yoga Clinical Benefits\" style=\"float: none;\" width=\"100%\" \/>\n            <\/div>\n            <div class=\"img-grid\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_acb368fd-ea1f-495f-a07a-e91a9932099f.png?v=1663399012\"\n                    alt=\"Yoga Clinical Benefits\" style=\"float: none;\" width=\"100%\" \/>\n            <\/div>\n            <div class=\"img-grid\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/3_31d4c2aa-eefc-4541-942a-e527358d23b6.png?v=1663399011\"\n                    alt=\"Yoga Clinical Benefits\" style=\"float: none;\" width=\"100%\" \/>\n            <\/div>\n            <div class=\"img-grid\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/4_f809fcc1-ae44-4524-baea-e744ce6b2a3d.png?v=1663399008\"\n                    alt=\"Yoga Clinical Benefits\" style=\"float: none;\" width=\"100%\" \/>\n\n            <\/div>\n        <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 56
+      }
+    },
+    "16627975929fe2c2be": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Focussed_Approach.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "165791530733c07b38": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n        .faq {\n            padding: 10px;\n        }\n\n        .faq .faq-item {\n            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n            padding: 10px 15px;\n            border-radius: 10px;\n            margin-bottom: 10px;\n        }\n\n        .faq-item {\n            margin-top: 10px;\n        }\n\n        .faq-question {\n            font-size: 15px;\n            letter-spacing: 0.8px;\n        }\n\n        .accordion-header {\n            font-weight: 600;\n        }\n\n        @media (max-width: 800px) {\n            .faq {\n                padding: 8px;\n            }\n        }\n    <\/style>\n    <!-----------------------------------------FAQ's------------------------------------------------------->\n    <div class=\"container\">\n        <h3>FAQ's<\/h3>\n        <div class=\"container-accordion mt-3 p-3\">\n            <div class=\"accordion faq\" id=\"accordionExample\">\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingOne\"><button class=\"accordion-button faq-question\"\n                            type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\"\n                            aria-controls=\"collapseOne\">\n                            I am 60 years old, so am I fit for yoga?\n                        <\/button>\n                    <\/h2>\n                    <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">Yes, yoga can be performed by everyone. There are many yoga asanas\n                            that\n                            can be performed by all age groups.\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingTwo\"><button class=\"accordion-button faq-question collapsed\"\n                            type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\"\n                            aria-controls=\"collapseTwo\"> How does yoga with BIBO helps? <\/button><\/h2>\n                    <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">We at BIBO work for the holistic respiratory care of you. Our yoga\n                            expert will prescribe the yogasanas that are appropriate for your condition. .<\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingThree\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n                            Can I apply coupon code on yoga consultation?<\/button><\/h2>\n                    <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">No, coupon codes or Bibo cash are not applicable to yoga\n                            consultation.\n                            You can apply the coupon codes on our products.<\/div>\n                    <\/div>\n                <\/div>\n\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item  faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingFour\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseFour\" aria-expanded=\"false\" aria-controls=\"collapseFour\">Can I\n                            practice yoga just after having meals?<\/button>\n                    <\/h2>\n                    <div id=\"collapseFour\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFour\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">No, practising yoga just after meals is not advisable. You can wait\n                            for 1-2 hours after taking heavy meals to practice\n                            yoga. But there are some exceptions. You can talk to our yoga consultant to know about these\n                            asanas.\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingFive\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseFive\" aria-expanded=\"false\" aria-controls=\"collapseFive\">How\n                            often should I practice yoga for the best results?\n                        <\/button><\/h2>\n                    <div id=\"collapseFive\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFive\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">Regular practice of yoga can help you manage your condition better.\n                            Our yoga consultant will give you a detailed\n                            explanation of which yoga is to be performed, for how long, when to perform and a lot more\n                            based on your necessity and\n                            flexibility.\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingSix\"><button class=\"accordion-button faq-question collapsed\"\n                            type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseSix\" aria-expanded=\"false\"\n                            aria-controls=\"collapseSix\">Do I have to be flexible in practising yoga?<\/button><\/h2>\n                    <div id=\"collapseSix\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSix\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">No, everyone can practice yoga. Our yoga consultant will prescribe\n                            you only those yogasanas which are beneficial to you\n                            and can be performed by you based on your age and flexibility. Regularly practising yoga may\n                            even improve your\n                            flexibility.\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item  faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingSeven\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseSeven\" aria-expanded=\"false\" aria-controls=\"collapseSeven\">I have\n                            some medical conditions, can I still practice yoga?\n                        <\/button><\/h2>\n                    <div id=\"collapseSeven\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSeven\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">Yes, yoga can be practised by everyone. Our yoga consultant will\n                            take a detailed history of your medical condition and\n                            prescribe you only those yogasanas which can be performed by you and are equally beneficial\n                            to you. While prescribing\n                            the yogasanas to you, your medical condition, age and flexibility will be taken into\n                            account.<\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingEight\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseEight\" aria-expanded=\"false\" aria-controls=\"collapseEight\">What can\n                            I expect during the consultation?\n\n                        <\/button><\/h2>\n                    <div id=\"collapseEight\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingEight\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">During the yoga consultation with BIBO, you can expect to describe\n                            your medical condition with your social habits\n                            (sedentary lifestyle). Based on your medical condition, age and flexibility, our yoga\n                            consultant may prescribe you some\n                            yogasanas and home remedies. Our yoga consultant may show you the yogasanas that you must\n                            practice to improve your\n                            health condition.\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n                <div class=\"accordion-item  faq-item\">\n                    <h2 class=\"accordion-header\" id=\"headingNine\"><button\n                            class=\"accordion-button faq-question collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                            data-bs-target=\"#collapseNine\" aria-expanded=\"false\" aria-controls=\"collapseNine\">What\n                            will the prescription in the yoga consultation include?<\/button><\/h2>\n                    <div id=\"collapseNine\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingNine\"\n                        data-bs-parent=\"#accordionExample\">\n                        <div class=\"accordion-body\">Based on your health condition and age, our yoga consultant may\n                            prescribe you some yogasanas that you might need to\n                            practice daily. Along with this, the prescription may also include some home remedies to\n                            improve your condition.<\/div>\n                    <\/div>\n                <\/div>\n                <!------------------------------------------------------------------>\n\n\n\n\n\n\n\n\n\n\n\n            <\/div>\n            <!------------------------------------------------------------------>\n        <\/div>\n    <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "16620463560443c7d2",
+    "1657860903526e6608",
+    "1660294532b5ebdc5c",
+    "1658745494e3a18e7f",
+    "16588428228b80af9e",
+    "main-collection-product-grid",
+    "1657918381e65a6cf9",
+    "16602979506d3b88b9",
+    "166029580292db5e3e",
+    "16627975929fe2c2be",
+    "165791530733c07b38"
+  ]
+}

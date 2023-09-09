@@ -1,0 +1,205 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 d-block d-md-none mb-3">
+      <div class="text-center">
+        <div class="main-heading mb-3">{{ section.settings.text }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 mb-4">
+      <div class="images_wrapper">
+        <div class="first-img">
+          <img loading="eager" src="{{section.settings.image1 |img_url: 'master'}}" alt="">
+        </div>
+        <div class="second-img">
+          <img loading="eager" src="{{section.settings.image2 |img_url: 'master'}}" alt="">
+
+        </div>
+        <div class="overlay-svg">
+          {{ section.settings.svg-image }}
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-block col-12 col-md-6 mb-4 ps-md-5">
+      <div class="d-flex flex-column justify-content-center h-100">
+        <div class="main-heading mb-3">{{ section.settings.text }}</div>
+        <div>
+          <a class="btn px-4 py-2 learn-more-btn mb-4" href="{{section.settings.link}}">{{ section.settings.link-text }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-block d-md-none mb-3">
+      <div class="text-center">
+        <div>
+          <a class="btn px-4 py-2 learn-more-btn mb-4" href="{{section.settings.link}}">{{ section.settings.link-text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .learn-more-section {
+    background-image: url('{{section.settings.bg_image |img_url}}') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .learn-more-section .main-heading {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.023%; /* 36.146px */
+  }
+  .learn-more-section b {
+    color: #275C5C;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 139.023%;
+
+  }
+  .learn-more-btn,
+  .learn-more-btn:hover {
+    border-radius: 8px;
+    background: #275C5C;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .learn-more-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media(min-width:768px) {
+    .learn-more-section .main-heading {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 39px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 139.023%; /* 54.219px */
+      text-align: left;
+
+    }
+    .learn-more-section b {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 39px;
+      font-style: normal;
+      font-weight: 700 !important;
+      line-height: 139.023%;
+      text-align: left;
+
+    }
+  }
+  .learn-more-btn,
+  .learn-more-btn:hover {
+    border-radius: 8px;
+    background: #275C5C;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22.008px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .learn-more-section .images_wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+  }
+  .learn-more-section .first-img,
+  .learn-more-section .second-img {
+    --s: 100px;
+  }
+
+  .learn-more-section .first-img {
+    /* Clip path to create the smaller image on the left */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--s)));
+
+  }
+
+  .learn-more-section .second-img {
+    /* Clip path to create the larger image on the right */
+    clip-path: polygon(0 0, 100% var(--s), 100% 100%, 0 100%);
+    margin-top: calc(var(--s) * -1 + 0px);
+
+
+  }
+  .learn-more-section .overlay-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .learn-more-section .overlay-svg svg {
+    width: 60px;
+    height: 60px;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Learn More Section",
+    "class": "section learn-more-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image 2"
+      },
+      {
+        "type": "liquid",
+        "id": "svg-image",
+        "label": "SVG"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Whether you <b>puff or inhale</b>, lungs must not fail."
+      }, {
+        "type": "text",
+        "id": "link-text",
+        "label": "Link Text",
+        "default": "learn more"
+      }, {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Learn More Section"
+      }
+    ]
+  }
+{% endschema %}

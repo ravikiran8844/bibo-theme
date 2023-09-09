@@ -1,0 +1,157 @@
+<div class="container">
+<div class="py-5 px-3 rich-text-section_wrapper-{{ section.id }} mb-5">
+  <div class="row text-center">
+    <div class="col-12">
+      <div class="rich-text-section_heading">
+        {{ section.settings.heading }}
+
+      </div>
+      <div class="mb-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="156"
+          height="8"
+          viewBox="0 0 156 8"
+          fill="none">
+          <path
+            d="M4 4H152"
+            stroke="#54B5A9"
+            stroke-width="8"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+    </div>
+    <div class="col-12 mb-5">
+      <div class="rich-text-section_subheading">
+        {{ section.settings.subtitle }}
+
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="rich-text-section_text">
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<style>
+  .rich-text-section_wrapper-{{ section.id }} {
+    border-radius: 11px;
+    background-color: {{ section.settings.bgcolor}};
+  }
+
+  .rich-text-section_heading {
+    color: #54B5A9;
+    font-family: Satisfy;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: .7;
+  }
+  .rich-text-section_subheading {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 90%;
+    margin: auto;
+  }
+  .rich-text-section_subheading i {
+    color: #000;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .rich-text-section_text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        max-width: 900px;
+    margin: auto;
+  }
+
+  @media(min-width:768px) {
+    .rich-text-section_heading {
+      color: #54B5A9;
+      font-family: Satisfy;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: .7;
+    }
+    .rich-text-section_subheading {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .rich-text-section_subheading i {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .rich-text-section_text {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "rich text section",
+    "class": "rich-text-section section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bgcolor",
+        "label": "BG Color",
+        "default": "#F5F5F5"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "default": "Our mission",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "default": "<i>Centuries</i> of use, validated by <i>science</i>",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "text",
+        "default": "Provide better breathing for more than 10 million people in the next 5 years with uniquely crafted products and solutions from the house of Bibo.​",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "rich text section"
+      }
+    ]
+  }
+{% endschema %}

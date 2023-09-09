@@ -1,0 +1,136 @@
+{% comment %}
+    Renders a product estimated date of delivery
+
+    Accepts:
+    - product: {Object} Product Liquid object (compulsary)
+    - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+
+    Usage:
+    {% render 'product-card', product: section.settings.show_vendor %}
+{% endcomment %}
+
+
+<div id = "edd-{{product.selected_or_first_available_variant.id}}">
+</div>
+
+<style>
+
+  #edd-{{product.selected_or_first_available_variant.id}}{
+    color: #6E6E7A;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    
+  }
+ 
+   #innerTime{
+     
+     color:red
+   }
+  
+  #datetime{
+  margin-left: 6px;
+    color: #0066FF;
+  }
+  #delivertimehyperlocal{
+     color: #0066FF;
+    margin-left:6px
+  }
+</style>
+
+
+<script>
+  console.log("{{product.selected_or_first_available_variant.id}}");
+  function join(t, s) {
+      const a = [{day: 'numeric'}, {month: 'short'}];
+      function format(m) {
+          let f = new Intl.DateTimeFormat('en', m);
+          return f.format(t);
+      }
+      return a.map(format).join(s);
+  }
+  function get_delivery_text(result, pincode, variant_id){
+    var someDate = new Date();
+    var numberOfDaysToAdd = result.min_tat;
+    var serviceable = result.serviceable;
+    result.pincode = pincode;
+    result.variant_id = variant_id;
+    console.log(result,"result")
+    Shopify.analytics.publish("gs_tag_enabled", result);
+    if(serviceable === false) {
+      return "Not Serviceable"
+    }
+    else{
+      
+      if(numberOfDaysToAdd === 0) {
+      return "<img src=https://raw.githubusercontent.com/growsimplee/hosted-assets/master/speed-tag.svg></img><b id=delivertimehyperlocal>Delivery Today by 9pm </b>";
+    }
+    else if(numberOfDaysToAdd === 1 && result.hyperlocal === true){
+      return "<img src=https://raw.githubusercontent.com/growsimplee/hosted-assets/master/speed-tag.svg></img><b id=delivertimehyperlocal>Delivery Tomorrow by 9pm </b>";
+    }
+    else if(numberOfDaysToAdd > 1 && result.hyperlocal === true){
+     someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+    let minimum = join(someDate, '-');
+    var numberOfDaysToAdd = result.max_tat + 1;
+      var newDate = new Date();
+    newDate.setDate(newDate.getDate() + numberOfDaysToAdd); 
+    let maximum = join(newDate, '');
+       return "Estimated Delivery by 9P.M <b id=datetime>" + minimum +" & " + maximum +"</b>"
+    }
+    else{
+      console.log("Non hyp case");
+    someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+    let minimum = join(someDate, '');
+    var numberOfDaysToAdd = result.max_tat + 1; 
+      var newDate = new Date();
+    newDate.setDate(newDate.getDate() + numberOfDaysToAdd); 
+    let maximum = join(newDate, '');
+      return "<div>Delivery between </div> <b id=datetime>" + minimum +"</b>&nbsp;-&nbsp;<b id=datetime>"+maximum+"</b>";
+    }
+    }
+   
+   
+  }
+  
+  function getTat(variant_id,pincode){
+      var x = document.getElementById("edd-"+variant_id);
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      if (/^(\d{4}|\d{6})$/.test(pincode.toString()) == false){
+        x.innerHTML = "Invalid Pincode";
+      } else { 
+      var raw = JSON.stringify({
+        "href":window.location.href,
+        "channel_listing_id":variant_id.toString(),
+        "channel_id":"shopify",
+        "dest_pin": pincode
+      });
+    
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+    
+      fetch("https://8i01f8vw5j.execute-api.ap-south-1.amazonaws.com/v1/prod", requestOptions)
+        .then(response => response.json())
+        .then(result => x.innerHTML = get_delivery_text(result, pincode, variant_id));
+      }   
+   }
+  
+  function eventGetTat(variant_id,pincode){
+    console.log("event taught");
+    var x = document.getElementById("edd-"+variant_id);
+    x.innerHTML = "Waiting";
+    getTat(variant_id,pincode);
+  }
+  
+  var variant_id = "{{product.selected_or_first_available_variant.id}}";
+  var pincode = localStorage.getItem("pincode");
+  if(pincode) {
+    console.log("load_default");
+    getTat(variant_id,pincode);
+  }
+  document.addEventListener("pincode", (e) => eventGetTat(variant_id,e.value), false);
+</script>

@@ -1,0 +1,238 @@
+<style>
+  .ibwt-section {
+    background-image: linear-gradient(180deg, rgba(235, 117, 44, 0.40) 0%, rgba(235, 117, 44, 0.00) 100%), url("{{section.settings.bg-image|img_url: 'master'}}");
+    width: 100%;
+    font-family: Poppins;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .overlay-img{
+    max-height:100% !important;
+  }
+  .ibwt-section .overlay-img {
+    max-height: 600px;
+    width: 100%;
+    position: relative;
+  }
+  .ibwt_text {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+  }
+  .bibo-overlay-img {
+    position: absolute;
+    bottom: -15px;
+    left: 60px;
+    width: 144px;
+    height: 124px;
+  }
+  .ibwt-btn {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.008px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    width: 205px;
+    height: 74px;
+    flex-shrink: 0;
+    border: none;
+  }
+  .ibwt-logo_item .logo-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+  }
+  .ibwt-logo_item-img_wrapper{
+    height:60px;
+      width:60px;
+        margin: auto;
+
+  }
+  .ibwt-logo_item img{
+    max-height:60px;
+      max-width:60px;
+    width:auto;
+    height:auto;
+  }
+  @media(min-width:768px) {
+    .ibwt-section .overlay-img {
+      position: absolute;
+      bottom: 0;
+    }
+    .ibwt-logo_item {
+      height: 100%;
+      border-right: 1.5px solid #54B5A9;
+      padding-right: 20px;
+    }
+    .ibwt-logo_item--last {
+      border-right: none !important;
+    }
+    .ibwt-btn {
+      width: 275px;
+
+    }
+  }
+</style>
+
+
+<div style="background-color: #F9D04D;">
+  <div class="ibwt-section">
+    <div class="container-lg">
+      <div class="row g-0">
+        <div class="col-12 overlay-img_wrapper col-md-5 position-relative order-1  order-md-0 ">
+          <img
+            loading="lazy"
+            class="w-100 img-fluid h-auto overlay-img"
+            height="600"
+            width="600"
+            src="{{section.settings.image | img_url: 'master'}}"
+            alt="">
+          {% if section.settings.overlay_image!=blank %}
+             <img
+            loading="lazy"
+            width="144"
+            height="124 "
+            class="bibo-overlay-img"
+            src="{{section.settings.overlay_image | img_url: 'master'}}"
+            alt="">
+          {% endif %}
+
+         
+        </div>
+        <div class="col-12 col-md-7 order-0 order-md-1 py-5">
+          <div class="text-center ">
+          {% if section.settings.caption !=blank %}
+             <div class="fs-2 fw-bold text-white text-uppercase mt-5 mb-2">{{ section.settings.caption }}</div>
+            {% endif %}
+
+
+            <div class="display-2 fw-bold text-white text-uppercase mb-4">{{ section.settings.title }}</div>
+            <div class="row d-flex  justify-content-end">
+              <div class="col-6">
+                <div class="fs-4 ibwt_text text-white">{{ section.settings.text }}</div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              {% form 'product', product %}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ product.variants.first.id }}">
+                <input
+                  type="hidden"
+                  name="quantity"
+                  value="1">
+                <button class="ibwt-btn mb-5">BUY NOW</button>
+              {% endform %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% if section.blocks.size > 0 %}
+  <div style="background-color: #275C5C;" class="py-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        {% for block in section.blocks %}
+          <div class="col-6 col-md-2 my-4">
+            <div class="ibwt-logo_item text-center {% if forloop.last  %} ibwt-logo_item--last {% endif %}">
+              <div class="ibwt-logo_item-img_wrapper mb-3">
+                <img
+                  loading="lazy"
+                  height="60"
+                  width="60"
+                  src="{{block.settings.logo | img_url: 'master'}}"
+                  alt="">
+              </div>
+              <div class="text-white logo-text">
+                {{ block.settings.text }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "IBWT",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg-image",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "overlay_image",
+        "label": "Overlay Image"
+      },
+       {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Unlock the right comfort with breathofy syrup, ending generations of lingering cough."
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "text",
+        "default": "Unlock the Healing Power of 40% Honey and 14+ Herbs in Every Dose of Breathofy Syrup!"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "logo",
+        "limit": 5,
+        "type": "logo-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "IBWT"
+      }
+    ]
+  }
+{% endschema %}

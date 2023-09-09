@@ -1,0 +1,306 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="nasal-product-cards_title">{{ section.settings.title }}</div>
+      <div class="mb-5">
+        <svg
+          width="113"
+          height="6"
+          viewBox="0 0 113 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 3H109.5"
+            stroke="#EB752C"
+            stroke-width="6"
+            stroke-linecap="round" />
+        </svg>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    {% for block in section.blocks %}
+      <div class="col-12 col-md-4 mb-4">
+
+        <div class="nasal-product-cards_item">
+          <div class="text-center nasal-product-cards_item-img_wrapper">
+            <img
+              width="160"
+              height="180"
+              class="img-fluid"
+              src="{{block.settings.img | img_url: 'master'}}"
+              alt="{{block.settings.title}}">
+          </div>
+          <div class="text-center nasal-product-cards_item-bg--{{block.id}}">
+            <div class="nasal-product-cards_item-title">{{ block.settings.title }}</div>
+          </div>
+
+          <div>
+            <ul class="p-5">
+              <li class="mb-5 list-group-item ">
+                <i class="me-2">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 23.5L14.5 31C20.5123 21.6493 25.1236 17.234 35 10.5"
+                      stroke="{{ block.settings.bgcolor}}"
+                      stroke-width="3.6"
+                      stroke-linecap="round" />
+                    <circle
+                      cx="21"
+                      cy="21"
+                      r="21"
+                      fill="{{ block.settings.bgcolor}}"
+                      fill-opacity="0.11" />
+                  </svg>
+
+                </i>
+                {{ block.settings.item1 }}</li>
+              <li class="mb-5 list-group-item ">
+                <i class="me-2">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 23.5L14.5 31C20.5123 21.6493 25.1236 17.234 35 10.5"
+                      stroke="{{ block.settings.bgcolor}}"
+                      stroke-width="3.6"
+                      stroke-linecap="round" />
+                    <circle
+                      cx="21"
+                      cy="21"
+                      r="21"
+                      fill="{{ block.settings.bgcolor}}"
+                      fill-opacity="0.11" />
+                  </svg>
+
+                </i>
+                {{ block.settings.item2 }}</li>
+              <li class="mb-5 list-group-item ">
+                <i class="me-2">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 23.5L14.5 31C20.5123 21.6493 25.1236 17.234 35 10.5"
+                      stroke="{{ block.settings.bgcolor}}"
+                      stroke-width="3.6"
+                      stroke-linecap="round" />
+                    <circle
+                      cx="21"
+                      cy="21"
+                      r="21"
+                      fill="{{ block.settings.bgcolor}}"
+                      fill-opacity="0.11" />
+                  </svg>
+
+                </i>
+                {{ block.settings.item3 }}</li>
+              <li class="list-group-item ">
+                <i class="me-2">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 23.5L14.5 31C20.5123 21.6493 25.1236 17.234 35 10.5"
+                      stroke="{{ block.settings.bgcolor}}"
+                      stroke-width="3.6"
+                      stroke-linecap="round" />
+                    <circle
+                      cx="21"
+                      cy="21"
+                      r="21"
+                      fill="{{ block.settings.bgcolor}}"
+                      fill-opacity="0.11" />
+                  </svg>
+
+                </i>
+                {{ block.settings.item4 }}</li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+
+
+  </div>
+
+</div>
+
+{% style %}
+  {% for  block in section.blocks %}
+    .nasal-product-cards_item-bg--{{ block.id}}{
+      background: {{ block.settings.bgcolor}}
+      ;
+
+    }
+  {% endfor %}
+{% endstyle %}
+
+<style>
+  .nasal-product-cards_item-img_wrapper {
+    height: 180px;
+    width: 160px;
+    margin: auto;
+  }
+  .nasal-product-cards_item {
+    border-radius: 18.477px;
+    border: 2px solid #E9E6E6;
+    background: #FFF;
+    box-shadow: 0 0 39px 0 rgba(102, 102, 102, 0.25);
+    max-width: 489px;
+    margin: auto;
+    height:100%;
+  }
+
+
+  .nasal-product-cards_title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .nasal-product-cards_item-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  .nasal-product-cards ul li {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%; /* 27.17px */
+  }
+  .nasal-product-cards_item ul li{
+    display:flex;
+  }
+
+
+  @media(min-width:998px) {
+    .nasal-product-cards_title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .nasal-product-cards_item-title {
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.42px;
+    }
+    .nasal-product-cards ul li {
+      color: #000;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 123.5%; /* 27.17px */
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Nasal Product Cards",
+    "tag": "section",
+    "class": "section nasal-product-cards",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Tailored formulations for all your needs."
+      }
+    ],
+
+    "blocks": [
+      {
+        "name": "product card",
+        "type": "card-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Saline Nasal Spray"
+          },
+          {
+            "type": "color",
+            "id": "bgcolor",
+            "default": "#275C5C",
+            "label": "Bg Color"
+          },
+          {
+            "type": "text",
+            "id": "item1",
+            "label": "Text 1",
+            "default": "Nasal irrigant"
+          }, {
+            "type": "text",
+            "id": "item2",
+            "label": "Text 2",
+            "default": "Nasal irrigant"
+          }, {
+            "type": "text",
+            "id": "item3",
+            "label": "Text 3",
+            "default": "Nasal irrigant"
+          }, {
+            "type": "text",
+            "id": "item4",
+            "label": "Text 4",
+            "default": "Nasal irrigant"
+          }
+        ]
+      }
+    ],
+
+
+
+    "presets": [
+      {
+        "name": "Nasal Product Cards"
+      }
+    ]
+  }
+{% endschema %}

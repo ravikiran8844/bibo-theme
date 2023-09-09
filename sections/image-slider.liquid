@@ -1,0 +1,80 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+
+<div id="main-image-slider" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for block in section.blocks %}
+        <li class="splide__slide">
+          {% assign mobileSrc = block.settings.mobImg | default: block.settings.img %}
+          <a href="{{block.settings.link}}">
+            {% render 'image', class: 'main-image-slider_img-wrapper', mobileSrc: mobileSrc, desktopSrc: block.settings.img %}
+
+          </a>
+        </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .main-image-slider_img-wrapper img {
+    width: 100%;
+    height: auto;
+    min-height:300px;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('#main-image-slider', {
+      type: 'loop',
+      arrows: true,
+      pagination: false,
+      autoplay:true,
+      perPage: 1
+    });
+    splide.mount();
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Main Image Slider",
+    "class": "section main-image-slider",
+    "tag": "section",
+    "settings": [],
+    "blocks": [
+
+      {
+        "name": "banner",
+        "limit": 6,
+        "type": "banner-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Desktop Image"
+          }, {
+            "type": "image_picker",
+            "id": "mobImg",
+            "label": "Mobile Image"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+
+      }
+    ],
+    "presets": [
+      {
+        "name": "Main Image Slider"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,168 @@
+<div class="container py-5">
+  <div class="col-12 text-center">
+    <div class="mb-4 try-now_title">{{ section.settings.title }}
+      <span class="ms-3">
+        <svg
+          width="161"
+          height="28"
+          viewBox="0 0 161 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1086_547)">
+            <path d="M33.4311 6.73342L36.5132 0.544983L39.9651 6.73342L46.376 8.02267L41.5678 13.0507L42.4309 20.2706L36.5132 17.0475L30.4722 20.2706L31.2119 13.0507L26.6504 8.02267L33.4311 6.73342Z" fill="#FEA500" />
+            <path d="M8.3383 6.73342L11.4204 0.544983L14.8724 6.73342L21.2832 8.02267L16.4751 13.0507L17.3381 20.2706L11.4204 17.0475L5.37946 20.2706L6.11916 13.0507L1.55762 8.02267L8.3383 6.73342Z" fill="#FEA500" />
+            <path d="M58.517 6.73342L61.5991 0.544983L65.0511 6.73342L71.462 8.02267L66.6539 13.0507L67.5168 20.2706L61.5991 17.0475L55.5581 20.2706L56.2979 13.0507L51.7363 8.02267L58.517 6.73342Z" fill="#FEA500" />
+            <path d="M83.606 6.73342L86.688 0.544983L90.1401 6.73342L96.5509 8.02267L91.7427 13.0507L92.6058 20.2706L86.688 17.0475L80.6471 20.2706L81.3868 13.0507L76.8252 8.02267L83.606 6.73342Z" fill="#FEA500" />
+            <path d="M108.696 6.73342L111.778 0.544983L115.229 6.73342L121.641 8.02267L116.832 13.0507L117.695 20.2706L111.778 17.0475L105.737 20.2706L106.476 13.0507L101.915 8.02267L108.696 6.73342Z" fill="#FEA500" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1086_547">
+              <rect
+                width="160.244"
+                height="27.7587"
+                fill="white"
+                transform="translate(0.755859)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+    </div>
+
+    <div class="try-now_main-title mb-4">{{ section.settings.heading }}</div>
+    <div class="try-now_caption mb-5">{{ section.settings.text }}
+    </div>
+    <div>
+      <a href="{{section.settings.link}}" class="button try-now_btn">Try Now</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+  .try-now_title {
+    color: #181818;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.604px; /* 88.59% */
+  }
+  .try-now_main-title {
+    color: #EC7F51;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 39px */
+  }
+
+  .try-now_caption {
+    color: #515151;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%; /* 23.04px */
+  }
+  .try-now_btn,
+  .try-now_btn:hover {
+    background: #275C5C;
+    color: #FFF !important;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.27px;
+  }
+
+
+
+  @media(min-width:768px) {
+    .try-now_title {
+      color: #181818;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18.604px; /* 88.59% */
+    }
+    .try-now_main-title {
+      color: #EC7F51;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 39px */
+    }
+
+    .try-now_caption {
+      color: #515151;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 128%; /* 23.04px */
+    }
+    .try-now_btn,
+    .try-now_btn:hover {
+      background: #275C5C;
+      color: #FFF !important;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.27px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Try Now",
+    "tag": "section",
+    "class": "section try-now",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Rated 5 stars"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Allergies Sinus Blocked Nose? Get Bibo!"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Holistic Respiratory Care | Immunity Building"
+      }, {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
+      }
+
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Try Now"
+      }
+    ]
+  }
+{% endschema %}

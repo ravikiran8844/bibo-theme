@@ -1,0 +1,757 @@
+{
+  "layout": "theme.alternate",
+  "sections": {
+    "main": {
+      "type": "breathe-blend-product-card",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "cc50699c-f6a0-40fc-8547-95063057edd0": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "cc50699c-f6a0-40fc-8547-95063057edd0"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.product-info-top {font-size: 11px; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "35f1ba95-1347-4bc6-8f56-a6b2579966a3": {
+      "type": "custom-img-text-blocks",
+      "blocks": {
+        "b4c41113-63dc-4e79-b9a7-6c517ae521a2": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blend1_1.gif",
+            "text": "Messy green capsules are prone to spillage"
+          }
+        },
+        "ecfcd270-7bb4-4523-be1f-f32770dab6e8": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blend2_1.gif",
+            "text": "No more messy\/sticky balms for congestion"
+          }
+        },
+        "765a8407-54ff-4acb-838c-60625a59f689": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blend3_1.gif",
+            "text": "Reduces the feel of dyspnoea(Shortness of breath)"
+          }
+        }
+      },
+      "block_order": [
+        "b4c41113-63dc-4e79-b9a7-6c517ae521a2",
+        "ecfcd270-7bb4-4523-be1f-f32770dab6e8",
+        "765a8407-54ff-4acb-838c-60625a59f689"
+      ],
+      "settings": {
+        "bgcolor": "#f9f9f9",
+        "heading": "Why Bibo Breathe Blend?"
+      }
+    },
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
+      "type": "accordian-section-new",
+      "blocks": {
+        "c01a1fd3-f8e1-412a-be46-9873c93838bb": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/eucalyptus-eucalyptus-globulus-_Background_Removed_1.png",
+            "title": "Eucalyptus Oil",
+            "text": "Has analgesic (reduces pain), antibacterial, antiviral, antioxidant, nasal decongestant properties."
+          }
+        },
+        "2bc2bf3e-c0da-4c3e-9856-3c352715f750": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/pepperment.png",
+            "title": "Peppermint Oil",
+            "text": "Kills bacteria and eases irritation and pain in the respiratory tract."
+          }
+        },
+        "f76ffc7c-f39c-43d4-aaf5-3984ed335fef": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Camphor_1_1.png",
+            "title": "Camphor",
+            "text": "It is known for its expectorant and nasal decongestant actions."
+          }
+        },
+        "fced220f-3508-4190-a2e2-6fd883a3f32b": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Pine-Oil_Background_Removed_1.png",
+            "title": "Pine Oil",
+            "text": "Support the respiratory tract as a decongestant and for its properties to help release mucus."
+          }
+        },
+        "91cd178c-83ea-434e-9228-724f2a841ccc": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/thy.png",
+            "title": "Thymol Oil",
+            "text": "Manages common cold, sore throat, bronchitis, asthma, whooping cough, pharyngitis & other respiratory tract infections."
+          }
+        }
+      },
+      "block_order": [
+        "c01a1fd3-f8e1-412a-be46-9873c93838bb",
+        "2bc2bf3e-c0da-4c3e-9856-3c352715f750",
+        "f76ffc7c-f39c-43d4-aaf5-3984ed335fef",
+        "fced220f-3508-4190-a2e2-6fd883a3f32b",
+        "91cd178c-83ea-434e-9228-724f2a841ccc"
+      ],
+      "custom_css": [
+        ".accordian-section {padding-top: 40px;}"
+      ],
+      "settings": {
+        "heading": "Ingredients",
+        "text": ""
+      }
+    },
+    "9f795468-7108-41ee-8a94-43acd7a1d285": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "Benefits",
+        "text": "<p><strong>Fast relief:<\/strong> Inhaling essential oils provide quick relief from the common cold, runny and blocked nose, nasal congestion, cough, sore throat, sinusitis, asthma, bronchitis and other respiratory conditions.<\/p><p><strong>Aromatherapy:<\/strong> Adding essential oils to a diffuser cleans the air from dust and microbes, making the air fresh. Pine oil shows air freshening properties.<\/p><p><strong>Steam inhalation:<\/strong> Adding essential oil to steam inhalers provides excellent relief from cold, runny and blocked nose, nasal congestion, sinusitis, asthma, bronchitis and other respiratory conditions.<\/p><p><strong>Air freshener:<\/strong> Pine oil is used as an air freshener to keep the air free from dust and microbes. Dust particles can trigger the symptoms of sinusitis, asthma and bronchitis.<\/p><p><strong>Antimicrobial:<\/strong> The essential oils of eucalyptus, thymol, menthol and camphor kill the microbes causing the common cold, cough, sore throat, sinusitis, pharyngitis and bronchitis.<\/p><p><strong>Chronic respiratory conditions:<\/strong> The inflammation-reducing properties of eucalyptus, thymol, menthol, camphor, and pine oil reduce sinusitis, pharyngitis, asthma and bronchitis.<\/p><p><strong>Nasal congestion:<\/strong> Camphor is extensively known for its nasal decongestant property.<\/p><p><strong>No rebound congestion effect:<\/strong> Nasal decongestants may cause your congestion to get worse if used for more days. Use Bibo Breathe Blend without worrying about the rebound congestion effect. It is safe for all age groups.<br\/><strong>Booster dose for vapor patch: <\/strong>Enhance the impact of vapor patch for stubborn congestions, just add a drop of Breathe Blend.<\/p>"
+      }
+    },
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-bottom: 40px;}"
+      ],
+      "settings": {
+        "heading": "Safety Precautions",
+        "text": "<ol><li>Use with caution during pregnancy and lactation.<\/li><li>For infants and toddlers below 2 years, take doctor advice and use with adult supervision. For kids between 3 to 11 years, have adult supervision.<\/li><li>Avoid contact with eyes. In case of eye contact, wash your face with plenty of water.<\/li><li>Keep out of reach of children.<\/li><li>Store away from direct sunlight.<\/li><\/ol>"
+      }
+    },
+    "34c1ac48-d967-46d3-8fd3-4410269e2db5": {
+      "type": "image-with-text-overlay-new",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Untitled_3.webp",
+        "mobile_bg": "shopify:\/\/shop_images\/background_image.webp",
+        "mobile_img": "shopify:\/\/shop_images\/BB_4_1.png",
+        "caption": "gone with a whiff!!!",
+        "title": "one bottle 5 incredible benefits",
+        "text": "Unlock the power of hands free inhaler and use it on the go!",
+        "mobile_title": "Unlock the power of hands free inhaler and use it on the go!"
+      }
+    },
+    "335fbc50-f28a-403b-a999-6c4ef27ee366": {
+      "type": "logos",
+      "blocks": {
+        "cc7aba9b-9187-4dff-9eb7-ef6b1103571c": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14752.png",
+            "title": "Decongests nose Quickly",
+            "text": ""
+          }
+        },
+        "855f63dd-8119-4945-a10b-1934d371c093": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14754.png",
+            "title": "Long hours of relief",
+            "text": ""
+          }
+        },
+        "dfb13921-81d2-4c9f-9ded-b7d673d6c08b": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14753.png",
+            "title": "100% Natural",
+            "text": ""
+          }
+        },
+        "5c465eb6-e148-458f-a826-48cb4f40ad49": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1572_1.png",
+            "title": "Safe for kids",
+            "text": ""
+          }
+        },
+        "1d9e41e0-68f1-48db-8584-f64cc515fa66": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1576_2.png",
+            "title": "Super convenient",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc7aba9b-9187-4dff-9eb7-ef6b1103571c",
+        "855f63dd-8119-4945-a10b-1934d371c093",
+        "dfb13921-81d2-4c9f-9ded-b7d673d6c08b",
+        "5c465eb6-e148-458f-a826-48cb4f40ad49",
+        "1d9e41e0-68f1-48db-8584-f64cc515fa66"
+      ],
+      "settings": {
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "a1a97d8e-530f-4e7d-8854-046f7a6e7ac0": {
+      "type": "htu-section",
+      "blocks": {
+        "d19ac1d6-18b7-4098-8572-da83f926e811": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bb1_1.gif",
+            "step": "Add few drops to your bowl of hot water",
+            "text": ""
+          }
+        },
+        "9a77522e-b2cf-4461-ba4a-a0c902999e53": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bb2_1.gif",
+            "step": "Add few drops to your vaporizer",
+            "text": ""
+          }
+        },
+        "f2ef94b0-6387-4d34-955d-a2b66c72a9ac": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bb3_1.gif",
+            "step": "Add few drops to your diffuser",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "d19ac1d6-18b7-4098-8572-da83f926e811",
+        "9a77522e-b2cf-4461-ba4a-a0c902999e53",
+        "f2ef94b0-6387-4d34-955d-a2b66c72a9ac"
+      ],
+      "custom_css": [
+        ".main-text {font-size: 20px;}",
+        ".main-caption {font-size: 10px;}",
+        ".sub-heading {font-weight: 400; font-size: 16px;}",
+        "@media screen and (min-width: 768px) {.main-text {font-size: 28px; } .sub-heading {font-weight: 400; font-size: 18px; } .main-caption {font-size: 15px; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "text": "steam inhalation is a great remedy for cold & nasal congestion",
+        "caption": "enhances the impact of steam inhalation"
+      }
+    },
+    "d82c39f6-d9f5-44fd-ba4e-679f0fff27f8": {
+      "type": "doctors-recommendation",
+      "blocks": {
+        "3de23caf-8afd-49b8-bfbb-2d40949fd351": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_933.png",
+            "name": "Dr. Vybhav Vijendra",
+            "caption": "Pulmonologist",
+            "text": "‘Steam inhalation helps in hydrating both upper and lower respiratory tracts thereby soothing the sinuses and also bronchial\/lung areas. It helps in mucolytic action and reduces symptoms.’"
+          }
+        },
+        "5eaccca5-e2e9-4433-8a38-ccf494300ac6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_935.png",
+            "name": "Dr. Anju Balakrishnan",
+            "caption": "BAMS, MD in Ayurveda",
+            "text": "‘Eucalyptus essential oil has decongestant and anti-inflammatory properties, which can help clear nasal passages, relieve sinus pressure, and alleviate headache symptoms. Its invigorating aroma provides a soothing effect for respiratory and headache relief.’"
+          }
+        }
+      },
+      "block_order": [
+        "3de23caf-8afd-49b8-bfbb-2d40949fd351",
+        "5eaccca5-e2e9-4433-8a38-ccf494300ac6"
+      ],
+      "settings": {
+        "heading": "Doctor’s Recommendation",
+        "subheading": "on cough syrups",
+        "bottom-text": ""
+      }
+    },
+    "3d4199ee-37f4-4879-8852-c84db4ea06e2": {
+      "type": "custom-img-banner",
+      "settings": {
+        "width": "col-lg-8",
+        "bg-img": "shopify:\/\/shop_images\/white-texture_1_2.png",
+        "heading": "Why thousands of people are <b>choosing us?<\/b>",
+        "img": "shopify:\/\/shop_images\/Group_14770_1.webp",
+        "mobile_img": "shopify:\/\/shop_images\/mobile11.webp"
+      }
+    },
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76": {
+      "type": "frequently-bought",
+      "settings": {
+      }
+    },
+    "001a1250-4f5d-4e9a-bc47-876266c5f79a": {
+      "type": "steps-section",
+      "blocks": {
+        "48f53271-c6e0-4abd-8eab-582a4b96434d": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/steps1_1.gif",
+            "step": "Add 1-2 drops to your handkercheif",
+            "text": ""
+          }
+        },
+        "83635765-951a-43f5-bf51-4add5d72b7cb": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/steps2_1.gif",
+            "step": "Add 1-2 drops to boost your vapor patch",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "48f53271-c6e0-4abd-8eab-582a4b96434d",
+        "83635765-951a-43f5-bf51-4add5d72b7cb"
+      ],
+      "settings": {
+        "heading": "use in on the go!",
+        "text": "",
+        "caption": "innovated with <b>euro dropper<\/b> for ease of use"
+      }
+    },
+    "149aa81a-c006-4771-95aa-d813aba542b3": {
+      "type": "video-slider",
+      "blocks": {
+        "a5a930e5-775c-4c13-95ce-0dfda0b02820": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/thumb1.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "a5a930e5-775c-4c13-95ce-0dfda0b02820"
+      ],
+      "settings": {
+        "heading": "Hear what our <b>customers<\/b> have to say about us"
+      }
+    },
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33": {
+      "type": "faqs",
+      "blocks": {
+        "96461f6c-8648-4658-b6ae-23e9c2a3b512": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use Bibo Breathe Blend for steam inhalation?",
+            "answer": "Yes, Bibo Breathe Blend is ideal for steam inhalation. The essential oils of eucalyptus, thymol, pine, menthol and camphor help in respiratory conditions such as nasal congestion, blocked nose, sinusitis, runny nose, cough, chest congestion, pharyngitis, asthma and bronchi."
+          }
+        },
+        "35ec897d-49d5-4370-9e8b-578952c7d045": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the indications for Bibo Breathe Blend?",
+            "answer": "Use Bibo Breathe Blend for nasal and chest congestion, cold, cough, nasal blockage, runny nose, pharyngitis, sinusitis, asthma and bronchitis. A few drops of Bibo Breathe Blend can be poured on a handkerchief, in a steam inhaler, diffuser or a vapor patch for upper and lower respiratory tract symptoms."
+          }
+        },
+        "55c47033-1701-4863-9041-595a445f7bca": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of Pine oil in Bibo Breathe Blend?",
+            "answer": "Pine oil help to reduce the inflammation, pain, itching and dryness associated with cold, cough, runny or blocked nose, nasal or chest congestion, sinusitis, pharyngitis, asthma and bronchitis. Adding Pine oil to diffusers is excellent for air freshening."
+          }
+        },
+        "ce839a8e-4996-4fd5-ad04-65dca1763514": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of camphor in Bibo Breathe Blend?",
+            "answer": "Camphor helps reduce the inflammation, pain, irritation and itching caused due to cold, runny nose, cough, blocked nose, chest or nasal congestion, sinusitis, pharyngitis, asthma and bronchitis."
+          }
+        },
+        "f1d16ad4-43f0-4fed-ae65-51ebba838b93": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the ingredients of Bibo Breathe Blend?",
+            "answer": "Bibo Breathe Blend contains Camphor 10%, Thymol 5%, Eucalyptus Oil 40%, Menthol 15% and Pine Oil 30%."
+          }
+        },
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Bibo Breathe Blend contain peppermint oil?",
+            "answer": "Yes, peppermint is the source of menthol. The primary active compounds present in peppermint are menthol and menthone. Menthol helps to provide a soothing effect on the throat and nasal area. It shows antioxidant, antibacterial and anti-inflammatory actions."
+          }
+        },
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of thymol in Bibo Breathe Blend?",
+            "answer": "Thymol relieves the symptoms of cold, cough, bronchitis and asthma. It shows anti-inflammatory and antimicrobial actions against various bacteria, viruses and fungi causing infections."
+          }
+        },
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use Bibo Breathe Blend for my asthma symptoms?",
+            "answer": "Yes, the symptoms associated with asthma are usually due to the inflammation and narrowing of the airways. Essential oils like Eucalyptus oil, Pine oil, Menthol and Thymol of Bibo Breathe Blend may help reduce inflammation and ease asthma symptoms."
+          }
+        },
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use Bibo Breathe Blend for wheezing?",
+            "answer": "Wheezing is generally due to the blockage or narrowing of the airways. Using Bibo breathe blend may help you open up your airways and provide relief from wheezing. You can add a few drops of Bibo Breathe Blend to your steamer and inhale it for 5-10 minutes."
+          }
+        },
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How many drops of Bibo Breathe Blend should I add to my steamer\/ kerchief\/ vapor patch\/ diffuser?",
+            "answer": "You can add 1-2 drops of Bibo Breathe Blend to the steamer, kerchief, vapor patch or diffuser. Bibo Breathe Blend will help you loosen the mucus and open the airways for easy breathing. As the herbs show anti-inflammatory and antimicrobial actions, they can relieve the symptoms of sinusitis, cold, cough, flu, bronchitis, asthma, COPD and other respiratory infections."
+          }
+        },
+        "69008387-1a19-4d3e-9815-f97c5a059fd9": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How many times can I use Bibo Breathe Blend in a day?",
+            "answer": "Use Bibo Breathe Blend based on your health condition. If symptoms are mild, use Bibo Breathe Blend twice daily. If symptoms are moderate, use Bibo Breathe Blend every 4-6 hours."
+          }
+        }
+      },
+      "block_order": [
+        "96461f6c-8648-4658-b6ae-23e9c2a3b512",
+        "35ec897d-49d5-4370-9e8b-578952c7d045",
+        "55c47033-1701-4863-9041-595a445f7bca",
+        "ce839a8e-4996-4fd5-ad04-65dca1763514",
+        "f1d16ad4-43f0-4fed-ae65-51ebba838b93",
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5",
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1",
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad",
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783",
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
+        "69008387-1a19-4d3e-9815-f97c5a059fd9"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
+      "type": "logos-section",
+      "blocks": {
+        "4c4d8337-c190-420b-8c7c-2c6306d049fd": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14676.png",
+            "logo-text": "Backed by Ayurveda"
+          }
+        },
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "8123b403-6543-4cd1-a340-f572d4999f91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14680.png",
+            "logo-text": "100% Natural"
+          }
+        },
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "19996c59-130e-4628-9736-4e2ab4e3a49d": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "4c4d8337-c190-420b-8c7c-2c6306d049fd",
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df",
+        "8123b403-6543-4cd1-a340-f572d4999f91",
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
+        "19996c59-130e-4628-9736-4e2ab4e3a49d"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc": {
+      "type": "video-slides",
+      "blocks": {
+        "c3a5c82a-168a-4ecc-a3a4-4e045cefe5d0": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/WhatsApp Video 2022-10-31 at 12.29.29 PM (1).mp4"
+          }
+        },
+        "0b0c0f37-b556-4ea7-860c-2a35c55e3478": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Comp 1_1.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "c3a5c82a-168a-4ecc-a3a4-4e045cefe5d0",
+        "0b0c0f37-b556-4ea7-860c-2a35c55e3478"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "94089cfc-fe1b-4bfa-b753-5ce1131d118c": {
+      "type": "single-video-slides",
+      "blocks": {
+        "d9872ab6-ea8e-4761-93a0-1b9c14af2dd6": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/WhatsApp Video 2022-10-31 at 12.29.29 PM (1).mp4"
+          }
+        },
+        "e5dcac3e-9ebc-4cd4-b73b-630cd9263f98": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Comp 1_1.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "d9872ab6-ea8e-4761-93a0-1b9c14af2dd6",
+        "e5dcac3e-9ebc-4cd4-b73b-630cd9263f98"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "168932840165a33ba6": {
+      "type": "apps",
+      "blocks": {
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "7d775979-c607-49fc-be08-8974021af891": {
+      "type": "things-to-note",
+      "blocks": {
+        "dae75b32-18e8-40fc-b608-5179d1184dbe": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_13.png",
+            "title": "Expect overnight results.",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "3caf2c39-8fd3-4b94-838a-3bd17d30e888": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_63.png",
+            "title": "Got medicine! I can eat anything now",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "7a9e6012-fa95-4d01-a000-0927814e1890": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_92.png",
+            "title": "I will take medicine only SOS!",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        }
+      },
+      "block_order": [
+        "dae75b32-18e8-40fc-b608-5179d1184dbe",
+        "3caf2c39-8fd3-4b94-838a-3bd17d30e888",
+        "7a9e6012-fa95-4d01-a000-0927814e1890"
+      ],
+      "settings": {
+        "title": "What it won’t do",
+        "caption": "THINGS TO NOTE"
+      }
+    },
+    "93aa0bff-5183-4229-8050-c435b6f61ba9": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "description",
+    "35f1ba95-1347-4bc6-8f56-a6b2579966a3",
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
+    "9f795468-7108-41ee-8a94-43acd7a1d285",
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
+    "34c1ac48-d967-46d3-8fd3-4410269e2db5",
+    "335fbc50-f28a-403b-a999-6c4ef27ee366",
+    "main-product-recommendations",
+    "a1a97d8e-530f-4e7d-8854-046f7a6e7ac0",
+    "d82c39f6-d9f5-44fd-ba4e-679f0fff27f8",
+    "3d4199ee-37f4-4879-8852-c84db4ea06e2",
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76",
+    "001a1250-4f5d-4e9a-bc47-876266c5f79a",
+    "149aa81a-c006-4771-95aa-d813aba542b3",
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33",
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71",
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc",
+    "94089cfc-fe1b-4bfa-b753-5ce1131d118c",
+    "168932840165a33ba6",
+    "7d775979-c607-49fc-be08-8974021af891",
+    "93aa0bff-5183-4229-8050-c435b6f61ba9"
+  ]
+}

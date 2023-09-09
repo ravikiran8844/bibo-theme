@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "32de4bb4-4b99-4a5d-bef8-43bc57ddeb50": {
+      "type": "reviews-section",
+      "blocks": {
+        "ca722167-2873-4bd1-92f6-4a7de67acb47": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "0d3a56bb-a7e8-4960-ad23-184df234bfc0": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "d7fbd810-bf99-4e15-aed8-f5a4ef302d3a": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "8bbfe217-d691-4267-abb4-6f59f6897c65": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "236c1ed9-e901-4aae-8b11-a1dc2a9cf444": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "694f14af-c20b-4bfc-b8c4-9ae955554a19": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        },
+        "93f0ac18-e9cd-47c5-b2ea-c4cb3953b295": {
+          "type": "review-block",
+          "settings": {
+            "name": "Name",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ca722167-2873-4bd1-92f6-4a7de67acb47",
+        "0d3a56bb-a7e8-4960-ad23-184df234bfc0",
+        "d7fbd810-bf99-4e15-aed8-f5a4ef302d3a",
+        "8bbfe217-d691-4267-abb4-6f59f6897c65",
+        "236c1ed9-e901-4aae-8b11-a1dc2a9cf444",
+        "694f14af-c20b-4bfc-b8c4-9ae955554a19",
+        "93f0ac18-e9cd-47c5-b2ea-c4cb3953b295"
+      ],
+      "custom_css": [
+        ".reviews-slider {background-image: none; background-color: #fff;}"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text": ""
+      }
+    },
+    "07d447ae-5085-46d3-915f-f9aedf078b25": {
+      "type": "nasal-img-text-section",
+      "settings": {
+        "title": "How  Bibo Nasal Sprays  Works?",
+        "caption": "Direct pathway to deliver drug to lungs.",
+        "text": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief."
+      }
+    },
+    "d0a30081-9ed5-4e24-906b-16bdcad3520f": {
+      "type": "nasal-text-section",
+      "settings": {
+        "title": "Find your <span>Bibo Spray<\/span>",
+        "caption": "BREATHING DIFFICULTIES? LET’S FIX THAT!"
+      }
+    },
+    "6e72a770-4759-46be-bbab-07dd74b541ef": {
+      "type": "products-slider",
+      "settings": {
+        "heading": "",
+        "products": [
+          "breathofy-syrup",
+          "bibo-saline-tulsi-nasal-spray",
+          "breathe-blend",
+          "bibonase-spray"
+        ]
+      }
+    },
+    "a151528b-c5c2-4b40-a284-d4a007e62874": {
+      "type": "try-now-section",
+      "settings": {
+        "title": "Rated 5 stars",
+        "heading": "Allergies Sinus Blocked Nose? Get Bibo!",
+        "text": "Holistic Respiratory Care | Immunity Building",
+        "link": ""
+      }
+    },
+    "39dc5ec7-df60-4be5-9bed-71f3e3a4f695": {
+      "type": "nasal-product-cards",
+      "blocks": {
+        "64113f4e-9cc8-4e85-8426-eedd89b069ae": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_14716.png",
+            "title": "Saline Nasal Spray",
+            "bgcolor": "#275c5c",
+            "item1": "Nasal irrigant",
+            "item2": "Contains Tulsi and Xylitol",
+            "item3": "For common cold, sinusitis, rhinitis, nasal irrigation, etc.",
+            "item4": "Long term use"
+          }
+        },
+        "31b3ba9d-6d4e-424a-88fe-46823ecf7310": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/94ecd1374fd01f97e459e943ebf512a5.png",
+            "title": "Bibonase Nasal Spray",
+            "bgcolor": "#eb752c",
+            "item1": "Steroid & antihistamine Nasal spray",
+            "item2": "Contains Fluticasone and azelastine",
+            "item3": "For chronic sinusitis, rhinitis, and symptoms associated with them",
+            "item4": "Long term use"
+          }
+        },
+        "aa202d0e-c4da-4bf8-b618-78969ed1eb0c": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/315db4396a81604fd91fb37a0cbe514d.png",
+            "title": "Saline Nasal Spray",
+            "bgcolor": "#275c5c",
+            "item1": "Decongestant nasal spray",
+            "item2": "Contains oxymetazoline",
+            "item3": "Relief from blocked nose and nasal congestion",
+            "item4": "Instant action"
+          }
+        }
+      },
+      "block_order": [
+        "64113f4e-9cc8-4e85-8426-eedd89b069ae",
+        "31b3ba9d-6d4e-424a-88fe-46823ecf7310",
+        "aa202d0e-c4da-4bf8-b618-78969ed1eb0c"
+      ],
+      "settings": {
+        "title": "Tailored formulations for all your needs."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "32de4bb4-4b99-4a5d-bef8-43bc57ddeb50",
+    "07d447ae-5085-46d3-915f-f9aedf078b25",
+    "d0a30081-9ed5-4e24-906b-16bdcad3520f",
+    "6e72a770-4759-46be-bbab-07dd74b541ef",
+    "a151528b-c5c2-4b40-a284-d4a007e62874",
+    "39dc5ec7-df60-4be5-9bed-71f3e3a4f695"
+  ]
+}

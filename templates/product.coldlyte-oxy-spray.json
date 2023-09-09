@@ -1,0 +1,435 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-card-ml",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "cc50699c-f6a0-40fc-8547-95063057edd0": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "cc50699c-f6a0-40fc-8547-95063057edd0"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.product-info-top {font-size: 11px; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680": {
+      "type": "simple-text-block",
+      "settings": {
+        "bg-color": "#FFF",
+        "text": "Disclaimer: This is a Schedule H drug. This will be sold only after a prescription from the registered doctor only."
+      }
+    },
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "heading": "GENERAL INFORMATION",
+        "text": "<p><strong>COMPOSITION: <\/strong>Oxymetazoline Hydrochloride<\/p><p><strong>INDICATIONS: <\/strong>: COLDLYTE OXY relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions.<\/p><p><strong>BENEFITS:<\/strong><br\/>It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds. It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><p><strong>THERAPEUTIC CLASS: <\/strong>Respiratory<\/p><p><strong>ADDICTIVE OR HABIT FORMING: <\/strong>No<\/p><p><strong>CATEGORY: <\/strong>Antihistamine (anti-allergic)<\/p>"
+      }
+    },
+    "9f795468-7108-41ee-8a94-43acd7a1d285": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "ABOUT COLDLYTE OXY SPRAY",
+        "text": "<p>COLDLYTE OXY Spray is India's first pump based oxymetazoline spray which ensures uniform dosing and prevents from many adverse effects related to faulty drug (medicine) delivery as seen in squeeze based oxymetazoline nasal sprays.<\/p><p>COLDLYTE OXY Spray contains Oxymetazoline which is a decongestant. It relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions. It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds and acts up to 12 hours. It also shortens the illness such as blocked nose and nasal & sinus congestion by 2 days.<\/p><p>It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><h2><strong>SIDE EFFECTS<\/strong><\/h2><p>The common side effects include:<\/p><ul><li>Nausea<\/li><li>Burning sensation<\/li><li>Dry mouth, nose or throat<\/li><li>Headache<\/li><\/ul><p>The side effects are generally mild and would resolve on their own.<br\/>Severe side effects-<\/p><ul><li>Increased blood pressure<\/li><li>Blurred vision<\/li><li>Swelling of the face, lips, tongue or throat<\/li><li>Dizziness<\/li><li>Insomnia (difficulty in sleeping)<\/li><li>Weakness<\/li><li>Irregular heartbeat<\/li><\/ul><p>If such symptoms occur, stop using the medicine, and consult a doctor or visit a nearby clinic immediately.<\/p>"
+      }
+    },
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
+      "type": "accordian-section-new",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "DIRECTION TO USE",
+        "text": "<p>Read the leaflet of COLDLYTE OXY Spray for complete information on how to use this product.<\/p><ul><li>Use COLDLYTE OXY Spray as directed by your doctor.<\/li><li>Wash your hands before and after using the spray.<\/li><li>Blow off the nose gently before using this spray.<\/li><li>If you are using the spray for the first time or after a few days or weeks, it is better to shake the bottle gently and prime it.<\/li><li>While using the spray in one nostril, keep the other nostril closed.<\/li><li>Slowly inhale while you spray COLDLYTE OXY Spray towards the sides of the nostril.<\/li><li>Clean and dry the tip of the spray after each use.<\/li><\/ul>"
+      }
+    },
+    "4f697d50-229d-4207-906a-2b5caf122204": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "MODE OF ACTION",
+        "text": "<p>COLDLYTE OXY Spray contains oxymetazoline which is a decongestant. It works by shrinking the blood vessels in the nasal passages and decreasing the blood flow to the nasal area. The shrunk blood vessels reduce the inflammation by shrinking the inflamed tissues, thus providing temporary relief from nasal congestion and blockage due to common cold, sinusitis or allergies.<\/p>"
+      }
+    },
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "PRECAUTIONS AND WARNINGS",
+        "text": "<p><strong>Children<\/strong><br\/>Do not use COLDLYTE OXY Spray for children below 12 years.<\/p><p><strong>Pregnancy<\/strong><br\/>Limited human data is available on the safety of COLDLYTE OXY Spray in pregnancy. However, animal studies have shown harmful effects on the developing baby. Hence, it is better to avoid using this medicine.<\/p><p><strong>Lactating mothers<\/strong><br\/>Limited data is available on whether the drug passes through breast milk. Hence it is better to consult a doctor before taking this medicine.<\/p><p><strong>Driving<\/strong><br\/>COLDLYTE OXY Spray may cause dizziness, drowsiness and excessive sleep. If such symptoms occur, it is better to take a rest and avoid driving or operating heavy machinery.<\/p><p><strong>Alcohol<\/strong><br\/>There is limited data on the safety of consuming alcohol while taking COLDLYTE OXY Spray. Hence it is better to avoid drinking alcohol while taking this medicine.<\/p><p><strong>Liver diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with liver diseases.<\/p><p><strong>Kidney diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with kidney diseases.<\/p><p><strong>CONTRAINDICATIONS<\/strong><br\/>Do not use COLDLYTE OXY Spray if:<\/p><ul><li>You are allergic to oxymetazoline or any other ingredients of this medicine.<\/li><li>You have high blood sugar levels.<\/li><li>You have glaucoma, enlarged prostate gland (in men), hyperthyroidism, liver, kidney, or heart problems<\/li><\/ul>"
+      }
+    },
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "STORAGE",
+        "text": "<p>Store in a cool, dry place at a temperature below 30ᵒC<\/p><p>Do not freeze<\/p>"
+      }
+    },
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "DOSAGE",
+        "text": "<p><strong>Missed dose<\/strong><br\/>Take COLDLYTE OXY Spray as soon as you remember. But if it is the time for next dose, skip the missed dose and continue taking this medicine. Do not take a double dose of this medicine to compensate for the missed dose.<\/p><p><strong>Overdose<\/strong><br\/>COLDLYTE OXY Spray is for intranasal use only. So chances of overdose are unlikely. However, if you have sprayed a higher dose of the medicine, contact your doctor or visit a nearby hospital.<\/p>"
+      }
+    },
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "INTERACTIONS",
+        "text": "<ul><li><strong>Drug-drug interactions:<\/strong><br\/> It is better to avoid using these medicines along with COLDLYTE OXY Spray. Also, inform your doctor regarding all the medicines you are taking, including prescription and non-prescription medicines, ayurvedic, homoeopathic or dietary supplements.<\/li><li><strong>Drug-food interactions:<\/strong><br\/> Include non-spicy foods and drink warm liquids to ease the symptoms.<\/li><li><strong>Drug-disease interactions:<\/strong><br\/> Do not self-medicate. It is always better to consult a doctor before using COLDLYTE OXY Spray.<\/li><\/ul>"
+      }
+    },
+    "008eacbb-14a6-472a-90b8-188a65470334": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-bottom: 40px;}"
+      ],
+      "settings": {
+        "heading": "NATURAL REMEDIES TO EASE THE SYMPTOMS",
+        "text": "<p><strong>Diet modification:<\/strong><\/p><ul><li>Adding ginger and tulsi to your tea will help reduce the inflammation and infection in the respiratory tract.<\/li><li>Stay well hydrated. It helps clear the extra mucus and dust particles from the nose, sinuses and airways.<\/li><li>Drink warm water or drinks to reduce the inflammation of the airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways.<\/li><li>Avoid spicy, fried foods as they may worsen allergic symptoms like watery eyes and runny nose.<\/li><li>Include honey, green leafy vegetables, broccoli, turmeric, etc. They may help improve immunity and deal with allergic symptoms.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li>Avoid exposure to allergens.<\/li><li>Always wear a mask in crowded and polluted places.<\/li><li>Practice deep breathing exercises to improve lung capacity and health.<\/li><li>Nasal irrigation with saline water is an effective way to clean the nasal and sinus areas.<\/li><li>Gargles are effective in healing sore throats and infections of the oral cavity.<\/li><\/ul>"
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76": {
+      "type": "frequently-bought",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33": {
+      "type": "faqs",
+      "blocks": {
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can COLDLYTE OXY Spray worsen my nasal congestion?",
+            "answer": "Using COLDLYTE OXY Spray for more than the recommended dose and duration may worsen nasal congestion. It is always better to consult a doctor before using this medicine and read the instructions on the label."
+          }
+        },
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the uses of COLDLYTE OXY Spray?",
+            "answer": "COLDLYTE OXY Spray relieves nasal congestion and blocked nose due to common cold, sinusitis or allergy."
+          }
+        },
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How to use COLDLYTE OXY Spray?",
+            "answer": "Use COLDLYTE OXY Spray as directed by your doctor. Read the instructions in the leaflet properly. Do not exceed the dose and duration of this spray."
+          }
+        },
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is COLDLYTE OXY Spray a steroid?",
+            "answer": "No, COLDLYTE OXY Spray is not a steroid. It contains oxymetazoline which is a nasal decongestant. It relieves blocked nose and nasal congestion by shrinking the blood vessels in the nasal and sinus area."
+          }
+        },
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use COLDLYTE OXY Spray for sinusitis?",
+            "answer": "Yes, COLDLYTE OXY Spray is used to relieve blocked nose and nasal congestion due to sinusitis. Use COLDLYTE OXY Spray only if recommended by the doctor."
+          }
+        },
+        "05200af5-2156-4f62-a4a3-9250cd71f098": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the side effects of COLDLYTE OXY Spray?",
+            "answer": "COLDLYTE OXY Spray can cause mild symptoms such as nausea, burning sensation in the nose and throat, dry mouth, or headache. These symptoms would resolve with time. It is better to stop using the medicine and consult a doctor or visit a nearby clinic if you experience increased heart rate, blurred vision, swelling of the face, lips, tongue or throat, dizziness or irregular heartbeat"
+          }
+        }
+      },
+      "block_order": [
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5",
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1",
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad",
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783",
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
+        "05200af5-2156-4f62-a4a3-9250cd71f098"
+      ],
+      "custom_css": [
+        ".rk-faq-section,.faq-section {background: #f9f9f9;}"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
+      "type": "logos-section",
+      "blocks": {
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "8123b403-6543-4cd1-a340-f572d4999f91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cs-logo.png",
+            "logo-text": "Recent Molecules"
+          }
+        },
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "19996c59-130e-4628-9736-4e2ab4e3a49d": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df",
+        "8123b403-6543-4cd1-a340-f572d4999f91",
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
+        "19996c59-130e-4628-9736-4e2ab4e3a49d"
+      ],
+      "custom_css": [
+        ".logo-item-4 {display: block !important;}"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc": {
+      "type": "video-slides",
+      "blocks": {
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "32bea08b-833a-4fed-862a-3d30a5b857f0": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "6902e791-44f3-4580-989e-9dd1e6d27d25": {
+          "type": "video-block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6",
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f",
+        "32bea08b-833a-4fed-862a-3d30a5b857f0",
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859",
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20",
+        "6902e791-44f3-4580-989e-9dd1e6d27d25"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "168932840165a33ba6": {
+      "type": "apps",
+      "blocks": {
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "93aa0bff-5183-4229-8050-c435b6f61ba9": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "description",
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680",
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
+    "9f795468-7108-41ee-8a94-43acd7a1d285",
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
+    "4f697d50-229d-4207-906a-2b5caf122204",
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4",
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76",
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e",
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f",
+    "008eacbb-14a6-472a-90b8-188a65470334",
+    "main-product-recommendations",
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76",
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33",
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71",
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc",
+    "168932840165a33ba6",
+    "93aa0bff-5183-4229-8050-c435b6f61ba9"
+  ]
+}

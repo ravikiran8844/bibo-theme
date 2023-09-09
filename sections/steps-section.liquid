@@ -1,0 +1,264 @@
+<div class="container p-5">
+  <div class="col-12">
+    <div class="text-center">
+      <h2 class="main-heading mb-3">{{ section.settings.heading }}</h2>
+      <div class="main-text mb-3">{{ section.settings.text }}</div>
+      <div class="main-caption mb-5">{{ section.settings.caption }}</div>
+
+
+    </div>
+  </div>
+
+  <div class="row htus_items g-4 justify-content-center">
+    {% for block in section.blocks %}
+      <div class="col-6 col-md-4 step--{{forloop.index}}">
+        <div class="htus-images-item mb-5">
+          <div class="mb-3 htus_image text-center">
+            <img
+              class="img-fluid"
+              loading="lazy"
+              width="357"
+              height="357"
+              src="{{block.settings.image | img_url: 'large'}}"
+              alt="image">
+            <div class="step-svg-line">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2"
+                height="102"
+                viewBox="0 0 2 102"
+                fill="none">
+                <path d="M1 0.208984L1 101.672" stroke="black" />
+              </svg>
+            </div>
+          </div>
+          <div class="content-box text-center mb-4">
+            <div class="sub-heading mb-3">{{ block.settings.step }}</div>
+            <p class="text mb-3">{{ block.settings.text }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+
+<style>
+  .htus_items {
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 243, 229, 0.70) 0%, rgba(255, 243, 229, 0.00) 100%);
+  }
+  .htus_image img {
+    position: relative;
+    z-index: 1;
+    max-height: 357px;
+
+  }
+  .htus-images-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-box {
+    margin-top: 50px;
+  }
+
+  .steps--section {
+    background: #F9F9F9;
+  }
+  .htus_image {
+    max-height: 357px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .step-svg-line {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    z-index: 0;
+  }
+  .steps--section .htus-images-item {
+    height: 100%;
+  }
+  .steps--section .main-heading {
+    color: #275C5C;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .steps--section .sub-heading {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.44px;
+  }
+  .steps--section .text {
+    color: #5D5D5D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    letter-spacing: 0.28px;
+  }
+  .steps--section .main-text {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .steps--section .main-caption {
+    color: #000;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 24.675px */
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+  }
+  .step--1 .content-box {
+    order: 1;
+    margin-bottom: 50px !important;
+
+  }
+  .step--1 .step-svg-line {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+  }
+  .step--1 .htus_image {
+    order: 2;
+  }
+  @media screen and (min-width: 768px) {
+    .steps--section .main-text {
+      color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .steps--section .main-caption {
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 164.5%; /* 34.545px */
+      letter-spacing: 2.94px;
+      text-transform: uppercase;
+    }
+    .steps--section .main-heading {
+      color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .steps--section .sub-heading {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .steps--section .text {
+      color: #5D5D5D;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px; /* 140% */
+      letter-spacing: 0.3px;
+    }
+
+    .step--1 .content-box {
+      order: 0;
+      margin-bottom: 50px;
+    }
+    .step--1 .htus_image {
+      order: 1;
+    }
+    .step--2  .step-svg-line {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    z-index: 0;
+  }
+    .step--1 .step-svg-line {
+      position: absolute;
+      left: 50%;
+      top: -50px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Steps Section",
+    "class": "section steps--section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "title"
+      }, {
+        "type": "text",
+        "id": "caption",
+        "label": "caption"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Image Block",
+        "type": "image-block",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "step",
+            "label": "step"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Steps Section"
+      }
+    ]
+  }
+{% endschema %}

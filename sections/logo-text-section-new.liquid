@@ -1,0 +1,120 @@
+<div class="page-width py-5 mb-5">
+  <div class="col-12 text-center">
+    <div class="mb-5 logo-text-section-new_title">{{ section.settings.title }}</div>
+  </div>
+  <div class="row">
+    {% for block in section.blocks %}
+      <div class="col-6 col-lg {% if forloop.index == 5 %}d-none d-lg-block {% endif %} mb-5">
+        <div class="d-flex align-items-center">
+          <div class="me-2 logo-text-section-new_img_wrapper">
+            <img
+              loading="lazy"
+              src="{{block.settings.logo | img_url: 'master'}}"
+              alt="logo">
+          </div>
+          <div class="logo-text-section-new_text">{{ block.settings.text }}</div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+
+<style>
+  .logo-text-section-new_img_wrapper{
+    height: 60px;
+    width: 60px;
+  }
+  .logo-text-section-new_img_wrapper img{
+    width:auto;
+    height:100%
+  }
+  .logo-text-section-new {
+    background: #BAE9E3;
+    margin-bottom:40px;
+  }
+  .logo-text-section-new_text {
+    color: #434343;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%; /* 14.04px */
+    text-transform: capitalize;
+  }
+  .logo-text-section-new_title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media(min-width:768px) {
+  .logo-text-section-new_img_wrapper{
+    height: 75px;
+    width: 75px;
+  }
+    .logo-text-section-new_title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .logo-text-section-new_text {
+      color: #434343;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 117%; /* 23.4px */
+      text-transform: capitalize;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "logo text section new",
+    "class": "section logo-text-section-new",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Our Principles"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "logos",
+        "type": "logo-block",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Prioritize consumer’s interest"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "logo text section new"
+      }
+    ]
+  }
+{% endschema %}

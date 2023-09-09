@@ -1,0 +1,438 @@
+{% assign currentProduct = product.selected_or_first_available_variant %}
+{% assign freqBoughtProduct = product.metafields.custom.frequently_bought.value %}
+
+<div class="container p-5">
+  <div class="col-12 col-lg-10 fbt_wrapper p-5">
+    <div>
+      <div class="mb-5 fbt-title">Frequently Bought Together</div>
+      <div class="fbt-item">
+        <div>
+          <div class="fbt-item-block">
+            <div class="fbt-item_img-wrapper">
+              <img
+                loading="lazy"
+                class="img-fluid fbt-over-lay"
+                width="142"
+                height="142"
+                src="{{currentProduct.featured_image  | img_url: 'medium'}}"
+                alt="">
+              <input
+                checked
+                class="input-checkbox"
+                type="checkbox"
+                name="fbp"
+                id="currentProduct"
+                onchange="updateTotalPrice()">
+            </div>
+            <div class="mt-3 fbp-item-text">{{ product.title | truncatewords: 4 }}</div>
+
+            <div class="mt-1 fbp-item-text">
+              <span class="fw-bold">₹{{ currentProduct.price | money_without_currency }}</span>
+              <span class="ms-2">
+                <s>₹{{ currentProduct.compare_at_price | money_without_currency }}</s>
+              </span>
+
+
+
+              {%- if currentProduct.price < currentProduct.compare_at_price -%}
+                {%- assign savings = currentProduct.compare_at_price | minus: currentProduct.price | times: 100.0 | divided_by: currentProduct.compare_at_price | round | append: '%' -%}
+                <span class="ms-2 save-text-color">{{ savings }} off</span>
+              {%- endif -%}
+
+            </div>
+
+          </div>
+        </div>
+        <div class="fbt-plus mt-5">+</div>
+        <div>
+          <div class="fbt-item-block">
+            <div class="fbt-item_img-wrapper">
+              <img
+                loading="lazy"
+                class="img-fluid fbt-over-lay"
+                width="142"
+                height="142"
+                src="{{freqBoughtProduct.featured_image | img_url: 'medium'}}"
+                alt="">
+              <input
+                checked
+                class="input-checkbox"
+                type="checkbox"
+                name="fbp"
+                id="freqBoughtProduct"
+                onchange="updateTotalPrice()">
+
+            </div>
+            <div class="mt-3 fbp-item-text">{{ freqBoughtProduct.title | truncatewords: 3}}</div>
+            <div class="mt-1 fbp-item-text">
+              <span class="fw-bold">₹{{ freqBoughtProduct.price | money_without_currency }}</span>
+              <span class="ms-2">
+                <s>₹{{ freqBoughtProduct.compare_at_price | money_without_currency }}</s>
+              </span>
+
+              {%- if freqBoughtProduct.price < freqBoughtProduct.compare_at_price -%}
+                {%- assign savings = freqBoughtProduct.compare_at_price | minus: freqBoughtProduct.price | times: 100.0 | divided_by: freqBoughtProduct.compare_at_price | round | append: '%' -%}
+                <span class="ms-2 save-text-color">{{ savings }} off</span>
+              {%- endif -%}
+            </div>
+
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="fbt-total my-3">TOTAL PRICE:
+            <span id="totalPrice">₹{{ currentProduct.price | plus: freqBoughtProduct.price | money_without_currency | remove: "₹" }}</span>
+            <span class="ms-2 fw-light">
+              <s>
+                <span id="total-compared-price">₹{{ currentProduct.compare_at_price | plus: freqBoughtProduct.compare_at_price | money_without_currency | remove: "₹" }}</span>
+              </s>
+            </span>
+
+
+            {% assign tot = currentProduct.price | plus: freqBoughtProduct.price %}
+            {% assign compTot = currentProduct.compare_at_price | plus: freqBoughtProduct.compare_at_price %}
+
+            {%- assign savingsTotal = compTot | minus: tot | times: 100.0 | divided_by: compTot | round | append: '%' -%}
+            <span class="ms-2 save-text-color text-lowercase">
+              <span id="TotalSavePercent">{{ savingsTotal }}</span>
+              off</span>
+
+
+
+          </div>
+
+          <form
+            class="mt-3 d-flex justify-content-center"
+            action="/cart/add"
+            method="post"
+            id="fbtForm">
+            <!-- Add item 1 -->
+            <input
+              type="hidden"
+              name="id[]"
+              value="{{ currentProduct.id }}"
+              id="currentProductInput">
+            <input
+            type="hidden"
+              name="quantity[]"
+              value="1">
+
+            <!-- Add item 2 -->
+            <input
+              type="hidden"
+              name="id[]"
+              value="{{ freqBoughtProduct.selected_or_first_available_variant.id }}"
+              id="freqBoughtProductInput">
+            <input
+            type="hidden"
+              name="quantity[]"
+              value="1">
+
+            <!-- Add to cart button -->
+            <button
+              type="submit"
+              class="fbt-btn mb-5"
+              id="addToCartButton"
+              disabled>Add both to cart</button>
+          </form>
+          {% assign totalPrice = currentProduct.price | plus: freqBoughtProduct.price %}
+          {% assign comparedprice = currentProduct.compare_at_price | plus: freqBoughtProduct.compare_at_price %}
+          {% assign savedAmount = comparedprice | minus: totalPrice | money_without_currency | remove: ".00" %}
+          <div class="fb-saved-amount mt-4 py-3 px-4" id="savedAmountDisplay">You Saved ₹{{ savedAmount }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function updateTotalPrice() {
+    const currentProductPrice = parseFloat("{{ currentProduct.price }}");
+    const freqBoughtProductPrice = parseFloat("{{ freqBoughtProduct.price }}");
+    const currentProductComparedPrice = parseFloat("{{ currentProduct.compare_at_price }}");
+    const freqBoughtProductComparedPrice = parseFloat("{{ freqBoughtProduct.compare_at_price }}");
+    const currentProductCheckbox = document.getElementById("currentProduct");
+    const freqBoughtProductCheckbox = document.getElementById("freqBoughtProduct");
+    const totalPriceSpan = document.getElementById("totalPrice");
+    const savedAmountDisplay = document.getElementById("savedAmountDisplay");
+    const addToCartButton = document.getElementById("addToCartButton");
+    const comparedPriceSpan = document.getElementById("total-compared-price");
+    const totalSavedPercentageSpan = document.getElementById("TotalSavePercent");
+
+    let totalPrice = 0;
+    let totalcomparedPrice = 0;
+    let totalSavingsPercent = 0;
+
+
+    if (currentProductCheckbox.checked) {
+      totalPrice += currentProductPrice;
+      totalcomparedPrice += currentProductComparedPrice;
+    }
+
+    if (freqBoughtProductCheckbox.checked) {
+      totalPrice += freqBoughtProductPrice;
+      totalcomparedPrice += freqBoughtProductComparedPrice;
+
+    }
+
+// Round the total price to two decimal places and convert it to a string
+    const formattedTotalPrice = totalPrice.toFixed(2).toString();
+
+// Remove the trailing ".00" from the formatted total price
+    const displayTotalPrice = formattedTotalPrice.replace(/\.00$/, "");
+
+
+// Round the total price to two decimal places and convert it to a string
+    const formattedComparedTotalPrice = totalcomparedPrice.toFixed(2).toString();
+
+// Remove the trailing ".00" from the formatted total price
+    const displayComparedTotalPrice = formattedComparedTotalPrice.replace(/\.00$/, "");
+
+    let t = displayComparedTotalPrice / 100;
+    let s = displayTotalPrice / 100;
+
+
+    let percentageSavings;
+
+    if (t !== 0) {
+      percentageSavings = ((t - s) / t) * 100;
+    } else {
+      percentageSavings = 0;
+    }
+
+    const roundedPercentage = Math.round(percentageSavings);
+
+    totalSavedPercentageSpan.textContent = `${roundedPercentage}%`;
+
+    comparedPriceSpan.textContent = `₹${
+      displayComparedTotalPrice / 100
+    }`;
+
+    totalPriceSpan.textContent = `₹${
+      displayTotalPrice / 100
+    }`;
+
+
+
+// Calculate and update the saved amount
+    let savedAmount = 0;
+    const comparedPrice1 = parseFloat("{{ currentProduct.compare_at_price }}");
+    const comparedPrice2 = parseFloat("{{ freqBoughtProduct.compare_at_price }}");
+
+    if (currentProductCheckbox.checked) {
+      savedAmount += comparedPrice1 - currentProductPrice;
+
+    }
+
+    if (freqBoughtProductCheckbox.checked) {
+      savedAmount += comparedPrice2 - freqBoughtProductPrice;
+    }
+
+    savedAmount = savedAmount.toFixed(2).toString().replace(/\.00$/, "");
+    savedAmountDisplay.textContent = `You Saved ₹${
+      savedAmount / 100
+    }`;
+
+// Update the "Add to cart" button state and text based on checkbox status
+    if (currentProductCheckbox.checked & freqBoughtProductCheckbox.checked) {
+      addToCartButton.disabled = false;
+      addToCartButton.textContent = "Add both to cart";
+    } else if (currentProductCheckbox.checked || freqBoughtProductCheckbox.checked) {
+      addToCartButton.disabled = false;
+      addToCartButton.textContent = "Add to cart";
+    } else {
+      addToCartButton.disabled = true;
+      addToCartButton.textContent = "Add to cart";
+    }
+
+// Update the form inputs based on checkbox status
+    const currentProductInput = document.getElementById("currentProductInput");
+    const freqBoughtProductInput = document.getElementById("freqBoughtProductInput");
+
+    if (currentProductCheckbox.checked && ! currentProductInput) {
+      const currentProductInput = document.createElement("input");
+      currentProductInput.type = "hidden";
+      currentProductInput.name = "id[]";
+      currentProductInput.value = "{{ currentProduct.id }}";
+      currentProductInput.id = "currentProductInput";
+      document.getElementById("fbtForm").appendChild(currentProductInput);
+    } else if (! currentProductCheckbox.checked && currentProductInput) {
+      document.getElementById("fbtForm").removeChild(currentProductInput);
+    }
+
+    if (freqBoughtProductCheckbox.checked && ! freqBoughtProductInput) {
+      const freqBoughtProductInput = document.createElement("input");
+      freqBoughtProductInput.type = "hidden";
+      freqBoughtProductInput.name = "id[]";
+      freqBoughtProductInput.value = "{{ freqBoughtProduct.selected_or_first_available_variant.id }}";
+      freqBoughtProductInput.id = "freqBoughtProductInput";
+      document.getElementById("fbtForm").appendChild(freqBoughtProductInput);
+    } else if (! freqBoughtProductCheckbox.checked && freqBoughtProductInput) {
+      document.getElementById("fbtForm").removeChild(freqBoughtProductInput);
+    }
+  }
+
+// Update the total price and saved amount when the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    updateTotalPrice();
+  });
+
+// Add event listeners to checkboxes to update the total price and saved amount on click
+  document.getElementById("currentProduct").addEventListener("click", updateTotalPrice);
+  document.getElementById("freqBoughtProduct").addEventListener("click", updateTotalPrice);
+</script>
+
+
+
+<style>
+.save-text-color{
+  color:#54B5A9;
+}
+  .fbp-item-text {
+    color: #646363;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%; /* 17.55px */
+    text-transform: capitalize;
+  }
+
+  .input-checkbox {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .fb-saved-amount {
+    border-radius: 3px 0 0 3px;
+    background: #EB752C;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    position: absolute;
+    width: 100%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .freq-bought-together {
+    padding: 50px 0;
+    background: #F9F9F9 !important;
+  }
+  .fbt-item-block {
+    text-align: center;
+  }
+  .fbt-total {
+    color: #181818;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+    text-transform: uppercase;
+  }
+  .fbt-btn {
+    border-radius: 5px;
+    background: #275C5C;
+    box-shadow: 3px 4px 13px 0 rgba(0, 0, 0, 0.20);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+    height: 58px;
+    width: 190px;
+  }
+  .fbt_wrapper {
+    border-radius: 7px;
+    border: 2px dashed #54B5A9;
+    background: #FFF;
+    box-shadow: 3px 4px 13px 0 rgba(0, 0, 0, 0.20);
+    margin: auto;
+    position: relative;
+  }
+  .fbt-plus {
+    color: #E97000;
+    text-align: center;
+    font-family: Agrandir;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+  }
+  .fbt-item_img-wrapper {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 5px;
+    background: #F6F6F6;
+    box-shadow: 6px 8px 20px 0 rgba(0, 0, 0, 0.12);
+  }
+  .fbt-over-lay {
+    position: absolute;
+    width: 142px;
+    height: 142px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+  .fbt-title {
+    color: #385B5F;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .fbt-title {
+    text-align: center;
+  }
+  .fbt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media(min-width:768px) {
+    .fbt-title {
+      text-align: left;
+    }
+    .fbt-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .fb-saved-amount {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: max-content;
+      transform: none;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Freq Bought Together",
+    "class": "section freq-bought-together",
+    "tag": "section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Freq Bought Together"
+      }
+    ]
+  }
+{% endschema %}

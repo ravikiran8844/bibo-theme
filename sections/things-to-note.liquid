@@ -1,0 +1,189 @@
+<div class="container py-5">
+
+  <div class="things-to-note_section-wrapper p-4">
+    <div class="col-12 text-center mt-5">
+      <div class="things-to-note_title">{{ section.settings.title }}</div>
+      <div class="things-to-note_caption">{{ section.settings.caption }}</div>
+
+    </div>
+    <div class="row my-5">
+      {% for block in section.blocks %}
+        <div class="col-12 col-md-4 px-3 mb-4 things-to-note_item">
+          <div class="text-center">
+            <div class="things-to-note_img-wrapper">
+              <img
+                class="img-fluid"
+                height="143"
+                width="143"
+                src="{{block.settings.img | img_url: 'master'}}"
+                alt="">
+            </div>
+            <div class="things-to-note_item-title mb-4">{{ block.settings.title }}</div>
+            <div class="things-to-note_item-text">
+              {{ block.settings.text }}
+            </div>
+          </div>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .things-to-note {
+    background: linear-gradient(270deg, #4C7E5E 0%, #275C5C 100%);
+  }
+  .things-to-note_section-wrapper {
+    border-radius: 25px;
+    background: #FFF;
+  }
+  .things-to-note_item {
+    height: 100%;
+    max-width: 333px;
+    margin: auto;
+  }
+  .things-to-note_img-wrapper {
+    width: 143px;
+    height: 143px;
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+
+  .things-to-note_item-title {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .things-to-note_item-text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .things-to-note_title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #4B7D5F 3.95%, #285D5D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .things-to-note_caption {
+    color: #7D7D7D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5.7px;
+  }
+
+  @media(min-width:768px) {
+    .things-to-note_item-title {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .things-to-note_item-text {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .things-to-note_title {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: linear-gradient(90deg, #4B7D5F 3.95%, #285D5D 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .things-to-note_caption {
+      color: #7D7D7D;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 5.7px;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "Things to Note",
+    "class": "section things-to-note",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "What it won’t do"
+      }, {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "THINGS TO NOTE"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Expect overnight results."
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Things to Note"
+      }
+    ]
+  }
+{% endschema %}

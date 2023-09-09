@@ -1,0 +1,152 @@
+<script>
+  console.log(localStorage.getItem("pincode"));
+  console.log("gs-input");  
+   function setPincode() {
+    const pincode = document.getElementById("pincodeinputbox");
+    console.log(pincode.value);
+    localStorage.setItem("pincode",pincode.value);
+    const e = new Event("pincode");
+    e.value = pincode.value; // Optional..
+    e.key = "pincode"; // Optional..
+    document.dispatchEvent(e);
+  }
+</script>
+
+<div id ="demo">
+  <style>
+    #demo{
+      text-align: left;
+        position: relative;
+      border: 1px solid #6E6E7A;
+      margin-bottom: 20px;
+    }
+    #GSHeader{
+    background-color: #fdfbf7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 43px;
+    font-size: 14px;
+    color: #0D0D0D;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 26px;       
+    }
+    #GSButton {
+    background-color: #2c5c60;
+    border-radius: 10px;
+    border: 1px solid #64625D;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;  
+    font-weight: bold;  
+    font-size: 14px;
+    cursor: pointer;
+    width: 138px;
+    position: relative;
+    }
+
+    #pincodeinputbox{
+    background-color: #fdfbf7;
+    border-radius: 10px;
+    border: 1px solid #64625D;
+    /* max-width: 110%; */
+    padding: 10px 17px;
+    width: 100%;
+    margin-right: 18px;
+    }
+     #pincodeinputbox:focus{     
+          border: none;
+    /* max-width: 110%; */
+    padding: 10px 17px;
+    width: 100%;
+    margin-right: 18px;
+     }
+   
+    #pincodeinputbox:visited 
+    { 
+     border: 1px solid #64625D;
+    /* max-width: 110%; */
+    padding: 10px 17px;
+    width: 100%;
+    margin-right: 18px;
+    }
+     #pincodeinputbox:focus{
+          border: 1px solid #64625D;
+    /* max-width: 110%; */
+    padding: 10px 17px;
+    width: 100%;
+    margin-right: 18px;
+     }
+
+      #innerbox{
+     height: auto;
+    border-end-start-radius: 15px;
+    border-end-end-radius: 15px;
+    display: flex;
+    /* align-items: center; */
+    padding: 16px 21px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;    
+    }
+
+
+    #tat{
+      font-size: 1.4rem;
+      letter-spacing: .1em;
+      line-height: 1.6em;
+      margin-top: 0.5rem;
+      text-align: left;    
+      width: 474px;
+    }
+    #delivery-text{
+
+      text-transform: uppercase;
+      letter-spacing: .3em;
+      margin-bottom: 0.5rem;
+      font-size: .64em;
+    }
+    #bottonInputBox{
+       display:flex
+    }
+    }
+ 
+
+  </style>
+</div>   
+  <div id= "outerBox">
+    <div id="GSHeader">
+      <div>Delivery Time Checker</div>
+      <div>
+        <a href="https://www.growsimplee.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/growsimplee/hosted-assets/master/logonew.svg"></img>
+        </a>
+        </div>
+  </div>
+    
+<!--     <div id= "delivery-text">Delivery Durations
+    </div> -->
+    <div id="innerbox">
+      <div id="bottonInputBox">
+         <input placeholder = "Enter Pincode" id ="pincodeinputbox" type="text" name="pin" pattern="[0-9]{4}" maxlength="6">
+    <button
+            className="button"
+            id="GSButton"
+            onclick= "setPincode()"
+            >
+      CHECK
+    </button>
+      </div>              
+          {%- render 'gs-output', product:product -%} 
+    </div>
+  
+
+  </div>
+<script>
+    if (localStorage.getItem("pincode")!==null){
+    var element = document.getElementById("pincodeinputbox");
+    element.value = localStorage.getItem("pincode");
+  }
+</script>

@@ -1,0 +1,170 @@
+<div class="container">
+  <div class="row d-flex mb-4">
+    <div class="col-12 col-md-6">
+      <img
+        class="img-fluid"
+        loading="lazy"
+        width="450"
+        height="450"
+        src="{{section.settings.img |img_url: 'master'}}"
+        alt="">
+    </div>
+    <div class="col-12 col-md-6 m-auto">
+      <div class="bns-title mb-4">
+        <b>India’s First</b>
+        Saline Nasal Spray  with Tulsi & Xylitol !</div>
+      <div class="bns-text mb-5">Your daily defence against pollutants and allergens.</div>
+      <div>
+        {% form 'product', product %}
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}">
+          <input
+            type="hidden"
+            name="quantity"
+            value="1">
+          <button class="bns-btn">Buy Now</button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+  <div class="row d-none d-lg-block mb-5">
+    <div class="col-12 bns-items d-flex justify-content-between p-4">
+      {% for block in section.blocks %}
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="bns-item text-center">
+            <div class="bns-item-img-wrapper">
+              <img
+                loading="lazy"
+                src="{{block.settings.logo | img_url: 'master'}}"
+                alt="">
+            </div>
+            <div class="bns-item-title my-3">{{ block.settings.title }}</div>
+            <div class="bns-item-text">{{ block.settings.text }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .buy-now-section {
+    background: url('https://cdn.shopify.com/s/files/1/0551/8157/4300/files/white-texture_1_2.png'), lightgray -0.407px 0 / 105.82% 100% no-repeat;
+    padding: 30px 0;
+  }
+  .bns-title {
+    color: #393939;
+    font-family: Urbanist;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .buy-now-section b {
+    color: #254E4E;
+    font-family: Urbanist;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  .bns-text {
+    color: #393939;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 113.5%;
+  }
+  .bns-btn {
+    border-radius: 3px;
+    background: #275C5C;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    width: 253px;
+    height: 59px;
+    flex-shrink: 0;
+  }
+  .bns-items {
+    border-radius: 19px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.50);
+  }
+  .bns-item-img-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bns-item-title {
+    color: #222;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    text-transform: capitalize;
+  }
+  .bns-item-text {
+    color: #151515;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Buy Now Image Banner",
+    "class": "section buy-now-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "title",
+            "default": "Fortified with Tulsi"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "Tulsi fight bacterial and viral infections."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Buy Now Image Banner"
+      }
+    ]
+  }
+{% endschema %}

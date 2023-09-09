@@ -1,0 +1,126 @@
+<div class="py-5 p-2 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 m-auto text-center">
+        <div class="text-section-new_title mb-3">
+          {{ section.settings.title }}</div>
+        <div class="text-section-new_caption mb-4">{{ section.settings.caption }}</div>
+        <div class="text-section-new_text">{{ section.settings.text }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .text-section-new {
+    border-radius: 11px;
+    background: #F5F5F5;
+    margin: 10px;
+  }
+  .text-section-new_title {
+    color: #00A79D;
+    font-family: Satisfy;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .text-section-new_caption {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .text-section-new_text {
+    color: #222;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .text-section-new_text span {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #00A79D;
+  }
+
+  @media(min-width:768px) {
+    .text-section-new {
+      background: #FFF;
+    }
+    .text-section-new_title {
+      color: #00A79D;
+      font-family: Satisfy;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .text-section-new_caption {
+      color: #000;
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .text-section-new_text {
+      color: #222;
+      text-align: center;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .text-section-new_text span {
+      color: #FFF;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      background-color: #00A79D;
+    }
+
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Text Section New",
+    "class": "setion text-section-new",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "caption",
+        "label": "caption"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text Section New"
+      }
+    ]
+  }
+{% endschema %}

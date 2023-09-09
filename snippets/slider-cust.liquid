@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.container_myslider {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(90, 90, 90);
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    bottom: 58px;
+    z-index: 1;
+    text-decoration: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container_myslider {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 12%;
+}
+.demo {
+  opacity: 1;
+}
+
+.active,
+.demo:hover {
+  opacity: 0.7;
+}
+img.demo.cursor {
+    padding: 3px;
+}
+  .mySlides {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+    margin: 20px;
+    width: 60%;
+    margin: 10px auto;
+
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+img#sliding_myslides {
+  width: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+@media screen and (max-width: 600px) { 
+.prev, .next {
+    font-size: 18px;
+    bottom: 25px;
+}
+  .row {
+    overflow-x: auto;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+    flex-wrap: unset;
+    overflow-y: hidden;
+    margin: 0 auto;
+}
+  .column {
+    float: left;
+    width: 30%;
+}
+
+
+.mySlides {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+    margin: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+}
+</style>
+<body>
+
+
+<div class="container_myslider">
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-1.webp?v=1669221539" >
+  </div>
+
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-2.webp?v=1669221547">
+  </div>
+
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-3.webp?v=1669221572" >
+  </div>
+    
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-4.webp?v=1669221591" >
+  </div>
+
+  <div class="mySlides">
+   
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-5.webp?v=1669221612" >
+  </div>
+    
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-6.webp?v=1669221635" >
+  </div>
+
+  <div class="mySlides">
+    
+    <img id="sliding_myslides" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-7.webp?v=1669221653" >
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
+  <a class="next" onclick="plusSlides(1)">&#8594;</a>
+
+ 
+
+  <div class="row">
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-1.webp?v=1669221539" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-2.webp?v=1669221547" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-3.webp?v=1669221572" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-4.webp?v=1669221591" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-5.webp?v=1669221612" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-6.webp?v=1669221635" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/product-7.webp?v=1669221653" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n1) {
+  showSlides(slideIndex += n1);
+}
+
+function currentSlide(n1) {
+  showSlides(slideIndex = n1);
+}
+
+function showSlides(n1) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots1 = document.getElementsByClassName("demo1");
+  let captionText = document.getElementById("caption");
+  if (n1 > slides.length) {slideIndex = 1}
+  if (n1 < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots1.length; i++) {
+    dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots1[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>

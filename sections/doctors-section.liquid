@@ -1,0 +1,288 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="mb-4 doctors-section_main-heading">The Experts Joined Us On This Journey</div>
+      <div class="mb-5 doctors-section_main-text">We realized that to make the science behind wellness more accessible to all, we had to have the experts to guide us on this journey. We joined hands with a set of medical experts and doctors who were passionate about changing male health habits and cared deeply about their craft.</div>
+    </div>
+  </div>
+
+  <div id="custom-cards-sldier" class="splide">
+    <div class="splide__track">
+      <ul class="col-12 splide__list">
+
+
+
+        {% for block in section.blocks %}
+          <li class="splide__slide">
+            <div class="custom-card">
+              <div class="image-section image-section--{{block.id}}">
+                <img
+                  loading="lazy"
+                  class="img-fluid"
+                  height="450"
+                  width="430"
+                  src="{{block.settings.img | img_url: 'master'}}"
+                  alt="Image">
+              </div>
+              <div class="text-section text-center">
+                <h2>{{ block.settings.title }}</h2>
+                <p class="mb-4">{{ block.settings.text }}</p>
+                <a href="{{block.settings.link_url}}">{{ block.settings.link_text }}</a>
+
+              </div>
+            </div>
+          </li>
+
+        {% endfor %}
+
+
+
+      </ul>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+{% style %}
+  {% for block in section.blocks %}
+    .custom-card .image-section--{{ block.id}}{
+      background-color: {{ block.settings.card_bg}}
+      ;
+    }
+  {% endfor %}
+{% endstyle %}
+
+
+<style>
+  .doctors-section {
+    background: #F5F5F5;
+  }
+
+  .doctors-section_main-heading {
+    color: #000;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .doctors-section_main-text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .doctors-section .custom-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 380px;
+    margin: auto;
+    padding:0 30px;
+  }
+
+  .doctors-section .custom-card .image-section {
+    position: relative;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* Yellow color for the image section */
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doctors-section .custom-card .image-section img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+        max-width:280px;
+
+
+  }
+
+  .doctors-section .custom-card .text-section {
+    padding: 20px;
+    border-radius: 0 0 12px 10px;
+    background: #FFF;
+    box-shadow: 4px 14px 48px 0 rgba(0, 0, 0, 0.04);
+    color: #000;
+    /* Green color for the text section */
+  }
+
+  .doctors-section .custom-card .text-section h2 {
+    margin-top: 0;
+    color: #474747;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.5%; /* 21.845px */
+  }
+
+  .doctors-section .custom-card .text-section p {
+    color: #474747;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.5%; /* 15.42px */
+  }
+  .doctors-section .custom-card a {
+    color: #00A79D;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 128.5%; /* 17.99px */
+    text-decoration: none;
+  }
+  @media(min-width:768px) {
+    .doctors-section .custom-card {
+    padding:0;
+  }
+    .doctors-section_main-heading {
+      color: #000;
+      text-align: center;
+      font-family: Urbanist;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .doctors-section_main-text {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 80%;
+    margin: auto;
+    }
+
+    .doctors-section .custom-card .text-section h2 {
+      margin-top: 0;
+      color: #474747;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 128.5%; /* 38.55px */
+    }
+
+    .doctors-section .custom-card .text-section p {
+      color: #474747;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 128.5%; /* 25.7px */ /* White text color */
+    }
+    .doctors-section .custom-card a {
+      color: #00A79D;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 128.5%; /* 25.7px */
+      text-decoration: none;
+    }
+  }
+</style>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('#custom-cards-sldier', {
+      type: 'loop',
+      arrows: true,
+      pagination: false,
+      gap: "20px",
+      perPage: 3,
+      breakpoints: {
+        1040: {
+          perPage: 3
+        },
+        820: {
+          perPage: 2
+        },
+        660: {
+          perPage: 1
+        }
+      }
+    });
+    splide.mount();
+  });
+</script>
+{% schema %}
+  {
+    "name": "Doctors Section",
+    "tag": "section",
+    "class": "section doctors-section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "card",
+        "type": "card-block",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          },
+          {
+            "type": "color",
+            "id": "card_bg",
+            "default": "#ECECEC",
+            "label": "card background color"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Dhrithi Bhat",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Content & Research Lead, Bibo",
+            "label": "Text"
+          }, {
+            "type": "text",
+            "id": "link_text",
+            "default": "Read more",
+            "label": "Link Text"
+          }, {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link Url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Doctors Section"
+      }
+    ]
+  }
+{% endschema %}

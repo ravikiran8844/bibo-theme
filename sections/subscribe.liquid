@@ -1,0 +1,168 @@
+<div class="container py-5">
+  <div class="row g-0">
+    <div class="col-12 col-md-6 mb-4 px-3">
+      <div class="main-title">Stay in Touch</div>
+      <div class="text">Join our list for exclusive access to discounts, product launches, and real talk on Saline Nasal Spray.</div>
+    </div>
+    <div class="col-12 col-md-6 m-auto">
+      {% form 'customer' %}
+        <div class="input-group">
+          <input
+            class="form-control email-input"
+            type="email"
+            name="contact[email]"
+            placeholder="Enter your email"
+            required>
+          <button type="submit">Subscribe</button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .email-subscribe-section {
+    background: #EB752C;
+  }
+  .email-subscribe-section .form-control:focus,
+  .email-subscribe-section .form-control {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #FFBB92 !important;
+
+  }
+  .email-subscribe-section .main-title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149%; /* 50.66px */
+    text-transform: uppercase;
+  }
+  .email-subscribe-section .text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    letter-spacing: -0.07px;
+    text-transform: capitalize;
+  }
+  .email-subscribe-section input::-webkit-input-placeholder {
+    /* Edge */
+    color: #FFBB92;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: left;
+
+  }
+
+  .email-subscribe-section input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #FFBB92;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: left;
+
+  }
+
+  .email-subscribe-section input::placeholder {
+    color: #FFBB92;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: left;
+
+  }
+
+  .email-subscribe-section button {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 122.187%; /* 18.328px */
+    height: 40px;
+    padding: 5px 20px;
+  }
+  @media(min-width:768px) {
+    .email-subscribe-section .main-title {
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 149%; /* 67.05px */
+      text-transform: uppercase;
+    }
+    .email-subscribe-section .text {
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 149%;
+      letter-spacing: -0.12px;
+      text-transform: capitalize;
+    }
+    .email-subscribe-section button {
+      border-radius: 5px;
+      border: 1px solid #FFF;
+      background: rgba(255, 255, 255, 0.15);
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 122.187%; /* 24.437px */
+      height: 50px;
+    }
+  }
+
+
+
+  .email-subscribe-section .email-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFBB92 !important;
+    max-width: 480.666px;
+    color: #fff;
+    font-size: 16px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Email Subscribe",
+    "class": "section email-subscribe-section",
+    "tag": "section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Email Subscribe"
+      }
+    ]
+  }
+{% endschema %}

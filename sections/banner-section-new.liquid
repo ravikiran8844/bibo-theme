@@ -1,0 +1,174 @@
+<div class="fluid-container py-5 banner-section-new_wrapper mb-5">
+  <div class="row g-0 text-center">
+    <div class="col-12">
+      <div class="banner-section-new_heading">
+        {{ section.settings.heading }}
+
+      </div>
+      <div class="mb-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="156"
+          height="8"
+          viewBox="0 0 156 8"
+          fill="none">
+          <path
+            d="M4 4H152"
+            stroke="#54B5A9"
+            stroke-width="8"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+    </div>
+    <div class="col-12 mb-5">
+      <div class="banner-section-new_subheading">
+        {{ section.settings.subtitle }}
+
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="banner-section_img-wrapper position-relative">
+   {% assign mobile_img=section.settings.mobile_img | default: section.settings.img %}
+      {% render 'image', class: 'banner-section_img', mobileSrc: mobile_img, desktopSrc: section.settings.img %}
+        <div class="banner-section_overlay-content">We asked, you told us, we listened. We hung on to every word. Countless conversations later – asking our community what’s lacking in the respiratory space, what works, and what doesn’t – we learned from you. Bibo is proudly co-founded by you!</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+    .banner-section_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 500px;
+
+  }
+  .banner-section_overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 4px 10px 30px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7px);
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 80%;
+    max-width: 700px;
+  }
+  .banner-section-new_heading {
+    color: #54B5A9;
+    font-family: Satisfy;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: .7;
+  }
+  .banner-section-new_subheading {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .banner-section-new_subheading i {
+    color: #000;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .banner-section-new_text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media(min-width:768px) {
+    .banner-section_overlay-content {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .banner-section-new_heading {
+      color: #54B5A9;
+      font-family: Satisfy;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: .7;
+    }
+    .banner-section-new_subheading {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .banner-section-new_subheading i {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Banner Section New",
+    "class": "banner-section-new section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "BG Image"
+      }, 
+      {"type": "image_picker",
+      "id": "mobile_img",
+      "label": "Mobile BG Image"
+        },{
+        "type": "text",
+        "id": "heading",
+        "default": "Our community",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "default": "<i>You are our ‘Why?’</i>",
+        "label": "Sub Heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner Section New"
+      }
+    ]
+  }
+{% endschema %}

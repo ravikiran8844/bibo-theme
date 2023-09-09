@@ -1,0 +1,274 @@
+<div class="fluid-container">
+  <div class="col-12 img-text-overlay_wrapper d-flex justify-content-start align-items-center">
+    <img
+      class="img-fluid d-none d-md-block "
+      width="1920"
+      height="720"
+      loading="lazy"
+      src="{{section.settings.img | img_url: 'master'}}"
+      alt="">
+
+    <div class="col-12 col-md-7 d-none d-md-block img-text-overlay_content text-center">
+      <div class="caption mb-4">{{ section.settings.caption }}</div>
+      <div class="main-title mb-4">{{ section.settings.title }}</div>
+      <div class="text mb-5 me-auto col-12 col-md-6">{{ section.settings.text }}</div>
+      <div>
+        {% form 'product', product %}
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}">
+          <input
+            type="hidden"
+            name="quantity"
+            value="1">
+          <button class="btn buy-now-button">BUY NOW</button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 d-block d-md-none mobile_wrapper pt-5">
+    <div class="text-center">
+      <div class="main-title-mobile mb-4">{{ section.settings.mobile_title }}</div>
+      <div class="text-mobile ms-auto col-12 col-md-6">{{ section.settings.text }}</div>
+   
+      <div class="position-relative d-flex flex-column align-items-end">
+        <img
+          class="img-fluid"
+          width="455"
+          height="280"
+          loading="lazy"
+          src="{{section.settings.mobile_img | img_url: 'master'}}"
+          alt="">
+           <div>
+        {% form 'product', product %}
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}">
+          <input
+            type="hidden"
+            name="quantity"
+            value="1">
+          <button class="btn button-mobile mobile-btn-position">BUY NOW</button>
+        {% endform %}
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<style>
+.mobile-btn-position{
+  position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.img-text-overlay-section{
+background: linear-gradient(180deg, rgba(235, 117, 44, 0.4) 0%, rgba(235, 117, 44, 0) 100%);
+}
+ 
+  .img-text-overlay-section .mobile_wrapper {
+    background: url({{section.settings.mobile_bg |image_url}}), lightgray 0px -7.328px / 100% 160.229% no-repeat;
+          background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-text-overlay-section .main-title-mobile {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+  }
+  .img-text-overlay-section .text-mobile {
+         background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+          height: 127px;
+          color: #275C5C;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140.5%;
+          letter-spacing: -0.25px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+  .img-text-overlay-section .button-mobile {
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    width: 150px;
+    height: 41px;
+    flex-shrink: 0;
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+  }
+
+ .img-text-overlay-section .button-mobile:hover {
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    width: 150px;
+    height: 41px;
+    flex-shrink: 0;
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+  }
+  .img-text-overlay_wrapper {
+    position: relative;
+  }
+  .img-text-overlay_content {
+    position: absolute;
+
+  }
+  .img-text-overlay_content .caption {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 30.406px */
+    letter-spacing: 6.689px;
+    text-transform: uppercase;
+
+  }
+  .img-text-overlay_content .main-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 109%; /* 65.4px */
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+  }
+  .img-text-overlay_content .text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 37.79px */
+    letter-spacing: -0.261px;
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+    text-align: right;
+  }
+  .img-text-overlay_content .buy-now-button {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.008px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 305px;
+    height: 74px;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+  }
+    .img-text-overlay_content .buy-now-button:hover {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 4.00153112411499px 10px 0 rgba(0, 0, 0, 0.10);
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.008px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 305px;
+    height: 74px;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+  }
+
+  .img-text-overlay_wrapper img {
+        background: #F5B93D;
+
+    min-height: 550px;
+    width: 100%;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Image text overlay New",
+    "class": "section img-text-overlay-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+         {
+        "type": "image_picker",
+        "id": "mobile_bg",
+        "label": "Mobile Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_img",
+        "label": "Mobile Image"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Caption"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "text",
+        "default": "text"
+      }, {
+        "type": "text",
+        "id": "mobile_title",
+        "label": "Mobile Title",
+        "default": "Mobile Title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image text overlay New"
+      }
+    ]
+  }
+{% endschema %}

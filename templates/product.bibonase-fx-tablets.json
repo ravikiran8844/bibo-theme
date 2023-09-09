@@ -1,0 +1,459 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-card-tablets",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "cc50699c-f6a0-40fc-8547-95063057edd0": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "cc50699c-f6a0-40fc-8547-95063057edd0"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.product-info-top {font-size: 11px; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680": {
+      "type": "simple-text-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "text": "Disclaimer: This is a Schedule H drug. This will be sold only after a prescription from the registered doctor only."
+      }
+    },
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "heading": "GENERAL INFORMATION",
+        "text": "<p><strong>COMPOSITION: <\/strong>Fexofenadine Hydrochloride (120mg) + Montelukast Sodium (10mg)<\/p><p><strong>INDICATIONS: <\/strong>BIBONASE FX Tablet relieves the symptoms of allergic rhinitis (hay fever) such as sneezing, runny or blocked nose, stuffy nose, nasal and chest congestion, itchy and watery eyes and other allergic symptoms.<\/p><p><strong>BENEFITS:<\/strong><br\/><\/p><ul><li>Fexofenadine is an antihistamine used to relieve the symptoms of allergies such as runny nose, sneezing, cough, nasal congestion and itchy or watery eyes, etc.<\/li><li>Montelukast is an anti-allergic used to relieve runny nose, sneezing and other symptoms of allergies.<\/li><\/ul><p><strong>THERAPEUTIC CLASS: <\/strong>Respiratory<\/p><p><strong>ADDICTIVE OR HABIT FORMING: <\/strong>No<\/p><p><strong>CATEGORY: <\/strong>Anti-allergic<\/p>"
+      }
+    },
+    "9f795468-7108-41ee-8a94-43acd7a1d285": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "ABOUT BIBONASE FX TABLETS",
+        "text": "<p>BIBONASE FX Tablet is a combination medicine. It contains Fexofenadine Hydrochloride and Montelukast Sodium as active ingredients.<\/p><p>BIBONASE FX Tablet is an anti-allergic medicine. It relieves the symptoms of allergic rhinitis (hay fever) such as sneezing, runny or blocked nose, stuffy nose, nasal and chest congestion, itchy and watery eyes and other allergic symptoms.<\/p><h4><strong>SIDE EFFECTS<\/strong><\/h4><p>The common side effects include:<\/p><ul><li>Nausea<\/li><li>Vomiting<\/li><li>Headache<\/li><li>Dizziness<\/li><li>Drowsiness<\/li><li>Stomach upset<\/li><li>Sore throat<\/li><li>Cough<\/li><li>Dry mouth<\/li><\/ul><p>The side effects are generally mild and would resolve on their own.<br\/>Severe side effects-<\/p><ul><li>Swelling of the face, lips, tongue or throat.<\/li><li>Difficulty breathing<\/li><li>Abdominal pain<\/li><li>Tiredness<\/li><li>Anxiety<\/li><\/ul><p>If such symptoms occur, stop using the medicine, and consult a doctor or visit a nearby clinic immediately.<\/p>"
+      }
+    },
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
+      "type": "accordian-section-new",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "DIRECTION TO USE",
+        "text": "<ul><li>Take BIBONASE FX Tablet as directed by your doctor.<\/li><li>Swallow it as a whole with a glass of water. Do not chew, break or crush the tablet.<\/li><li>If you feel sleepy after taking this medicine, it is better to avoid driving.<\/li><\/ul>"
+      }
+    },
+    "4f697d50-229d-4207-906a-2b5caf122204": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "MODE OF ACTION",
+        "text": "<p>Fexofenadine is an anti-histaminic drug. It blocks the action of endogenous histamine (responsible for allergic symptoms) by binding to the histamine receptors, which leads to temporary relief from the ill effects of histamine.<\/p><p>Montelukast is a leukotriene receptor blocker. By blocking the actions of leukotriene, it reduces inflammation and relaxes the airways, making breathing easier.<\/p>"
+      }
+    },
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "PRECAUTIONS AND WARNINGS",
+        "text": "<p><strong>Children<\/strong><br\/>BIBONASE FX Tablet is indicated only for adults. It should not be used by children until prescribed by the doctor.<\/p><p><strong>Pregnancy<\/strong><br\/>There is limited data on the safety of BIBONASE FX Tablet in human pregnant women. However, animal studies have shown harmful effects on the developing baby. Hence, it is better to avoid using this medicine in pregnancy until prescribed by your physician.<\/p><p><strong>Lactating mothers<\/strong><br\/>BIBONASE FX Tablet is safe to use in lactating women if prescribed by the doctor. It is better to avoid self-medication.<\/p><p><strong>Driving<\/strong><br\/>BIBONASE FX Tablet may cause dizziness and drowsiness and may affect vision. So it is better not to drive, operate heavy machinery or do something that requires mental alertness.<\/p><p><strong>Alcohol<\/strong><br\/>Alcohol may worsen the side effects associated with BIBONASE FX Tablet. Therefore, it is better to avoid alcohol while taking this medicine.<\/p><p><strong>Liver diseases<\/strong><br\/>Using BIBONASE FX Tablet is generally safe. There may be no requirement for dose adjustment. But it is always better to use this medicine only if prescribed by your doctor.<\/p><p><strong>Kidney diseases<\/strong><br\/>Use BIBONASE FX Tablet with caution. Some people may require a dose adjustment. It may cause excessive sleepiness in patients with End-Stage Kidney Disease. Hence, it is better to consult a doctor before using this medicine.<\/p><p><strong>Other general warnings<\/strong><br\/>Inform your doctor if<\/p><ul><li>You have any allergic reactions after taking this medicine. It is better to discontinue this medicine in case of such reactions.<\/li><li>You are already taking medicine with one or more ingredients of the BIBONASE FX Tablet.<\/li><li>You have other medical conditions related to liver, kidney, heart, thyroid, etc.<\/li><li>You have abnormal blood count or swelling of the blood vessels.<\/li><\/ul><p><strong>CONTRAINDICATIONS<\/strong><br\/>Do not use BIBONASE FX Tablet if you are allergic to any of the ingredients of this medicine.<\/p>"
+      }
+    },
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "STORAGE",
+        "text": "<p>Store in a cool and dark place at a temperature below 30ᵒC.<\/p>"
+      }
+    },
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "DOSAGE",
+        "text": "<p><strong>Missed dose<\/strong><br\/>Take BIBONASE FX Tablet as soon as you remember. But if it is time for the next dose, skip the missed dose and continue this medicine as regular. Do not take a double dose of this medicine.<\/p><p><strong>Overdose<\/strong><br\/>It is better to seek medical help immediately if you take more than the daily recommended dose of this medicine. An overdose may increase the severity of side effects.<\/p>"
+      }
+    },
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "INTERACTIONS",
+        "text": "<p><strong>Drug-drug interactions:<\/strong><br\/><strong>Effect:<\/strong> Certain drugs like antibiotics (erythromycin), anticonvulsants (phenytoin, phenobarbital), antifungals (ketoconazole), lipid-lowering agents (gemfibrozil), etc. may interfere with the effectiveness of BIBONASE FX.<\/p><p><strong>Remedy:<\/strong> It is better to inform the doctor about all the medicines you are currently taking, including prescription and non-prescription drugs, ayurvedic, homoeopathic or nutritional supplements, to avoid any possible interaction.<\/p><p><strong>Effect:<\/strong> Taking antacids containing aluminium and magnesium may decrease the effectiveness of BIBONASE FX.<\/p><p><strong>Remedy:<\/strong> It is better to maintain a gap of a minimum of 2 hours between these medicines.<\/p><p><strong>Drug-food interactions:<\/strong><br\/><strong>Effect:<\/strong> Certain fruit juices, including grapefruit, orange and apple, may decrease the effectiveness of the BIBONASE FX tablet.<\/p><p><strong>Remedy:<\/strong> It is better to limit or avoid taking these fruit juices with a BIBONASE FX tablet.<\/p><p><strong>Drug-disease interactions:<\/strong><br\/><strong>Effect:<\/strong> Certain health conditions like Lapp lactose deficiency, galactose intolerance, kidney, liver or heart diseases may interfere with the effectiveness of the BIBONASE FX tablet.<\/p><p><strong>Remedy:<\/strong> It is better to inform your doctor if you have any of these conditions before taking this medicine.<\/p>"
+      }
+    },
+    "008eacbb-14a6-472a-90b8-188a65470334": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-bottom: 40px;}"
+      ],
+      "settings": {
+        "heading": "NATURAL REMEDIES TO EASE THE SYMPTOMS",
+        "text": "<p><strong>Diet modification:<\/strong><\/p><ul><li>Adding ginger and tulsi to your tea will help reduce the inflammation and infection in the respiratory tract.<\/li><li>Stay well hydrated. It helps clear the extra mucus and dust particles from the nose, sinuses and airways.<\/li><li>Drink warm water or drinks to reduce the inflammation of the airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways. Thick mucus makes it difficult to breathe.<\/li><li>Avoid spicy, fried foods as they may worsen allergic symptoms like watery eyes and runny nose.<\/li><li>Include honey, green leafy vegetables, broccoli, turmeric, etc. They may help improve immunity and deal with allergic symptoms.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li>Avoid exposure to allergens.<\/li><li>Always wear a mask in crowded and polluted places.<\/li><li>Practice deep breathing exercises to improve lung capacity and health.<\/li><li>Nasal irrigation with saline water is an effective way to clean the nasal and sinus areas.<\/li><li>Gargles are effective in healing sore throats and infections of the oral cavity.<\/li><\/ul>"
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76": {
+      "type": "frequently-bought",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33": {
+      "type": "faqs",
+      "blocks": {
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the uses of BIBONASE FX Tablet?",
+            "answer": "BIBONASE FX Tablet is used to relieve the symptoms of allergies such as runny or blocked nose, sneezing, congestion, watery and itchy eyes and other symptoms of allergies."
+          }
+        },
+        "05200af5-2156-4f62-a4a3-9250cd71f098": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does BIBONASE FX Tablet cause drowsiness?",
+            "answer": "Yes, BIBONASE FX Tablet may cause drowsiness. Hence, it is better to avoid something that requires mental alertness such as driving or operating heavy machinery."
+          }
+        },
+        "1f568522-1c41-4937-881c-e47e4fd8bf84": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the ingredients of BIBONASE FX Tablet?",
+            "answer": "BIBONASE FX Tablet contains Fexofenadine and Montelukast as active ingredients."
+          }
+        },
+        "4f908ef1-4213-40a6-a899-76b301a348ff": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is it safe to take BIBONASE FX Tablet in pregnancy?",
+            "answer": "Limited data is available on the safety of BIBONASE FX Tablet in pregnancy. Hence, it is better to talk to a doctor before taking this medicine."
+          }
+        },
+        "d4fd3a32-9513-4467-b190-c2d3bb2d5eef": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is it safe to take BIBONASE FX Tablet while breastfeeding?",
+            "answer": "BIBONASE FX Tablet can be taken if prescribed by the doctor. But it is better to avoid self-medication with this medicine."
+          }
+        },
+        "1c30de90-b57b-48bd-95ad-f96b4d75ee4b": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take BIBONASE FX Tablet for asthma attack?",
+            "answer": "No, BIBONASE FX Tablet is not indicated for asthma attack. It is indicated to provide relief from allergic rhinitis."
+          }
+        },
+        "d129ec75-5535-4dda-aa9a-ef484e04bd83": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take fruit juice while taking BIBONASE FX Tablet?",
+            "answer": "Taking certain fruit juice such as grapefruit, orange and apple may decrease the effects of BIBONASE FX Tablet. Hence, it is better to avoid taking these juice when taking BIBONASE FX Tablet."
+          }
+        },
+        "141c3213-df7f-4c20-bf5d-5b35f8865d48": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take antacids and BIBONASE FX Tablet at the same time?",
+            "answer": "Taking antacids containing aluminium and magnesium may interfere with the actions and efficacy of BIBONASE FX Tablet. So, it is better to maintain a gap of minimum 2 hours between these medicines."
+          }
+        },
+        "43f8b4ad-cedf-45bf-8345-68c526a2bd88": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What should I do if I miss a dose?",
+            "answer": "Take BIBONASE FX Tablet as soon as you remember and if it is time for the next dose, then skip the missed dose and continue taking the medicine regularly."
+          }
+        }
+      },
+      "block_order": [
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
+        "05200af5-2156-4f62-a4a3-9250cd71f098",
+        "1f568522-1c41-4937-881c-e47e4fd8bf84",
+        "4f908ef1-4213-40a6-a899-76b301a348ff",
+        "d4fd3a32-9513-4467-b190-c2d3bb2d5eef",
+        "1c30de90-b57b-48bd-95ad-f96b4d75ee4b",
+        "d129ec75-5535-4dda-aa9a-ef484e04bd83",
+        "141c3213-df7f-4c20-bf5d-5b35f8865d48",
+        "43f8b4ad-cedf-45bf-8345-68c526a2bd88"
+      ],
+      "custom_css": [
+        ".rk-faq-section,.faq-section {background: #f9f9f9;}"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
+      "type": "logos-section",
+      "blocks": {
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "8123b403-6543-4cd1-a340-f572d4999f91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cs-logo.png",
+            "logo-text": "Recent Molecules"
+          }
+        },
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "19996c59-130e-4628-9736-4e2ab4e3a49d": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df",
+        "8123b403-6543-4cd1-a340-f572d4999f91",
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
+        "19996c59-130e-4628-9736-4e2ab4e3a49d"
+      ],
+      "custom_css": [
+        ".logo-item-4 {display: block !important;}"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc": {
+      "type": "video-slides",
+      "blocks": {
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "32bea08b-833a-4fed-862a-3d30a5b857f0": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "6902e791-44f3-4580-989e-9dd1e6d27d25": {
+          "type": "video-block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6",
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f",
+        "32bea08b-833a-4fed-862a-3d30a5b857f0",
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859",
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20",
+        "6902e791-44f3-4580-989e-9dd1e6d27d25"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "168932840165a33ba6": {
+      "type": "apps",
+      "blocks": {
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "93aa0bff-5183-4229-8050-c435b6f61ba9": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "description",
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680",
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
+    "9f795468-7108-41ee-8a94-43acd7a1d285",
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
+    "4f697d50-229d-4207-906a-2b5caf122204",
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4",
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76",
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e",
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f",
+    "008eacbb-14a6-472a-90b8-188a65470334",
+    "main-product-recommendations",
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76",
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33",
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71",
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc",
+    "168932840165a33ba6",
+    "93aa0bff-5183-4229-8050-c435b6f61ba9"
+  ]
+}

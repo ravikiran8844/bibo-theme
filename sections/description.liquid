@@ -1,0 +1,27 @@
+
+<section id="descripton-{{ section.id }}" class="description-section">
+   <div class="product__description rte quick-add-hidden">
+                {{ product.description }}
+              </div>
+</section>
+
+{% schema %}
+{
+  "name": "Description",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "description",
+      "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

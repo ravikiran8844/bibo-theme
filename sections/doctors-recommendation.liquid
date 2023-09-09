@@ -1,0 +1,258 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+
+
+<div class="dr-section container py-5">
+  <div class="col-12">
+    <div class="dr-section_title">{{ section.settings.heading }}</div>
+    <div class="dr-section_text mb-5 h5">{{ section.settings.subheading }}</div>
+  </div>
+  <div id="dr-recommendations" class="splide">
+    <div  class="splide__track">
+  <div class="doctor-slider splide__list">
+    {% for block in section.blocks %}
+      <div class="mb-4 p-3 splide__slide">
+        <div class="dr-section_item d-flex p-5">
+          <div class="dr-section_item-content">
+            <div class="dr-section_item-title">{{ block.settings.name }}</div>
+            <div class="dr-section_item-caption pe-2 mb-4">{{ block.settings.caption }}</div>
+            <div class="dr-section_item-text">{{ block.settings.text }}</div>
+          </div>
+          <div class="dr-section_item-img">
+            <img
+              class="img-fluid"
+              width="270"
+              height="337"
+              loading="lazy"
+              src="{{block.settings.image |img_url: 'master' }}"
+              alt="">
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+  </div>
+  {% if section.settings.bottom-text !=blank %}
+  <div class="col-12 text-center d-none d-md-block">
+                    <div class="dr-section_bottom-text mt-4">{{ section.settings.bottom-text }}</div>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+
+
+ 
+  .dr-section_bottom-text{
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.523%; /* 34.657px */
+  }
+.doctors-recommendation{
+      background: #FFF;
+
+}
+
+   .doctors-recommendation .flickity-slider{
+    margin-left:0;
+  }
+  .dr-section_item {
+    flex-shrink: 0;
+    border-radius: 30.676px;
+    background: #F9F9F9;
+    height:100% !important;  
+  }
+
+  .dr-section_title {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.523%;
+  }
+  .dr-section_text {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.523%;
+  }
+  .dr-section_item-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  .dr-section_item-caption {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+  }
+  .dr-section_item-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.5%;
+  }
+
+  @media(min-width:768px) {
+    .dr-section_title {
+      color: #275C5C;
+      font-size: 54px;
+      text-align: center;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 115.523%;
+    }
+    .dr-section_text {
+      color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 115.523%;
+    }
+    .dr-section_item-title {
+      color: #000;
+    font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+    .dr-section_item-caption {
+      color: #6C6C6C;
+    font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 132%;
+    }
+    .dr-section_item-text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 132.5%;
+    }
+  }
+
+
+  .dr-section_item-content {
+    width: 70%;
+  }
+  .dr-section_item-img {
+    width: 30%;
+  }
+  .dr-section_item-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 37.067px;
+    background: #fff;
+  }
+
+ 
+
+</style>
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '#dr-recommendations',{
+            type: 'loop',
+        arrows: true,
+      pagination:false,
+  perPage: 2,
+  breakpoints: {
+      1040: {
+			perPage: 2,
+		},
+		920: {
+			perPage: 1,
+		},440: {
+			perPage: 1,
+		},
+  }
+} );
+    splide.mount();
+  } );
+</script>
+
+
+{% schema %}
+  {
+    "name": "Doctors Recommendation",
+    "class": "doctors-recommendation section",
+    "tag":"section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "heading",
+        "default": "heading"
+      }, {
+        "type": "text",
+        "id": "subheading",
+        "label": "subheading",
+        "default": "subheading"
+      }, {
+            "type": "text",
+            "id": "bottom-text",
+            "label": "Bottom Text"
+          }
+    ],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "name",
+            "label": "Name",
+            "default": "Name"
+          }, {
+            "type": "text",
+            "id": "caption",
+            "label": "caption",
+            "default": "caption"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Doctors Recommendation"
+      }
+    ]
+  }
+{% endschema %}

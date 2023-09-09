@@ -1,0 +1,190 @@
+<div class="container p-5">
+
+  <div class="row">
+    
+    <div class="col-12 col-md-6 mb-4">
+        <div class="text-center">
+          <div class="mobile-heading mb-3">{{ section.settings.mobile_heading }}</div>
+        </div>
+      <div class="image_wrapper">
+        <img
+        class="img-fluid"
+        loading="lazy"
+        width="566"
+        height="385"
+        src="{{section.settings.img | img_url: 'master'}}"
+        alt="">
+      </div>
+    </div>
+    <div class="col-12 col-md-6 mb-4">
+      <div class="htus-title mb-4">{{ section.settings.heading }}</div>
+      <div class="row">
+        {% for block in section.blocks %}
+          <div class="col-4">
+            <div class="htus-step text-center htus-step-{{forloop.index}}">
+              <div class="htus-step_img-wrapper">
+                <img
+                  loading="lazy"
+                  class="img-fluid"
+                  width="139"
+                  height="118"
+                  src="{{block.settings.logo | img_url: 'master'}}"
+                  alt="">
+              </div>
+              <div class="htus-step-title my-3">{{ block.settings.title }}</div>
+              <div class="htus-text">{{ block.settings.text }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="htus-title mt-5 mb-3">{{ section.settings.footer_heading }}</div>
+      <div class="htus-text mb-3">{{ section.settings.footer_text }}</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .how-to-use-section {
+    background: #F9F9F9;
+    padding: 30px 0;
+  }
+  .how-to-use-section .mobile-heading {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.523%; /* 40.657px */
+  }
+  .how-to-use-section .mobile-heading b {
+    color: #275C5C;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.523%;
+  }
+  .htus-title {
+    color: #181818;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 22px */
+  }
+  .htus-step_img-wrapper {
+    max-width: 163px;
+    min-height: 118px !important;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+  }
+  .htus-step-title {
+    color: #181818;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.5%;
+    text-transform: capitalize;
+  }
+  .htus-text {
+    color: #393939;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147%; /* 19.11px */
+  }
+  .htus-step-1 {
+    border-left: none !important;
+  }
+  .htus-step {
+    border-left: 1px solid #BBB;
+    padding: 10px;
+  }
+  @media(min-width:768px) {
+    .how-to-use-section .image_wrapper {
+      padding: 20px;
+    }
+    .htus-title {
+      color: #181818;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 30px */
+      padding: 5px;
+    border-bottom: 1px solid #BBB;
+    }
+    .htus-text {
+      color: #393939;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 147%; /* 20.58px */
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "How to Use",
+    "class": "section how-to-use-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "heading"
+      },
+      {
+        "type": "text",
+        "id": "mobile_heading",
+        "label": "mobile top heading"
+      },
+      {
+        "type": "text",
+        "id": "footer_heading",
+        "label": "footer heading"
+      }, {
+        "type": "text",
+        "id": "footer_text",
+        "label": "footer text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "steps-block",
+        "name": "steps",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "How to Use"
+      }
+    ]
+  }
+{% endschema %}

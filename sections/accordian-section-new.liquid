@@ -1,0 +1,221 @@
+<div class="container px-5 py-1 acc-{{section.id}}">
+  <div class="col-12">
+    <div class="accordion accordion-flush" id="accordion-{{section.id}}">
+      <div class="accordion-item py-2">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne-{{section.id}}"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne-{{section.id}}">
+            {{ section.settings.heading }}
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne-{{section.id}}"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordion-{{section.id}}">
+          <div class="accordion-body">
+            <div class="ingredients-section">
+              {% if section.settings.text != blank %}
+                <div>{{ section.settings.text }}</div>
+              {% endif %}
+              <div class="row gx-4">
+                {% for block in section.blocks %}
+                  <div class="col col-sm-6 col-lg-4 col-xl-3 ingredient-item-{{forloop.index}} mb-5">
+                    <div class="acc_section-item text-center p-3">
+                      <div class="mb-3 img_wrapper">
+                        <img
+                          class="img-fluid"
+                          loading="lazy"
+                          width="205"
+                          height="161"
+                          src="{{block.settings.logo | img_url: 'master'}}"
+                          alt="ingredient">
+                      </div>
+                      <div class="main-title mb-3">{{ block.settings.title }}</div>
+                      <div class="main-text mb-3">
+                        {{ block.settings.text }}
+                      </div>
+
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .acc_section-item {
+    max-width: 263.25px;
+    min-width:200px;
+    width:auto;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #F9F9F9;
+    height: 100%;
+    margin: auto;
+  }
+
+ .acc_section-item .img_wrapper{
+      height: 150px;
+       max-height: 150px;
+        max-width: 150px;
+       margin: auto;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+    .acc_section-item img {
+       max-height: 150px;
+        max-width: 150px;
+    width:auto;
+    height:auto;
+  }
+  .acc_section-item .main-title {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.523%; /* 24.754px */
+  }
+  .acc_section-item .main-text {
+    color: #5B5B5B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.188%; /* 20.186px */
+  }
+  .accordian-section {
+    background-color: #fff !important;
+  }
+  .accordian-section .accordion {
+    border-bottom: 1px solid #275C5C;
+    border-top: none !important;
+    margin-top: 0 !important;
+  }
+  .accordian-section .accordion-button:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .accordian-section .accordion-button:not(.collapsed) {
+    color: #275C5C;
+    box-shadow: none;
+    background-color: #fff;
+  }
+  .accordian-section .accordion-button {
+    color: #275C5C;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  @media(min-width:768px) {
+    .accordian-section .accordion-button {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 137.523%; /* 44.007px */
+    }
+  }
+
+  .accordian-section .accordion-button::after {
+    content: "+";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: initial;
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    color: #EB752C;
+
+  }
+
+  .accordian-section .accordion-button:not(.collapsed)::after {
+    content: "-";
+    color: #EB752C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: initial;
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+  }
+</style>
+
+<style>
+  .ingredients-section {
+    background-color: #fff;
+  }
+  .ingredients-section b {
+    font-weight: 600 !important;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Accordian Section New",
+    "class": "section accordian-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Heading",
+        "label": "Heading"
+      }, {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "ingredient",
+        "type": "ingredient-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "label": "Title",
+            "id": "title",
+            "default": "Ashwagandha"
+          }, {
+            "type": "text",
+            "label": "Text",
+            "id": "text",
+            "default": "Reduces the swelling of the airways, fever, and pain."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Accordian Section New"
+      }
+    ]
+  }
+{% endschema %}

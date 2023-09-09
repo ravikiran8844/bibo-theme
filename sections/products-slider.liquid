@@ -1,0 +1,279 @@
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+<script defer src="{{'products-slider.js' | asset_url}}"></script>
+
+<div class="container py-5">
+  <div class="col-12 text-center">
+    <div class="products-slider_title">{{ section.settings.heading }}</div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+
+
+      <div class="owl-carousel">
+
+        {% for product in section.settings.products %}
+          <div class="item products-slider_item text-center">
+            <div class="mb-3">
+              <a href="{{product.url}}">
+                <img
+                  loading="lazy"
+                  class="img-fluid"
+                  width="340"
+                  height="340"
+                  src="{{product.featured_image | img_url: 'master'}}"
+                  alt="">
+              </a>
+            </div>
+            <div class="mb-3 products-slider_item-title">{{ product.metafields.custom.product_title }}</div>
+            <div class="mb-4 products-slider_item-caption">{{ product.metafields.custom.product_slider_caption }}</div>
+            <div class="mb-4 products-slider_item-price">₹ {{ product.price | money_without_currency }}</div>
+            <div class="mb-3">
+              <a href="{{product.url}}" class="btn px-4 py-2 products-slider_item-btn">Shop Now</a>
+            </div>
+          </div>
+
+        {% endfor %}
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .products-slider i {
+    border: 2px solid #B0B0B0;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .products-slider .owl-carousel {
+    position: relative;
+  }
+  .products-slider .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .products-slider .owl-prev {
+    position: absolute;
+    left: 0;
+  }
+
+  .products-slider .owl-next {
+    position: absolute;
+
+    right: 0;
+  }
+
+
+  .products-slider_title {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%; /* 30.42px */
+    text-transform: uppercase;
+  }
+
+  .products-slider_item-title {
+    color: #181818;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.5%; /* 25.795px */
+  }
+  .products-slider_item-caption {
+    color: #666;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.5%; /* 23.859px */
+  }
+
+  .products-slider_item-price {
+    color: #181818;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 20.887px */
+  }
+
+  .products-slider_item-btn {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.27px;
+  }
+
+  .products-slider_item-btn,
+  .products-slider_item-btn:hover {
+
+    color: #275C5C;
+
+    border-radius: 6px;
+    border: 1.5px solid #275C5C;
+  }
+
+  .owl-item.center .products-slider_item .products-slider_item-btn,
+  .owl-item.center .products-slider_item .products-slider_item-btn:hover {
+    color: #FFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: #275C5C;
+  }
+
+  .products-slider_item {
+    padding: 30px 0;
+    max-width: 357px;
+    width: 100%;
+    height: 100%;
+    max-height: 541px;
+    flex-shrink: 0;
+    border-radius: 17.137px;
+    background: #FBFBFB;
+    margin: auto;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  .owl-item .item {
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  .owl-item.center .products-slider_item {
+    border-radius: 18.477px;
+    border: 2px solid #E9E6E6;
+    background: #FFF;
+    box-shadow: 0 0 39px 0 #66666640;
+  }
+
+  @media(min-width:768px) {
+
+      .owl-item .item {
+    margin: 100px auto;
+    padding: 15px;
+  }
+    .owl-item.center .products-slider_item {
+      border-radius: 18.477px;
+      border: 2px solid #E9E6E6;
+      background: #FFF;
+      box-shadow: 0 0 39px 0 #66666640;
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
+    }
+    .products-slider_title {
+      color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 117%; /* 46.8px */
+      text-transform: uppercase;
+    }
+
+
+
+    .products-slider_item-title {
+      color: #181818;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 20.887px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 123.5%; /* 25.795px */
+    }
+    .products-slider_item-caption {
+      color: #666;
+      font-family: Poppins;
+      font-size: 16.067px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 148.5%; /* 23.859px */
+    }
+
+    .products-slider_item-price {
+      color: #181818;
+      text-align: center;
+      font-family: Urbanist;
+      font-size: 20.887px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 20.887px */
+    }
+
+    .products-slider_item-btn {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.27px;
+    }
+
+
+
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Products slider",
+    "class": "products-slider section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "RECOMMENDED PRODUCTS",
+        "label": "Heading"
+      }, {
+        "type": "product_list",
+        "id": "products",
+        "label": "Products"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Products slider"
+      }
+    ]
+  }
+{% endschema %}

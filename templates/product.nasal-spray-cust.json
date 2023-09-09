@@ -1,0 +1,302 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-cust",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "a5b19d5a-4d56-4185-b23d-457fb1b6f8f5": {
+          "type": "shopify:\/\/apps\/rivyo-product-reviews-qa\/blocks\/wc-product-review-badge\/f1860e84-309f-40ca-a2df-188435a622f3",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "330250f7-9942-4975-8448-2a6827679094": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n        .icon-grid {\n            display: grid;\n            grid-template-columns: 1fr 1fr 1fr 1fr;\n        }\n\n        .icon-badge {\n            width: 100%;\n        }\n\n        @media (max-width: 800px) {\n            .icon-grid {\n                grid-template-columns: 1fr 1fr;\n            }\n .icon-badge {\n            width: 80%;\n        }\n\n        }\n    <\/style>\n\n\n    <div class=\"icon-grid\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/3_f2cdf7c4-0c41-4232-b4de-1bddebaf06dd.png?v=1668340275\"\n            alt=\"\" class=\"icon-badge\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/1_d361bfce-6252-4727-a7b1-f9bca55a6270.png?v=1668340275\"\n            alt=\"\" class=\"icon-badge\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_939dbb22-5785-4b2d-80be-da3c93084716.png?v=1668340275\"\n            alt=\"\" class=\"icon-badge\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/4_e6cfefae-9e39-495a-8adf-f1ac140a957f.png?v=1668340275\"\n            alt=\"\" class=\"icon-badge\">\n    <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "a5b19d5a-4d56-4185-b23d-457fb1b6f8f5",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "330250f7-9942-4975-8448-2a6827679094"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "8b4a156b-efdc-4123-b6aa-9861d2283fbe": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "eb3fabd1-851d-4f95-acc6-0d8968bc7110": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Icons_1.png",
+            "image_padding": false
+          }
+        },
+        "template--15671163027612__8b4a156b-efdc-4123-b6aa-9861d2283fbe-166835811432210eee-1": {
+          "type": "product",
+          "settings": {
+            "product": "breathe-blend-aroma-therapy",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "eb3fabd1-851d-4f95-acc6-0d8968bc7110",
+        "template--15671163027612__8b4a156b-efdc-4123-b6aa-9861d2283fbe-166835811432210eee-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "settings": {
+      }
+    },
+    "89a35862-2559-4ef8-8fe4-90ab926454c2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"brought_together-section\">\n            <img class=\"background_img_brought\" src=\"{{ product.metafields.global.frequently-bought-product1.value }}\" alt=\"\">\n            <img class=\"background_mob\" src=\"{{ product.metafields.global.frequently-bought-product2.value }}\" alt=\"\">\n           \n            <div class=\"brought_div\">\n                <h1 id=\"frequently_brought\">Work Best with<\/h1>\n                <div class=\"added_frequently\">\n                <div class=\"products_brought\">\n                <div class=\"product_1\">\n                    <img class=\"product_img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/product.png?v=1669139449\" alt=\"\">\n                    <img class=\"right_img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/right.png?v=1669139468\" alt=\"\">\n                    <p id=\"brought_text\">Bibo Saline Tulsi Nasal <br> Spray 15 ml<\/p>\n                <\/div>\n                <h4 class=\"addition_brought\">+<\/h4>\n                <div class=\"product_1\">\n                    <img class=\"product_img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/product.png?v=1669139449\" alt=\"\">\n                    <img class=\"right_img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/right.png?v=1669139468\" alt=\"\">\n                    <p id=\"brought_text\">Bibo Saline Tulsi Nasal <br> Spray 15 ml<\/p>\n\n                <\/div>\n\n            <\/div>\n\n\n            <div class=\"brought_pricing\">\n                <div class=\"frequently_pricing\"><span id=\"main_product\">Main Product selected<\/span> <span id=\"main_product_pricing\">Rs. 349<\/span><\/div>\n                <div class=\"frequently_pricing\"><span id=\"main_product\">Add on Product 1<\/span> <span id=\"main_product_pricing\">Rs. 220<\/span><\/div>\n                <div class=\"frequently_pricing\"><span id=\"main_product\">Add on Product 2<\/span> <span id=\"main_product_pricing\">Rs. 260<\/span><\/div>\n                <hr id=\"hrLine\">\n                <div class=\"frequently_pricing\"><span id=\"main_product\">Total<\/span> <span id=\"main_product_pricing\">Rs. 1560<\/span>\n\n\n<\/div>\n<div style=\" text-align:center;   \">\n<a style=\"text-decoration: none; background-color:#2c4648; padding:10px; color:white; border-radius:6px;\"href=\"https:\/\/bibo.health\/cart\/39403276468380:1,41712547922076:1?discount=Booster2\" > Buy Now<\/a>\n <\/div>\n            <\/div>\n        <\/div>\n                 \n        <\/div>\n\n    <\/section>\n<\/body>\n<\/html>\n\n<style>\n    * {\n        margin: 0;\n        padding:0;\n    }\nhr#hrLine {\n    margin: 0;\n    background: white;\n}\n  \n    section.brought_together-section {\n    position: relative;\n    width: 100%;\n}\n    img.background_img_brought {\n    width: 100%;\n}\nimg.background_mob {\n    display: none;\n}\n  \n\nh1#frequently_brought {\n    font-size: 40px;\n    color: white;\n    width: 80%;\n    margin: 30px auto;\n}\n\nimg.product_img {\n     box-shadow: 0 4px 8px 0 rgb(0 0 0 \/ 20%);\n    padding: 20px 46px;\n    border-radius: 20px;\n    background: white;\n\n}\n.product_1 {\n    width: 185px;\n    position: relative;\n}\nimg.right_img {\n    width: 40px;\n    position: absolute;\n    right: -21px;\n    top: 17px;\n    background-color: white;\n    border-radius: 100%;\n\n}\nh4.addition_brought {\n    width: 185px;\n    font-size: 25px;\n    text-align: center;\n    color: white;\n}\n.products_brought {\n     display: flex;\n    align-items: center;\n    width: 700px;\n}\n.brought_pricing {\n    width: 400px;\n    font-size: 25px;\n    color: white;\n\n}\n.frequently_pricing {\n    display: flex;\n    justify-content: space-between;\n    line-height: 45px;\n    align-items: center;\n}\n.added_frequently {\n    display: flex;\n    justify-content: space-evenly;\n    width: 100%;\n    align-items: center;\n    flex-wrap: wrap;\n}\n.brought_div {\n    position: absolute;\n    width: 100%;\n    top: 70px;\n    margin: 0 auto;\n}\np#brought_text {\n    font-size: 15px;\n    color: white;\n    padding: 5px;\n    width:100%\n}\n\n@media screen and (max-width: 1100px) {\n    img.background_img_brought {\n   width: 100%;\n    height: 100vh;\n}\n.brought_pricing {\n    width: 86%;\n    font-size: 25px;\n    color: white;\n    margin: 30px auto;\n}\n.products_brought {\n    display: flex;\n    align-items: center;\n    width: 90%;\n}\n    \n}\n\n@media screen and (max-width: 600px) {\n    img.background_mob {\n    display: block;\n    width: 100%;\n}\n.brought_pricing {\n    width: 86%;\n    font-size: 20px;\n}\n  h1#frequently_brought {\n    font-size: 30px;\n  }\n\nimg.background_img_brought {\n    width: 100%;\n    display: none;\n}\n    img.product_img {\n    width: 120px;\n    box-shadow: 0 4px 8px 0 rgb(0 0 0 \/ 20%);\n    padding: 10px 30px;\n    border-radius: 20px;\n    background: white;\n}\n\np#brought_text {\n       font-size: 15px;\n    color: white;\n    padding: 1px;\n    width: 100%;\n}\n.added_frequently {\n    display: flex;\n    justify-content: space-evenly;\n    width: 100%;\n    align-items: center;\n    flex-wrap: wrap;\n}\n.products_brought {\n    display: flex;\n    align-items: center;\n    width: 80%;\n    margin: 0 auto;\n}\n    \n}\n\n\n<\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16637392817f36806f": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Our Customers' perspective on Bibo Products",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Clear_Vapor_Patch_7272c56e-5df1-4445-8ef8-260ca0dc94b6.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=w34RQ2JxPGs&feature=youtu.be",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "1663752213b3b8e8b2": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/nasal_spray_d906f188-c541-485a-93a4-4136914dd3bc.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=sWeesNJqH-U",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16637523282f903fdd": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/nasal_spray_2.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=LSjQbJNHFNM&feature=youtu.be",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1663752449e8900172": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/1_06c20c10-65ab-4698-99b3-510ec7d0011f.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-wVvWegEnQQ&list=PLUph01sCe_4WdS6mgxgBheUZB7U3u78fx&index=3",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "a047cf29-4848-4c7f-a156-f78a9e9127e0": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  img#author_photo {\n    position: relative;\n    bottom: 20px;\n}\n  img.mySlides321 {\n    height: 55vh;\n}\n  span#dots_space {\n    margin: 0 4px;\n    background: rgba(0,0,0,0.2);\n    background-color: #ffffffbd;\n    border-radius: 50%;\n    opacity: 0.6;\n}\n  span#dots_space:hover {\n    opacity: 1;\n  }\n  \n  \n.mySlides321 {display:none}\n.w3-left, .w3-right, .w3-badge {cursor:pointer}\n.w3-badge {height:13px;width:13px;padding:0}\n.w3-right {\n    float: right!important;\n    color: white;\n    font-size: 25px;\n\n\n}\nspan#dots_space {\n    margin: 0 4px;\n}\n.white_dots {\n    width: 100%;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    position: absolute;\n    bottom: 5px;\n}\n.w3-left {\n    float: left!important;\n    color: white;\n    font-size: 25px;\n\n}\n.w3-display-bottommiddle {\n    position: absolute;\n    left: 50%;\n    bottom: 100px;\n    transform: translate(-50%,0%);\n    z-index: 1;\n}\n.w3-tooltip, .w3-display-container {\n    position: relative;\n    width: 86%;\n    margin: 30px auto;\n}\n\n\/*************added data************************\/\n.photos_images {\n  display: flex;\n    width: 100%;\n    justify-content: center;\n       position: absolute;\n    flex-wrap: wrap;\n    top: 0;\n}\n\n.author_pics {\n    width: 200px;\n    margin-right: 100px;\n\n}\np#author_name, p#author_place{\n    margin: 5px;\n}\n.author_comment {\n    width: 400px;\n    margin-top: 60px;\n\n}\n@media screen and (max-width: 850px) {\nimg.mySlides321 {\n    height: 105vh;\n}\np#author_name, p#author_place {\n    margin: -6px;\n    text-align: center;\n    font-size: 20px;\n}\n}\n\n  @media screen and (max-width: 600px) {\n    .photos_images {\n    display: flex;\n    width: 100%;\n    justify-content: center;\n   position: absolute;\n    flex-wrap: wrap;\n    top: -10px;\n\n}\n\n    img.mySlides321 {\n    height: 106vh;\n}\n    .author_pics {\n    width: 200px;\n    margin-right: 0;\n}\n    .author_comment {\n    width: 400px;\n    margin: 20px;\n    text-align: left;\n}\n    .w3-right, .w3-left {\n    color: #bbbbbb;\n    }\n.w3-display-bottommiddle {\n    bottom: 300px;\n  }\n}\n<\/style>\n<div class=\"w3-container\">\n\n<div class=\"w3-content w3-display-container\">\n\n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n  \n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n  \n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n\n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n  \n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n  \n  <img class=\"mySlides321\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/background.png?v=1669226615\" style=\"width:100%\">\n  \n  <div class=\"w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle\" style=\"width:100%\">\n    <div class=\"w3-left w3-hover-text-khaki\" onclick=\"plusDivs(-1)\">←<\/div>\n    <div class=\"w3-right w3-hover-text-khaki\" onclick=\"plusDivs(1)\">→<\/div>\n    \n  <\/div>\n  <div class=\"white_dots\">\n  <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(1)\"><\/span>\n    <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(2)\"><\/span>\n    <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(3)\"><\/span>\n    \n      <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(1)\"><\/span>\n    <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(2)\"><\/span>\n    <span id=\"dots_space\" class=\"w3-badge demo w3-border w3-transparent w3-hover-white\" onclick=\"currentDiv(3)\"><\/span>\n  <\/div>\n\n\n\n\n<div class=\"photos_images\">\n  <div class=\"author_pics\">\n    <img id=\"author_photo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/author.png?v=1669226603\" alt=\"\">\n    <p id=\"author_name\">Tara j<\/p>\n    <p id=\"author_place\">Bangalore<\/p>\n  <\/div>\n\n  <div class=\"author_comment\">\n    <p id=\"comment_author\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam illo modi reprehenderit placeat vero, debitis, perferendis tenetur minus aliquid facere. Odit nihil mollitia facilis quaerat debitis aliquid totam voluptate!<\/p>\n\n    <p id=\"comment1_author\">Lorem ipsum dolor sit amet,  perspiciatis, sapiente, qui saepe molestiae tenetur voluptatem quibusdam expedita. Atque, laboriosam. Vel, illo.<\/p>\n\n  <\/div>\n<\/div>\n<\/div>\n\n<script>\nvar slideIndex321 = 1;\nshowDivs(slideIndex321);\n\nfunction plusDivs321(n) {\n  showDivs(slideIndex321 += n);\n}\n\nfunction currentDiv321(n) {\n  showDivs(slideIndex321 = n);\n}\n\nfunction showDivs(n) {\n  var i;\n  var x = document.getElementsByClassName(\"mySlides321\");\n  var dots = document.getElementsByClassName(\"demo\");\n  if (n > x.length) {slideIndex321 = 1}\n  if (n < 1) {slideIndex321 = x.length}\n  for (i = 0; i < x.length; i++) {\n    x[i].style.display = \"none\";  \n  }\n  \n  for (i = 0; i < dots.length; i++) {\n    dots[i].className = dots[i].className.replace(\" w3-white\", \"\");\n  }\n  x[slideIndex321-1].style.display = \"block\";  \n  dots[slideIndex321-1].className += \" w3-white\";\n}\n<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1654835162029de1b7": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "166692232334bcc7ad": {
+      "type": "apps",
+      "blocks": {
+        "fcf09627-a685-48b0-9be0-1f3e7b96cb18": {
+          "type": "shopify:\/\/apps\/rivyo-product-reviews-qa\/blocks\/wc-review-section\/f1860e84-309f-40ca-a2df-188435a622f3",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fcf09627-a685-48b0-9be0-1f3e7b96cb18"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8b4a156b-efdc-4123-b6aa-9861d2283fbe",
+    "description",
+    "89a35862-2559-4ef8-8fe4-90ab926454c2",
+    "16637392817f36806f",
+    "1663752213b3b8e8b2",
+    "16637523282f903fdd",
+    "1663752449e8900172",
+    "a047cf29-4848-4c7f-a156-f78a9e9127e0",
+    "1654835162029de1b7",
+    "main-product-recommendations",
+    "166692232334bcc7ad"
+  ]
+}

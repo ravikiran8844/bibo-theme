@@ -1,0 +1,194 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-12 col-lg-5 text-center text-lg-start mb-5">
+      <div class="mb-5 custom-img-text-section_border">
+        <div class="d-block d-lg-none text-center">
+          <svg
+            width="115"
+            height="8"
+            viewBox="0 0 115 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4 4H111"
+              stroke="#54B5A9"
+              stroke-width="8"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="custom-img-text-section_heading">{{ section.settings.heading }}</div>
+        <div class="custom-img-text-section_subheading">{{ section.settings.subheading }}</div>
+      </div>
+      <div class="custom-img-text-section_text mb-5">{{ section.settings.text }}</div>
+      <div>
+        <a class="custom-img-text-section_links" href="{{section.settings.link1}}">{{ section.settings.link_text1 }}</a>
+      </div>
+      <div class="mt-5">
+        <a class="custom-img-text-section_links" href="{{section.settings.link2}}">{{ section.settings.link_text2 }}</a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 px-5">
+      <div>
+        <img
+          class="img-fluid"
+          loading="lazy"
+          height="508"
+          width="844"
+          src="{{section.settings.img | img_url: 'master'}}"
+          alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-img-text-section_border {
+    border-left: none;
+    padding: 10px;
+  }
+
+  @media(min-width:992px) {
+    .custom-img-text-section_border {
+      border-left: 5px solid #54B5A9;
+      padding: 10px;
+    }
+  }
+
+  .custom-img-text-section_heading {
+    color: #00A79D;
+    font-family: Satisfy;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .custom-img-text-section_subheading {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125.5%; /* 33.885px */
+  }
+  .custom-img-text-section_text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .custom-img-text-section_links {
+    color: #000;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    border-bottom: 5px solid #54B5A9;
+    padding-bottom: 3px;
+  }
+  .custom-img-text-section_links:hover {
+    color: #000;
+  }
+
+
+  @media(min-width:768px) {
+    .custom-img-text-section_heading {
+      color: #00A79D;
+      font-family: Satisfy;
+      font-size: 29px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .custom-img-text-section_subheading {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125.5%; /* 47.69px */
+    }
+    .custom-img-text-section_text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .custom-img-text-section_links {
+      color: #000;
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-decoration: none;
+      border-bottom: 5px solid #54B5A9;
+      padding-bottom: 3px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Custom Img Text Section",
+    "class": "section custom-img-text-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "heading",
+        "default": "Holistic Approach To Health"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "subheading",
+        "default": "Going beyond the products."
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "text",
+        "default": "We take responsibility and provide customers a holistic environment to improve and maintain their respiratory health aisa kuch likhna hai"
+      },
+      {
+        "type": "text",
+        "id": "link_text1",
+        "label": "Link 1 Text",
+        "default": "Know Our Ingredients"
+
+      }, {
+        "type": "url",
+        "id": "link1",
+        "label": "link 1 url"
+      }, {
+        "type": "text",
+        "id": "link_text2",
+        "label": "Link 2 Text",
+        "default": "Our Research Papers"
+
+      }, {
+        "type": "url",
+        "id": "link2",
+        "label": "link 2 url"
+      }, {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Img Text Section"
+      }
+    ]
+  }
+{% endschema %}

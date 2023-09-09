@@ -1,0 +1,499 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-card-tablets",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "cc50699c-f6a0-40fc-8547-95063057edd0": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "cc50699c-f6a0-40fc-8547-95063057edd0"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.product-info-top {font-size: 11px; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680": {
+      "type": "simple-text-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "text": "Disclaimer: This is a Schedule G drug. This will be sold only after a prescription from the registered doctor only."
+      }
+    },
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "heading": "GENERAL INFORMATION",
+        "text": "<p><strong>COMPOSITION: <\/strong>Paracetamol (500mg) + Phenylephrine Hydrochloride (10mg) + Chlorpheniramine Maleate (2mg)<\/p><p><strong>INDICATIONS: <\/strong>Coldlyte Pro Tablet acts on a broader symptoms. It relieves the runny nose, nasal or sinus congestion, stuffy nose, sneezing, watery eyes, sore throat, headache, fever, cough, and body or muscle pain.<\/p><p><strong>BENEFITS:<\/strong><br\/><\/p><ul><li>Paracetamol reduces fever, headache, muscle aches and body pain.<\/li><li>Phenylephrine relieves stuffy nose and sinus congestion caused by the common cold, hay fever or allergies.<\/li><li>Chlorpheniramine reduces the symptoms associated with allergies such as red, itchy and watery eyes, sneezing, sore throat, irritation in the nose and runny nose caused by the common cold, hay fever or allergies.<\/li><\/ul><p><strong>THERAPEUTIC CLASS: <\/strong>Respiratory<\/p><p><strong>ADDICTIVE OR HABIT FORMING: <\/strong>No<\/p><p><strong>CATEGORY:<\/strong><\/p><ul><li>Analgesic<\/li><li>Antipyretic (fever-reducing)<\/li><li>Anti-allergic<\/li><li>Decongestant<\/li><\/ul>"
+      }
+    },
+    "9f795468-7108-41ee-8a94-43acd7a1d285": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "ABOUT COLDLYTE PRO TABLETS",
+        "text": "<p>Coldlyte Pro is a combination medicine. It contains paracetamol, phenylephrine and chlorpheniramine maleate as active ingredients. It shows multiple actions such as analgesic (pain reducing), antipyretic (fever-reducing), anti-allergic and decongestant.<\/p><p><strong>SIDE EFFECTS<\/strong><\/p><p>The common side effects include:<\/p><ul><li>Nausea<\/li><li>Vomiting<\/li><li>Stomach pain<\/li><li>Loss of appetite<\/li><li>Dry mouth<\/li><li>Drowsiness<\/li><li>Excess sleep<\/li><li>Dizziness<\/li><li>Insomnia (difficulty in sleeping)<\/li><li>Stomach upset<\/li><li>Headache<\/li><\/ul><p>The side effects are generally mild and would resolve on their own.<\/p><p><strong>Severe side effects-<\/strong><\/p><ul><li>Rapid heartbeat<\/li><li>Anxiety<\/li><li>Blurred vision<\/li><li>Nervousness<\/li><\/ul><p>If such symptoms occur, stop using the medicine, and consult a doctor or visit a nearby clinic immediately.<\/p>"
+      }
+    },
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
+      "type": "accordian-section-new",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "DIRECTION TO USE",
+        "text": "<ul><li>Take Coldlyte Pro tablet as directed by your doctor.<\/li><li>Swallow it as a whole with a glass of water. Do not chew, break or crush the tablet.<\/li><li>If you feel sleepy after taking this medicine, avoid driving.<\/li><\/ul>"
+      }
+    },
+    "4f697d50-229d-4207-906a-2b5caf122204": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "MODE OF ACTION",
+        "text": "<p>Paracetamol is an analgesic and antipyretic. It inhibits the prostaglandin synthesis (responsible for pain) and directly acts on the heat-regulating centres (hypothalamus) to reduce fever by producing sweat and removing body heat.<\/p><p>Phenylephrine is a nasal decongestant. It activates the receptors in the blood vessels of the nasal mucosa that causes constriction of the blood vessels. The constricted blood vessels cause decreased inflammation (by shrinking the inflamed tissues) and increased drainage of the sinus cavity.<\/p><p>Chlorpheniramine is an anti-allergic (anti-histaminic). It binds and blocks the action of endogenous histamine (responsible for allergic symptoms), which eventually leads to temporary relief from the ill effects of histamine.<\/p>"
+      }
+    },
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "PRECAUTIONS AND WARNINGS",
+        "text": "<p><strong>Children<\/strong><br\/>Use Coldlyte Pro Tablet with caution in children. It may not be suitable for children below two years. Therefore do not give this medicine to children until prescribed by the doctor.<\/p><p><strong>Pregnancy<\/strong><br\/>The safety of Coldlyte Pro in humans is limited. However, animal studies have shown harmful effects on the developing baby. Hence, it is better to avoid using this medicine in pregnancy until prescribed by your physician.<\/p><p><strong>Lactating mothers<\/strong><br\/>The ingredients of Coldlyte Pro Tablet can pass through breast milk. Hence, it is advised not to use this medicine in lactating mothers until recommended by the physician.<\/p><p><strong>Driving<\/strong><br\/>Coldlyte Pro Tablet may cause dizziness and drowsiness. It may also affect the vision. So it is better not to drive, operate heavy machinery or do something that requires mental alertness.<\/p><p><strong>Alcohol<\/strong><br\/>Alcohol may worsen the side effects associated with Coldlyte Pro Tablet. So it is advised to avoid alcohol while taking this medicine.<\/p><p><strong>Liver diseases<\/strong><br\/>Use Coldlyte Pro Tablet with caution in individuals with liver diseases. Some individuals may require a dose adjustment. It is better to consult a doctor before taking this medicine.<\/p><p><strong>Kidney diseases<\/strong><br\/>Coldlyte Pro Tablet is safe if prescribed by the doctor. Some individuals may require a dose adjustment. It may cause excessive sleepiness in patients with End-Stage Kidney Disease. Hence, it is better to consult a doctor before using this medicine.<\/p><p><strong>Other general warnings<\/strong><br\/>Inform your doctor if<\/p><ul><li>You have any allergic reactions after taking this medicine. It is better to discontinue this medicine in case of such reactions.<\/li><li>You are already taking a medicine containing any ingredients present in the Coldlyte Pro Tablet.<\/li><li>You have other medical conditions related to liver, kidney, heart, thyroid, etc.<\/li><\/ul><p><strong>CONTRAINDICATIONS<\/strong><br\/>Do not use Coldlyte Pro Tablet if you are allergic to paracetamol, phenylephrine, chlorpheniramine maleate or any of the other ingredients of this medicine.<\/p>"
+      }
+    },
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "STORAGE",
+        "text": "<p>Store in a cool, dark place at a temperature below 30ᵒC.<\/p>"
+      }
+    },
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "DOSAGE",
+        "text": "<p><strong>Missed dose<\/strong><br\/>Take Coldlyte Pro Tablet as soon as you remember. But if it is time for the next dose, skip the missed dose and continue the medicine as regular. Do not take a double dose of this medicine.<\/p><p><strong>Overdose<\/strong><br\/>It is better to seek medical help immediately if you have taken more than the daily recommended dose of this medicine. An overdose may increase the severity of side effects.<\/p>"
+      }
+    },
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "INTERACTIONS",
+        "text": "<ul><li><strong>Drug-drug interactions:<\/strong><br\/> Avoid taking these medicines along with Coldlyte Pro. Also, inform your doctor regarding all the medicines you are taking, including prescription and non-prescription medicines, ayurvedic, homoeopathic or dietary supplements.<\/li><li><strong>Drug-food interactions:<\/strong><br\/>Remedy: It is better to limit or avoid caffeine-containing products while taking this medicine.<\/li><li><strong>Drug-disease interactions:<\/strong><br\/> Do not self-medicate. Always consult a doctor before using this medicine.<\/li><\/ul>"
+      }
+    },
+    "008eacbb-14a6-472a-90b8-188a65470334": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-bottom: 40px;}"
+      ],
+      "settings": {
+        "heading": "NATURAL REMEDIES TO EASE THE SYMPTOMS",
+        "text": "<p><strong>Diet modification:<\/strong><\/p><ul><li>Adding ginger and tulsi to your tea will help reduce the inflammation and infection in the respiratory tract.<\/li><li>Stay well hydrated. It helps clear the extra mucus and dust particles from the nose, sinuses and airways.<\/li><li>Drink warm water or drinks to reduce the inflammation of the airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways. Thick mucus makes it difficult to breathe.<\/li><li>Avoid spicy, fried foods as they may worsen allergic symptoms like watery eyes and runny nose.<\/li><li>Include honey, green leafy vegetables, broccoli, turmeric, etc. They may help improve immunity and deal with allergic symptoms.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li>Avoid exposure to allergens.<\/li><li>Always wear a mask in crowded and polluted places.<\/li><li>Practice deep breathing exercises to improve lung capacity and health.<\/li><li>Nasal irrigation with saline water is an effective way to clean the nasal and sinus areas.<\/li><li>Gargles are effective in healing sore throats and infections of the oral cavity.<\/li><\/ul>"
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76": {
+      "type": "frequently-bought",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33": {
+      "type": "faqs",
+      "blocks": {
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the indications of the Coldlyte Pro Tablet?",
+            "answer": "Coldlyte Pro Tablet provides temporary relief from blocked or runny nose, cough, sore throat, nasal congestion, fever, muscle or body pain, sneezing, red or watery eyes, itching and other symptoms of the common cold and allergies."
+          }
+        },
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the ingredients of the Coldlyte Pro Tablet?",
+            "answer": "Coldlyte Pro Tablet is a combination medicine. It contains paracetamol 500mg, chlorpheniramine maleate 2mg and phenylephrine hydrochloride 10mg."
+          }
+        },
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is it safe to take Coldlyte Pro Tablet in pregnancy?",
+            "answer": "The safety profile of Coldlyte Pro Tablet in pregnancy is limited. Hence it is better to avoid taking this medicine during pregnancy until recommended by your doctor."
+          }
+        },
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is it safe to take Coldlyte Pro Tablet while breastfeeding?",
+            "answer": "The ingredients of Coldlyte Pro Tablet can pass through the breast milk. So it is advised not to take this medicine while breastfeeding."
+          }
+        },
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take alcohol while taking Coldlyte Pro Tablet?",
+            "answer": "Drinking alcohol may worsen the side effects of Coldlyte Pro Tablet. It may increase dizziness and drowsiness. Hence it is better to avoid drinking alcohol while taking this medicine."
+          }
+        },
+        "05200af5-2156-4f62-a4a3-9250cd71f098": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What should I do if I miss a dose?",
+            "answer": "Take Coldlyte Pro Tablet as soon as you remember and if it is time for the next dose, skip the missed dose and continue the medicine regularly."
+          }
+        },
+        "1f568522-1c41-4937-881c-e47e4fd8bf84": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Coldlyte Pro Tablet if I have high blood pressure?",
+            "answer": "Coldlyte Pro Tablet may increase blood pressure. So it is better to talk to your doctor before taking this medicine."
+          }
+        },
+        "4f908ef1-4213-40a6-a899-76b301a348ff": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Coldlyte Pro Tablet while driving?",
+            "answer": "Some individuals may develop dizziness and drowsiness after taking Coldlyte Pro Tablet. It is better to take this medicine at least one hour before travelling."
+          }
+        },
+        "d4fd3a32-9513-4467-b190-c2d3bb2d5eef": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is Coldlyte Pro Tablet addictive?",
+            "answer": "No, Coldlyte Pro Tablet has not shown any addictive or habit-forming effects."
+          }
+        },
+        "1c30de90-b57b-48bd-95ad-f96b4d75ee4b": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Coldlyte Pro Tablet cause drowsiness?",
+            "answer": "Yes, Coldlyte Pro Tablet may make you drowsy. If you feel drowsiness or sleepy after taking Coldlyte Pro Tablet, it is better to rest and avoid driving or operating heavy machinery that may require mental alertness."
+          }
+        },
+        "5e3f9f06-f910-4581-8dc5-4d648aeb8132": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the dose of Coldlyte Pro Tablet for children?",
+            "answer": "The doctor will decide the dose and duration of Coldlyte Pro Tablet for children. It is better to avoid self-medication of this medicine"
+          }
+        },
+        "353e1cba-8e1b-4d7f-b4ce-5600fcd7fdd1": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What to do if I vomit after taking Coldlyte Pro Tablet?",
+            "answer": "If vomiting occurs within 30 minutes of taking the Coldlyte Pro Tablet, you can take another dose of this medicine. After 30-60 minutes, Coldlyte Pro Tablet gets absorbed into the blood."
+          }
+        },
+        "cb9e6142-abc7-4fd3-b451-7feff6b3e2a3": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Coldlyte Pro Tablet for long-term use?",
+            "answer": "Coldlyte Pro Tablet helps to provide temporary relief from fever, cough, cold and allergic symptoms. Take Coldlyte Pro Tablet only in the dose and duration prescribed by your doctor."
+          }
+        },
+        "2595ff74-cd0d-49cc-9f9d-6dfded95d2d6": {
+          "type": "faq-block",
+          "settings": {
+            "question": "For how many days can I take Coldlyte Pro Tablet?",
+            "answer": "Take Coldlyte Pro Tablet for a duration prescribed by your doctor. Do not exceed the maximum daily dose and duration of the medicine. If you don't feel any improvement after taking this medicine, inform your doctor. Avoid taking this medicine for more than seven days."
+          }
+        }
+      },
+      "block_order": [
+        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5",
+        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1",
+        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad",
+        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783",
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
+        "05200af5-2156-4f62-a4a3-9250cd71f098",
+        "1f568522-1c41-4937-881c-e47e4fd8bf84",
+        "4f908ef1-4213-40a6-a899-76b301a348ff",
+        "d4fd3a32-9513-4467-b190-c2d3bb2d5eef",
+        "1c30de90-b57b-48bd-95ad-f96b4d75ee4b",
+        "5e3f9f06-f910-4581-8dc5-4d648aeb8132",
+        "353e1cba-8e1b-4d7f-b4ce-5600fcd7fdd1",
+        "cb9e6142-abc7-4fd3-b451-7feff6b3e2a3",
+        "2595ff74-cd0d-49cc-9f9d-6dfded95d2d6"
+      ],
+      "custom_css": [
+        ".rk-faq-section,.faq-section {background: #f9f9f9;}"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
+      "type": "logos-section",
+      "blocks": {
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "8123b403-6543-4cd1-a340-f572d4999f91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cs-logo.png",
+            "logo-text": "Recent Molecules"
+          }
+        },
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "19996c59-130e-4628-9736-4e2ab4e3a49d": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df",
+        "8123b403-6543-4cd1-a340-f572d4999f91",
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
+        "19996c59-130e-4628-9736-4e2ab4e3a49d"
+      ],
+      "custom_css": [
+        ".logo-item-4 {display: block !important;}"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc": {
+      "type": "video-slides",
+      "blocks": {
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "32bea08b-833a-4fed-862a-3d30a5b857f0": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20": {
+          "type": "video-block",
+          "settings": {
+          }
+        },
+        "6902e791-44f3-4580-989e-9dd1e6d27d25": {
+          "type": "video-block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "32dc4c9d-ac10-40b2-879f-1b1dd495c5b6",
+        "9eaacc3d-7353-49fd-bb02-c7816ec9af1f",
+        "32bea08b-833a-4fed-862a-3d30a5b857f0",
+        "3cea2575-6b86-4a17-a2aa-8aa07b8f6859",
+        "9eaeffb6-ba8b-4b9e-882e-bf196de46f20",
+        "6902e791-44f3-4580-989e-9dd1e6d27d25"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "168932840165a33ba6": {
+      "type": "apps",
+      "blocks": {
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "93aa0bff-5183-4229-8050-c435b6f61ba9": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "description",
+    "e3fec895-9236-4e6a-a2a1-e2630fa87680",
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
+    "9f795468-7108-41ee-8a94-43acd7a1d285",
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
+    "4f697d50-229d-4207-906a-2b5caf122204",
+    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4",
+    "cb81ba62-a6b0-4c5f-a595-276974fe8f76",
+    "f06fe682-f320-4a03-9dd6-d8c5f827548e",
+    "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f",
+    "008eacbb-14a6-472a-90b8-188a65470334",
+    "main-product-recommendations",
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76",
+    "6697a374-4c70-4c7c-86c2-8c5d88c27a33",
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71",
+    "9e55d7a2-c668-45d5-8e1f-d216e429bfdc",
+    "168932840165a33ba6",
+    "93aa0bff-5183-4229-8050-c435b6f61ba9"
+  ]
+}

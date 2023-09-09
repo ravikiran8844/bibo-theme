@@ -1,0 +1,946 @@
+{
+  "layout": "theme.alternate",
+  "sections": {
+    "main": {
+      "type": "rk-main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "cc50699c-f6a0-40fc-8547-95063057edd0": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "cc50699c-f6a0-40fc-8547-95063057edd0"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.product-info-top {font-size: 11px; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "35f1ba95-1347-4bc6-8f56-a6b2579966a3": {
+      "type": "custom-img-text-blocks",
+      "blocks": {
+        "b4c41113-63dc-4e79-b9a7-6c517ae521a2": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/df79db816bf4079311697b2a16168c88_1.gif",
+            "text": "Instant soothing with honey and herbs"
+          }
+        },
+        "ecfcd270-7bb4-4523-be1f-f32770dab6e8": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3267c42ea9cf30aac3276cc7dd36c0d3_1.gif",
+            "text": "Immunity from allergens & pathogens"
+          }
+        },
+        "765a8407-54ff-4acb-838c-60625a59f689": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ffc4ff0a55c7bb119bc870890975983d_1.gif",
+            "text": "Bronchodilator and mucolytic action"
+          }
+        }
+      },
+      "block_order": [
+        "b4c41113-63dc-4e79-b9a7-6c517ae521a2",
+        "ecfcd270-7bb4-4523-be1f-f32770dab6e8",
+        "765a8407-54ff-4acb-838c-60625a59f689"
+      ],
+      "settings": {
+        "bgcolor": "#f9f9f9",
+        "heading": "Our Bibo Breathofy Syrup helps you with"
+      }
+    },
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
+      "type": "accordian-section-new",
+      "blocks": {
+        "c2304aea-95bc-4c33-ae6b-a24dc9f1a1d8": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Ashwaganda_Background_Removed_1.png",
+            "title": "Ashwagandha",
+            "text": "Reduces the swelling of the airways, fever, and pain."
+          }
+        },
+        "25e697dc-005a-49ba-a45c-76bb9b49048e": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Talispatra_3207c9a5-fabc-4968-bebb-f58163eb580d.png",
+            "title": "Talispatra",
+            "text": "Has antibacterial, anti-inflammatory, anti-tussive properties."
+          }
+        },
+        "0f0179ef-5c0b-4ff5-a585-a6a18d0710eb": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/nut-grass-2-scaled_Background_Removed_1.png",
+            "title": "Motha (Nutgrass)",
+            "text": "Reduces fever, pain, inflammation, and infection."
+          }
+        },
+        "0f7c3976-2d57-4a8a-a2b1-356de6b42eae": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SriSatymev-Rudravanti-Fruit-Rudanti_Background_Removed_1.png",
+            "title": "Rudravanti",
+            "text": "Reduces chest & nasal congestion, wheezing, cough etc."
+          }
+        },
+        "e07d1e07-20d0-47de-a78b-4dda759d3d54": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/istockphoto-1131562141-612x612_Background_Removed_1.png",
+            "title": "Pudina",
+            "text": "Has cooling effect on the throat"
+          }
+        },
+        "afe6749c-ea6b-4362-a0db-645e0d9bb4a2": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/19-badi-peepar-500x500_Background_Removed_1.png",
+            "title": "Pippali",
+            "text": "Manages asthma, bronchitis, & other inflammatory conditions."
+          }
+        },
+        "6b2b4824-5ba1-4915-baf4-91e967130eda": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/health-benefits-of-fennel-seeds_Background_Removed_1.png",
+            "title": "Saunf (Fennel)",
+            "text": "kills various viruses and bacteria & reduces inflammation of the airways"
+          }
+        },
+        "65e7d644-cf7b-4175-810e-0a943730267f": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/717o-O2DmqS_Background_Removed_1.png",
+            "title": "Vacha (sweet flag)",
+            "text": "Reduces pain & swelling of the airways with its anti-inflammatory properties"
+          }
+        },
+        "4e62bc24-ce3b-4a66-bdf7-c09da36a933a": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/thyme-min-scaled_Background_Removed_1.png",
+            "title": "Thyme (Indian mint)",
+            "text": "contains chemicals that act against various bacterial, viral & fungal infections"
+          }
+        },
+        "d010c8e4-fa42-4185-887f-54532f5bfe2a": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/honey_2__1_Background_Removed_1.png",
+            "title": "Honey",
+            "text": "Honey is an excellent soothing agent"
+          }
+        },
+        "c01a1fd3-f8e1-412a-be46-9873c93838bb": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/360_F_263846480_zQ9YO4y7zkUE5q8d1RD20h8SgtrRBoV0_Background_Removed_1.png",
+            "title": "Tulsi (Basil)",
+            "text": "Tulsi is known as the \"Elixir of life\".It is an immunity-building herb."
+          }
+        },
+        "2bc2bf3e-c0da-4c3e-9856-3c352715f750": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/61SCxbFGpWL_Background_Removed_1.png",
+            "title": "Ginger (Sunthi)",
+            "text": "Relaxes the airway and improves breathing"
+          }
+        },
+        "f76ffc7c-f39c-43d4-aaf5-3984ed335fef": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/adulsa-powder-500x500_Background_Removed_1.png",
+            "title": "Adulsa (vasa)",
+            "text": "Has cough-suppressant, anti-microbial, & anti-inflammatory actions"
+          }
+        },
+        "fced220f-3508-4190-a2e2-6fd883a3f32b": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/mulethi_Background_Removed_1.png",
+            "title": "Mulethi (Yashtimadhu)",
+            "text": "Has Glycyrrhizic acid & flavonoids which show anti-asthmatic effects."
+          }
+        },
+        "91cd178c-83ea-434e-9228-724f2a841ccc": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/7c39d4fe-21ab-46ee-9c92-9e8d5d754d04-202210140622041594_1_2_Background_Removed_1.png",
+            "title": "Bhumi amla",
+            "text": "Has immune-modulating properties & detoxifies the blood"
+          }
+        }
+      },
+      "block_order": [
+        "c2304aea-95bc-4c33-ae6b-a24dc9f1a1d8",
+        "25e697dc-005a-49ba-a45c-76bb9b49048e",
+        "0f0179ef-5c0b-4ff5-a585-a6a18d0710eb",
+        "0f7c3976-2d57-4a8a-a2b1-356de6b42eae",
+        "e07d1e07-20d0-47de-a78b-4dda759d3d54",
+        "afe6749c-ea6b-4362-a0db-645e0d9bb4a2",
+        "6b2b4824-5ba1-4915-baf4-91e967130eda",
+        "65e7d644-cf7b-4175-810e-0a943730267f",
+        "4e62bc24-ce3b-4a66-bdf7-c09da36a933a",
+        "d010c8e4-fa42-4185-887f-54532f5bfe2a",
+        "c01a1fd3-f8e1-412a-be46-9873c93838bb",
+        "2bc2bf3e-c0da-4c3e-9856-3c352715f750",
+        "f76ffc7c-f39c-43d4-aaf5-3984ed335fef",
+        "fced220f-3508-4190-a2e2-6fd883a3f32b",
+        "91cd178c-83ea-434e-9228-724f2a841ccc"
+      ],
+      "custom_css": [
+        ".accordian-section {padding-top: 40px;}"
+      ],
+      "settings": {
+        "heading": "Ingredients",
+        "text": ""
+      }
+    },
+    "9f795468-7108-41ee-8a94-43acd7a1d285": {
+      "type": "accordian-section-new",
+      "settings": {
+        "heading": "Benefits",
+        "text": "<p>Breathofy syrup is not an ordinary cough syrup. It helps in the overall improvement of lung health.<\/p><p><em>Breathofy syrup manages the following conditions-<\/em><\/p><ul><li><strong>Cough: <\/strong>Cough is a body's response to eliminate foreign particles like dust, smoke, liquid, or solid particles from the airways. In dry cough, the airways don't produce enough mucus to keep the airways moist, while a wet cough has excess mucus production. Honey, Talispatra, and Adulsa provide a soothing effect on the throat and help deal with a sore throat and dry cough, while herbs like Mulethi help decrease the mucus content in wet cough<\/li><li><strong>Asthma and bronchitis: <\/strong>In asthma and bronchitis, our airways get compromised, thus limiting the oxygen supply to the lungs. It may cause cough, wheezing, breathing difficulty, and shortness of breath. Herbs like Tulsi, Adulsa, Shunti, Mulethi, Vacha, Ashwagandha, Pippali, Thyme and Saunf contain ingredients that help to improve the airflow to the lungs, thus reducing the intensity of symptoms.<\/li><li><strong>Smoking: <\/strong>Smoking can cause inflammation and irritation to the lungs. Tobacco has nicotine and other cancer-causing chemicals. These chemicals get absorbed into your blood, lungs, and other organs and release free radicals in the body, which may cause serious health issues. Breathofy syrup contains free-radical scavenging herbs like Tulsi and Adulsa that help to detoxify the lungs, while Ashwagandha, Rudravanti, and Adulsa help to improve overall lung health. Smoking may also cause lung cancer. The herbs like Pudina, Honey, Motha, and Ginger show anti-cancer properties.<\/li><li><strong>Allergies: <\/strong>Allergies may compromise our airways and nasal passages and cause airway inflammation. Herbs like Tulsi, Shunti, Bhumi amla, and Talispatra help to improve immunity against allergens.<\/li><\/ul>"
+      }
+    },
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
+      "type": "accordian-section-new",
+      "custom_css": [
+        ".accordian-section {padding-bottom: 40px;}"
+      ],
+      "settings": {
+        "heading": "Safety Precautions",
+        "text": "<ol><li>Read the label carefully before use<\/li><li>Keep out of reach of the children<\/li><li>Store in a cool dry place away from direct sunlight<\/li><li>This is an ayurvedic proprietary medicine and is generally considered safe<\/li><li>If you face any adverse symptoms or develop any allergy from the product, please discontinue and see a doctor<\/li><li>If problems persist see a doctor<\/li><\/ol>"
+      }
+    },
+    "a6159c2a-5608-4c88-b442-43101e00f2c0": {
+      "type": "ibwt",
+      "blocks": {
+        "afcff11c-3406-43e1-9a64-2fd08fd006df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1573_3.png",
+            "text": "14+ Ayurvedic Herbs"
+          }
+        },
+        "b7b415a3-aef5-47b6-a469-5b58ade1920c": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_7.png",
+            "text": "Immunity Builder"
+          }
+        },
+        "62f16875-88d2-497c-823a-af43d76b7a5c": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14718.png",
+            "text": "Non drowsy"
+          }
+        },
+        "1db3e55f-9cef-4423-aff6-aeba85bc0976": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1572_1.png",
+            "text": "Great Taste"
+          }
+        },
+        "8b97786c-b2d4-4709-92a6-cab8f3989d5a": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1576_2.png",
+            "text": "Super convenient"
+          }
+        }
+      },
+      "block_order": [
+        "afcff11c-3406-43e1-9a64-2fd08fd006df",
+        "b7b415a3-aef5-47b6-a469-5b58ade1920c",
+        "62f16875-88d2-497c-823a-af43d76b7a5c",
+        "1db3e55f-9cef-4423-aff6-aeba85bc0976",
+        "8b97786c-b2d4-4709-92a6-cab8f3989d5a"
+      ],
+      "custom_css": [
+        ".mobile_wrapper {background: linear-gradient( 180deg, rgba(235, 117, 44, 0.5) 0%, rgba(235, 117, 44, 0) 100% );}"
+      ],
+      "settings": {
+        "bg-image": "shopify:\/\/shop_images\/1_51_1_1.webp",
+        "image": "shopify:\/\/shop_images\/vbs_1_1.webp",
+        "overlay_image": "shopify:\/\/shop_images\/Free_Syrup_Box_Mockup_PSD_Template-2_2.png",
+        "caption": "",
+        "title": "Unlock the right comfort with breathofy syrup, ending generations of lingering cough.",
+        "text": "Unlock the Healing Power of 40% Honey and 14+ Herbs in Every Dose of Breathofy Syrup!"
+      }
+    },
+    "b962c8f4-9628-44a7-a657-b5fdc4315664": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        ".img-text-overlay-section {background: linear-gradient( 180deg, rgba(235, 117, 44, 0.4) 0%, rgba(235, 117, 44, 0) 100% );}"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/1_51_1_2.webp",
+        "mobile_bg": "shopify:\/\/shop_images\/mobile-bg.webp",
+        "mobile_img": "shopify:\/\/shop_images\/bibo_1.webp",
+        "caption": "Unlock the right comfort with breathofy syrup, ending generations of lingering cough.",
+        "title": "",
+        "text": "Unlock the Healing Power of 40% Honey and 14+ Herbs in Every Dose of Breathofy Syrup!",
+        "mobile_title": "Unlock the right comfort with breathofy syrup, ending generations of lingering cough."
+      }
+    },
+    "335fbc50-f28a-403b-a999-6c4ef27ee366": {
+      "type": "logos",
+      "blocks": {
+        "cc7aba9b-9187-4dff-9eb7-ef6b1103571c": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1573_3.png",
+            "title": "14+ Ayurvedic Herbs",
+            "text": ""
+          }
+        },
+        "855f63dd-8119-4945-a10b-1934d371c093": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_7.png",
+            "title": "Immunity Builder",
+            "text": ""
+          }
+        },
+        "dfb13921-81d2-4c9f-9ded-b7d673d6c08b": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14718.png",
+            "title": "Non drowsy",
+            "text": ""
+          }
+        },
+        "5c465eb6-e148-458f-a826-48cb4f40ad49": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1572_1.png",
+            "title": "Great Taste",
+            "text": ""
+          }
+        },
+        "1d9e41e0-68f1-48db-8584-f64cc515fa66": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1576_2.png",
+            "title": "Super convenient",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc7aba9b-9187-4dff-9eb7-ef6b1103571c",
+        "855f63dd-8119-4945-a10b-1934d371c093",
+        "dfb13921-81d2-4c9f-9ded-b7d673d6c08b",
+        "5c465eb6-e148-458f-a826-48cb4f40ad49",
+        "1d9e41e0-68f1-48db-8584-f64cc515fa66"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "57b7eab2-935a-4def-84af-9f59b230c18d": {
+      "type": "custom-section1",
+      "blocks": {
+        "a0302b7c-a0ce-4be9-9643-257461f6c655": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_91_1.png",
+            "days": "1-7 Days",
+            "text": "Acts against disease causes like <b>infections, allergens<\/b> and <b>pollutants<\/b>"
+          }
+        },
+        "2510402d-9f75-49f0-bd3e-d7a6666d4917": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_62.png",
+            "days": "7-14 Days",
+            "text": "Provides <b>symptomatic relief<\/b> from cough, cold, sinusitis, congestion, sore throat etc"
+          }
+        },
+        "a7a70107-0f5c-4bbc-aa4a-687eee84a54d": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_12.png",
+            "days": "14-28 Days",
+            "text": "Herbs <b>rejuvenate lung cells<\/b> and improve functioning."
+          }
+        },
+        "8e566dcc-9547-41db-bd03-46c8f9b76221": {
+          "type": "block",
+          "settings": {
+            "days": "28th Day onwards",
+            "text": "Herbs in Breathofy are clinically proven <b>immunity builders<\/b>."
+          }
+        }
+      },
+      "block_order": [
+        "a0302b7c-a0ce-4be9-9643-257461f6c655",
+        "2510402d-9f75-49f0-bd3e-d7a6666d4917",
+        "a7a70107-0f5c-4bbc-aa4a-687eee84a54d",
+        "8e566dcc-9547-41db-bd03-46c8f9b76221"
+      ],
+      "custom_css": [
+        ".cs1-item-4 .cs1-days {height: 60px; display: flex; align-items: center; text-align: center; justify-content: center;}",
+        ".cs1-item-4 img {display: none;}",
+        ".cs1-item-4 .cs1-days-text {color: #de5806; font-family: Poppins; font-size: 16px; font-style: normal; font-weight: 400; line-height: 121%; \/* 29.04px *\/}"
+      ],
+      "settings": {
+        "main_title": "What happens when you take <b>Breathofy Syrup<\/b>",
+        "image": "shopify:\/\/shop_images\/b5fc99e5c3852b2f5740c944ba0b49ce_1.gif",
+        "bottom-text": "Research Journal Publication: IAMJ\/Sept2022\/ “Herbs For Preventing And Managing Acute And Chronic Respiratory Disorders” by Dr Kanchan Jangid and others."
+      }
+    },
+    "d82c39f6-d9f5-44fd-ba4e-679f0fff27f8": {
+      "type": "doctors-recommendation",
+      "blocks": {
+        "3de23caf-8afd-49b8-bfbb-2d40949fd351": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_933.png",
+            "name": "Dr. Vybhav Vijendra",
+            "caption": "Pulmonologist",
+            "text": "‘Strongly recommend not to buy syrups from counter without discussing with a doctor. Some home remedies like gargle or honey can be used to alleviate symptoms.’"
+          }
+        },
+        "5eaccca5-e2e9-4433-8a38-ccf494300ac6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_935.png",
+            "name": "Dr. Anju Balakrishnan",
+            "caption": "BAMS, MD in Ayurveda",
+            "text": "‘Honey acts as a natural expectorant, soothing the throat and reducing coughing. Herbs like Ashwagandha, Adulsa, Mulethi are great for respiratory health in both short term and long term for better immunity.’"
+          }
+        }
+      },
+      "block_order": [
+        "3de23caf-8afd-49b8-bfbb-2d40949fd351",
+        "5eaccca5-e2e9-4433-8a38-ccf494300ac6"
+      ],
+      "settings": {
+        "heading": "Doctor’s Recommendation",
+        "subheading": "On cough syrups",
+        "bottom-text": ""
+      }
+    },
+    "3d4199ee-37f4-4879-8852-c84db4ea06e2": {
+      "type": "custom-img-banner",
+      "settings": {
+        "width": "col-lg-8",
+        "bg-img": "shopify:\/\/shop_images\/white-texture_1_2.png",
+        "heading": "Why thousands of people are <b>choosing us?<\/b>",
+        "img": "shopify:\/\/shop_images\/bibo.webp",
+        "mobile_img": "shopify:\/\/shop_images\/bibo4.webp"
+      }
+    },
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76": {
+      "type": "frequently-bought",
+      "settings": {
+      }
+    },
+    "00e1848e-0954-4a0f-9a09-843eaea6ed5e": {
+      "type": "custom-img-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "width": "col-lg-10",
+        "heading": "",
+        "img": "shopify:\/\/shop_images\/kids.png",
+        "mobile_img": "shopify:\/\/shop_images\/bibo_kids.webp"
+      }
+    },
+    "23574418-8a19-426d-aca5-003a28e53756": {
+      "type": "learn-more",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/bg-color.webp",
+        "image1": "shopify:\/\/shop_images\/8aacb821ea9eaf72b7690f10998054b2_1.gif",
+        "image2": "shopify:\/\/shop_images\/636ba854d0de4f8231b5828e5bcd910c_1.gif",
+        "svg-image": "<svg width=\"82\" height=\"82\" viewBox=\"0 0 82 82\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"41\" cy=\"41\" r=\"41\" fill=\"#EB752C\"\/>\n<g filter=\"url(#filter0_d_396_460)\">\n<path d=\"M26.6504 29.652V49.8206C26.6504 52.4884 27.8243 53.5022 29.6917 53.5022C31.5592 53.5022 32.733 52.4884 32.733 49.8206V29.652C32.733 26.9841 31.5592 25.9704 29.6917 25.9704C27.8243 25.9704 26.6504 26.9841 26.6504 29.652ZM20.7812 49.4471V30.0254C20.7812 24.0496 23.9293 20.6348 29.6917 20.6348C35.4542 20.6348 38.6022 24.0496 38.6022 30.0254V49.4471C38.6022 55.423 35.4542 58.8378 29.6917 58.8378C23.9293 58.8378 20.7812 55.423 20.7812 49.4471Z\" fill=\"white\"\/>\n<path d=\"M60.6642 58.4109H54.6883C54.3681 57.4505 54.1547 56.8636 54.1547 53.8223V47.9531C54.1547 44.485 52.9809 43.2044 50.3131 43.2044H48.2855V58.4109H42.4163V21.0616H51.2735C57.3561 21.0616 59.9705 23.8895 59.9705 29.652V32.5865C59.9705 36.4282 58.7433 38.9359 56.1289 40.1631C59.0635 41.3903 60.0239 44.2182 60.0239 48.1132V53.8757C60.0239 55.6898 60.0772 57.0237 60.6642 58.4109ZM51.1134 26.3972H48.2855V37.8688H50.5798C52.7674 37.8688 54.1013 36.9084 54.1013 33.9205V30.2389C54.1013 27.5711 53.1943 26.3972 51.1134 26.3972Z\" fill=\"white\"\/>\n<path d=\"M60.6642 59.4109H62.173L61.5851 58.0213C61.0851 56.8395 61.0239 55.6908 61.0239 53.8757V48.1132C61.0239 44.7752 60.3352 41.8592 58.0681 40.1289C60.0867 38.5002 60.9705 35.9083 60.9705 32.5865V29.652C60.9705 26.6405 60.2893 24.1838 58.6134 22.4921C56.9359 20.7987 54.4501 20.0616 51.2735 20.0616H42.4163H41.4163V21.0616V58.4109V59.4109H42.4163H48.2855H49.2855V58.4109V44.2044H50.3131C51.5014 44.2044 52.1079 44.4878 52.4655 44.9177C52.8636 45.3962 53.1547 46.2874 53.1547 47.9531V53.8223C53.1547 55.3578 53.208 56.3214 53.3117 57.0398C53.4148 57.7541 53.566 58.2072 53.721 58.6715L53.7396 58.7272L53.9675 59.4109H54.6883H60.6642ZM27.6504 49.8206V29.652C27.6504 28.4422 27.9194 27.8079 28.2149 27.4788C28.4909 27.1713 28.9352 26.9704 29.6917 26.9704C30.4483 26.9704 30.8925 27.1713 31.1685 27.4788C31.464 27.8079 31.733 28.4422 31.733 29.652V49.8206C31.733 51.0303 31.464 51.6646 31.1685 51.9938C30.8925 52.3012 30.4483 52.5022 29.6917 52.5022C28.9352 52.5022 28.4909 52.3012 28.2149 51.9938C27.9194 51.6646 27.6504 51.0303 27.6504 49.8206ZM19.7812 30.0254V49.4471C19.7812 52.6019 20.6133 55.2273 22.3475 57.0689C24.0905 58.9199 26.6113 59.8378 29.6917 59.8378C32.7722 59.8378 35.293 58.9199 37.0359 57.0689C38.7701 55.2273 39.6022 52.6019 39.6022 49.4471V30.0254C39.6022 26.8706 38.7701 24.2452 37.0359 22.4036C35.293 20.5527 32.7722 19.6348 29.6917 19.6348C26.6113 19.6348 24.0905 20.5527 22.3475 22.4036C20.6133 24.2452 19.7812 26.8706 19.7812 30.0254ZM49.2855 36.8688V27.3972H51.1134C51.9617 27.3972 52.3621 27.6273 52.5979 27.931C52.8795 28.2936 53.1013 28.9794 53.1013 30.2389V33.9205C53.1013 35.2904 52.7926 35.9655 52.45 36.3119C52.1119 36.6537 51.5493 36.8688 50.5798 36.8688H49.2855Z\" stroke=\"black\" stroke-width=\"2\"\/>\n<\/g>\n<defs>\n<filter id=\"filter0_d_396_460\" x=\"18.7812\" y=\"18.6348\" width=\"53.9009\" height=\"51.2031\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n<feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"\/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"\/>\n<feOffset dx=\"5\" dy=\"5\"\/>\n<feGaussianBlur stdDeviation=\"2\"\/>\n<feComposite in2=\"hardAlpha\" operator=\"out\"\/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0\"\/>\n<feBlend mode=\"normal\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow_396_460\"\/>\n<feBlend mode=\"normal\" in=\"SourceGraphic\" in2=\"effect1_dropShadow_396_460\" result=\"shape\"\/>\n<\/filter>\n<\/defs>\n<\/svg>",
+        "text": "Whether you <b>puff or inhale,<\/b> lungs must not fail.",
+        "link-text": "learn more",
+        "link": ""
+      }
+    },
+    "d392e81f-36eb-4d50-85d9-f56a3e775459": {
+      "type": "faqs",
+      "blocks": {
+        "76a60b1a-ad71-4b07-ac02-1eab7f2285ad": {
+          "type": "faq-block",
+          "settings": {
+            "question": "For which all conditions can I use Breathofy syrup?",
+            "answer": "One can use Breathofy syrup for dry cough, sore throat, cough with phlegm (mucus), common cold, congestion, and seasonal allergies. The syrup also provides relief from shallow breathing, recurrent cough, and wheezing. It gives relief to people with asthma and bronchitis. Breathofy syrup calms conditions like tonsillitis, sinusitis, and rhinitis while improving the body's resistance to allergens and pollution. It also improves the lung health of smokers and people exposed to polluted air."
+          }
+        },
+        "98cf5b5a-78fa-462f-aea3-cf16ede936bb": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is Breathofy syrup safe for kids?",
+            "answer": "Yes, Breathofy syrup is safe for all age groups, including children one year and above. The recommended dose for kids below four years is 2.5 ml, while children between 5-11 years can take 5 ml. A person above 12 years can take 10 ml of the syrup."
+          }
+        },
+        "c1c11a33-c1c3-4a4b-b7c8-4613de247fd1": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Breathofy syrup cause drowsiness?",
+            "answer": "No, Breathofy syrup is an ayurvedic syrup, and it does not contain any ingredient that may cause drowsiness. All the ingredients are natural and safe to use. You can use breathofy syrup while driving and operating heavy machinery without worrying about dizziness and drowsiness."
+          }
+        },
+        "352ae890-d0c4-4d88-a0fd-00cfa5a3dffb": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of tulsi in Breathofy syrup?",
+            "answer": "Tulsi is well known for its wide range of activities. You can find its use for cough, fever, allergies, asthma, and other respiratory conditions due to its inflammation and infection-reducing properties. Tulsi is an immunity-building herb with the properties of detoxifying the lungs and blood."
+          }
+        },
+        "404de6de-b7b0-41f9-a904-b52066aef20e": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of adulsa, and what is the quantity present in Breathofy syrup?",
+            "answer": "Adulsa is known to reduce inflammation in the airways, especially in bronchitis. Due to its antimicrobial properties, adulsa kills various microbes responsible for infection and hence reduces the common cold, cough, and symptoms associated with chronic bronchitis and asthma. Every 5 ml of the Breathofy syrup contains 69 mg of adulsa extracts."
+          }
+        },
+        "ee3bc71e-c5ff-4487-a386-b0d1d79e4498": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Breathofy syrup contain any artificial or added sugar?",
+            "answer": "No, it contains honey which acts as a remedy for dry cough and sore throat and as a sweetening agent. Breathofy syrup contains honey. The honey in Breathofy syrup is free of harmful chemicals and without gluten. It is non-genetically modified, with no added sugar."
+          }
+        },
+        "987ec670-9fa2-495d-963d-ea9d08e22e1d": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How does Breathofy syrup taste?",
+            "answer": "It tastes good, just like honey. Breathofy syrup contains 40% honey which is the maximum quantity among all the mainstream brands in India. Hence, it wouldn't taste spicy like other ayurvedic syrups. So with the best taste, you get the most benefits from honey."
+          }
+        },
+        "fa22da90-2415-4fc0-b499-a36f6dedbf62": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How many times can I take Breathofy syrup in a day?",
+            "answer": "One can take it up to four times a day for cough relief. The dose is 2.5 ml for children between 1-4 years of age, 5 ml for children between 5-11 years, and 10 ml above 12 years of age. Breathofy syrup is not for infants below one year. For frequent use (in conditions like sinusitis, asthma, bronchitis, smokers, and people exposed to allergens and pollution), take 5 ml twice daily."
+          }
+        },
+        "2dba84ca-bf04-49e2-922b-6a1ada1c5cba": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Breathofy syrup for my asthma?",
+            "answer": "Yes, it can improve the symptoms of asthma and other lung conditions. It contains 15 clinically proven herbs to show positive effects on respiratory health. The anti-inflammatory and anti-asthmatic properties of herbs like Tulsi, Mulethi, Adulsa, Rudravanti, and Honey reduce asthma-associated symptoms."
+          }
+        },
+        "727feb3f-fb4d-42f0-8704-883dd996d2ee": {
+          "type": "faq-block",
+          "settings": {
+            "question": "I am a smoker, so will this syrup help me to reduce my cough?",
+            "answer": "Yes, this syrup helps manage all coughs, including the smoker's cough. It is not just an ordinary cough syrup but a lung supplement to improve overall lung health. Breathofy syrup contains clinically proven herbs with antioxidant, anti-inflammatory, and anti-cancer effects. You can take 5 ml of Breathofy syrup twice daily to improve lung health."
+          }
+        },
+        "f2631a1b-44a3-49af-9b5d-e1fca1eb4f2b": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Breathofy syrup for my dry cough?",
+            "answer": "Yes, Breathofy syrup is beneficial for dry and wet coughs. The antibacterial and anti-inflammatory properties of various herbs like Tulsi, Mulethi, Adulsa, Pippali, Saunf, and others help fight against microbes causing infection and reduce inflammation that may cause dry cough."
+          }
+        },
+        "b91dc0d1-6be9-4b12-a7ae-59d6bb1b0a43": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How is Breathofy syrup different from other syrups?",
+            "answer": "Honey comprises 40% volume of Breathofy syrup. It has more than honey present in all the famous cough syrups available. It is not an ordinary cough syrup, but a lung supplement. It is safe for all above one year. "
+          }
+        },
+        "c56b929f-b74c-4780-af8d-da121e25d237": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of Thyme in Breathofy syrup?",
+            "answer": "Due to its antioxidant and microbes-killing properties, Thyme manage conditions like cold, cough, chronic asthma, hiccough, and bronchitis. The concentrated decoction of Thyme is effective in various respiratory infections."
+          }
+        },
+        "36825eee-1f64-4c42-8030-230e1f121689": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the role of Ashwagandha?",
+            "answer": "Ashwagandha reduces the inflammation of the airways and nasal passages for better breathing. Due to its inflammation-reducing properties, Ashwagandha helps a person with the common cold, cough, sinusitis, asthma, bronchitis, and other conditions. It also reduces stress and anxiety and acts as a mood enhancer. Ashwagandha also has immunity-building properties."
+          }
+        },
+        "2a00d4d4-d649-46d2-8b7f-d2e568afb10c": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I take Breathofy syrup for my sinusitis?",
+            "answer": "Yes, Breathofy syrup contains herbs like Tulsi, Adulsa, Motha, Mulethi, and a few others that help to reduce inflammation and infection in the sinuses. Taking 5 ml twice a day may help you prevent and manage the symptoms of sinusitis and other chronic respiratory conditions."
+          }
+        }
+      },
+      "block_order": [
+        "76a60b1a-ad71-4b07-ac02-1eab7f2285ad",
+        "98cf5b5a-78fa-462f-aea3-cf16ede936bb",
+        "c1c11a33-c1c3-4a4b-b7c8-4613de247fd1",
+        "352ae890-d0c4-4d88-a0fd-00cfa5a3dffb",
+        "404de6de-b7b0-41f9-a904-b52066aef20e",
+        "ee3bc71e-c5ff-4487-a386-b0d1d79e4498",
+        "987ec670-9fa2-495d-963d-ea9d08e22e1d",
+        "fa22da90-2415-4fc0-b499-a36f6dedbf62",
+        "2dba84ca-bf04-49e2-922b-6a1ada1c5cba",
+        "727feb3f-fb4d-42f0-8704-883dd996d2ee",
+        "f2631a1b-44a3-49af-9b5d-e1fca1eb4f2b",
+        "b91dc0d1-6be9-4b12-a7ae-59d6bb1b0a43",
+        "c56b929f-b74c-4780-af8d-da121e25d237",
+        "36825eee-1f64-4c42-8030-230e1f121689",
+        "2a00d4d4-d649-46d2-8b7f-d2e568afb10c"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
+      "type": "logos-section",
+      "blocks": {
+        "4c4d8337-c190-420b-8c7c-2c6306d049fd": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14676.png",
+            "logo-text": "Backed by Ayurveda"
+          }
+        },
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "8123b403-6543-4cd1-a340-f572d4999f91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14680.png",
+            "logo-text": "100% Natural"
+          }
+        },
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "19996c59-130e-4628-9736-4e2ab4e3a49d": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "4c4d8337-c190-420b-8c7c-2c6306d049fd",
+        "e5ea787f-bdcc-4a8a-99fb-b242954269df",
+        "8123b403-6543-4cd1-a340-f572d4999f91",
+        "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
+        "19996c59-130e-4628-9736-4e2ab4e3a49d"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "623dae2e-01e4-4e2d-989d-9679593348e4": {
+      "type": "video-slides",
+      "blocks": {
+        "d2f704f8-abd8-4e5f-a801-9eaf6d718c63": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Bibo Breathofy Syrup.mp4"
+          }
+        },
+        "97f9a4e3-65d2-4242-8c2b-d503009dfa8a": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/BIBO_Breathofy_h2.mp4"
+          }
+        },
+        "1b9a77e9-ca7b-48bc-b014-c569cd5d461c": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/sanyam mehta.mp4"
+          }
+        },
+        "4a62772e-ce59-4324-b930-ab55db795d20": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Vaibhav chaturvedi.mp4"
+          }
+        },
+        "df6d3a6a-1d76-4de4-a41d-33bec5964095": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Zarkhanreza.mp4"
+          }
+        },
+        "3e9cff47-804d-493b-9011-003d58c64ecc": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Jaswinder Kaur _29dabd18-04cd-4159-b348-65744601902e.mp4"
+          }
+        },
+        "1588c50c-b8fc-4778-a8c1-2ea744201323": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Bhagyashree Nath.mp4"
+          }
+        },
+        "afd91773-6dc2-4917-942b-ba2a29d15440": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Kavita Rawat _a65941a1-28ad-4bf6-a6ca-c574fd8c6e95.mp4"
+          }
+        },
+        "06f8e416-9cea-4214-a933-4d3165fed66c": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Akshay Gupta.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "d2f704f8-abd8-4e5f-a801-9eaf6d718c63",
+        "97f9a4e3-65d2-4242-8c2b-d503009dfa8a",
+        "1b9a77e9-ca7b-48bc-b014-c569cd5d461c",
+        "4a62772e-ce59-4324-b930-ab55db795d20",
+        "df6d3a6a-1d76-4de4-a41d-33bec5964095",
+        "3e9cff47-804d-493b-9011-003d58c64ecc",
+        "1588c50c-b8fc-4778-a8c1-2ea744201323",
+        "afd91773-6dc2-4917-942b-ba2a29d15440",
+        "06f8e416-9cea-4214-a933-4d3165fed66c"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "168932840165a33ba6": {
+      "type": "apps",
+      "blocks": {
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "11fe04cd-e2c6-404e-aeb7-24b47213cdb2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "f4515e2b-5aa0-4426-87bb-fd1b8b103f23": {
+      "type": "things-to-note",
+      "blocks": {
+        "7d5718e0-6992-42c4-a183-0b59b579ca1d": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_13.png",
+            "title": "Expect overnight results.",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "892ae48e-35f9-4f11-aeed-5b128758a05c": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_63.png",
+            "title": "Got medicine! I can eat anything now",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "a51cc92c-8736-4fd4-93e9-c04883f9b74e": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_92.png",
+            "title": "I will take medicine only SOS!",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        }
+      },
+      "block_order": [
+        "7d5718e0-6992-42c4-a183-0b59b579ca1d",
+        "892ae48e-35f9-4f11-aeed-5b128758a05c",
+        "a51cc92c-8736-4fd4-93e9-c04883f9b74e"
+      ],
+      "settings": {
+        "title": "What it won’t do",
+        "caption": "THINGS TO NOTE"
+      }
+    },
+    "93aa0bff-5183-4229-8050-c435b6f61ba9": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "description",
+    "35f1ba95-1347-4bc6-8f56-a6b2579966a3",
+    "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
+    "9f795468-7108-41ee-8a94-43acd7a1d285",
+    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
+    "a6159c2a-5608-4c88-b442-43101e00f2c0",
+    "b962c8f4-9628-44a7-a657-b5fdc4315664",
+    "335fbc50-f28a-403b-a999-6c4ef27ee366",
+    "main-product-recommendations",
+    "57b7eab2-935a-4def-84af-9f59b230c18d",
+    "d82c39f6-d9f5-44fd-ba4e-679f0fff27f8",
+    "3d4199ee-37f4-4879-8852-c84db4ea06e2",
+    "c0be0f3f-3179-4de2-8f96-139f49fb0b76",
+    "00e1848e-0954-4a0f-9a09-843eaea6ed5e",
+    "23574418-8a19-426d-aca5-003a28e53756",
+    "d392e81f-36eb-4d50-85d9-f56a3e775459",
+    "e3ec87c0-1921-49b6-829d-0ea969f31a71",
+    "623dae2e-01e4-4e2d-989d-9679593348e4",
+    "168932840165a33ba6",
+    "f4515e2b-5aa0-4426-87bb-fd1b8b103f23",
+    "93aa0bff-5183-4229-8050-c435b6f61ba9"
+  ]
+}

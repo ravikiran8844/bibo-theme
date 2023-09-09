@@ -1,0 +1,161 @@
+<style>
+  /* CSS */
+  .collapsible-section {
+    background: #ECF2EC;
+  }
+  .collapsible-section .collapsible {
+    max-width: 756px;
+    margin: auto;
+  }
+  .collapsible-section .title-text {
+    color: #181818;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .collapsible-section .collapsible .item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #DDD9D8;
+    border-radius: 4px;
+  }
+
+  .collapsible-section .collapsible .item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .collapsible-section .collapsible .item-content {
+    padding: 10px;
+    display: none;
+  }
+
+  .collapsible-section .collapsible .icon {
+    font-weight: bold;
+    background: #275C5C;
+    color: #fff;
+    border-radius: 50px;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .collapsible-section .collapsible .item.open .icon {
+    transform: rotate(2deg);
+  }
+
+  .collapsible-section .collapsible .item.open .item-content {
+    display: block;
+    color: #535353;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.5px;
+    letter-spacing: 0.32px;
+  }
+</style>
+
+<div class="collapsible-section py-5">
+  <div class="container">
+    <div class="col-12">
+      <div class="collapsible">
+        {% for block in section.blocks %}
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <span class="me-2">
+                  {{ block.settings.svg }}
+                </span>
+                <span class="title-text">{{ block.settings.title }}</span>
+              </div>
+              <span class="icon">+</span>
+            </div>
+            <div class="item-content">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript
+  window.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.collapsible .item');
+
+    function toggleItem(item) {
+      const content = item.querySelector('.item-content');
+      const icon = item.querySelector('.icon');
+      const isOpen = item.classList.contains('open');
+
+      if (isOpen) {
+        content.style.display = 'none';
+        item.classList.remove('open');
+        icon.textContent = '+';
+      } else {
+        items.forEach(function(otherItem) {
+          if (otherItem !== item && otherItem.classList.contains('open')) {
+            toggleItem(otherItem);
+          }
+        });
+
+        content.style.display = 'block';
+        item.classList.add('open');
+        icon.textContent = '-';
+      }
+    }
+
+    items.forEach(function(item) {
+      const header = item.querySelector('.item-header');
+      header.addEventListener('click', function() {
+        toggleItem(item);
+      });
+    });
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Collapsible Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "svg",
+            "label": "SVG"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collapsible Section"
+      }
+    ]
+  }
+{% endschema %}

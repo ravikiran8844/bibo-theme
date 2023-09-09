@@ -1,0 +1,389 @@
+{
+  "layout": "theme.alternate",
+  "sections": {
+    "a36696d7-8118-4075-9caa-ebe559c0e0e3": {
+      "type": "main-banner-section",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/desktop-banner.webp",
+        "mobile_img": "shopify:\/\/shop_images\/mobile-img.webp"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "99fc55e3-ae0d-4d31-8dcd-b2a18ee61805": {
+      "type": "img-text-section-new",
+      "settings": {
+        "title": "Where we came from. Where we’re going.",
+        "subtitle": "Who are we?",
+        "image": "shopify:\/\/shop_images\/9c746e6e156a16de4502b96da8a6193d.webp",
+        "itemtitle": "We believe in a <br> <i> better <\/i> way to heal.",
+        "itemtext": "In today's developed markets, many products being sold are of low priority. People are relying on the same over-the-counter medicines or treatments, despite the significant advancements in science over the past 30 years. To address this issue, our goal is to offer innovative healthcare products at the right cost, providing the best possible care for everyone."
+      }
+    },
+    "c59be2cb-00d7-4e1d-af9f-b4a12e621f69": {
+      "type": "logo-text-section-new",
+      "blocks": {
+        "62b26676-0264-4f37-b3a4-4d0e514cfb1f": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Handshake.png",
+            "text": "Prioritize consumer’s interest"
+          }
+        },
+        "686b483e-8fd6-4f4c-a11f-8d5221d2487b": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HandHeart.png",
+            "text": "Safe product"
+          }
+        },
+        "d6b24fa1-f651-476d-8611-585f8be7beee": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MonitorPlay.png",
+            "text": "India centric content"
+          }
+        },
+        "16aa69f1-da9b-4c3e-a462-46ff21e5f0ae": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Pill.png",
+            "text": "Responsible self-medication"
+          }
+        },
+        "3625e4c7-d038-467f-8cd3-13a11b2b51a3": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ShieldCheck.png",
+            "text": "Accountability"
+          }
+        }
+      },
+      "block_order": [
+        "62b26676-0264-4f37-b3a4-4d0e514cfb1f",
+        "686b483e-8fd6-4f4c-a11f-8d5221d2487b",
+        "d6b24fa1-f651-476d-8611-585f8be7beee",
+        "16aa69f1-da9b-4c3e-a462-46ff21e5f0ae",
+        "3625e4c7-d038-467f-8cd3-13a11b2b51a3"
+      ],
+      "settings": {
+        "title": "Our Principles"
+      }
+    },
+    "8fffcc9b-f6cb-409f-b29e-2e9766f87949": {
+      "type": "text-section-new",
+      "settings": {
+        "title": "Our Vision",
+        "caption": "Real Ingredients. Real People. Real Results.",
+        "text": "Amid growing rise in breathing related chronic disorders, Bibo is here to cut the noise and provide <span>clear and clinically proven knowledge,<\/span> products and solutions for anything and everything respiratory."
+      }
+    },
+    "54d8e092-eb0d-46af-b82e-68f611877076": {
+      "type": "banner-section-new",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/collage_1.webp",
+        "mobile_img": "shopify:\/\/shop_images\/mob_banner.webp",
+        "heading": "Our community",
+        "subtitle": "You are our ‘Why?’"
+      }
+    },
+    "6712fbf9-a724-4b97-ab96-5559f84303eb": {
+      "type": "rich-text-section",
+      "settings": {
+        "bgcolor": "#f5f5f5",
+        "heading": "Our mission",
+        "subtitle": "<i>Centuries<\/i> of use, validated by <i>science<\/i>",
+        "text": "Provide better breathing for more than 10 million people in the next 5 years with uniquely crafted products and solutions from the house of Bibo.​"
+      }
+    },
+    "10d5b755-6f0f-46a8-a4e5-c49b4017534d": {
+      "type": "img-text-section2",
+      "settings": {
+        "heading": "Holistic Approach To Health",
+        "subheading": "Going beyond the products.",
+        "text": "We take responsibility and provide customers a holistic environment to improve and maintain their respiratory health aisa kuch likhna hai",
+        "link_text1": "Know Our Ingredients",
+        "link1": "",
+        "link_text2": "Our Research Papers",
+        "link2": "",
+        "img": "shopify:\/\/shop_images\/Rectangle_946.webp"
+      }
+    },
+    "0e3865d7-9569-439f-9ee9-7daa12fb8602": {
+      "type": "rich-text-section",
+      "settings": {
+        "bgcolor": "#ffffff",
+        "heading": "Well researched ayurveda",
+        "subtitle": "<i>100% Natural & Quality Guaranteed<\/i>",
+        "text": "At Bibo, we strive for excellence by offering products that are crafted with great care and based on extensively researched Ayurvedic principles. Our dedication goes beyond just following tradition; we carefully select and refine age-old remedies to ensure their modern effectiveness and provide a complete environment to support your respiratory health. Moreover, our pharmaceutical line features the safest molecules that have been tried and tested over time, combining ancient wisdom with contemporary science. Experience Bibo - where tradition meets innovation."
+      }
+    },
+    "a2e713c3-32df-4500-bba1-cab41a1f782b": {
+      "type": "our-team",
+      "blocks": {
+        "affb4d89-deeb-4041-8334-308c49176fcb": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screenshot_2023-08-09_at_2.32_1_1_6dc50b4c-e13d-4856-8988-582a191db37a.png",
+            "card_bg": "#f4b78e",
+            "title": "Vikash Kumar",
+            "text": "Founder & CEO, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>An alumnus of prestigious institutes IIT-BHU, Varanasi, and IIT Kharagpur, Vikash spent 10+ years in investment banking before launching Bibo. Worked on several transactions in healthcare-pharma space, Vikash was inspired by many entrepreneurs and was driven by desire to launch value-added and branded pharma company.<\/p>"
+          }
+        },
+        "03164336-ae30-4da5-bd5e-ce6f0a6acf63": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screenshot_2023-08-09_at_2.36_1_1_f836ad5d-5f36-467e-9de5-84ce8f0da66e.png",
+            "card_bg": "#54b5a9",
+            "title": "Sagar Sheel",
+            "text": "B2B Sales Head, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>Sagar is a people person with a forte in networking. He has completed his B. Pharm from PES College of Pharmacy, Bangalore. An expert in pharmaceutical sales, Sagar has vast experience working on various corporate and institutional accounts for large pharma cos including Merck(MSD), Abbott, and also for a startup, Giver Nutrition. Sagar also owns a private book collection.<\/p>"
+          }
+        },
+        "05c901ab-7de9-47af-8fac-b43631d56d2f": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screenshot_2023-08-09_at_2.33_1_1_81132190-f7b4-4b25-87e6-7a86e4373c7a.png",
+            "card_bg": "#bcc1fb",
+            "title": "Pooja Gupta",
+            "text": "Digital Growth Head, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>Pooja comes from a Digital marketing background and has a vast experience of about 7 years in the Digital e-commerce space. She has done Btech, Mtech from RTU and a Digital Marketing Certification from IIT-B. An expert in the marketing side and has worked in various D2C and B2B brands. <\/p><p>Gregarious and energetic, she's not only an expert but also a travel enthusiast, adding a touch of zest to her persona.<\/p>"
+          }
+        },
+        "85ba36bc-d4ce-4792-97a5-9aada610c490": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_5421_Background_Removed_1_1_c4eb768b-f7bd-4bdf-8777-7603f9d95880.png",
+            "card_bg": "#e6e2fd",
+            "title": "Shreya Shree",
+            "text": "Design & Social Head, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>Shreya has pursued a Bachelor of Design from the NIFT, Kolkata. Her forte is Brand and fashion communication and visual design. She has a keen interest in creating a brand persona and infusing life to content with better design. Shreya interned with CurioEd and Bibo before joining the core team full time. Shreya is very sharp, proactive, and has a strong inclination toward social media channels.<\/p>"
+          }
+        },
+        "47c672bc-ca81-4965-9a3e-8150854d7f35": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/tempImagedsbXP3-removebg-preview_1_2_09738cbd-f774-4193-965e-dc678783ad49.png",
+            "card_bg": "#fce76d",
+            "title": "Dhrithi Bhat",
+            "text": "Content & Research Lead, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>Dhrithi Bhat is a BE Biotechnology graduate with a strong inclination towards research in the healthcare sector. Her adept social skills make her a good learner, always seeking to broaden her knowledge by engaging with people. Beyond her scientific pursuits, Dhrithi is equally passionate about fine arts, particularly music, theatre, and dance, showcasing a well-rounded and dynamic personality.<\/p>"
+          }
+        },
+        "1a1e90a9-75a7-4149-a75a-fd442248a7f5": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/tempImagelJ7c4Z-removebg-preview_1_1_20d1ef50-4d2c-4b89-bf73-2a408c252756.png",
+            "card_bg": "#275c5c",
+            "title": "Animesh Kumar",
+            "text": "Program Manager, Bibo",
+            "link_text": "Read more",
+            "short-text": "<p>Animesh completed his BE in Industrial Engineering and Management from RVCE- one of the top engineering colleges in Banglore. A happy-go-lucky person, he has keen observation skills  and adapts to the varying needs of the company. He joined us as an intern, and is currently a Program Lead along with being a value added resource to the team. Ever since college, he wanted to be part of a team’s growth tangent and he puts in work for the same.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "affb4d89-deeb-4041-8334-308c49176fcb",
+        "03164336-ae30-4da5-bd5e-ce6f0a6acf63",
+        "05c901ab-7de9-47af-8fac-b43631d56d2f",
+        "85ba36bc-d4ce-4792-97a5-9aada610c490",
+        "47c672bc-ca81-4965-9a3e-8150854d7f35",
+        "1a1e90a9-75a7-4149-a75a-fd442248a7f5"
+      ],
+      "settings": {
+        "heading": "Our Team",
+        "caption": "It’s all about the people."
+      }
+    },
+    "2be9f1de-74c4-4a38-90c5-4739b92eb7a9": {
+      "type": "doctors-section",
+      "blocks": {
+        "f9f60a31-8a2a-46a2-97d7-4deb3679af30": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/de5b52d62445d1cb233e955c9d9b4835_ff78064d-433b-4fd6-833c-e7ad6ea8e388.png",
+            "card_bg": "#ececec",
+            "title": "Dr Vybhav Vijendra",
+            "text": "Pulmonologist, MBBS",
+            "link_text": "Read more",
+            "link_url": "shopify:\/\/products\/dr-vybhav-vijendra"
+          }
+        },
+        "d2b1d866-00c5-41d5-bb10-ad5aa0d1839c": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/757073bd242a029a1686e67f20d63cd4_874d843c-a0fa-4ec0-81a8-15e957879dd5.png",
+            "card_bg": "#ececec",
+            "title": "Dr Adimalla Rajakumar",
+            "text": "Pulmonologist, MBBS",
+            "link_text": "Read more",
+            "link_url": "shopify:\/\/products\/dr-adimalla-rajakumar"
+          }
+        },
+        "01dfcd05-7e5d-4b22-918f-a201be323db6": {
+          "type": "card-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/55ca95d029dbb49fc9a9ae80ac537898_ced1350e-389c-44c4-8eac-e00944b68715.png",
+            "card_bg": "#ececec",
+            "title": "Dr Anju Balakrishnan",
+            "text": "BAMS, M.D (Ayu.)",
+            "link_text": "Read more",
+            "link_url": "shopify:\/\/products\/dr-anju-balakrishnan"
+          }
+        }
+      },
+      "block_order": [
+        "f9f60a31-8a2a-46a2-97d7-4deb3679af30",
+        "d2b1d866-00c5-41d5-bb10-ad5aa0d1839c",
+        "01dfcd05-7e5d-4b22-918f-a201be323db6"
+      ],
+      "settings": {
+      }
+    },
+    "fa6f7799-d9dc-4a63-b987-1d1c4bfe4dd8": {
+      "type": "trust-section",
+      "blocks": {
+        "2998b022-526e-4a91-85c3-f40be75f76b0": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust-01.jpg"
+          }
+        },
+        "2f4df766-8d52-4f3f-8c8c-d50f43a55384": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust-02.jpg"
+          }
+        },
+        "ec284fd3-6392-49f9-9cd1-f93d6c3ffcfe": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust-03.jpg"
+          }
+        },
+        "49871eea-4d42-4002-bc91-af9fa37c402a": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trust-04.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2998b022-526e-4a91-85c3-f40be75f76b0",
+        "2f4df766-8d52-4f3f-8c8c-d50f43a55384",
+        "ec284fd3-6392-49f9-9cd1-f93d6c3ffcfe",
+        "49871eea-4d42-4002-bc91-af9fa37c402a"
+      ],
+      "settings": {
+        "text": "<b>CERTIFIED<\/b> FOR YOUR TRUST"
+      }
+    },
+    "856b11ab-8e58-446c-89e1-cd646ddd3bf0": {
+      "type": "products-slider",
+      "settings": {
+        "heading": "RECOMMENDED PRODUCTS",
+        "products": [
+          "breathe-blend",
+          "bibo-saline-tulsi-nasal-spray",
+          "breathofy-syrup",
+          "bibo-clear-vapor-patch-ultra"
+        ]
+      }
+    },
+    "4cdf7bb4-c6be-4d49-8579-ae02151123ec": {
+      "type": "reviews-section",
+      "blocks": {
+        "9d5b3555-591c-48a7-b8a2-279b752a5bdf": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>I had dry cough since a long time and it wasn’t going away. The first time I tried this syrup it gave me instant relief but I thought my cough will again start. After taking it for a week I got great results and haven’t looked back since then.<\/p>"
+          }
+        },
+        "1432abd1-ba5e-440c-bdd6-bdcb860b75b2": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>I suffer from blocked nose every now and then. Doctors have suggested me to take different types of nasal sprays but after sometime these sprays were not effective. When I saw bibo nasal spray which claimed to be 100% natural I gave it a try. It worked really well. It helped me with my blocked nose<\/p>"
+          }
+        },
+        "36dfc747-d3d8-4fee-ada0-983653feb82f": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>I am really happy with this product. Never written any review but this product forced me to write it. I have cold allergy so winter is like nightmare to me but this product helps me a lot to fight with cold. Really happy with this.<\/p>"
+          }
+        },
+        "3650fdd9-5af2-48d4-857b-48b28ea32f49": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>No More Harmful Ingredients and I appreciate that this patch doesn't contain petroleum jelly like other vapor rubs.<\/p>"
+          }
+        },
+        "01516fea-c2b7-42a1-bea0-0cabc980385b": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>Bibo Nasal Spray is a must-have in my bag. It's so convenient to use and helps me breathe better whenever I need it.<\/p>"
+          }
+        },
+        "4901d6f5-9b0e-4ec4-b21c-95a701e2d7bb": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
+            "name": "Ruchatembe",
+            "text": "<p>Would surely recommend this product to all my friends and family.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9d5b3555-591c-48a7-b8a2-279b752a5bdf",
+        "1432abd1-ba5e-440c-bdd6-bdcb860b75b2",
+        "36dfc747-d3d8-4fee-ada0-983653feb82f",
+        "3650fdd9-5af2-48d4-857b-48b28ea32f49",
+        "01516fea-c2b7-42a1-bea0-0cabc980385b",
+        "4901d6f5-9b0e-4ec4-b21c-95a701e2d7bb"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Banner.webp",
+        "heading": "Only the best is good enough!",
+        "subheading": "Quality is everything when it comes to ayurveda. Our ingredients are handled with care at every step to ensure you always receive the best quality products.",
+        "text": "DON’T BELIEVE US? HERE’S WHAT OUR CUSTOMERS HAVE TO SAY!"
+      }
+    }
+  },
+  "order": [
+    "a36696d7-8118-4075-9caa-ebe559c0e0e3",
+    "main",
+    "99fc55e3-ae0d-4d31-8dcd-b2a18ee61805",
+    "c59be2cb-00d7-4e1d-af9f-b4a12e621f69",
+    "8fffcc9b-f6cb-409f-b29e-2e9766f87949",
+    "54d8e092-eb0d-46af-b82e-68f611877076",
+    "6712fbf9-a724-4b97-ab96-5559f84303eb",
+    "10d5b755-6f0f-46a8-a4e5-c49b4017534d",
+    "0e3865d7-9569-439f-9ee9-7daa12fb8602",
+    "a2e713c3-32df-4500-bba1-cab41a1f782b",
+    "2be9f1de-74c4-4a38-90c5-4739b92eb7a9",
+    "fa6f7799-d9dc-4a63-b987-1d1c4bfe4dd8",
+    "856b11ab-8e58-446c-89e1-cd646ddd3bf0",
+    "4cdf7bb4-c6be-4d49-8579-ae02151123ec"
+  ]
+}

@@ -1,0 +1,81 @@
+<script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+{% comment %}
+* Make sure you have the Flickity plugin installed and the proper license for this to function on your store
+* Plugin, licensing and documentation at https://flickity.metafizzy.co/
+{% endcomment %}
+
+{% assign collection_main = collections[section.settings.collection_main] %}
+{% assign collection_limit = section.settings.collection_limit %}
+
+{% assign cell_align = section.settings.cell_align %}
+{% assign wrap_around = section.settings.wrap_around %}
+{% assign img_width = section.settings.img_width | append: 'x' %}
+
+<div class="flickity-section-{{ section.id }} flickity-index-slider collection" style="background-color: {{ section.settings.bg }}">
+<div class="page-width">
+<div>
+<p class="text-title text-center" style="margin-bottom:{{ section.settings.title_mb }}px">{{ section.settings.title }}</p>
+</div>
+<div class="flickity-section__carousel carousel-{{section.id }} text-center"
+data-flickity='{
+"cellAlign": "{{ cell_align }}",
+"pageDots": false,
+"freeScroll": true,
+"contain": true,
+"wrapAround": {{ wrap_around }}
+}'>
+
+{% for product in collection_main.products limit: collection_limit %}
+{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
+{% assign first_variant = product.selected_or_first_available_variant %}
+{% assign featured_img_src = first_variant.featured_img.src | default: product.featured_image.src %}
+{% assign price = first_variant.price %}
+{% assign compare_at_price = first_variant.compare_at_price %}
+<div class="carousel__cell" style="width:{{ section.settings.cell_width }};margin-right:{{ section.settings.mr }}px">
+<a href="{{ product.url }}">
+<img height="270" width="270"  class="lazyload" data-src="{{ featured_img_src | img_url: img_width }}" alt="{{ product.featured_img.alt }}"  loading="lazy"  />
+</a>
+<a href="{{ product.url }}">
+<h5>{{ product.title }}</h5>
+</a>
+{% if compare_at_price > price %}
+<s class="product__compare-at-price">{{ compare_at_price | money }}</s>
+<p class="product__product-price">{{ price | money }}</p>
+{% else %}
+<p class="product__product-price">{{ price | money }}</p>
+{% endif %}
+</div>
+{% endfor %}
+{% comment %}
+{% for block in section.blocks %}
+{% assign block_product = all_products[block.settings.featured_product] %}
+{% assign block_first_variant = block_product.selected_or_first_available_variant %}
+{% assign featured_img_src = block_first_variant.featured_img.src | default: block_product.featured_image.src %}
+{% assign price = block_first_variant.price %}
+{% assign compare_at_price = block_first_variant.compare_at_price %}
+<div class="carousel__cell" style="width:{{ section.settings.cell_width }};margin-right:{{ section.settings.mr }}px">
+{% if block.settings.featured_product != blank %}
+<a href="{{ block_product.url }}">
+<img class="lazyload" data-src="{{ featured_img_src | img_url: img_width }}" alt="{{ block_product.featured_img.alt }}" />
+</a>
+{% else %}
+{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+{% endif %}
+<a href="{{ block_product.url }}">
+<h5>{{ block_product.title }}</h5>
+</a>
+{% if compare_at_price > price %}
+<s class="block-product__compare-at-price">{{ compare_at_price | money }}</s>
+<p class="block-product__product-price">{{ price | money }}</p>
+{% else %}
+<p class="block-product__product-price">{{ price | money }}</p>
+{% endif %}
+</div>
+{% endfor %}
+{% endcomment %}
+</div>
+</div>
+</div>
+

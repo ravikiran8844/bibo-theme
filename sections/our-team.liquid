@@ -1,0 +1,297 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="mb-3 our-team_main-heading">{{ section.settings.heading }}</div>
+      <div class="mb-5 our-team_main-text">{{ section.settings.caption }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for block in section.blocks %}
+      <div class="col-6 col-md-4 mb-5">
+        <div class="custom-card">
+          <div class="image-section image-section--{{block.id}}">
+            <img
+              loading="lazy"
+              class="img-fluid"
+              src="{{block.settings.img | img_url: 'master'}}"
+              alt="Image">
+          </div>
+          <div class="text-section text-center">
+            <div>
+              <h2>{{ block.settings.title }}</h2>
+              <div class="text mb-4">{{ block.settings.text }}</div>
+              <div class="collapse" id="collapse-{{block.id}}">
+                {{ block.settings.short-text }}
+              </div>
+              <button
+                onclick="toggleButtonText(this)"
+                id="btn-{{block.id}}"
+                class="collapse-button"
+                data-bs-target="#collapse-{{block.id}}"
+                type="button"
+                aria-expanded="false"
+                aria-controls="#collapse-{{block.id}}"
+                data-bs-toggle="collapse">Read More</button>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+
+{% style %}
+  {% for block in section.blocks %}
+    .our-team .custom-card .image-section--{{ block.id}}{
+      background-color: {{ block.settings.card_bg}}
+      ;
+    }
+  {% endfor %}
+{% endstyle %}
+
+
+<style>
+  .our-team {
+    background: #fff;
+  }
+
+  .our-team_main-heading {
+    color: #1B1B1B;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .our-team_main-text {
+    color: #1B1B1B;
+    font-family: Satisfy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFE86D 20%, #275C5C 20%, #00A79D 40%, #F08F4D 60%, #BCC1FB 80%) 5;
+    width: max-content;
+    margin: auto;
+  }
+  .our-team .custom-card {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 380px;
+    margin: auto;
+
+  }
+
+  .our-team .custom-card .image-section {
+    position: relative;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-team .custom-card .image-section img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+    object-fit: cover; /* Scale the image to cover the container */
+    max-width: 280px;
+  }
+
+  .our-team .custom-card .text-section {
+    padding: 20px;
+    color: #000;
+    border-radius: 0 0 12px 12px;
+    background: #FFF;
+    box-shadow: 4px 14px 48px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  .our-team .custom-card .text-section h2 {
+    margin-top: 0;
+    color: #474747;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.5%; /* 21.845px */
+  }
+
+  .our-team .custom-card .text-section .text {
+    color: #474747;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.5%; /* 15.42px */
+  }
+
+  .our-team .custom-card .text-section p {
+    color: #474747;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.5%; /* 15.42px */
+  }
+  .our-team .custom-card button {
+    color: #00A79D;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 128.5%; /* 17.99px */
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  @media(min-width:768px) {
+    .our-team_main-heading {
+      color: #1B1B1B;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .our-team_main-text {
+      color: #1B1B1B;
+      font-family: Satisfy;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .our-team .custom-card .text-section h2 {
+      margin-top: 0;
+      color: #474747;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 128.5%; /* 38.55px */
+    }
+
+    .our-team .custom-card .text-section .text {
+      color: #474747;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 128.5%; /* 25.7px */ /* White text color */
+    }
+
+
+    .our-team .custom-card .text-section p {
+      color: #474747;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 128.5%; /* 25.7px */ /* White text color */
+    }
+    .our-team .custom-card button {
+      color: #00A79D;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 128.5%; /* 25.7px */
+      text-decoration: none;
+    }
+  }
+</style>
+
+
+<script>
+  function toggleButtonText(button) {
+    if (button.textContent === "Hide Text") {
+      button.textContent = "Read More";
+    } else if (button.textContent === "Read More") {
+      button.textContent = "Hide Text";
+    }
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "our team",
+    "class": "our-team section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "default": "Our Team",
+        "id": "heading",
+        "label": "heading"
+      }, {
+        "type": "text",
+        "default": "It’s all about the people.",
+        "id": "caption",
+        "label": "caption"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "card",
+        "type": "card-block",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          },
+          {
+            "type": "color",
+            "id": "card_bg",
+            "default": "#ECECEC",
+            "label": "card background color"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Dhrithi Bhat",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Content & Research Lead, Bibo",
+            "label": "Text"
+          }, {
+            "type": "text",
+            "id": "link_text",
+            "default": "Read more",
+            "label": "Link Text"
+          }, {
+            "type": "richtext",
+            "id": "short-text",
+            "label": "Description",
+            "default": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam sit porro, molestiae magni accusantium sequi perferendis quod placeat itaque, beatae minus labore cumque architecto enim at eveniet sapiente vero.</p>"
+
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "our team"
+      }
+    ]
+  }
+{% endschema %}

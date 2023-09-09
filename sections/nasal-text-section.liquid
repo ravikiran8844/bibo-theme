@@ -1,0 +1,98 @@
+<div class="container pt-5">
+  <div class="col-12 text-center pt-5">
+    <div class="nasal-text-section_Caption mb-3">
+      {{ section.settings.caption }}
+    </div>
+    <div class="nasal-text-section_title">
+      {{ section.settings.title }}
+    </div>
+  </div>
+
+</div>
+
+<style>
+
+  .nasal-text-section_Caption {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%; /* 46.8px */
+    text-transform: uppercase;
+  }
+  .nasal-text-section_title {
+    color: #254E4E;
+    font-size: 36px;
+    text-align: center;
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .nasal-text-section_title span {
+    color: #EC7F51;
+    font-size: 34px;
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  @media(min-width:998px) {
+    .nasal-text-section_Caption {
+      color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 117%; /* 46.8px */
+      text-transform: uppercase;
+    }
+    .nasal-text-section_title {
+      color: #254E4E;
+      font-size: 60px;
+      text-align: center;
+      font-family: Urbanist;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .nasal-text-section_title span {
+      color: #EC7F51;
+      font-size: 60px;
+      font-family: Urbanist;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Nasal Text Section",
+    "class": "section nasal-text-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Find your <span>Bibo Spray</span>"
+      }, {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "BREATHING DIFFICULTIES? LET’S FIX THAT!"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nasal Text Section"
+      }
+    ]
+  }
+{% endschema %}

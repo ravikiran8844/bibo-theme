@@ -1,0 +1,107 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+
+<div id="video-slides" class="py-5 container splide">
+ <div class="splide__track">
+    <div class="video-items splide__list">
+    {% for block in section.blocks %}
+      <div class="video-item splide__slide">
+       {% if block.settings.video != blank %}
+            {% for video in block.settings.video.sources %}
+              {% if video.format == 'mp4' %}
+                <div class="">
+                  <video controls>
+                    <source src="{{ video.url }}" type="{{ video.mime_type }}">
+                  </video>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+      </div>
+    {% endfor %}
+
+  </div>
+ </div>
+</div>
+
+<style>
+  .video-slides {
+    background-color: {{ section.settings.bg-color}}
+    ;
+  }
+  .video-slides .video-item {
+    border-radius: 18px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 279.491px;
+    max-width:300px;
+    height: 358.571px;
+    flex-shrink: 0;
+    margin: 10px;
+  }
+  .video-slides video {
+    width: 100%;
+    max-height:358.571px;
+    min-height:358.571px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "video slides",
+    "class": "section video-slides",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Bg Color",
+        "default": "#F9F9F9"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "video",
+        "type": "video-block",
+        "settings": [
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "video slides"
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '#video-slides',{
+            type: 'slide',
+        arrows: true,
+      pagination:false,
+  perPage: 4,
+  breakpoints: {
+      1040: {
+			perPage: 3,
+		},
+		720: {
+			perPage: 2,
+		},440: {
+			perPage: 1,
+		},
+  }
+} );
+    splide.mount();
+  } );
+</script>

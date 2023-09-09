@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "1657860903526e6608": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Vaccine_Banner_1920_x_1300_px_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "1659123968327dd371": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/4_0331f4c2-6993-49ac-bbb2-6d5f5d605824.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ba20Vpcpf7M",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1659124061e61ef156": {
+      "type": "rich-text",
+      "blocks": {
+        "165912406188f6a744-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Launching India's most comprehensive<\/strong><\/p>"
+          }
+        },
+        "165912406188f6a744-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Home Vaccination Package<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "165912406188f6a744-1",
+        "165912406188f6a744-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "16631728457451e473": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/1_2c603e2f-f1e0-4c49-9900-85637a7e9603.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ay3gPYQJKNo",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16591240043bda1e94": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n        .grid-container-3col {\n            display: grid;\n            grid-template-columns: 1fr 1fr 1fr;\n            gap: 20px;\n        }\n\n        @media (max-width: 800px) {\n            .grid-container-3col {\n                grid-template-columns: auto;\n            }\n\n        }\n    <\/style>\n\n<div class=\"grid-container-3col\">\n        <div class=\"grid-item-3col\">\n            <a href=\"https:\/\/bibo.health\/collections\/bibo-vaccine\"><img\n                    src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/DiagnosticCard.jpg?v=1659123507\" alt=\"\"\n                    width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n        <\/div>\n\n        <div class=\"grid-item-3col\">\n            <a href=\"https:\/\/bibo.health\/collections\/our-doctors\"><img\n                    src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/5.jpg?v=1657108290\" alt=\"\" width=\"100%\"\n                    style=\"border-radius:10px ;\"><\/a>\n\n        <\/div>\n        <div class=\"grid-item-3col\">\n            <a href=\"https:\/\/bibo.health\/collections\/all\"><img\n                    src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Square_Banners.png?v=1662797957\" alt=\"\" width=\"100%\"\n                    style=\"border-radius:10px ;\"><\/a>\n\n        <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "1657860903526e6608",
+    "1659123968327dd371",
+    "1659124061e61ef156",
+    "main-collection-product-grid",
+    "16631728457451e473",
+    "16591240043bda1e94"
+  ]
+}

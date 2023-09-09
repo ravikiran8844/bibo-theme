@@ -1,0 +1,119 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-5 py-md-5">
+      <div class="mb-4 nasal-img-text-section_title">{{ section.settings.title }}</div>
+      <div class="mb-5 nasal-img-text-section_caption px-3">{{ section.settings.caption }}</div>
+      <div class="nasal-img-text-section_text">{{ section.settings.text }}</div>
+    </div>
+    <div class="col-12 col-md-7 p-md-5">
+
+      <img
+        loading="lazy"
+        class="rounded img-fluid"
+        src="{{section.settings.img | img_url: 'master'}}"
+        height="514"
+        width="1034"
+        alt="How  Bibo Nasal Sprays  Works">
+    </div>
+
+  </div>
+</div>
+
+
+
+<style>
+  .nasal-img-text-section {
+    background: #EEEFF1;
+  }
+  .nasal-img-text-section_title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 146.5%; /* 49.81px */
+  }
+  .nasal-img-text-section_caption {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #F4A26F;
+    width: max-content;
+  }
+  .nasal-img-text-section_text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media(min-width:768px) {
+    .nasal-img-text-section_title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 146.5%; /* 49.81px */
+    }
+    .nasal-img-text-section_caption {
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: #F4A26F;
+      width: max-content;
+    }
+    .nasal-img-text-section_text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Nasal Img Text",
+    "tag": "section",
+    "class": "nasal-img-text-section section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "How  Bibo Nasal Sprays  Works?"
+      }, {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Direct pathway to deliver drug to lungs."
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief."
+      }, {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }
+
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Nasal Img Text"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="col-12 text-center pt-5">
+        <div class="simple-text-block_text">{{section.settings.text}}</div>
+    </div>
+</div>
+
+<style>
+    .simple-text-block{
+        background-color: {{section.settings.bg-color}};
+    }
+    .simple-text-block_text{
+        color: #C5713E;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+  @media(min-width:768px){
+    .simple-text-block_text{
+        color: #C5713E;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "Simple Text Block",
+    "class": "section simple-text-block",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "BG Color",
+        "default": "#FFF"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Title",
+        "default": "Title"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Simple Text Block"
+        }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,110 @@
+<div class="container-fluid py-4">
+  <div class="col-12 logos-items d-flex flex-wrap justify-content-center justify-content-md-evenly p-4">
+    {% for block in section.blocks %}
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="logos-item text-center {% if forloop.last  %} logos-item--last {% endif %}">
+          <div class="logos-item_img d-flex justify-content-center align-items-center">
+            <img
+              class="img-fluid"
+              loading="eager"
+              src="{{block.settings.logo | img_url: 'master'}}"
+              alt="">
+          </div>
+          <div class="logos-item_title my-3">{{ block.settings.title }}</div>
+          <div class="logos-item_text px-3">{{ block.settings.text }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<style>
+  .logos-section_wrapper {
+    background: #275C5C;
+  }
+  .logos-item_img {
+    height: 88px;
+  }
+  .logos-item_title {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+  }
+  .logos-item_text {
+    color: #F9F9F9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media(min-width:768px) {
+
+
+
+     .logos-item {
+      height: 100%;
+      border-right: 1.5px solid #54B5A9;
+      padding-right: 20px;
+    }
+    .logos-item--last {
+      border-right: none !important;
+    }
+    .logos-item_text {
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Logos",
+    "class": "section logos-section_wrapper",
+    "tag": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "title",
+            "default": "Fortified with Tulsi"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "Tulsi fight bacterial and viral infections."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logos"
+      }
+    ]
+  }
+{% endschema %}

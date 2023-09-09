@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "1662797056e31d262f": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Diagnostic_Website_Banner_Mobile_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "166022211875381e67": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<style>\n    .banner-conatiner{\n        margin-bottom: -100px;\n        margin-top: -50px;\n    }\n      @media (max-width: 800px) {\n.banner-conatiner{\n        margin-bottom: -50px;\n    }\n      }\n<\/style>\n\n\n<div class=\"banner-conatiner justify-content-center d-flex\"><img\n        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/DiagBan.jpg?v=1660051532\"\n        alt=\"about bibo banner\" width=\"100%\" style=\"border-radius: 0px;\"\n        style=\"border: none !important; box-shadow: none !important; all: none !important;\" \/><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1660137075d4b7b4bb": {
+      "type": "rich-text",
+      "blocks": {
+        "16601370750c0ed979-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Why Bibo Diagnostic Packages?<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "16601370750c0ed979-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We provide you with the best respiratory care diagnostic services at the most affordable costs at your convenience.<\/p>"
+          }
+        },
+        "16601370750c0ed979-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16601370750c0ed979-0",
+        "16601370750c0ed979-1",
+        "16601370750c0ed979-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166006754387eefe79": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n        .container-image {\n            padding: 0px 100px;\n        }\n\n        .grid-conatiner {\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            gap: 10px;\n        }\n\n        .div-large-image {\n            grid-template-rows: auto;\n            grid-row: span 2;\n        }\n\n        .mobile {\n            display: none;\n        }\n\n        .desktop {\n            display: block;\n        }\n\n        @media (max-width: 800px) {\n            .grid-conatiner {\n                display: grid;\n                grid-template-columns: auto;\n            }\n\n            .container-image {\n                padding: 0px 10px;\n            }\n\n            .desktop {\n                display: none;\n            }\n\n            .mobile {\n                display: block;\n            }\n        }\n    <\/style>\n    <div class=\"container-image\">\n        <div class=\"grid-conatiner\">\n            <div class=\"div-large-image desktop\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/3step_Diagnosis_1.jpg?v=1662796781\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n            <div class=\"div-large-image mobile\">\n                <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/3step_Diagnosis_1.jpg?v=1662796781\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n\n            <\/div>\n            <div class=\"div-small-image\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_2.jpg?v=1662796978\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n            <div class=\"div-small-image\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/1_8.jpg?v=1662796979\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n\n        <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "16589958128e03df16": {
+      "type": "rich-text",
+      "blocks": {
+        "1658995812f0f723b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our curated lab tests for respiratory conditions<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1658995812f0f723b2-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 3,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "1658996466d0427152": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/8_3ae067ac-deaf-47cd-adca-d74e064abc0f.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=zYSgrgpXN60",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "1658994022db70911f": {
+      "type": "rich-text",
+      "blocks": {
+        "165899402206181394-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>State Of The Art Diagnostic Facilities<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "165899402206181394-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have tied-up with some of the best diagnostic chains in India like Radcliffe Lab and Orange Health to ensure the best quality, speed and accuracy in diagnostics<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165899402206181394-0",
+        "165899402206181394-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "16601261482997ad5f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n        .container-image {\n            padding: 0px 100px;\n        }\n\n        .grid-conatiner {\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            gap: 10px;\n        }\n\n        .div-large-image {\n            grid-template-rows: auto;\n            grid-row: span 2;\n        }\n\n        .mobile {\n            display: none;\n        }\n\n        .desktop {\n            display: block;\n        }\n\n        @media (max-width: 800px) {\n            .grid-conatiner {\n                display: grid;\n                grid-template-columns: auto;\n            }\n\n            .container-image {\n                padding: 0px 10px;\n            }\n\n            .desktop {\n                display: none;\n            }\n\n            .mobile {\n                display: block;\n            }\n        }\n    <\/style>\n    <div class=\"container-image\">\n        <div class=\"grid-conatiner\">\n            <div class=\"div-large-image desktop\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_6.jpg?v=1660137475\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n            <div class=\"div-large-image mobile\">\n                <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/2_6.jpg?v=1660137475\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n\n            <\/div>\n            <div class=\"div-small-image\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/8_1.jpg?v=1660126309\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n            <div class=\"div-small-image\">\n               <img\n                        src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/7_1.jpg?v=1660126309\"\n                        alt=\"\" width=\"100%\" style=\"border-radius:10px ;\"><\/a>\n\n            <\/div>\n\n        <\/div>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1662797056e31d262f",
+    "166022211875381e67",
+    "1660137075d4b7b4bb",
+    "166006754387eefe79",
+    "16589958128e03df16",
+    "main-collection-product-grid",
+    "1658996466d0427152",
+    "main-collection-banner",
+    "1658994022db70911f",
+    "16601261482997ad5f"
+  ]
+}

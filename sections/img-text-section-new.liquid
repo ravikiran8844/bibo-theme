@@ -1,0 +1,185 @@
+<div class="img-text-section-new__wrapper">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 mb-5 text-center">
+        <div class="mb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="156"
+            height="8"
+            viewBox="0 0 156 8"
+            fill="none">
+            <path
+              d="M4 4H152"
+              stroke="#54B5A9"
+              stroke-width="8"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="mb-2 img-text-section-new_title">
+          {{ section.settings.title }}
+        </div>
+        <div class="img-text-section-new_subtitle">
+          {{ section.settings.subtitle }}
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-5 mb-4 text-center px-5">
+          <img
+            class="img-fluid"
+            width="450"
+            height="450"
+            loading="lazy"
+            src="{{section.settings.image | img_url: 'master'}}"
+            alt="">
+        </div>
+        <div class="col-12 col-lg-7 m-auto px-4 text-center text-lg-start">
+          <div class="img-text-section-new_item-title mb-4">
+            {{ section.settings.itemtitle }}
+          </div>
+          <div class="img-text-section-new_item-text">
+            {{ section.settings.itemtext }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .img-text-section-new__wrapper {
+    background-color: #FFF !important;
+  }
+  .img-text-section-new_title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .img-text-section-new_subtitle {
+    color: #7CCDC3;
+    font-family: Satisfy;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .img-text-section-new_item-title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125.5%; /* 37.65px */
+  }
+  @media(min-width:992px) {
+    .img-text-section-new_item-title {
+      max-width: 350px;
+
+    }
+  }
+
+  .img-text-section-new_item-title i {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 125.5%;
+  }
+  .img-text-section-new_item-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media(min-width:768px) {
+    .img-text-section-new_title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .img-text-section-new_subtitle {
+      color: #7CCDC3;
+      font-family: Satisfy;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .img-text-section-new_item-title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125.5%; /* 47.69px */
+    }
+    .img-text-section-new_item-title i {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 125.5%;
+    }
+    .img-text-section-new_item-text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Image Text Section New",
+    "class": "section img-text-section-new",
+    "tag": "section",
+    "settings": [
+
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "itemtitle",
+        "label": "Item Title"
+      }, {
+        "type": "text",
+        "id": "itemtext",
+        "label": "Item Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Text Section New"
+      }
+    ]
+  }
+{% endschema %}

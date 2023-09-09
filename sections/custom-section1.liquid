@@ -1,0 +1,259 @@
+<style>
+  .cs1_wrapper {
+    background: #F9F9F9;
+  }
+  .cs1_main-heading {
+    color: #275C5C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121%; /* 29.04px */
+    position: relative;
+    z-index: 1;
+  }
+  .cs1_main-heading b {
+    color: #275C5C;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121%;
+  }
+  .cs1_overlay {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    background-color: #FFDA92;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: 0;
+  }
+  .cs1_image_wrapper {
+    position: relative;
+  }
+
+  .cs1_image_wrapper img {
+    z-index: 1;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    max-width:500px;
+
+  }
+  .cs1-days {
+    border-radius: 53px;
+    border: 2px solid #000;
+    width: max-content;
+    padding: 0 10px;
+    height: max-content;
+    flex-shrink: 0;
+  }
+  .cs1-days-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121%; /* 29.04px */
+  }
+  .cs1-days-description {
+    color: rgba(0, 0, 0, 0.73);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121%; /* 29.04px */
+  }
+  .cs1-days-description b {
+    color: rgba(0, 0, 0, 0.73);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 121%;
+  }
+  .cs1-days{
+    width:200px;
+  }
+  @media(min-width:768px) {
+    .cs1_main-heading {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      text-align: left;
+      font-weight: 400;
+      line-height: 121%; /* 42.35px */
+      max-width: 580px;
+      position: relative;
+      z-index: 1;
+    }
+    .cs1_main-heading b {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 121%;
+    }
+  }
+  .cs1-bottom-text{
+    color: rgba(0, 0, 0, 0.63);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 121%; /* 15.73px */
+  }
+</style>
+
+<div class="cs1_wrapper">
+  <div class="container py-5">
+    <div class="row" style="position: relative;">
+      <div class="col-12 m-auto">
+        <div class="cs1_main-heading mb-3  px-5">{{ section.settings.main_title }}
+        </div>
+        <div class="cs1_overlay" style="display: block !important;"></div>
+
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-5 cs1_image_wrapper mb-5 px-5">
+        <img
+          loading="lazy"
+          class="img-fluid"
+          width="538"
+          height="620"
+          src="{{section.settings.image | img_url: 'master'}}"
+          alt="">
+      </div>
+      <div class="col-12 col-md-6  col-lg-7 mb-4 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+        {% for block in section.blocks %}
+          <div class="d-flex flex-column  cs1-item-{{forloop.index}} flex-lg-row  justify-content-center align-items-center mb-5">
+            <div class="cs1-days">
+              <span>
+
+                <img
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                  src="{{block.settings.image | img_url: 'master'}}"
+                  alt="">
+              </span>
+              <span class="cs1-days-text">{{ block.settings.days }}</span>
+            </div>
+            <div class="d-block d-lg-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="7"
+                height="41"
+                viewBox="0 0 7 41"
+                fill="none">
+                <path
+                  d="M3 6L3 40"
+                  stroke="#BCBCBC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="4 4" />
+                <circle
+                  cx="3.21869"
+                  cy="3.21855"
+                  r="3.21857"
+                  transform="rotate(180 3.21869 3.21855)"
+                  fill="#919191" />
+              </svg>
+            </div>
+            <div class="d-none d-lg-block ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="62"
+                height="9"
+                viewBox="0 0 62 9"
+                fill="none">
+                <path
+                  d="M7 4.03329H61"
+                  stroke="#BCBCBC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="4 4" />
+                <circle
+                  cx="4.00784"
+                  cy="4.11165"
+                  r="4"
+                  transform="rotate(89.8877 4.00784 4.11165)"
+                  fill="#919191" />
+              </svg>
+            </div>
+            <div class="text-center text-lg-start cs1-days-description">{{ block.settings.text }}</div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+                  <div class="col-12 text-center">
+                    <div class="cs1-bottom-text mb-4">{{ section.settings.bottom-text }}</div>
+                  </div>
+
+  </div>
+
+</div>
+             
+
+
+
+{% schema %}
+  {
+    "name": "Custom Section 1",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_title",
+        "label": "Title",
+        "default": "What happens when you take Breathofy Syrup"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+            "type": "text",
+            "id": "bottom-text",
+            "label": "Bottom Text"
+          }
+    ],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "days",
+            "label": "Days",
+            "default": "1-7 Days"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Acts against disease causes like infections, allergens and pollutants"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Section 1"
+      }
+    ]
+  }
+{% endschema %}
