@@ -5,12 +5,12 @@
       <div class="mb-5 nasal-img-text-section_caption px-3">{{ section.settings.caption }}</div>
       <div class="nasal-img-text-section_text">{{ section.settings.text }}</div>
     </div>
-    <div class="col-12 col-md-7">
+    <div class="col-12 col-md-7 m-auto">
 
      <div class="nasal-img-text-section_img-wrapper">
         <img
-        loading="lazy"
-        class="rounded img-fluid"
+
+          loading="lazy" class="rounded img-fluid"
         src="{{section.settings.img | img_url: 'master'}}"
         alt="How  Bibo Nasal Sprays  Works">
      </div>
@@ -32,6 +32,11 @@
     font-style: normal;
     font-weight: 600;
     line-height: 146.5%; /* 49.81px */
+  }
+  .nasal-img-text-section_title span{
+    border-radius: 8px;
+    border: 2.6px solid #18ECD2;
+    box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.25);
   }
   .nasal-img-text-section_caption {
     color: #000;

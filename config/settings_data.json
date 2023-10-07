@@ -110,15 +110,15 @@
         "blocks": {
           "38b50374-5cce-47ef-8e2d-994f6e2ce6f0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "<b>2 Free Vapor Patches<\/b> on all orders",
+              "text": "Use <b>FIRST10<\/b> for 10% off on First Order",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "5ca48262-cb06-4c63-86e0-fb3324ac4296": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Use <b>FIRST10<\/b> for 10% off on First Order",
               "color_scheme": "accent-1",
@@ -140,7 +140,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/Untitled_design_150b0ebe-fd8f-4aa5-af6c-ab4fd5c177d2.png",
+          "logo": "shopify:\/\/shop_images\/onksdbeaynbshxhzpvxd.webp",
           "logo_width": 70,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -485,6 +485,12 @@
       "7584948915495707528": {
         "type": "shopify:\/\/apps\/joy-loyalty-program\/blocks\/app-embed\/555c55c9-9a3d-4fe0-a7a8-2c256984a371",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "4015264832934714879": {
+        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": false,
         "settings": {
         }
       }

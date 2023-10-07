@@ -31,18 +31,14 @@ line-height: normal;
 letter-spacing: -0.1px;
 }
 
-.announcement-bar.color-accent-1.gradient{
-    height: 48.917px !important;
-    padding: 10px !important;
+.announcement-bar{
     background: #275C5C !important;
+}
+.announcement-bar a{
+  color: #FFF !important;
 }
 .announcement-bar p{
     color: #FFF !important;
-font-family: Poppins  !important;
-font-size: 18px  !important;
-font-style: normal  !important;
-font-weight: 500 !important;
-letter-spacing: -0.09px;
 }
 .announcement-bar b{
 font-weight: 700 !important;

@@ -46,7 +46,7 @@
 .header__menu-item {
   color: #545454;
 text-align: center;
-font-family: Poppins;
+font-family: Poppins !important;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -158,22 +158,7 @@ letter-spacing: -0.1px;
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
                   <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-      <div style="margin-left:35px">
-      	  {%- if shop.customer_accounts_enabled -%}
-  <button type="button" class="btn--link" onclick="avadaJoyTrigger();">
-    {%- if customer -%}
-      {%- assign aj_point = customer.metafields.avada_joy.point | split: '' -%}
-      {%- for digit in aj_point -%}
-        {%- assign threeFromEnd = aj_point.size | minus: forloop.index | modulo: 3 -%}
-        {%- if threeFromEnd == 2 and forloop.index != 1 -%}{{ digit | prepend: ',' }}{%- else -%}{{ digit }}{%- endif -%}
-      {% endfor %}
-      {{ customer.metafields.avada_joy.point | pluralize: 'Bibo Cash', 'Bibo Cash' }}
-    {%- else -%}
-     Bibo Wallet
-    {%- endif -%}
-  </button>
-{%- endif -%}
-      </div>
+
                     {%- for link in section.settings.menu.links -%}
                       <li>
                       
@@ -539,20 +524,6 @@ letter-spacing: -0.1px;
               </li>
             {%- endfor -%}
           </ul>
-          {%- if shop.customer_accounts_enabled -%}
-  <button type="button" class="btn--link" onclick="avadaJoyTrigger();">
-    {%- if customer -%}
-      {%- assign aj_point = customer.metafields.avada_joy.point | split: '' -%}
-      {%- for digit in aj_point -%}
-        {%- assign threeFromEnd = aj_point.size | minus: forloop.index | modulo: 3 -%}
-        {%- if threeFromEnd == 2 and forloop.index != 1 -%}{{ digit | prepend: ',' }}{%- else -%}{{ digit }}{%- endif -%}
-      {% endfor %}
-      {{ customer.metafields.avada_joy.point | pluralize: 'Bibo Cash', 'Bibo Cash' }}
-    {%- else -%}
-     Bibo Wallet
-    {%- endif -%}
-  </button>
-{%- endif -%}
 
         </nav>
       {%- endif -%}

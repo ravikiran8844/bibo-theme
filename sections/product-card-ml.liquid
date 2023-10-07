@@ -20,7 +20,9 @@
     .product-info-top{
       color: #EB752C !important;
     }
-
+ .temp-sinus-wellness-pack .product-info-top{
+      color: #181818 !important;
+    }
 
    
 .watch-testimonials{
@@ -479,7 +481,8 @@
 
                           {% assign pack-ml = product.metafields.custom.pack_ml %}
                          {% if value == "Pack of 1" %}
-                          
+                           
+                          {% if pack-ml !=blank %}
                           <div>({% if pack-ml != blank %}
                     {{ pack-ml | times:1 }}
                     {% endif %} {{ product.metafields.custom.pack_metric_type }})</div>
@@ -489,6 +492,8 @@
                     {% endif %} {{ product.metafields.custom.pack_metric_type }})
                           </div>
                             {% endif %}
+                        {% endif %}
+
                           
                         </div>
                             <div>

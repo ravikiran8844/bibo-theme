@@ -1,0 +1,210 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 published-articles_border-bottom text-center">
+      <div class="mb-4 published-articles_title">Published Articles</div>
+      <div class="mb-5 published-articles_text">Well Researched For Your Safety!</div>
+    </div>
+  </div>
+  <div class="row">
+    {% for block in section.blocks %}
+      <div class="col-12 py-3 {%if forloop.first%} published-articles_border-1 {%else%} published-articles_border-2 {%endif%}">
+
+        <div class="row">
+          <div class="col-4 published-articles_img-wrapper">
+            <img
+              class="img-fluid"
+              loading="lazy"
+              src="{{block.settings.img | img_url: 'master'}}"
+              width="436"
+              height="436"
+              alt="article {{forloop.index}}">
+          </div>
+          <div class="col-8 m-auto">
+            <div class="d-flex align-items-center mb-3">
+              <div class="published-articles_item-logo_wrapper">
+                <img
+                  loading="lazy"
+                  class="img-fluid"
+                  src="{{block.settings.logo | img_url: 'master'}}"
+                  alt="logo">
+              </div>
+              <div class="published-articles_item-pulished-date">{{block.settings.date}}</div>
+            </div>
+            <div class="published-articles_item-text mb-5">{{block.settings.text}}</div>
+            <div class="mb-5">
+              <a class="published-articles_item-btn px-5 py-3" href="{{block.settings.link}}">READ NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+<style>
+  .published-articles_border-1 {
+    border-top: 5px solid #EB752C;
+  }
+  .published-articles_border-2 {
+    border-top: 1px solid #646363;
+  }
+
+  .published-articles_img-wrapper img {
+    max-width:436px;
+    max-height:436px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .published-articles_item-logo_wrapper {
+    width: 100px;
+  }
+  .published-articles_item-btn,
+  .published-articles_item-btn:hover {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: #275C5C;
+    box-shadow: 0 4.00153px 10px 0 rgba(0, 0, 0, 0.10);
+    text-decoration: none;
+  }
+
+
+  .published-articles_title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .published-articles_text {
+    color: #00A79D;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .published-articles_item-pulished-date {
+    color: #00A79D;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%; /* 22.78px */
+  }
+  .published-articles_item-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134%; /* 40.2px */
+  }
+  @media(min-width:998px) {
+    .published-articles_title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .published-articles_text {
+      color: #00A79D;
+      font-family: Poppins;
+      font-size: 26px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .published-articles_item-pulished-date {
+      color: #00A79D;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 134%; /* 22.78px */
+    }
+    .published-articles_item-text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 134%; /* 40.2px */
+    }
+    .published-articles_item-btn,
+    .published-articles_item-btn:hover {
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      border-radius: 8px;
+      background: #275C5C;
+      box-shadow: 0 4.00153px 10px 0 rgba(0, 0, 0, 0.10);
+      text-decoration: none;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Published Articles",
+    "class": "section published-articles",
+    "tag": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "block",
+        "type": "article",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          }, {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "text",
+            "id": "date",
+            "label": "pusblished one",
+            "default":"(Published Online: September 2022)"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default":"A unique amalgamation of saline, tulsi, and xylitol to relieve nasal & sinus congestion."
+          },
+           {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Published Articles"
+      }
+    ]
+  }
+{% endschema %}

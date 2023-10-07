@@ -9,7 +9,7 @@
         <li class="splide__slide">
           {% assign mobileSrc = block.settings.mobImg | default: block.settings.img %}
           <a href="{{block.settings.link}}">
-            {% render 'image', class: 'main-image-slider_img-wrapper', mobileSrc: mobileSrc, desktopSrc: block.settings.img %}
+            {% render 'image', class: 'main-image-slider_img-wrapper', loading="eager" fetchPriority="high" mobileSrc: mobileSrc, desktopSrc: block.settings.img %}
 
           </a>
         </li>

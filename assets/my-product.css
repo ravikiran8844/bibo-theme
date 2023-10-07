@@ -3,18 +3,11 @@
     height: 103px;
     display: flex;
 }
-.announcement-bar.color-accent-1.gradient{
-    height: 48.917px !important;
-    padding: 10px !important;
-    background: rgba(255, 136, 26, 0.79) !important;
+.announcement-bar a{
+    color: #343434 !important;
 }
 .announcement-bar p{
     color: #343434 !important;
-font-family: Poppins  !important;
-font-size: 20px  !important;
-font-style: normal  !important;
-font-weight: 400 !important;
-letter-spacing: -0.1px;
 }
 body,.custom-product-page{
     background: rgba(245, 245, 245, 0.30) !important;

@@ -35,7 +35,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": true
           }
         },
         "00f934ea-331c-42d8-a463-22b61581c53c": {
@@ -132,15 +132,55 @@
       "settings": {
       }
     },
-    "e3fec895-9236-4e6a-a2a1-e2630fa87680": {
-      "type": "simple-text-block",
+    "b7a35bc3-3be9-47d1-86d0-e6600a6810be": {
+      "type": "accordian",
+      "blocks": {
+        "6c33f8b2-e8f2-4723-a13e-ff1fab46522f": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Free_Syrup_Box_Mockup_PSD_Template-2_2_c6d1b3ca-b91e-47cd-baf0-d68f2d776f3c.png",
+            "text": "<p><strong>Every 5 ml of the Syrup contains:<\/strong><br\/><br\/>Tulsi, (Ocimum sanctum), Lf, 86 mg; Sunthi, (Zingiber officinale), Rz, 43 mg;Adulsa\/Vasa, (Justicia adhatoda), Lf, 69 mg ;Mulethi\/Licorice, (Glycyrrhiza glabra), Rt, 52 mg;Bhumi amla, (Phyllanthus niruri), WP, 43 mg; Vacha\/Sweet flag, (Acorus calamus), Rt, 3 mg; Ashwagandha, (Withania somnifera), Rt, 69 mg; Talispatra, (Abies webbiana), Lf, 43 mg; Mutha\/Nut grass, (Cyperus rotundus), Rt, 43 mg;Rudravanti, (Cressa cretica), WP, 34 mg;Pippali, (Piper longum), Fr, 34 mg; Saunf, (Foeniculum vulgare), Fr, 34 mg; Spanish Thyme, (Coleus aromaticus), Lf, 17 mg; Menthol, (Pudina), Lf, 2 mg; Honey, 2000 mg; Excipients & Preservatives: Carboxymethyl Cellulose, Glycerine, and Sodium Benzoate.<\/p>"
+          }
+        },
+        "2e297ddd-33c9-4a32-a6ea-8b48856549b0": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MockUp_1-2_2.png",
+            "text": "<p><strong>Clear Vapor Patch Ultra contains:<\/strong><\/p><ul><li>Satva Pudina (Menthol) 6%<\/li><li>Kapoor (Camphor) 3%<\/li><li>Eucalyptus Oil 1%<\/li><li>Yavani Satva (Thymol) 1%<\/li><\/ul>"
+          }
+        },
+        "9575837e-2a0d-4c26-93a8-d253b634e53f": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14769.png",
+            "text": "<p><strong>Bibo Saline Nasal Spray:<\/strong><\/p><ul><li>Tulsi, Ocimum Sanctum, Leaves, 2.00%<\/li><li>Saline, Lavana, Salt, 0.65%<\/li><li>Excipients: Xylitol, 3%, Purified Water q.s.<\/li><\/ul>"
+          }
+        },
+        "8ecf09f6-d517-489d-931a-6fc48a47c99c": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BB_4.png",
+            "text": "<p><strong>Blend of following natural essential oils:<\/strong><\/p><ul><li>Camphor 10%<\/li><li>Thymol 5%<\/li><li>Eucalyptus Oil 40%<\/li><li>Menthol 15%<\/li><li>Pine Oil 30%<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "6c33f8b2-e8f2-4723-a13e-ff1fab46522f",
+        "2e297ddd-33c9-4a32-a6ea-8b48856549b0",
+        "9575837e-2a0d-4c26-93a8-d253b634e53f",
+        "8ecf09f6-d517-489d-931a-6fc48a47c99c"
+      ],
+      "custom_css": [
+        ".accordian-section {padding-top: 20px;}"
+      ],
       "settings": {
-        "bg-color": "#ffffff",
-        "text": "Disclaimer: This is a Schedule H drug. This will be sold only after a prescription from the registered doctor only."
+        "heading": "Ingredients",
+        "text": ""
       }
     },
     "44e2dd6b-d5d4-435c-8263-c0bf4555142c": {
       "type": "accordian-section-new",
+      "disabled": true,
       "custom_css": [
         ".accordian-section {padding-top: 20px;}"
       ],
@@ -149,56 +189,18 @@
         "text": "<p><strong>COMPOSITION: <\/strong>Oxymetazoline Hydrochloride<\/p><p><strong>INDICATIONS: <\/strong>: COLDLYTE OXY relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions.<\/p><p><strong>BENEFITS:<\/strong><br\/>It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds. It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><p><strong>THERAPEUTIC CLASS: <\/strong>Respiratory<\/p><p><strong>ADDICTIVE OR HABIT FORMING: <\/strong>No<\/p><p><strong>CATEGORY: <\/strong>Antihistamine (anti-allergic)<\/p>"
       }
     },
-    "9f795468-7108-41ee-8a94-43acd7a1d285": {
-      "type": "accordian-section-new",
-      "settings": {
-        "heading": "ABOUT COLDLYTE OXY SPRAY",
-        "text": "<p>COLDLYTE OXY Spray is India's first pump based oxymetazoline spray which ensures uniform dosing and prevents from many adverse effects related to faulty drug (medicine) delivery as seen in squeeze based oxymetazoline nasal sprays.<\/p><p>COLDLYTE OXY Spray contains Oxymetazoline which is a decongestant. It relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions. It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds and acts up to 12 hours. It also shortens the illness such as blocked nose and nasal & sinus congestion by 2 days.<\/p><p>It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><h2><strong>SIDE EFFECTS<\/strong><\/h2><p>The common side effects include:<\/p><ul><li>Nausea<\/li><li>Burning sensation<\/li><li>Dry mouth, nose or throat<\/li><li>Headache<\/li><\/ul><p>The side effects are generally mild and would resolve on their own.<br\/>Severe side effects-<\/p><ul><li>Increased blood pressure<\/li><li>Blurred vision<\/li><li>Swelling of the face, lips, tongue or throat<\/li><li>Dizziness<\/li><li>Insomnia (difficulty in sleeping)<\/li><li>Weakness<\/li><li>Irregular heartbeat<\/li><\/ul><p>If such symptoms occur, stop using the medicine, and consult a doctor or visit a nearby clinic immediately.<\/p>"
-      }
-    },
-    "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
-      "type": "accordian-section-new",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "heading": "DIRECTION TO USE",
-        "text": "<p>Read the leaflet of COLDLYTE OXY Spray for complete information on how to use this product.<\/p><ul><li>Use COLDLYTE OXY Spray as directed by your doctor.<\/li><li>Wash your hands before and after using the spray.<\/li><li>Blow off the nose gently before using this spray.<\/li><li>If you are using the spray for the first time or after a few days or weeks, it is better to shake the bottle gently and prime it.<\/li><li>While using the spray in one nostril, keep the other nostril closed.<\/li><li>Slowly inhale while you spray COLDLYTE OXY Spray towards the sides of the nostril.<\/li><li>Clean and dry the tip of the spray after each use.<\/li><\/ul>"
-      }
-    },
-    "4f697d50-229d-4207-906a-2b5caf122204": {
-      "type": "accordian-section-new",
-      "settings": {
-        "heading": "MODE OF ACTION",
-        "text": "<p>COLDLYTE OXY Spray contains oxymetazoline which is a decongestant. It works by shrinking the blood vessels in the nasal passages and decreasing the blood flow to the nasal area. The shrunk blood vessels reduce the inflammation by shrinking the inflamed tissues, thus providing temporary relief from nasal congestion and blockage due to common cold, sinusitis or allergies.<\/p>"
-      }
-    },
-    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4": {
-      "type": "accordian-section-new",
-      "settings": {
-        "heading": "PRECAUTIONS AND WARNINGS",
-        "text": "<p><strong>Children<\/strong><br\/>Do not use COLDLYTE OXY Spray for children below 12 years.<\/p><p><strong>Pregnancy<\/strong><br\/>Limited human data is available on the safety of COLDLYTE OXY Spray in pregnancy. However, animal studies have shown harmful effects on the developing baby. Hence, it is better to avoid using this medicine.<\/p><p><strong>Lactating mothers<\/strong><br\/>Limited data is available on whether the drug passes through breast milk. Hence it is better to consult a doctor before taking this medicine.<\/p><p><strong>Driving<\/strong><br\/>COLDLYTE OXY Spray may cause dizziness, drowsiness and excessive sleep. If such symptoms occur, it is better to take a rest and avoid driving or operating heavy machinery.<\/p><p><strong>Alcohol<\/strong><br\/>There is limited data on the safety of consuming alcohol while taking COLDLYTE OXY Spray. Hence it is better to avoid drinking alcohol while taking this medicine.<\/p><p><strong>Liver diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with liver diseases.<\/p><p><strong>Kidney diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with kidney diseases.<\/p><p><strong>CONTRAINDICATIONS<\/strong><br\/>Do not use COLDLYTE OXY Spray if:<\/p><ul><li>You are allergic to oxymetazoline or any other ingredients of this medicine.<\/li><li>You have high blood sugar levels.<\/li><li>You have glaucoma, enlarged prostate gland (in men), hyperthyroidism, liver, kidney, or heart problems<\/li><\/ul>"
-      }
-    },
-    "cb81ba62-a6b0-4c5f-a595-276974fe8f76": {
-      "type": "accordian-section-new",
-      "settings": {
-        "heading": "STORAGE",
-        "text": "<p>Store in a cool, dry place at a temperature below 30ᵒC<\/p><p>Do not freeze<\/p>"
-      }
-    },
     "f06fe682-f320-4a03-9dd6-d8c5f827548e": {
       "type": "accordian-section-new",
       "settings": {
-        "heading": "DOSAGE",
-        "text": "<p><strong>Missed dose<\/strong><br\/>Take COLDLYTE OXY Spray as soon as you remember. But if it is the time for next dose, skip the missed dose and continue taking this medicine. Do not take a double dose of this medicine to compensate for the missed dose.<\/p><p><strong>Overdose<\/strong><br\/>COLDLYTE OXY Spray is for intranasal use only. So chances of overdose are unlikely. However, if you have sprayed a higher dose of the medicine, contact your doctor or visit a nearby hospital.<\/p>"
+        "heading": "Benefits",
+        "text": "<ol><li><strong>SYNERGISTIC ACTION: <\/strong>Combining the benefits of Breathe Blend, Vapor Patch and Breathofy, the sinus wellness pack provide a long-term solution to your existing sinusitis.<\/li><li><strong>INSTANT RELIEF: <\/strong>Bibo Sinus wellness pack gives you instant relief. With Breathe Blend, Vapor Patch and Nasal Spray, you will immediately experience the benefits of essential oils and other herbs which ensure free and clear breathing.<\/li><li><strong>WHOLESOME RELIEF: <\/strong>Sinusitis often comes with allergies and moments of difficult breathing. With the Bibo Sinus wellness pack get freedom from stubborn nasal blockage or congestion in the nose.<\/li><li><strong>IMMUNITY BUILDERS: <\/strong>It not only gives symptomatic relief but also builds immunity against future infections.<\/li><li><strong>IT IS DIFFERENT FROM OTHERS:<\/strong> Our products are safe for your kids and are pocket friendly too.<\/li><\/ol>"
       }
     },
     "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f": {
       "type": "accordian-section-new",
       "settings": {
-        "heading": "INTERACTIONS",
-        "text": "<ul><li><strong>Drug-drug interactions:<\/strong><br\/> It is better to avoid using these medicines along with COLDLYTE OXY Spray. Also, inform your doctor regarding all the medicines you are taking, including prescription and non-prescription medicines, ayurvedic, homoeopathic or dietary supplements.<\/li><li><strong>Drug-food interactions:<\/strong><br\/> Include non-spicy foods and drink warm liquids to ease the symptoms.<\/li><li><strong>Drug-disease interactions:<\/strong><br\/> Do not self-medicate. It is always better to consult a doctor before using COLDLYTE OXY Spray.<\/li><\/ul>"
+        "heading": "Safety Precautions",
+        "text": "<ol><li>Breathe Blend is suitable for kids above the age of 5. For younger kids, it can be used only under the supervision of adults.<\/li><li>Seek medical advice if pregnant or lactating before using Breathe Blend.<\/li><li>Avoid contact with eyes and wash with water if came in touch.<\/li><li>Keep out of children's reach.<\/li><li>Vapor Patch is only for EXTERNAL use, do not taste or swallow.<\/li><li>Read the label carefully before use.<\/li><li>Store in a cool and dry place away from direct sunlight.<\/li><li>These are Ayurvedic proprietary medicines and are generally considered safe.<\/li><li>If you face any adverse symptoms or develop any allergy to the products, please discontinue and see a doctor.<\/li><li>Saline Nasal Spray is for nasal use only.<\/li><li>For Breathofy Syrup, finish or discard the product within 6 weeks of opening the bottle.<\/li><\/ol>"
       }
     },
     "008eacbb-14a6-472a-90b8-188a65470334": {
@@ -207,8 +209,8 @@
         ".accordian-section {padding-bottom: 40px;}"
       ],
       "settings": {
-        "heading": "NATURAL REMEDIES TO EASE THE SYMPTOMS",
-        "text": "<p><strong>Diet modification:<\/strong><\/p><ul><li>Adding ginger and tulsi to your tea will help reduce the inflammation and infection in the respiratory tract.<\/li><li>Stay well hydrated. It helps clear the extra mucus and dust particles from the nose, sinuses and airways.<\/li><li>Drink warm water or drinks to reduce the inflammation of the airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways.<\/li><li>Avoid spicy, fried foods as they may worsen allergic symptoms like watery eyes and runny nose.<\/li><li>Include honey, green leafy vegetables, broccoli, turmeric, etc. They may help improve immunity and deal with allergic symptoms.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li>Avoid exposure to allergens.<\/li><li>Always wear a mask in crowded and polluted places.<\/li><li>Practice deep breathing exercises to improve lung capacity and health.<\/li><li>Nasal irrigation with saline water is an effective way to clean the nasal and sinus areas.<\/li><li>Gargles are effective in healing sore throats and infections of the oral cavity.<\/li><\/ul>"
+        "heading": "Dosage",
+        "text": "<p><strong>Clear Vapor Patch Ultra<\/strong><\/p><ol><li>Use up to 2 patches per day for kids and up to 3 patches for adults.<\/li><li>Feel free in applying over clothes, it leaves no stains.<\/li><li>Use the patch immediately after tearing the pouch. It’s a single-use patch.<\/li><\/ol><p><strong>Breathe Blend<\/strong><\/p><ol><li>Use one to two drops on a hanky or pillow for inhalation.<\/li><li>Or add one to two drops for steam inhalation in water or the oils diffuser.<\/li><li>Can also add a drop to the vapor patch for extending efficacy further.<\/li><li>Euro dropper: Just tilt the bottle to get drops. Keep it sealed all the time.<\/li><\/ol><p><strong>Saline Nasal Spray<\/strong><\/p><ol><li>Spray in each nostril up to 3 times daily for kids aged between 3 years and 10 years.<\/li><li>For 11 years and onwards, use up to 2 sprays in each nostril up to 4 times a day.<\/li><li>Maintenance Dose: Daily twice, one spray in each nostril.<\/li><li>When using the spray, good to breathe in with nose and breathe out with mouth.<\/li><li>Keep the tip clean, wipe with clean cloth or tissues after use.<\/li><li>Avoid mixing up with others by writing your name with a marker.<\/li><\/ol><p><strong>Breathofy Syrup<\/strong><\/p><ol><li>Dosage for boosting lung health in conditions like asthma, bronchitis, and smoker's lungs: 5ml twice a day regularly.<\/li><li>Shake well before use. For best outcomes, take at least 30 minutes before or after meals and avoid having water after taking it.<\/li><\/ol>"
       }
     },
     "main-product-recommendations": {
@@ -241,43 +243,36 @@
         "9df71dc1-2cc3-443a-a1dc-f40357ef31c5": {
           "type": "faq-block",
           "settings": {
-            "question": "Can COLDLYTE OXY Spray worsen my nasal congestion?",
-            "answer": "Using COLDLYTE OXY Spray for more than the recommended dose and duration may worsen nasal congestion. It is always better to consult a doctor before using this medicine and read the instructions on the label."
+            "question": "What are the indications of Bibo Saline Nasal Spray?",
+            "answer": "Bibo Saline Nasal Spray relieves common cold, blocked or runny nose, nasal congestion, sore throat and sinusitis. It relieves symptoms in people suffering from allergies, deviated nasal septum and nasal polyps.Add about ten sprays to a glass of water and use it as a gargle.Add 5ml of Bibo Saline Nasal Spray to sterilized water, and you can use it for Neti kriya. The Neti kriya can give instant relief to people having sinusitis."
           }
         },
         "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1": {
           "type": "faq-block",
           "settings": {
-            "question": "What are the uses of COLDLYTE OXY Spray?",
-            "answer": "COLDLYTE OXY Spray relieves nasal congestion and blocked nose due to common cold, sinusitis or allergy."
+            "question": "How is Bibo Saline Nasal Spray different from other Nasal Sprays?",
+            "answer": "Bibo Saline Nasal Spray is not an ordinary spray. It is enriched with Tulsi and Xylitol. Bibo Saline Nasal Spray has antibacterial, anti-inflammatory and immune-building properties. It is safe for all age groups and can also be used as a gargle and a solution for Neti kriya."
           }
         },
         "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad": {
           "type": "faq-block",
           "settings": {
-            "question": "How to use COLDLYTE OXY Spray?",
-            "answer": "Use COLDLYTE OXY Spray as directed by your doctor. Read the instructions in the leaflet properly. Do not exceed the dose and duration of this spray."
+            "question": "Will Bibo Saline Nasal Spray cause nose bleeding or irritation?",
+            "answer": "No, Bibo Saline Nasal Spray will not cause nose bleeding or irritation when properly used. Use the spray up to 4-5 times a day."
           }
         },
         "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783": {
           "type": "faq-block",
           "settings": {
-            "question": "Is COLDLYTE OXY Spray a steroid?",
-            "answer": "No, COLDLYTE OXY Spray is not a steroid. It contains oxymetazoline which is a nasal decongestant. It relieves blocked nose and nasal congestion by shrinking the blood vessels in the nasal and sinus area."
+            "question": "Is Bibo Saline Nasal Spray safe for kids?",
+            "answer": "Yes, Bibo Saline Nasal Spray is safe for all age groups. It contains a saline solution with antimicrobial, anti-inflammatory, and immune-building herb Tulsi and Xylitol."
           }
         },
         "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
           "type": "faq-block",
           "settings": {
-            "question": "Can I use COLDLYTE OXY Spray for sinusitis?",
-            "answer": "Yes, COLDLYTE OXY Spray is used to relieve blocked nose and nasal congestion due to sinusitis. Use COLDLYTE OXY Spray only if recommended by the doctor."
-          }
-        },
-        "05200af5-2156-4f62-a4a3-9250cd71f098": {
-          "type": "faq-block",
-          "settings": {
-            "question": "What are the side effects of COLDLYTE OXY Spray?",
-            "answer": "COLDLYTE OXY Spray can cause mild symptoms such as nausea, burning sensation in the nose and throat, dry mouth, or headache. These symptoms would resolve with time. It is better to stop using the medicine and consult a doctor or visit a nearby clinic if you experience increased heart rate, blurred vision, swelling of the face, lips, tongue or throat, dizziness or irregular heartbeat"
+            "question": "Is Bibo Saline Nasal Spray addictive?",
+            "answer": "Bibo Saline Nasal Spray is non-addictive. It doesn’t contain any chemical that may be habit-forming."
           }
         }
       },
@@ -286,8 +281,7 @@
         "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1",
         "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad",
         "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783",
-        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
-        "05200af5-2156-4f62-a4a3-9250cd71f098"
+        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183"
       ],
       "custom_css": [
         ".rk-faq-section,.faq-section {background: #f9f9f9;}"
@@ -299,6 +293,13 @@
     "e3ec87c0-1921-49b6-829d-0ea969f31a71": {
       "type": "logos-section",
       "blocks": {
+        "9b52c750-6ffb-45c3-86af-fb075233d54a": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14676.png",
+            "logo-text": "Backed by Ayurveda"
+          }
+        },
         "e5ea787f-bdcc-4a8a-99fb-b242954269df": {
           "type": "logo-block",
           "settings": {
@@ -309,8 +310,8 @@
         "8123b403-6543-4cd1-a340-f572d4999f91": {
           "type": "logo-block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/cs-logo.png",
-            "logo-text": "Recent Molecules"
+            "logo": "shopify:\/\/shop_images\/Group_14680.png",
+            "logo-text": "100% Natural"
           }
         },
         "6a4387b5-f051-49a7-b3f6-2e485a76d1af": {
@@ -329,6 +330,7 @@
         }
       },
       "block_order": [
+        "9b52c750-6ffb-45c3-86af-fb075233d54a",
         "e5ea787f-bdcc-4a8a-99fb-b242954269df",
         "8123b403-6543-4cd1-a340-f572d4999f91",
         "6a4387b5-f051-49a7-b3f6-2e485a76d1af",
@@ -393,7 +395,7 @@
       "type": "apps",
       "blocks": {
         "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -414,13 +416,8 @@
   "order": [
     "main",
     "description",
-    "e3fec895-9236-4e6a-a2a1-e2630fa87680",
+    "b7a35bc3-3be9-47d1-86d0-e6600a6810be",
     "44e2dd6b-d5d4-435c-8263-c0bf4555142c",
-    "9f795468-7108-41ee-8a94-43acd7a1d285",
-    "5691b36a-cd64-44ed-b2e4-65e86f821c34",
-    "4f697d50-229d-4207-906a-2b5caf122204",
-    "43a33cb3-b394-4337-a5d0-3c2c4e593aa4",
-    "cb81ba62-a6b0-4c5f-a595-276974fe8f76",
     "f06fe682-f320-4a03-9dd6-d8c5f827548e",
     "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f",
     "008eacbb-14a6-472a-90b8-188a65470334",

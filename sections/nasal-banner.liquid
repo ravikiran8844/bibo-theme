@@ -1,0 +1,51 @@
+<div class="nasal-banner_wrapper container-fluid">
+  <div class="row">
+    <div class="col-12 p-0">
+      <a href={{ section.settings.url }}><img
+        height="976"
+        width="1936"
+        loading="eager"
+        class="img-fluid"
+        src="{{section.settings.img | img_url: 'master'}}"
+        alt="Banner Image"></a>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .nasal-banner {
+    background-image: url("{{section.settings.bg_img | img_url: 'master'}}");
+  }
+  .nasal-banner img{
+    width:100%;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Nasal Banner",
+    "class": "section nasal-banner",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Bg Image"
+      }, {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },{
+        "type": "url",
+        "id": "url",
+        "label": "Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nasal Banner"
+      }
+    ]
+  }
+{% endschema %}

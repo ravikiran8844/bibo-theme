@@ -1,3 +1,8 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+
+
 <div class="container py-5">
   <div class="row">
     <div class="col-12 text-center">
@@ -21,10 +26,15 @@
     </div>
 
   </div>
-  <div class="row">
+
+
+            
+  <div id="nasal-cards-slider" class="row splide">
+    <div class="col-12 splide__track">
+      <ul class="splide__list">
 
     {% for block in section.blocks %}
-      <div class="col-12 col-md-4 mb-5">
+      <li class="p-3 splide__slide">
 
         <div class="nasal-product-cards_item">
           <div class="text-center nasal-product-cards_item-img_wrapper">
@@ -138,13 +148,22 @@
           </div>
         </div>
 
-      </div>
+      </li>
     {% endfor %}
 
+
+   </ul>
+    </div>
 
   </div>
 
 </div>
+
+
+
+
+
+
 
 {% style %}
   {% for  block in section.blocks %}
@@ -166,7 +185,7 @@
     border-radius: 18.477px;
     border: 2px solid #E9E6E6;
     background: #FFF;
-    box-shadow: 0 0 39px 0 rgba(102, 102, 102, 0.25);
+    box-shadow: 0 0 10px 0 rgba(102, 102, 102, 0.25);
     max-width: 489px;
     margin: auto;
     height:100%;
@@ -230,6 +249,13 @@
       font-style: normal;
       font-weight: 500;
       line-height: 123.5%; /* 27.17px */
+    }
+  }
+
+
+  @media(min-width:968px){
+    .nasal-product-cards .splide__arrows{
+      display:none;
     }
   }
 </style>
@@ -304,3 +330,29 @@
     ]
   }
 {% endschema %}
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('#nasal-cards-slider', {
+      type: 'loop',
+      arrows: true,
+      autoplay: false,
+      pagination: false,
+      perPage: 3,
+      breakpoints: {
+        1240: {
+          perPage: 3
+        },
+        960: {
+          perPage: 2
+        },
+        680: {
+          perPage: 1
+        }
+      }
+    });
+    splide.mount();
+  });
+</script>

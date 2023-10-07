@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "product-card-ml",
+      "type": "product-card-tablets",
       "blocks": {
         "title": {
           "type": "title",
@@ -146,14 +146,14 @@
       ],
       "settings": {
         "heading": "GENERAL INFORMATION",
-        "text": "<p><strong>COMPOSITION: <\/strong>Oxymetazoline Hydrochloride<\/p><p><strong>INDICATIONS: <\/strong>: COLDLYTE OXY relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions.<\/p><p><strong>BENEFITS:<\/strong><br\/>It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds. It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><p><strong>THERAPEUTIC CLASS: <\/strong>Respiratory<\/p><p><strong>ADDICTIVE OR HABIT FORMING: <\/strong>No<\/p><p><strong>CATEGORY: <\/strong>Antihistamine (anti-allergic)<\/p>"
+        "text": "<p><strong>Composition<\/strong>: Acebrophylline (Sustained release) - 200mg<\/p><p><strong>Indications<\/strong>: Bronkite AB SR 200 Tablet is used to treat and prevent symptoms of lower respiratory problems like asthma, bronchitis, and chronic obstructive pulmonary disorder. It relaxes the muscles of the airways and helps in easy breathing.<\/p><p><strong>Benefits<\/strong>: <\/p><ul><li>Bronkite is a powerful solution with dual action, acting as both a bronchodilator and a mucolytic.<\/li><li>With its sustained-release formulation, Bronkite only requires one dose instead of two compared to other tablets<\/li><\/ul><p><strong>Therapeutic class<\/strong>: Respiratory<\/p><p><strong>Addictive or habit-forming<\/strong>: No<\/p><p><strong>Category<\/strong>: Bronchodilator + Mucolytic<\/p>"
       }
     },
     "9f795468-7108-41ee-8a94-43acd7a1d285": {
       "type": "accordian-section-new",
       "settings": {
-        "heading": "ABOUT COLDLYTE OXY SPRAY",
-        "text": "<p>COLDLYTE OXY Spray is India's first pump based oxymetazoline spray which ensures uniform dosing and prevents from many adverse effects related to faulty drug (medicine) delivery as seen in squeeze based oxymetazoline nasal sprays.<\/p><p>COLDLYTE OXY Spray contains Oxymetazoline which is a decongestant. It relieves blocked nose and nasal congestion due to common cold, sinusitis, hay fever or other allergic conditions. It shows instant action on a blocked nose. It starts to unblock the nose in 25 seconds and acts up to 12 hours. It also shortens the illness such as blocked nose and nasal & sinus congestion by 2 days.<\/p><p>It reduces the inflammation in the blood vessels and excess nasal secretions, thereby improving breathing.<\/p><h2><strong>SIDE EFFECTS<\/strong><\/h2><p>The common side effects include:<\/p><ul><li>Nausea<\/li><li>Burning sensation<\/li><li>Dry mouth, nose or throat<\/li><li>Headache<\/li><\/ul><p>The side effects are generally mild and would resolve on their own.<br\/>Severe side effects-<\/p><ul><li>Increased blood pressure<\/li><li>Blurred vision<\/li><li>Swelling of the face, lips, tongue or throat<\/li><li>Dizziness<\/li><li>Insomnia (difficulty in sleeping)<\/li><li>Weakness<\/li><li>Irregular heartbeat<\/li><\/ul><p>If such symptoms occur, stop using the medicine, and consult a doctor or visit a nearby clinic immediately.<\/p>"
+        "heading": "About Bronkite",
+        "text": "<p>Bronkite is an innovative tablet that contains Acebrophylline molecules. It's a powerful solution with dual action, acting as both a bronchodilator and a mucolytic.<\/p><p>Bronkite helps manage and prevent symptoms of lower respiratory problems like asthma and COPD.<\/p><p>With its sustained-release formulation, Bronkite only requires one dose instead of two compared to other tablets, offering convenience and effective respiratory care.<\/p><p><strong>Side effects:<\/strong><\/p><ul><li>Vomiting<\/li><li>Dizziness<\/li><li>Headache<\/li><li>Drowsiness<\/li><li>Heartburn<\/li><li>Abdominal discomfort and pain<\/li><li>Loss of appetite<\/li><li>Itching and rashes<\/li><li>Constipation<\/li><li>Diarrhea<\/li><\/ul><p>Please consult your healthcare provider if you experience any of these.<\/p>"
       }
     },
     "5691b36a-cd64-44ed-b2e4-65e86f821c34": {
@@ -163,42 +163,42 @@
       ],
       "settings": {
         "heading": "DIRECTION TO USE",
-        "text": "<p>Read the leaflet of COLDLYTE OXY Spray for complete information on how to use this product.<\/p><ul><li>Use COLDLYTE OXY Spray as directed by your doctor.<\/li><li>Wash your hands before and after using the spray.<\/li><li>Blow off the nose gently before using this spray.<\/li><li>If you are using the spray for the first time or after a few days or weeks, it is better to shake the bottle gently and prime it.<\/li><li>While using the spray in one nostril, keep the other nostril closed.<\/li><li>Slowly inhale while you spray COLDLYTE OXY Spray towards the sides of the nostril.<\/li><li>Clean and dry the tip of the spray after each use.<\/li><\/ul>"
+        "text": "<ul><li>Remember to swallow Bronkite whole with water. <\/li><li>Do not chew, break, or crush the tablet. <\/li><li>Take it after food.<\/li><\/ul>"
       }
     },
     "4f697d50-229d-4207-906a-2b5caf122204": {
       "type": "accordian-section-new",
       "settings": {
         "heading": "MODE OF ACTION",
-        "text": "<p>COLDLYTE OXY Spray contains oxymetazoline which is a decongestant. It works by shrinking the blood vessels in the nasal passages and decreasing the blood flow to the nasal area. The shrunk blood vessels reduce the inflammation by shrinking the inflamed tissues, thus providing temporary relief from nasal congestion and blockage due to common cold, sinusitis or allergies.<\/p>"
+        "text": "<p>Acebrophylline functions as a bronchodilator and mucolytic through its molecular mechanisms. It inhibits the enzyme phosphodiesterase, leading to increased intracellular cyclic AMP levels. This, in turn, relaxes bronchial smooth muscles, dilating airways. Simultaneously, it reduces mucus viscosity by enhancing the secretion of surfactant, facilitating mucus clearance. These actions collectively improve respiratory function in conditions like asthma and COPD.<\/p>"
       }
     },
     "43a33cb3-b394-4337-a5d0-3c2c4e593aa4": {
       "type": "accordian-section-new",
       "settings": {
         "heading": "PRECAUTIONS AND WARNINGS",
-        "text": "<p><strong>Children<\/strong><br\/>Do not use COLDLYTE OXY Spray for children below 12 years.<\/p><p><strong>Pregnancy<\/strong><br\/>Limited human data is available on the safety of COLDLYTE OXY Spray in pregnancy. However, animal studies have shown harmful effects on the developing baby. Hence, it is better to avoid using this medicine.<\/p><p><strong>Lactating mothers<\/strong><br\/>Limited data is available on whether the drug passes through breast milk. Hence it is better to consult a doctor before taking this medicine.<\/p><p><strong>Driving<\/strong><br\/>COLDLYTE OXY Spray may cause dizziness, drowsiness and excessive sleep. If such symptoms occur, it is better to take a rest and avoid driving or operating heavy machinery.<\/p><p><strong>Alcohol<\/strong><br\/>There is limited data on the safety of consuming alcohol while taking COLDLYTE OXY Spray. Hence it is better to avoid drinking alcohol while taking this medicine.<\/p><p><strong>Liver diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with liver diseases.<\/p><p><strong>Kidney diseases<\/strong><br\/>Use COLDLYTE OXY Spray with caution in patients with kidney diseases.<\/p><p><strong>CONTRAINDICATIONS<\/strong><br\/>Do not use COLDLYTE OXY Spray if:<\/p><ul><li>You are allergic to oxymetazoline or any other ingredients of this medicine.<\/li><li>You have high blood sugar levels.<\/li><li>You have glaucoma, enlarged prostate gland (in men), hyperthyroidism, liver, kidney, or heart problems<\/li><\/ul>"
+        "text": "<p><strong>Alcohol<\/strong>: AB Phylline SR 200 Tablet may cause excessive drowsiness with alcohol.<\/p><p><strong>Pregnancy<\/strong>: Information regarding using AB Phylline SR 200 Tablet during pregnancy is unavailable. Please consult your doctor.<\/p><p><strong>Breastfeeding<\/strong>: Information regarding using AB Phylline SR 200 Tablet during breastfeeding is unavailable. Please consult your doctor.<\/p><p><strong>Driving<\/strong>: AB Phylline SR 200 Tablet does not usually affect your ability to drive.<\/p><p><strong>Kidney<\/strong>: AB Phylline SR 200 Tablet should be used with caution in patients with kidney disease. A dose adjustment of AB Phylline SR 200 Tablet may be needed. Please consult your doctor.<\/p><p><strong>Liver<\/strong>: AB Phylline SR 200 Tablet should be used with caution in patients with liver disease. A dose adjustment of AB Phylline SR 200 Tablet may be needed. Please consult your doctor.<\/p><p><strong>Other general warnings:<\/strong><\/p><p>Inform your doctor if:<\/p><ul><li>You have any allergic reactions after taking this medicine. <\/li><li>You are already taking medicine with the ingredients of Brokite AB SR 200 Tablet.<\/li><li>You have other medical conditions related to liver, kidney, heart, thyroid, etc.<\/li><\/ul><p><strong>Contraindications:<\/strong><\/p><p>Do not use Bronkite AB SR 200 Tablet if you are allergic to any of the ingredients of this medicine.<\/p>"
       }
     },
     "cb81ba62-a6b0-4c5f-a595-276974fe8f76": {
       "type": "accordian-section-new",
       "settings": {
         "heading": "STORAGE",
-        "text": "<p>Store in a cool, dry place at a temperature below 30ᵒC<\/p><p>Do not freeze<\/p>"
+        "text": "<p>Store in a cool and dry place at room temperature.<\/p>"
       }
     },
     "f06fe682-f320-4a03-9dd6-d8c5f827548e": {
       "type": "accordian-section-new",
       "settings": {
         "heading": "DOSAGE",
-        "text": "<p><strong>Missed dose<\/strong><br\/>Take COLDLYTE OXY Spray as soon as you remember. But if it is the time for next dose, skip the missed dose and continue taking this medicine. Do not take a double dose of this medicine to compensate for the missed dose.<\/p><p><strong>Overdose<\/strong><br\/>COLDLYTE OXY Spray is for intranasal use only. So chances of overdose are unlikely. However, if you have sprayed a higher dose of the medicine, contact your doctor or visit a nearby hospital.<\/p>"
+        "text": "<ul><li>If you miss a dose of AB Phylline SR 200 Tablet, take it as soon as possible.<\/li><li>If it is almost time for your next dose, skip the missed dose and go back to your regular schedule. <\/li><li>Do not double the dose.<\/li><\/ul>"
       }
     },
     "1fd4624b-aaa3-4cbc-89a2-8cc6a0d0683f": {
       "type": "accordian-section-new",
       "settings": {
         "heading": "INTERACTIONS",
-        "text": "<ul><li><strong>Drug-drug interactions:<\/strong><br\/> It is better to avoid using these medicines along with COLDLYTE OXY Spray. Also, inform your doctor regarding all the medicines you are taking, including prescription and non-prescription medicines, ayurvedic, homoeopathic or dietary supplements.<\/li><li><strong>Drug-food interactions:<\/strong><br\/> Include non-spicy foods and drink warm liquids to ease the symptoms.<\/li><li><strong>Drug-disease interactions:<\/strong><br\/> Do not self-medicate. It is always better to consult a doctor before using COLDLYTE OXY Spray.<\/li><\/ul>"
+        "text": "<p><strong>Drug-Drug Interaction:<\/strong> Acebrophylline can potentially interact with several medications, including water pills like furosemide, gout medications like allopurinol, antacids such as cimetidine, antibiotics like ciprofloxacin, erythromycin, amoxicillin, and doxycycline, drugs that lower high blood pressure like diltiazem and verapamil, heart-related medications like isoprenaline, anthelmintic medication like thiabendazole, corticosteroids such as prednisone, and oral contraceptives like ethinylestradiol.<\/p><p><strong>Drug-Food Interaction:<\/strong> Avoid intake of alcohol with acebrophylline as it may increase drowsiness. Also, avoid or limit the intake of caffeine with acebrophylline as it may cause side effects.<\/p><p><strong>Drug-Disease Interaction:<\/strong> Avoid taking acebrophylline if you have low blood pressure, heart irregularities, unstable BP, heart attack history, or kidney\/liver issues. Inform your doctor of any heart problems, or issues like infections, high BP, fits, and ulcers before using it.<\/p>"
       }
     },
     "008eacbb-14a6-472a-90b8-188a65470334": {
@@ -208,7 +208,7 @@
       ],
       "settings": {
         "heading": "NATURAL REMEDIES TO EASE THE SYMPTOMS",
-        "text": "<p><strong>Diet modification:<\/strong><\/p><ul><li>Adding ginger and tulsi to your tea will help reduce the inflammation and infection in the respiratory tract.<\/li><li>Stay well hydrated. It helps clear the extra mucus and dust particles from the nose, sinuses and airways.<\/li><li>Drink warm water or drinks to reduce the inflammation of the airways.<\/li><li>Avoid dairy products as they may thicken the mucus in the nose, sinuses and airways.<\/li><li>Avoid spicy, fried foods as they may worsen allergic symptoms like watery eyes and runny nose.<\/li><li>Include honey, green leafy vegetables, broccoli, turmeric, etc. They may help improve immunity and deal with allergic symptoms.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li>Avoid exposure to allergens.<\/li><li>Always wear a mask in crowded and polluted places.<\/li><li>Practice deep breathing exercises to improve lung capacity and health.<\/li><li>Nasal irrigation with saline water is an effective way to clean the nasal and sinus areas.<\/li><li>Gargles are effective in healing sore throats and infections of the oral cavity.<\/li><\/ul>"
+        "text": "<ul><li><strong>Prioritize antioxidants<\/strong>: Consume berries, citrus, and leafy greens to reduce inflammation.<\/li><li><strong>Omega-3s<\/strong>: Incorporate flaxseeds and fatty fish for lung health and inflammation control.<\/li><li><strong>Ginger and turmeric<\/strong>: Include these spices to ease airway inflammation naturally.<\/li><li><strong>Herbal teas<\/strong>: Sip on chamomile or peppermint tea for soothing respiratory symptoms.<\/li><li><strong>Hydration<\/strong>: Maintain optimal fluid intake for mucus thinning and symptom relief.<\/li><li><strong>Consult a professional<\/strong>: Seek guidance from a healthcare provider for personalized dietary strategies.<\/li><\/ul><p><strong>Lifestyle changes:<\/strong><\/p><ul><li><strong>Avoid smoke<\/strong>: Steer clear of tobacco and secondhand smoke to protect your lungs.<\/li><li><strong>Exercise regularly<\/strong>: Engage in gentle, consistent physical activity to improve lung function.<\/li><li><strong>Stress management<\/strong>: Practice relaxation techniques like deep breathing to reduce asthma triggers.<\/li><li><strong>Maintain indoor air quality<\/strong>: Use air purifiers and keep allergen-free surroundings.<\/li><li><strong>Stay hydrated<\/strong>: Drink sufficient water to thin mucus and ease breathing.<\/li><\/ul><p><strong>Consult a specialist<\/strong>: Seek professional advice for a holistic approach to natural remedies.<\/p>"
       }
     },
     "main-product-recommendations": {
@@ -238,57 +238,50 @@
     "6697a374-4c70-4c7c-86c2-8c5d88c27a33": {
       "type": "faqs",
       "blocks": {
-        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5": {
+        "caf333ec-a755-49f4-88ab-af0f49a78594": {
           "type": "faq-block",
           "settings": {
-            "question": "Can COLDLYTE OXY Spray worsen my nasal congestion?",
-            "answer": "Using COLDLYTE OXY Spray for more than the recommended dose and duration may worsen nasal congestion. It is always better to consult a doctor before using this medicine and read the instructions on the label."
+            "question": "Question",
+            "answer": "Answer"
           }
         },
-        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1": {
+        "d2291903-b062-4752-920f-0d6bb136e3dd": {
           "type": "faq-block",
           "settings": {
-            "question": "What are the uses of COLDLYTE OXY Spray?",
-            "answer": "COLDLYTE OXY Spray relieves nasal congestion and blocked nose due to common cold, sinusitis or allergy."
+            "question": "Question",
+            "answer": "Answer"
           }
         },
-        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad": {
+        "9d8b3857-6647-4575-be4e-0047127bb646": {
           "type": "faq-block",
           "settings": {
-            "question": "How to use COLDLYTE OXY Spray?",
-            "answer": "Use COLDLYTE OXY Spray as directed by your doctor. Read the instructions in the leaflet properly. Do not exceed the dose and duration of this spray."
+            "question": "Question",
+            "answer": "Answer"
           }
         },
-        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783": {
+        "eabe7af3-e064-4bfb-99bc-ab8914965b4f": {
           "type": "faq-block",
           "settings": {
-            "question": "Is COLDLYTE OXY Spray a steroid?",
-            "answer": "No, COLDLYTE OXY Spray is not a steroid. It contains oxymetazoline which is a nasal decongestant. It relieves blocked nose and nasal congestion by shrinking the blood vessels in the nasal and sinus area."
+            "question": "Question",
+            "answer": "Answer"
           }
         },
-        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183": {
+        "89d68e71-cd5b-4583-a752-2de8925122ad": {
           "type": "faq-block",
           "settings": {
-            "question": "Can I use COLDLYTE OXY Spray for sinusitis?",
-            "answer": "Yes, COLDLYTE OXY Spray is used to relieve blocked nose and nasal congestion due to sinusitis. Use COLDLYTE OXY Spray only if recommended by the doctor."
-          }
-        },
-        "05200af5-2156-4f62-a4a3-9250cd71f098": {
-          "type": "faq-block",
-          "settings": {
-            "question": "What are the side effects of COLDLYTE OXY Spray?",
-            "answer": "COLDLYTE OXY Spray can cause mild symptoms such as nausea, burning sensation in the nose and throat, dry mouth, or headache. These symptoms would resolve with time. It is better to stop using the medicine and consult a doctor or visit a nearby clinic if you experience increased heart rate, blurred vision, swelling of the face, lips, tongue or throat, dizziness or irregular heartbeat"
+            "question": "Question",
+            "answer": "Answer"
           }
         }
       },
       "block_order": [
-        "9df71dc1-2cc3-443a-a1dc-f40357ef31c5",
-        "1e8260b4-e812-4fc2-9be3-6900b2d9b5e1",
-        "6eaaf24d-d6a1-4d80-a9f4-0df31b46e1ad",
-        "6fc7fcbf-9ef3-4130-8e8c-963caa3ad783",
-        "fa7b4a5a-4a80-4bbf-a5c7-89966d89a183",
-        "05200af5-2156-4f62-a4a3-9250cd71f098"
+        "caf333ec-a755-49f4-88ab-af0f49a78594",
+        "d2291903-b062-4752-920f-0d6bb136e3dd",
+        "9d8b3857-6647-4575-be4e-0047127bb646",
+        "eabe7af3-e064-4bfb-99bc-ab8914965b4f",
+        "89d68e71-cd5b-4583-a752-2de8925122ad"
       ],
+      "disabled": true,
       "custom_css": [
         ".rk-faq-section,.faq-section {background: #f9f9f9;}"
       ],
@@ -385,6 +378,7 @@
         "9eaeffb6-ba8b-4b9e-882e-bf196de46f20",
         "6902e791-44f3-4580-989e-9dd1e6d27d25"
       ],
+      "disabled": true,
       "settings": {
         "bg-color": "#f9f9f9"
       }
@@ -393,7 +387,7 @@
       "type": "apps",
       "blocks": {
         "11fe04cd-e2c6-404e-aeb7-24b47213cdb2": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }

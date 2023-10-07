@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5798f629-cc80-4782-a99a-728bfc0abcca": {
+      "type": "published-articles",
+      "blocks": {
+        "5681a2dd-35b8-484e-b5ad-4a005a9f9534": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_14726.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_11.57_1.png",
+            "date": "(Published Online: September 2022)",
+            "text": "A unique amalgamation of saline, tulsi, and xylitol to relieve nasal & sinus congestion.",
+            "link": ""
+          }
+        },
+        "38b7a03d-3899-4b83-91c3-679c623f7a0a": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_14727.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_11.57_1.png",
+            "date": "(Published Online: November 2022)",
+            "text": "A novel approach to oral & respiratoryhealth: Gargle",
+            "link": ""
+          }
+        },
+        "2496383b-d0a7-4225-a825-a42bba49e560": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Rectangle_972_7.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_11.57_1.png",
+            "date": "(Published Online: November 2022)",
+            "text": "Vapor Patch : A disruption in drug delivery for relieving congestion",
+            "link": ""
+          }
+        },
+        "3bb7a907-ba4b-4d63-a15e-e6a242ed8dd2": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Rectangle_972_8.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_11.57_1.png",
+            "date": "(Published Online: September 2022)",
+            "text": "Herbs for preventing & managing acute and chronic respiratory disorders",
+            "link": ""
+          }
+        },
+        "9ad6a3b5-a5a4-46b6-9d88-503b9366f0fd": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Rectangle_972_9.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_11.57_1.png",
+            "date": "(Published Online: September 2022)",
+            "text": "Aroma therapy : Role of essential oils in respiratory diseases: A review",
+            "link": ""
+          }
+        },
+        "f0386417-dfc0-478b-a87a-f9c24cb6db60": {
+          "type": "article",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Rectangle_972_10.png",
+            "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-11_at_12.32_1_1.png",
+            "date": "© 2023 IJNRD | Volume 8, Issue 8 August 2023 | ISSN: 2456-4184 | IJNRD.ORG",
+            "text": "The novel approach of demulcent-based ayurvedic kadha, impacts on building health immunity & acts as antiviral action.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5681a2dd-35b8-484e-b5ad-4a005a9f9534",
+        "38b7a03d-3899-4b83-91c3-679c623f7a0a",
+        "2496383b-d0a7-4225-a825-a42bba49e560",
+        "3bb7a907-ba4b-4d63-a15e-e6a242ed8dd2",
+        "9ad6a3b5-a5a4-46b6-9d88-503b9366f0fd",
+        "f0386417-dfc0-478b-a87a-f9c24cb6db60"
+      ],
+      "settings": {
+      }
+    },
+    "2fa4bf16-da6c-4c2f-91fc-00eeb95a83ce": {
+      "type": "logos-section",
+      "blocks": {
+        "0ed56aab-2b7d-4ddd-96a3-a65ec22cee77": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14676.png",
+            "logo-text": "Backed by Ayurveda"
+          }
+        },
+        "07cfe92e-dabb-45b8-94cb-02c4b29d75b6": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "802d8349-7946-4c86-926c-aa66d65bcfeb": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14680.png",
+            "logo-text": "100% Natural"
+          }
+        },
+        "46722a72-87b2-4339-85a5-445802f20c01": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "59766492-c9c8-4322-a873-2bd4c199667e": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "0ed56aab-2b7d-4ddd-96a3-a65ec22cee77",
+        "07cfe92e-dabb-45b8-94cb-02c4b29d75b6",
+        "802d8349-7946-4c86-926c-aa66d65bcfeb",
+        "46722a72-87b2-4339-85a5-445802f20c01",
+        "59766492-c9c8-4322-a873-2bd4c199667e"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5798f629-cc80-4782-a99a-728bfc0abcca",
+    "2fa4bf16-da6c-4c2f-91fc-00eeb95a83ce"
+  ]
+}

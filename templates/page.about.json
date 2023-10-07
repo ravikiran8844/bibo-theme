@@ -4,8 +4,8 @@
     "a36696d7-8118-4075-9caa-ebe559c0e0e3": {
       "type": "main-banner-section",
       "settings": {
-        "img": "shopify:\/\/shop_images\/desktop-banner.webp",
-        "mobile_img": "shopify:\/\/shop_images\/mobile-img.webp"
+        "img": "shopify:\/\/shop_images\/new_banner.jpg",
+        "mobile_img": "shopify:\/\/shop_images\/about_mobile_banner.png"
       }
     },
     "main": {
@@ -81,7 +81,7 @@
       "settings": {
         "title": "Our Vision",
         "caption": "Real Ingredients. Real People. Real Results.",
-        "text": "Amid growing rise in breathing related chronic disorders, Bibo is here to cut the noise and provide <span>clear and clinically proven knowledge,<\/span> products and solutions for anything and everything respiratory."
+        "text": "Amid growing rise in breathing related chronic disorders, Bibo is here to cut the noise and provide clear and clinically proven knowledge, products and solutions for anything and everything respiratory."
       }
     },
     "54d8e092-eb0d-46af-b82e-68f611877076": {
@@ -107,11 +107,11 @@
       "settings": {
         "heading": "Holistic Approach To Health",
         "subheading": "Going beyond the products.",
-        "text": "We take responsibility and provide customers a holistic environment to improve and maintain their respiratory health aisa kuch likhna hai",
+        "text": "We take responsibility and provide customers a holistic environment to improve and maintain their respiratory health",
         "link_text1": "Know Our Ingredients",
         "link1": "",
         "link_text2": "Our Research Papers",
-        "link2": "",
+        "link2": "shopify:\/\/pages\/published-articles",
         "img": "shopify:\/\/shop_images\/Rectangle_946.webp"
       }
     },
@@ -308,48 +308,42 @@
         "9d5b3555-591c-48a7-b8a2-279b752a5bdf": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Aditi",
             "text": "<p>I had dry cough since a long time and it wasn’t going away. The first time I tried this syrup it gave me instant relief but I thought my cough will again start. After taking it for a week I got great results and haven’t looked back since then.<\/p>"
           }
         },
         "1432abd1-ba5e-440c-bdd6-bdcb860b75b2": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Sudhakar",
             "text": "<p>I suffer from blocked nose every now and then. Doctors have suggested me to take different types of nasal sprays but after sometime these sprays were not effective. When I saw bibo nasal spray which claimed to be 100% natural I gave it a try. It worked really well. It helped me with my blocked nose<\/p>"
           }
         },
         "36dfc747-d3d8-4fee-ada0-983653feb82f": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Dilip",
             "text": "<p>I am really happy with this product. Never written any review but this product forced me to write it. I have cold allergy so winter is like nightmare to me but this product helps me a lot to fight with cold. Really happy with this.<\/p>"
           }
         },
         "3650fdd9-5af2-48d4-857b-48b28ea32f49": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Vijay",
             "text": "<p>No More Harmful Ingredients and I appreciate that this patch doesn't contain petroleum jelly like other vapor rubs.<\/p>"
           }
         },
         "01516fea-c2b7-42a1-bea0-0cabc980385b": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Samantha",
             "text": "<p>Bibo Nasal Spray is a must-have in my bag. It's so convenient to use and helps me breathe better whenever I need it.<\/p>"
           }
         },
         "4901d6f5-9b0e-4ec4-b21c-95a701e2d7bb": {
           "type": "review-block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Kajol_post_2_1_2.png",
-            "name": "Ruchatembe",
+            "name": "Priyanka",
             "text": "<p>Would surely recommend this product to all my friends and family.<\/p>"
           }
         }

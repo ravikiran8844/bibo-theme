@@ -7,7 +7,7 @@
           "type": "banner-block",
           "settings": {
             "img": "shopify:\/\/shop_images\/DV_Banner_c4c20d86-3117-4053-beca-3ab256090e26.jpg",
-            "mobImg": "shopify:\/\/shop_images\/MB_1.jpg",
+            "mobImg": "shopify:\/\/shop_images\/uqxujdaqosgzevnz5l6m.webp",
             "link": "shopify:\/\/products\/bibo-saline-tulsi-nasal-spray"
           }
         },
@@ -15,7 +15,7 @@
           "type": "banner-block",
           "settings": {
             "img": "shopify:\/\/shop_images\/DV_Banner_1.jpg",
-            "mobImg": "shopify:\/\/shop_images\/MB_2_9a744db7-3c1e-4491-a0f2-81b6c8d45184.jpg",
+            "mobImg": "shopify:\/\/shop_images\/sjeqx2wltqos8ub46p38.webp",
             "link": "shopify:\/\/collections\/our-doctors"
           }
         },
@@ -23,7 +23,7 @@
           "type": "banner-block",
           "settings": {
             "img": "shopify:\/\/shop_images\/DV_Banner_2.jpg",
-            "mobImg": "shopify:\/\/shop_images\/MB_3_bc561179-9bb6-4fe5-9c43-87881a2f873d.jpg",
+            "mobImg": "shopify:\/\/shop_images\/rmr4md2ggya0zixiy7jr.webp",
             "link": "shopify:\/\/collections\/bibo-natural-products"
           }
         }
@@ -42,7 +42,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "<div class=\"icon-section\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Premium-quality-new.png?v=1685948401\">\n<p>Premium quality<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Easy-Returns-new.png?v=1685948416\">\n<p>Easy Returns<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Doctor-Approved-new.png?v=1685948434\">\n<p>Doctor Approved<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Trusted-Customers.png?v=1685948453\">\n<p>Trusted by 100k+ Customers<\/p>\n<\/div>\n<\/div>\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"icon-section\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Premium-quality-new.png?v=1685948401\">\n<p>Premium quality<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/free-shipping_430x.png\">\n<p>Free Delivery<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Doctor-Approved-new.png?v=1685948434\">\n<p>Doctor Approved<\/p>\n<\/div>\n<div class=\"col-3 col-md-3\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/8157\/4300\/files\/Trusted-Customers.png?v=1685948453\">\n<p>Trusted by 100k+ Customers<\/p>\n<\/div>\n<\/div>\n<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0

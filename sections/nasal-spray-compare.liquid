@@ -4,6 +4,8 @@
       <div class="nasal-spray-vs-others_heading">Bibo Nasal Spray</div>
       <div class="nasal-spray-vs-others_img-wrapper">
         <img
+          
+          loading="lazy"
           src="{{section.settings.compare-img | img_url: 'master'}}"
           class="img-fluid"
           alt="">
@@ -66,7 +68,10 @@
       </div>
       <div class="col">
         <div class="">
-          img
+           <a href="{{ section.settings.link }}"><img
+          src="{{section.settings.img | img_url: 'master'}}"
+          class="img-fluid"
+          alt=""></a>
         </div>
 
       </div>
@@ -131,7 +136,9 @@
 
 <style>
   .nasal-spray-vs-others {
-    background-image: url("https://s3-alpha-sig.figma.com/img/52fc/717e/8e9162fc0e0c5fef9375c8b181b83a6a?Expires=1694995200&Signature=jdUk3fHfLo-zT1Mw5cGYk9Przsk2QDeCzwAifbb8Xkn6OavPs2gChkEW8EmVKhmiKfJi6o51yod2uP357StqBKfUuFM2MOsIIppvhDT2Opb0IkHJCMwtjtbn0mlVS5fuWY~21Ts0XFB1qoSDsHuvSvXJdGLwTtsnnEnKSxl-zu4grzdk1Y1y5NcIUHZziLeF0Igbv0Oii209R1lDIvhwbUOWcDwYbTDibuQB0ICjYvZhRiSF4dmnzCgDYwgyDvTGJIreTYZqms-K3W9RFxF6rWogakU19TS29yuvpisT~n7kDsGOQ3ENu0HFHj~cfdvaPxegQ3PxRYm~nCFf11dOMg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-image: url("{{section.settings.bg-img | img_url: 'master'}}");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .nasal-spray-vs-others_img-wrapper {
     height: 80px;
@@ -203,11 +210,24 @@
     "name": "Nasal Spray Vs Others",
     "tag": "section",
     "class": "nasal-spray-vs-others section",
-    "settings": [
+    "settings": [ {
+        "type": "image_picker",
+        "id": "bg-img",
+        "label": "BG Image"
+      },
       {
         "type": "image_picker",
         "id": "compare-img",
         "label": "Compare Image"
+      },
+  {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }, {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
       }
     ],
     "blocks": [],
