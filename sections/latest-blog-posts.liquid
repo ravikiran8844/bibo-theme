@@ -1,0 +1,69 @@
+{{'blog.css' |  asset_url |  stylesheet_tag}}
+
+
+<div class="container py-5">
+  <div class="col-12 mb-5">
+    <div class="latest-blog-posts_title">Latest</div>
+  </div>
+  <div class="row">
+
+
+    {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
+    {% assign limit = 4 %}
+    {% assign all_articles = "" | split: "" %}
+
+    {% for handle in blog_handles %}
+      {% assign articles = blogs[handle].articles | sort: 'published_at' | reverse %}
+      {% assign latest_articles = articles | slice: 0, limit %}
+      {% assign all_articles = all_articles | concat: latest_articles %}
+    {% endfor %}
+
+    {% assign sorted_articles = all_articles | sort: 'published_at' | reverse %}
+    {% assign display_articles = sorted_articles | slice: 0, limit %}
+
+    {% for article in display_articles %}
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card latest-blog-posts_card">
+          <div class=" card-img-top">
+            <a class=" text-decoration-none" href="{{article.handle}}">
+
+              <img
+                height="210"
+                width="315"
+                class="img-fluid w-100 object-fit-cover"
+                src="{{article.image|img_url: 'master'}}"
+                alt="{{article.title}}">
+            </a>
+          </div>
+          <div class="card-body">
+            {% comment %} <div>{{ article.published_at | date: "%d-%m-%Y" }}</div> {% endcomment %}
+            <div class="latest-blog-posts_tiny-text">5 mins read</div>
+            <a class=" text-decoration-none" href="{{article.handle}}">
+              <div class="latest-blog-posts_article-title">{{ article.title }}</div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+
+
+
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Latest Blog posts",
+    "class": "latest-blog-posts",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Latest Blog posts"
+      }
+    ]
+  }
+{% endschema %}

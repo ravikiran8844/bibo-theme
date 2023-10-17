@@ -1,0 +1,128 @@
+{% if section.settings.banner != blank %}
+  <div class="fluid-container">
+    <div class="col-12">
+      <div class="position-relative d-flex justify-content-center align-items-center">
+        <img
+          class="img-fluid w-100"
+          height="680"
+          width="1928"
+          src="{{section.settings.banner |img_url: 'master'}}"
+          alt="Main Banner">
+        <div class="position-absolute top-0 d-flex justify-content-center align-items-center h-100">
+          <div class="text-center blog-main-banner-content">
+            <div class="blog-main-banner_title mb-4">{{ section.settings.title }}</div>
+            <div class="blog-main-banner_text">{{ section.settings.sub-title }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+<style>
+  .blog-main-banner img {
+    min-height: 680px;
+    object-fit: cover;
+  }
+  .blog-main-banner_title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .blog-main-banner b {
+    font-weight: 600;
+  }
+  .blog-main-banner_text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .blog-main-banner span {
+    color: #00A79D;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .blog-main-banner-content {
+    width: 90%;
+    border-radius: 7px;
+    background: rgba(249, 249, 249, 0.75);
+    backdrop-filter: blur(4px);
+    padding: 30px;
+  }
+
+
+  @media(min-width:768px) {
+    .blog-main-banner-content {
+      width: 80%;
+      max-width: 1200px;
+      border-radius: 7px;
+      background: rgba(249, 249, 249, 0.75);
+      backdrop-filter: blur(4px);
+      padding: 30px;
+    }
+    .blog-main-banner_title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .blog-main-banner b {
+      font-weight: 600;
+    }
+    .blog-main-banner_text {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .blog-main-banner span {
+      color: #00A79D;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Blog Main Banner",
+    "tag": "section",
+    "class": "blog-main-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner",
+        "label": "Banner"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      }, {
+        "type": "text",
+        "id": "sub-title",
+        "label": "Sub Title",
+        "default": "Sub Title"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Blog Main Banner"
+      }
+    ]
+  }
+{% endschema %}

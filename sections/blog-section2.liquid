@@ -1,0 +1,85 @@
+
+
+<div class="fluid-container py-5">
+  <div class="row g-0">
+    <div class="col-12">
+      <ul class="list-unstyled">
+        {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
+        {% for handle in blog_handles %}
+          {% assign blog = blogs[handle] %}
+          {% if blog %}
+            <li>
+              <a href="{{ blog.url }}">{{ blog.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .blog-section2 {
+    background: #FFE0A7;
+  }
+  .blog-section2 ul li {
+    border-right: 1px solid #0F1935;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+  }
+
+  .blog-section2 ul li:last-child {
+    border-right: none;
+  }
+  .blog-section2 ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .blog-section2 ul li a {
+    color: #0F1935;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .blog-section2 ul li a:hover {
+     color: #00a79d;
+
+  }
+
+
+  @media(min-width:768px) {
+    .blog-section2 ul li a {
+      font-size: 20px;
+    }
+    .blog-section2 ul li {
+      border-right: 1px solid #0F1935;
+      padding-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Blog Section 2",
+    "class": "blog-section2",
+    "settings": [],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Blog Section 2"
+      }
+    ]
+  }
+{% endschema %}

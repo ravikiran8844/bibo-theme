@@ -1,0 +1,113 @@
+{{'blog.css' |  asset_url |  stylesheet_tag}}
+
+<div class="container py-5">
+    <div class="row">
+
+
+
+
+            <div class="col-12 col-lg-8 pe-lg-4 mb-5">
+                <div class="mb-5 blog-section-title" >Featured Post</div>
+                    {% for article in blog.articles %}
+
+                    {% if forloop.first %}
+
+                    <div class="card blog-section3_card">
+                        <div class="card-img-top mb-4">
+                            <img width="884" height="367" class="img-fluid object-fit-cover w-100" src="{{ article.image |  image_url: width:884 , height:367  }}" alt="">
+                        </div>
+
+                        <div class="mb-4">
+                            By <span class="blog-hightlight-text">{{ article.author }}</span> | <span>{{ article.published_at | date: "%b %d, %Y"}}</span>
+                        </div>
+                        <a class="text-decoration-none " href="{{ article.url }}"><div class="mb-4 blog-article-title">{{ article.title }}</div></a>
+                        <div class="mb-4 blog-article-text">{{ article.excerpt }}</div>
+                        <div>
+                            <a class="blog-section3_article-link btn btn-lg btn-danger px-4 py-3" href="{{ article.url }}">Read More ></a>
+                        </div>
+                     </div>
+                    {% endif %}
+
+                    {% endfor %}
+
+                   
+            </div>
+
+
+            <div class="col-12 col-lg-4">
+                <div class="d-flex justify-content-between mb-5">
+                    <div class="blog-section-title ps-lg-2">All Posts</div>
+                    {% comment %} <div class="blog-section3_hightlight">View All</div> {% endcomment %}
+                </div>
+
+
+                <div>
+
+                {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
+                {% assign limit = 4 %}
+                {% assign all_articles = "" | split: "" %}
+                
+                {% for handle in blog_handles %}
+                  {% assign articles = blogs[handle].articles | sort: 'published_at' | reverse %}
+                  {% assign latest_articles = articles | slice: 0, limit %}
+                  {% assign all_articles = all_articles | concat: latest_articles %}
+                {% endfor %}
+
+
+                {% assign sorted_articles = all_articles | sort: 'published_at' | reverse %}
+                {% assign display_articles = sorted_articles | slice: 0, limit %}
+
+                    {% for article in display_articles %}
+                    <div class="all-post-card p-3">
+                        <div>
+                            <div class="mb-2">
+                            By <span class="blog-hightlight-text">{{ article.author }}</span> | <span>{{ article.published_at | date: "%b %d, %Y"}}</span>
+                        </div>
+                        <a class="text-decoration-none " href="{{ article.url }}"><div class="mb-4 blog-article-title">{{ article.title }}</div></a>
+                        </div>
+                    </div>
+
+
+                    {% endfor %}
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+    </div>
+</div>
+
+
+<style>
+    .all-post-card:hover{
+        background:#FBF6EA;
+    }
+    .blog-section3_card{
+        border: 1px solid #E9E6E6;
+        padding: 20px;
+    }
+  
+    .blog-section3_article-link{
+        border-radius: 6px;
+        background: #EB752C;
+    }
+</style>
+
+
+{% schema %}
+{
+    "name": "Blog Section 3",
+    "class": "blog-section3",
+    "settings": [
+        
+        ],
+        "presets": [{
+            "name": "Blog Section 3"
+        }]
+}
+{% endschema %}

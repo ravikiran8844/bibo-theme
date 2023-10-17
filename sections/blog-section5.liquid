@@ -1,0 +1,187 @@
+
+
+<div class="container blog-section5_wrapper">
+    
+    <div class="row my-5">
+        <div class="col-12 col-lg-8 mb-4  pe-lg-4">
+            <div class="mb-5 blog-section-title" >Featured Video</div>
+            <div class="row">
+                   
+            {% for block in section.blocks %}
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card latest-blog-posts_card">
+                            <div class="blog-section5_video-wrapper">
+                              
+                            <div class="video-embed">
+                                {% if block.settings.video_id contains "youtube.com" %}
+                                    <iframe
+                                    class="img-fluid"
+
+                                        src="{{ block.settings.video_id | split: 'v=' | last | prepend: 'https://www.youtube.com/embed/' }}"
+                                        frameborder="0"
+                                        allowfullscreen
+                                    ></iframe>
+                                {% elsif block.settings.video_id contains "vimeo.com" %}
+                                    <iframe
+                                        class="img-fluid"
+                                        src="{{ block.settings.video_id | replace: 'vimeo.com', 'player.vimeo.com/video' }}"
+                                        frameborder="0"
+                                        allowfullscreen
+                                    ></iframe>
+                                {% else %}
+                                    <p>This video source is not supported.</p>
+                                {% endif %}
+                            </div>
+                          
+                        </div>
+                        <div class="card-body">
+                           
+                                <div class="mb-2 blog-article-title">Lorem ipsum dolor sit amet, nwjw</div>
+                                <div class="blog-section5_date-text">Aug 23, 2021 </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-lg-4">
+                <div class="blog-section-title popular-terms"><span>Popular Terms</span></div>
+            <div class="mt-5">
+                <div class="tag-cloud">
+
+
+                {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
+                
+                <ul>
+                    {% for handle in blog_handles %}
+                        {% assign blog = blogs[handle] %}
+                        {% if blog %}
+                          <li class="list-unstyled">
+                            <a href="{{ blog.url }}">{{ blog.title }}</a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                </ul>
+
+                    
+                </div>
+                  
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+    .blog-section5_date-text{
+        color: rgba(76, 76, 76, 0.44);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+    }
+    .blog-section5_video-wrapper{
+        width: 331px;
+        min-height: 204px;
+        max-height: 204px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.20);
+    }
+    .blog-section5_video-wrapper iframe{
+        width: 100%;
+        height: auto;
+        min-height: 204px;
+        object-fit: cover;
+    }
+    .blog-section5_wrapper{
+        border-top: 1px solid #F3F3F3;
+    }
+    .tag-cloud ul{
+        display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+
+    padding-left: 0;
+    }
+    .tag-cloud li{
+        border: 1px solid #F3F3F3;
+    padding: 5px;
+    }
+    .tag-cloud li a{
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 186.667% */
+        text-decoration: none;
+    }
+   .tag-cloud li a:hover{
+        color: #00a79d;
+    }
+
+ .popular-terms{
+    position: relative;
+
+ }
+ .popular-terms {
+    overflow: hidden;
+}
+
+.popular-terms:after {
+    content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid #54B5A9;
+}
+</style>
+
+
+{% schema %}
+    {
+        "name": "Blog Section 5",
+        "class": "blog-section5",
+        "settings": [
+            
+            ],
+            "blocks": [{
+                "name": "video",
+                "type": "video",
+                "limit": 3,
+                "settings": [{
+                    "type": "video_url",
+                    "id": "video_id",
+                    "label": "Video Url",
+                    "accept": [  "youtube","vimeo"]
+                                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title"
+                },{
+                    "type": "text",
+                    "id": "date",
+                    "label": "Date",
+                    "default": "Aug 23, 2021"
+                }
+            ]
+            }],
+            "presets": [{
+                "name": "Blog Section 5"
+            }]
+    }
+    {% endschema %}
