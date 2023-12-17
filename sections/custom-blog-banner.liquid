@@ -1,0 +1,124 @@
+<div class="container-fluid p-0">
+  <div class="col-12">
+    {% if blog.articles.size > 0 %}
+      {% assign first_article = blog.articles.last %}
+      <div class="custom-blog-banner_image-wrapper">
+        <img
+          height="400"
+          width="2040"
+          class="img-fluid"
+          src="{{section.settings.image |  image_url: width: 2040}}"
+          alt="blog banner image"
+        >
+
+        <div class="custom-blog-banner_image-overlay">
+          <div class="custom-blog-banner_image-overlay-main-caption mb-4">{{ blog.title }}</div>
+          <div class="custom-blog-banner_image-overlay-main-title mb-3">{{ section.settings.title }}</div>
+          <div class="custom-blog-banner_image-overlay-main-text">{{ section.settings.text }}</div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .custom-blog-banner_image-wrapper {
+      position: relative;
+  }
+  .custom-blog-banner_image-overlay-main-caption{
+      font-family: Poppins;
+      padding: 2px 12px;
+      background: #000;
+      color: #fff;
+      line-height: 20px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+  }
+
+
+  .custom-blog-banner_image-overlay-main-text{
+      color: #FFF;
+      font-family: Poppins;
+      margin-top: 16px;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: .06em;
+
+  }
+  .custom-blog-banner img {
+      min-height: 400px;
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+      -webkit-filter: brightness(70%);
+
+  }
+
+  .custom-blog-banner_image-overlay {
+      position: absolute;
+      top: 0;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  }
+
+  .custom-blog-banner_image-overlay-main-title{
+      color: #FFF;
+      font-family: Urbanist;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      max-width: 800px;
+      text-align: center;
+  }
+
+  @media (min-width:768px) {
+      .custom-blog-banner_image-overlay-main-title{
+      color: #FFF;
+      font-family: Urbanist;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      max-width: 800px;
+      text-align: center;
+  }
+  }
+</style>
+
+{% schema %}
+{
+"name": "Custom Blog Banner",
+"class": "custom-blog-banner",
+"settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Bg Image"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Latest News & Health Tips"
+    },
+    {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "BY BIBO"
+    }
+],
+"presets": [{
+"name": "Custom Blog Banner"
+}]
+}
+{% endschema %}

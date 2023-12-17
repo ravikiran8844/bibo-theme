@@ -3,7 +3,7 @@
 <div class="fluid-container py-5">
   <div class="row g-0">
     <div class="col-12">
-      <ul class="list-unstyled">
+      {% comment %} <ul class="list-unstyled">
         {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
         {% for handle in blog_handles %}
           {% assign blog = blogs[handle] %}
@@ -13,6 +13,53 @@
             </li>
           {% endif %}
         {% endfor %}
+      </ul> {% endcomment %}
+
+      <ul class="list-unstyled">
+        
+        
+          
+          
+            <li>
+              <a href="/blogs/asthma-2">Asthma</a>
+            </li>
+          
+        
+          
+          
+            <li>
+              <a href="/blogs/a-return-to-nature">Ayurveda</a>
+            </li>
+          
+        
+          
+          
+            <li>
+              <a href="/blogs/pharma-blogs">Pharma</a>
+            </li>
+          
+        
+          
+          
+            <li>
+              <a href="/blogs/respiratory-conditions">Respiratory</a>
+            </li>
+          
+        
+          
+          
+            <li>
+              <a href="/blogs/sinusitis-2">Sinusitis</a>
+            </li>
+          
+        
+          
+          
+            <li>
+              <a href="/blogs/wellness">Trending</a>
+            </li>
+          
+        
       </ul>
     </div>
   </div>

@@ -162,6 +162,41 @@
         "include_margins": true
       }
     },
+    "88a14a3f-80dc-4564-acc4-c13312f8c73f": {
+      "type": "video-blocks",
+      "blocks": {
+        "54f1176a-678f-45a2-a819-fa4da3e5ed22": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/ezgif-3-d90df039d1.mp4",
+            "text": "Relieve blocked nose"
+          }
+        },
+        "15a7f9c0-4752-4d6c-aad0-4539201ec087": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/ezgif-3-cdc53aae45.mp4",
+            "text": "Flush out pollutants & allergens"
+          }
+        },
+        "02723222-7f27-44da-88e6-d5fa5ea880a6": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/ezgif-3-8dc95eafa1.mp4",
+            "text": "Eases pain and pressure of sinusitis"
+          }
+        }
+      },
+      "block_order": [
+        "54f1176a-678f-45a2-a819-fa4da3e5ed22",
+        "15a7f9c0-4752-4d6c-aad0-4539201ec087",
+        "02723222-7f27-44da-88e6-d5fa5ea880a6"
+      ],
+      "settings": {
+        "bgcolor": "#ffffff",
+        "heading": "Our Bibo Saline Nasal Spray helps you"
+      }
+    },
     "14406abf-fd6f-48d7-a509-ed9e62d1a179": {
       "type": "custom-img-text-blocks",
       "blocks": {
@@ -192,6 +227,7 @@
         "44a0d2d6-e1a4-4d1d-8483-d8f4e0c46ef6",
         "a2952766-d4ad-41c7-ae96-4a2e623c8674"
       ],
+      "disabled": true,
       "settings": {
         "bgcolor": "#ffffff",
         "heading": "Our Bibo Saline Nasal Spray helps you"
@@ -255,7 +291,7 @@
     "e3d0f277-c9a0-4ef3-b81e-de40dbcad03b": {
       "type": "image-with-text-overlay",
       "settings": {
-        "img": "shopify:\/\/shop_images\/desire-desk-bg2_1_1.webp",
+        "img": "shopify:\/\/shop_images\/desire-desk-bg2_1_1_1.webp",
         "mobile_bg": "shopify:\/\/shop_images\/1_51_8d0e2522-17dc-4a28-a845-c53ab32b9c05.webp",
         "mobile_img": "shopify:\/\/shop_images\/Tulsi_1_c8c6fc0c-d6c1-44b4-b501-d1f6a0665626.png",
         "caption": "India’s first",
@@ -318,38 +354,38 @@
       "settings": {
       }
     },
-    "e112f8ea-2c1f-4ffe-b4e1-140b09a8e3f0": {
-      "type": "htu-section",
+    "fe4efe28-f1bb-4cb1-9d7e-aa002e6097d3": {
+      "type": "htu-videos",
       "blocks": {
-        "0317c0ca-b147-4f10-9b37-78ab61997044": {
-          "type": "image-block",
+        "3f13207f-7f0a-4adc-b971-51ec2c0dfd48": {
+          "type": "video-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0f02b9114203935d11c21127839fc95e_1.gif",
+            "video": "shopify:\/\/files\/videos\/ezgif-5-3a74b19ae5.mp4",
             "step": "STEP 01",
             "text": "Open the cap and prime the spray by pulling the pump down using 2 fingers."
           }
         },
-        "480b6315-a60d-4621-ac24-1028d37e7546": {
-          "type": "image-block",
+        "60a8274e-daff-4205-b52f-629e46f2ee01": {
+          "type": "video-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/b2b533d6559365e363a971f3965f509b_1.gif",
+            "video": "shopify:\/\/files\/videos\/ezgif-3-47803988a8.mp4",
             "step": "STEP 02",
             "text": "Take one spray in each nostril while breathing in from nose & breathing out from the mouth"
           }
         },
-        "12870d03-f079-4a28-8ef1-c0e6a9f4d4c8": {
-          "type": "image-block",
+        "1f9beddd-ef7a-40ab-bbaf-9980e98fda9d": {
+          "type": "video-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9239f38d1c26c25624ab7a359381093f_1.gif",
+            "video": "shopify:\/\/files\/videos\/ezgif-4-1c975c5770.mp4",
             "step": "STEP 03",
             "text": "Wipe the tip of the spray with a clean cloth after each use"
           }
         }
       },
       "block_order": [
-        "0317c0ca-b147-4f10-9b37-78ab61997044",
-        "480b6315-a60d-4621-ac24-1028d37e7546",
-        "12870d03-f079-4a28-8ef1-c0e6a9f4d4c8"
+        "3f13207f-7f0a-4adc-b971-51ec2c0dfd48",
+        "60a8274e-daff-4205-b52f-629e46f2ee01",
+        "1f9beddd-ef7a-40ab-bbaf-9980e98fda9d"
       ],
       "settings": {
         "heading": "How to use?",
@@ -404,9 +440,9 @@
       "settings": {
         "width": "col-lg-8",
         "bg-img": "shopify:\/\/shop_images\/bg-color.webp",
-        "heading": "Why thousands of people are  <b>choosing us?<\/b>",
-        "img": "shopify:\/\/shop_images\/Comparison.png",
-        "mobile_img": "shopify:\/\/shop_images\/mobile_banner.webp"
+        "heading": "Why thousands of people are  choosing us?",
+        "img": "shopify:\/\/shop_images\/pngns.png",
+        "mobile_img": "shopify:\/\/shop_images\/MPNG.png"
       }
     },
     "66b52890-c706-4f45-b7a2-464d609f8c55": {
@@ -461,21 +497,21 @@
         "d2c13177-6301-41cc-bb60-2dc8b1bda8f4": {
           "type": "video-block",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/video.webp",
+            "cover_image": "shopify:\/\/shop_images\/video_1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=sWeesNJqH-U"
           }
         },
         "01fb1c99-5bb8-4328-bd40-3ad691c6ad8e": {
           "type": "video-block",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/bib2.webp",
+            "cover_image": "shopify:\/\/shop_images\/bib2_1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=LSjQbJNHFNM&feature=youtu.be"
           }
         },
         "b7253cd6-5d18-4331-960d-c6ec528bb722": {
           "type": "video-block",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/bib3.webp",
+            "cover_image": "shopify:\/\/shop_images\/bib3_1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=-wVvWegEnQQ&list=PLUph01sCe_4WdS6mgxgBheUZB7U3u78fx&index=3"
           }
         }
@@ -486,7 +522,7 @@
         "b7253cd6-5d18-4331-960d-c6ec528bb722"
       ],
       "settings": {
-        "heading": "Hear what our <b>customers<\/b> have to say about us"
+        "heading": "Hear what <b>our customers <\/b>have to say about us"
       }
     },
     "263781bb-c651-4461-a395-edc41d77e9e9": {
@@ -762,7 +798,7 @@
       "type": "apps",
       "blocks": {
         "f642ad58-374e-4854-8eb8-a0146d98fd46": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -823,13 +859,14 @@
     "description",
     "main-product-recommendations",
     "166692232334bcc7ad",
+    "88a14a3f-80dc-4564-acc4-c13312f8c73f",
     "14406abf-fd6f-48d7-a509-ed9e62d1a179",
     "cbbafa95-fdbc-4fd5-9b23-c6b8ecf7d521",
     "7c8ee5bd-2106-4e37-ada2-3f397eacc762",
     "67128949-f04c-4010-a6bf-c52bc9a61047",
     "e3d0f277-c9a0-4ef3-b81e-de40dbcad03b",
     "08b65193-9da2-4f1c-92db-3d46469a164c",
-    "e112f8ea-2c1f-4ffe-b4e1-140b09a8e3f0",
+    "fe4efe28-f1bb-4cb1-9d7e-aa002e6097d3",
     "3ae7f065-a280-41c9-abc5-149124dfbe2a",
     "bed58423-988c-44be-a7df-c88f68658811",
     "66b52890-c706-4f45-b7a2-464d609f8c55",

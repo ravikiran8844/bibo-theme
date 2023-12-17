@@ -22,3 +22,10 @@
 /* .temp-published-articles{
   background: url("https://bibo.health/cdn/shop/files/Group_14708.png") !important;
 } */
+
+.carousel-indicators li {
+  list-style:none !important;
+}
+.carousel-control-prev,.carousel-control-next{
+  display:none;
+}

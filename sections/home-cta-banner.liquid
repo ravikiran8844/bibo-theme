@@ -1,0 +1,59 @@
+<div class="py-5 container">
+  <div class="d-flex flex-column text-center text-xl-start flex-xl-row justify-content-center justify-content-lg-evenly align-items-center flex-wrap">
+    <div>
+      <div class="fs-2 fw-semibold mb-3 mb-xl-0">{{ section.settings.title }}</div>
+      <div class="d-flex flex-column text-center text-xl-start flex-xl-row justify-content-between">
+        <div class="fs-4 fw-medium mb-3 mb-xl-0">{{ section.settings.caption }}</div>
+        <div class="fs-4 fw-medium mb-3 mb-xl-0">{{ section.settings.date }}</div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="{{section.settings.link}}" class="button text-white">Register Now</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .home-cta-banner{
+      background: linear-gradient(90deg, #FD0 5.55%, #FF9453 69.68%);
+      color: #000 !important;
+  }
+</style>
+
+{% schema %}
+{
+    "name": "Home CTA Banner",
+    "tag": "section",
+    "class": "home-cta-banner",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Webinar & AMA Session with Dr Rajakumar on daily respiratory issues"
+        },
+        {
+            "type": "text",
+            "id": "caption",
+            "label": "caption",
+            "default": "COPD | Asthma | Sinusitis"
+        },
+        {
+            "type": "text",
+            "id": "date",
+            "label": "Date & Time",
+            "default": "22 Nov 2023 | 5-6PM"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+                }
+
+
+        ],
+        "presets": [{
+            "name": "Home CTA Banner"
+        }]
+}
+{% endschema %}

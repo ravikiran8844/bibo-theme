@@ -1,0 +1,87 @@
+<div class="container p-5 position-relative">
+  <div class="col-12 mt-5">
+    <div class="text-center webnair-section_content">
+      <div class="display-2 font-urbanist webnair-title-color mb-3 fw-bold">Learn to Breathe Better!</div>
+      <div class="fs-1 font-urbanist webnair-title-color mb-4 fw-semibold">
+        A Webinar for Your Respiratory Health With Highly Experienced Doctor
+      </div>
+
+      <p class="text-dark mb-5 fs-3">
+        Welcome to our exclusive webinar: "Insights into Everyday Respiratory Challenges." Elevate your knowledge of
+        respiratory health with Dr. Rajakumar, Vydehi Hospital's top-rated expert.
+      </p>
+
+      <div class="mb-4">
+        {% form 'product', product %}
+          <div>
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.variants.first.id }}"
+            >
+            <input
+              type="hidden"
+              name="quantity"
+              value="1"
+            >
+            <button
+              onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+              class="btn buy-now-button"
+            >
+              register now
+            </button>
+          </div>
+        {% endform %}
+        <div class="text-dark fs-4 mt-2 fw-medium">{{ product.metafields.custom.webnair_date_time }}</div>
+
+        <div class="text-dark fw-medium">LIMITED SEATS. BOOK YOURS TODAY!</div>
+      </div>
+    </div>
+  </div>
+  <div class="webnair-section1_overlay-text position-absolute fs-3 text-dark">
+    Register for <b class="ms-1">99/-</b>
+  </div>
+</div>
+
+<style>
+    @media (max-width:768px) {
+     .webnair-section1_overlay-text{
+         top: 10px;
+         left: 50%;
+         transform: translate(-50%);
+   }
+     }
+
+   @media (min-width:768px) {
+     .webnair-section1_overlay-text{
+         top: 10px;
+         left:unset;
+         right: 10px;
+   }
+   }
+   .webnair-section1_overlay-text{
+     border-radius: 7px;
+     border: 0.3px solid #000;
+     background: linear-gradient(90deg, #FD0 5.55%, #FF741F 69.68%);
+     padding: 0 10px;
+     text-transform: uppercase;
+     width: max-content;
+   }
+  .webnair-section1{
+     background: #FFC36A;
+  }
+</style>
+
+{% schema %}
+{
+    "name": "Webnair Sec 1",
+    "class": "webnair-section1",
+    "tag": "section",
+    "settings": [
+
+        ],
+        "presets": [{
+            "name": "Webnair Sec 1"
+        }]
+}
+{% endschema %}

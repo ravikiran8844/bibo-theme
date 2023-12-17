@@ -1,0 +1,266 @@
+<div class="container p-5">
+    <div class="col-12 text-center mb-5">
+        <div class="fs-1 text-dark fw-semibold mb-3">SO WHAT ARE YOU WAITING FOR?</div>
+        <div class="fs-1 text-dark fw-semibold webnair-section8_title">SIGNUP NOW!</div>
+    </div>
+
+
+    <div class="webnair-section8_items">
+
+
+        <div class="webnair-section8_form-wrapper">
+            {% comment %} <div>
+                <form action="https://formsubmit.co/bibocontactform@gmail.com" method="POST">
+
+                    <div class="field">
+                        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="name"
+                            placeholder="Name">
+                        <label class="field__label" for="ContactForm-name">Name</label>
+                    </div>
+
+                    <div class="field field--with-error">
+                        <input autocomplete="email" type="email" id="ContactForm-email" class="field__input"
+                            name="email" spellcheck="false" autocapitalize="off" value="" aria-required="true"
+                            placeholder="Email">
+                        <label class="field__label" for="ContactForm-email">Email <span
+                                aria-hidden="true">*</span></label>
+                    </div>
+
+                    <div class="field mb-4">
+                        <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="phone"
+                            pattern="[0-9\-]*" value="" placeholder="Phone number">
+                        <label class="field__label" for="ContactForm-phone">Phone number</label>
+                    </div>
+
+                    <input type="hidden" name="_cc" value="pooja@bibo.health,vikash@bibo.health">
+                    <input type="hidden" name="_subject" value="New Webinar form submission!">
+
+                    <input type="hidden" name="_next" value="https://bibo.health">
+                    <div class="contact__button">
+                        <button type="submit" class="button">
+                            Register Now
+                        </button>
+                    </div>
+                </form>
+            </div> {% endcomment %}
+
+
+
+
+
+            {% form 'product', product %}
+            <div>
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                <input type="hidden" name="quantity" value="1">
+                <div class="field">
+                    <input class="field__input" type="text" name="name" placeholder="Name">
+                    <label class="field__label" for="ContactForm-name">Name</label>
+                </div>
+
+                <div class="field ">
+                    <input type="email" id="ContactForm-email" class="field__input" name="email" placeholder="Email">
+                    <label class="field__label" for="ContactForm-email">Email <span aria-hidden="true">*</span></label>
+                </div>
+
+                <div class="field mb-4">
+                    <input type="tel" class="field__input" name="phone" pattern="[0-9\-]*" placeholder="Phone number">
+                    <label class="field__label" for="ContactForm-phone">Phone number</label>
+                </div>
+
+
+
+                <button
+                    onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+                    class="btn buy-now-button">
+                    register now
+                </button>
+            </div>
+            {% endform %}
+
+        </div>
+
+
+        <div>
+
+            <div class="fs-3 text-dark mb-4">
+                <span class="me-2">
+                    <img width="40" height="40" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/calender.png?v=1699971346" alt="calender">
+                </span> {{section.settings.webnair_date}}
+            </div>
+
+            <div class="fs-3 text-dark mb-4 d-flex align-items-center">
+                <span class="me-2">
+                    <img width="40" height="40" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/chair.png?v=1699971357" alt="chair">
+                </span>
+                {% form 'product', product %}
+                <div>
+                    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button
+                        onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+                        class="btn buy-now-button">Save my Spot</button>
+                </div>
+                {% endform %}
+
+            </div>
+
+            <p class="fs-3 text-dark mb-4">On the occasion of Pulmonary Day, Dr. Rajkumar will be here with us to
+                enhance awareness and
+                empower you with
+                insights on Pulmonary health and its care.</p>
+            <p class="fs-3 text-dark mb-4">Register, and join us on this webinar to prioritize your well-being and make
+                informed choices for
+                a healthier
+                life.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="col-12 text-center mt-5">
+
+        <div class="fs-2 text-dark fw-semibold mb-3">SHARE THIS WEBINAR:</div>
+
+        <div class="mb-5">
+
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://bibo.health/products/webnair"><svg width="47"
+                    height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.6562 0H7.34375C3.28791 0 0 3.28791 0 7.34375V39.6562C0 43.7121 3.28791 47 7.34375 47H39.6562C43.7121 47 47 43.7121 47 39.6562V7.34375C47 3.28791 43.7121 0 39.6562 0Z"
+                        fill="#1877F2" />
+                    <path
+                        d="M35.25 23.5C35.25 17.0375 29.9625 11.75 23.5 11.75C17.0375 11.75 11.75 17.0375 11.75 23.5C11.75 29.375 16.0094 34.2219 21.5906 35.1031V26.8781H18.6531V23.5H21.5906V20.8562C21.5906 17.9187 23.3531 16.3031 25.9969 16.3031C27.3188 16.3031 28.6406 16.5969 28.6406 16.5969V19.5344H27.1719C25.7031 19.5344 25.2625 20.4156 25.2625 21.2969V23.5H28.4937L27.9062 26.8781H25.1156V35.25C30.9906 34.3687 35.25 29.375 35.25 23.5Z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/intent/tweet?url=https://bibo.health/products/webnair&text="><svg width="47"
+                    height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.6562 0H7.34375C3.28791 0 0 3.28791 0 7.34375V39.6562C0 43.7121 3.28791 47 7.34375 47H39.6562C43.7121 47 47 43.7121 47 39.6562V7.34375C47 3.28791 43.7121 0 39.6562 0Z"
+                        fill="#1DA1F2" />
+                    <path
+                        d="M35.25 16.1562C34.3687 16.5969 33.4875 16.7438 32.4594 16.8906C33.4875 16.3031 34.2219 15.4219 34.5156 14.2469C33.6344 14.8344 32.6062 15.1281 31.4312 15.4219C30.55 14.5406 29.2281 13.9531 27.9062 13.9531C24.8219 13.9531 22.4719 16.8906 23.2063 19.8281C19.2406 19.6813 15.7156 17.7719 13.2188 14.8344C11.8969 17.0375 12.6313 19.8281 14.6875 21.2969C13.9531 21.2969 13.2188 21.0031 12.4844 20.7094C12.4844 22.9125 14.1 24.9687 16.3031 25.5562C15.5688 25.7031 14.8344 25.85 14.1 25.7031C14.6875 27.6125 16.45 29.0812 18.6531 29.0812C16.8906 30.4031 14.2469 31.1375 11.75 30.8438C13.9531 32.1656 16.45 33.0469 19.0938 33.0469C28.0531 33.0469 33.0469 25.5562 32.7531 18.6531C33.7812 18.0656 34.6625 17.1844 35.25 16.1562Z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://bibo.health/products/webnair"><svg
+                    width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.6562 0H7.34375C3.28791 0 0 3.28791 0 7.34375V39.6562C0 43.7121 3.28791 47 7.34375 47H39.6562C43.7121 47 47 43.7121 47 39.6562V7.34375C47 3.28791 43.7121 0 39.6562 0Z"
+                        fill="#2867B2" />
+                    <path
+                        d="M17.0375 35.25H12.0437V19.5344H17.0375V35.25ZM14.5406 17.3313C12.925 17.3313 11.75 16.1562 11.75 14.5406C11.75 12.925 13.0719 11.75 14.5406 11.75C16.1563 11.75 17.3313 12.925 17.3313 14.5406C17.3313 16.1562 16.1563 17.3313 14.5406 17.3313ZM35.25 35.25H30.2563V26.7313C30.2563 24.2344 29.2281 23.5 27.7594 23.5C26.2906 23.5 24.8219 24.675 24.8219 26.8781V35.25H19.8281V19.5344H24.5281V21.7375C24.9687 20.7094 26.7312 19.0938 29.2281 19.0938C32.0187 19.0938 34.9563 20.7094 34.9563 25.5562V35.25H35.25Z"
+                        fill="white" />
+                </svg>
+            </a>
+
+
+            <a href="https://msng.link/o?https://bibo.health/products/webnair=ig"><svg width="47" height="47"
+                    viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.6562 0H7.34375C3.28791 0 0 3.28791 0 7.34375V39.6562C0 43.7121 3.28791 47 7.34375 47H39.6562C43.7121 47 47 43.7121 47 39.6562V7.34375C47 3.28791 43.7121 0 39.6562 0Z"
+                        fill="#F00073" />
+                    <path
+                        d="M23.4992 13.5125C26.7305 13.5125 27.1711 13.5125 28.493 13.5125C29.668 13.5125 30.2555 13.8062 30.6961 13.9531C31.2836 14.2468 31.7242 14.3937 32.1648 14.8343C32.6055 15.275 32.8992 15.7156 33.0461 16.3031C33.193 16.7437 33.3398 17.3312 33.4867 18.5062C33.4867 19.8281 33.4867 20.1218 33.4867 23.5C33.4867 26.8781 33.4867 27.1718 33.4867 28.4937C33.4867 29.6687 33.193 30.2562 33.0461 30.6968C32.7523 31.2843 32.6055 31.725 32.1648 32.1656C31.7242 32.6062 31.2836 32.9 30.6961 33.0468C30.2555 33.1937 29.668 33.3406 28.493 33.4874C27.1711 33.4874 26.8773 33.4874 23.4992 33.4874C20.1211 33.4874 19.8273 33.4874 18.5055 33.4874C17.3305 33.4874 16.743 33.1937 16.3023 33.0468C15.7148 32.7531 15.2742 32.6062 14.8336 32.1656C14.393 31.725 14.0992 31.2843 13.9523 30.6968C13.8055 30.2562 13.6586 29.6687 13.5117 28.4937C13.5117 27.1718 13.5117 26.8781 13.5117 23.5C13.5117 20.1218 13.5117 19.8281 13.5117 18.5062C13.5117 17.3312 13.8055 16.7437 13.9523 16.3031C14.2461 15.7156 14.393 15.275 14.8336 14.8343C15.2742 14.3937 15.7148 14.1 16.3023 13.9531C16.743 13.8062 17.3305 13.6593 18.5055 13.5125C19.8273 13.5125 20.268 13.5125 23.4992 13.5125ZM23.4992 11.3093C20.1211 11.3093 19.8273 11.3093 18.5055 11.3093C17.1836 11.3093 16.3023 11.6031 15.568 11.8968C14.8336 12.1906 14.0992 12.6312 13.3648 13.3656C12.6305 14.1 12.3367 14.6875 11.8961 15.5687C11.6023 16.3031 11.4555 17.1843 11.3086 18.5062C11.3086 19.8281 11.3086 20.2687 11.3086 23.5C11.3086 26.8781 11.3086 27.1718 11.3086 28.4937C11.3086 29.8156 11.6023 30.6968 11.8961 31.4312C12.1898 32.1656 12.6305 32.9 13.3648 33.6343C14.0992 34.3687 14.6867 34.6625 15.568 35.1031C16.3023 35.3968 17.1836 35.5437 18.5055 35.6906C19.8273 35.6906 20.268 35.6906 23.4992 35.6906C26.7305 35.6906 27.1711 35.6906 28.493 35.6906C29.8148 35.6906 30.6961 35.3968 31.4305 35.1031C32.1648 34.8093 32.8992 34.3687 33.6336 33.6343C34.368 32.9 34.6617 32.3125 35.1023 31.4312C35.3961 30.6968 35.543 29.8156 35.6898 28.4937C35.6898 27.1718 35.6898 26.7312 35.6898 23.5C35.6898 20.2687 35.6898 19.8281 35.6898 18.5062C35.6898 17.1843 35.3961 16.3031 35.1023 15.5687C34.8086 14.8343 34.368 14.1 33.6336 13.3656C32.8992 12.6312 32.3117 12.3375 31.4305 11.8968C30.6961 11.6031 29.8148 11.4562 28.493 11.3093C27.1711 11.3093 26.8773 11.3093 23.4992 11.3093Z"
+                        fill="white" />
+                    <path
+                        d="M23.4992 17.1843C19.9742 17.1843 17.1836 19.975 17.1836 23.5C17.1836 27.025 19.9742 29.8156 23.4992 29.8156C27.0242 29.8156 29.8148 27.025 29.8148 23.5C29.8148 19.975 27.0242 17.1843 23.4992 17.1843ZM23.4992 27.6124C21.2961 27.6124 19.3867 25.85 19.3867 23.5C19.3867 21.2968 21.1492 19.3875 23.4992 19.3875C25.7023 19.3875 27.6117 21.15 27.6117 23.5C27.6117 25.7031 25.7023 27.6124 23.4992 27.6124Z"
+                        fill="white" />
+                    <path
+                        d="M29.9617 18.5062C30.7729 18.5062 31.4305 17.8486 31.4305 17.0375C31.4305 16.2263 30.7729 15.5687 29.9617 15.5687C29.1506 15.5687 28.493 16.2263 28.493 17.0375C28.493 17.8486 29.1506 18.5062 29.9617 18.5062Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<style>
+    .webnair-section8_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width:768px) {
+        .webnair-section8_items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+    .webnair-section8 a {
+        text-decoration: none !important;
+    }
+
+    .webnair-section8_form-wrapper input {
+        border-radius: 5px;
+    }
+
+    .webnair-section8_form-wrapper .field {
+        margin-bottom: 20px;
+    }
+
+    .webnair-section8_form-wrapper button {
+        border-radius: 5px;
+        background: #EB752C;
+        width: 100%;
+    }
+
+    .webnair-section8_form-wrapper {
+        border-radius: 5px;
+        background: #D8D8D8;
+        box-shadow: 0px 4px 40px 0px rgba(43, 89, 255, 0.08);
+        padding: 40px;
+    }
+
+    .webnair-section8_title {
+        border-radius: 7px;
+        background: linear-gradient(90deg, #FD0 5.55%, #FF9453 69.68%);
+        padding: 0 5px;
+        width: fit-content;
+        margin: auto;
+    }
+</style>
+
+
+{% schema %}
+{
+"name": "Webnair Sec 8",
+"class": "webnair-section8",
+"tag": "section",
+"settings": [
+{
+"type": "text",
+"id": "webnair_date",
+"default": "6pm, 7th November, 2023.",
+"label": "Webnair Time & Date"
+
+}
+],
+"presets": [{
+"name": "Webnair Sec 8"
+}]
+}
+{% endschema %}

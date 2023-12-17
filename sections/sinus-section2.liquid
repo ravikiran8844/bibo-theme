@@ -1,0 +1,104 @@
+{{"sinus-page.css" |  asset_url |  stylesheet_tag}}
+
+
+
+<div class="container p-5">
+    <div class="col-12 text-center mb-5">
+        <div class="sinus-section2_card_heading display-4 fw-semibold">What Are Your <span class="custom-border">Sinusitis</span> Concerns?</div>
+    </div>
+
+
+
+
+    <div class="sinus-section2_cards row">
+
+   
+
+
+
+   {% for block in section.blocks %}
+
+    <div class="col-12 col-sm-6 col-lg-3 px-3 mb-5">
+        <div class="card sinus-section2_card">
+        <div class="card-header text-center">
+            <div class="fw-semibold">{{block.settings.title}}</div>
+        </div>
+        <div class="card-body">
+            <div>{{block.settings.text}}</div>
+        </div>
+        </div>
+    </div>
+    
+   {% endfor %}
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<style>
+    .sinus-section2_card {
+        max-width: 350px;
+        margin: auto;
+        height: 100%;
+    }
+
+    .sinus-section2_card_heading {
+        color: #000;
+        font-family: Urbanist;
+    }
+
+    .sinus-section2_card .card-header {
+        background: #275C5C;
+        color: #FFF;
+        text-transform: capitalize;
+        padding: 15px 0;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+
+    .sinus-section2_card .card-body {
+        padding: 20px 10px;
+        border: 4px solid #000;
+        border-top: none;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+    }
+</style>
+
+{% schema %}
+{
+"name": "Sinus Section 2",
+"class": "sinus-section2",
+"tag": "section",
+"settings": [
+
+],
+"blocks": [{
+    "name": "block",
+    "type": "block",
+    "limit": 4,
+    "settings": [{
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Nasal Congestion"
+    },
+    {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Feeling like a small ball is stuck in your nose? These are polyps, harmless non-cancerous growths on the lining of the nose or sinuses."
+    }
+]
+}],
+"presets": [{
+"name": "Sinus Section 2"
+}]
+
+}
+{% endschema %}

@@ -1,0 +1,109 @@
+<div class="container p-5">
+  <div class="row">
+    <div class="col-12 webnair-section5-items">
+
+      <div class="m-auto">
+        <img class="img-fluid" height="500" width="500" loading="lazy"
+          src="{{section.settings.image |  image_url: width:695 }}" alt="">
+      </div>
+
+      <div class="webnair-section5-item_content mt-5">
+        <div>
+          <div class="webnair-section5-item_content_border-left mb-4">
+            <div class="webnair-section5-item_content-caption fs-1">Know about the host</div>
+            
+            <div class="fs-1 fw-semibold text-dark custom-border">
+                Dr. Adimalla Rajakumar
+            </div>
+          
+
+
+            </div>
+          </div>
+
+
+          <p class="webnair-section5-text-color mb-3">MBBS, MD - Tuberculosis & Respiratory Diseases/Medicine
+            Pulmonologist, General Physician ; 7 Years Experience Overall (1 year as specialist)
+            Owner of ABS chest and children’s hospital, Ex-Apollo, Ex-Vydehi Institute of Medical Sciences and Research
+            Centre.</p>
+
+          <p class="text-dark mb-5">Dr. Adimalla Raja Kumar has practiced at Sky Medical Corporation in Whitefield,
+            Bangalore, Apollo Medical Centre in Kundalahalli, Bangalore and RxDx Healthcare in Whitefield, Bangalore. He
+            completed MBBS from Vydehi Institute of Medical Sciences and Research Centre, Bangalore in 2016 and MD -
+            Tuberculosis & Respiratory Diseases/Medicine from Vydehi Institute of Medical Sciences and Research Centre,
+            Bangalore in 2021. Dr. Rajakumar specialises in a wide range of respiratory disorders, including <b>Asthma,
+              Bronchitis, COPD, Tuberculosis, Pneumonia, and various other lung conditions. </b></p>
+
+
+          <div class="text-center text-lg-start">
+            {% form 'product', product %}
+            <div>
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <input type="hidden" name="quantity" value="1">
+              <button
+                onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+                class="btn buy-now-button">LEARN MORE</button>
+            </div>
+            {% endform %}
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .webnair-section5-text-color {
+    color: #474646 !important;
+
+  }
+
+  .webnair-section5-item_content-caption {
+    color: #00A79D;
+    font-family: Satisfy;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .webnair-section5-item_content_border-left {
+    border-left: 5px solid #54B5A9;
+    padding-left: 5px;
+  }
+
+  .webnair-section5-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width:992px) {
+    .webnair-section5-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+
+</style>
+
+{% schema %}
+{
+"name": "Webnair Sec 5",
+"class": "webnair-section5",
+"tag": "section",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+],
+"presets": [{
+"name": "Webnair Sec 5"
+}]
+}
+{% endschema %}

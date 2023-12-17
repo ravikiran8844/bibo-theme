@@ -1,0 +1,452 @@
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+
+<script defer src="{{"nasal-spray-types.js" |  asset_url }}"></script>
+<div class="container py-5">
+  <div class="col-12 text-center">
+    <div class="nasal-spray-types_main-title mb-5">{{ section.settings.heading }}</div>
+  </div>
+
+  <div class="row nasal-spray-types_items owl-carousel owl-theme" id="nasal-spray-types">
+    {% for block in section.blocks %}
+      <div class="col-12 nasal-spray-type_item item">
+        <div class="nasal-spray-type_item-content">
+          <div class="nasal-spray-types_section-title mb-4">
+            {{ block.settings['sub-heading'] }}
+          </div>
+          <div class="nasal-spray-types_section-text mb-4">
+            {{ block.settings.text1 }}
+          </div>
+          <div class="nasal-spray-types_section-sub-title mb-4">
+            {{ block.settings.title }}
+          </div>
+          <div class="nasal-spray-types_section-text mb-4">
+            {{ block.settings.text2 }}
+          </div>
+        </div>
+        <div>
+          {% assign product = block.settings.product %}
+
+          <div class="card p-3">
+            <div class="card-body">
+              <div class="text-center mb-4">
+                <img
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                  class="img-fluid"
+                  src="{{product.images.first |  image_url: width:405, height:477 }}"
+                  alt=""
+                >
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="nasal-spray-type_item-title">
+                  {{ product.metafields.custom.product_title }}
+                </div>
+                <div class="nasal-spray-type_item-title">
+                  {{ product.price | money_without_trailing_zeros }}
+                </div>
+              </div>
+
+              <div class="nasal-spray-type_item-caption">
+                {{ product.metafields.custom.product_caption }}
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div>
+                  <span class="me-2">
+                    <svg
+                      width="126"
+                      height="21"
+                      viewBox="0 0 126 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9208 0.669434L14.0822 7.21287L21.1496 8.26009L16.0352 13.3494L17.2436 20.5399L10.9208 17.1448L4.59808 20.5399L5.80646 13.3494L0.685547 8.26009L7.75946 7.21287L10.9208 0.669434Z"
+                        fill="#FEA501"
+                        stroke="#C1942D"
+                        stroke-width="0.375"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M36.7666 0.669434L39.9279 7.21287L46.9953 8.26009L41.8809 13.3494L43.0893 20.5399L36.7666 17.1448L30.4438 20.5399L31.6522 13.3494L26.5312 8.26009L33.6052 7.21287L36.7666 0.669434Z"
+                        fill="#FEA501"
+                        stroke="#C1942D"
+                        stroke-width="0.375"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M62.6116 0.669434L65.773 7.21287L72.8404 8.26009L67.726 13.3494L68.9343 20.5399L62.6116 17.1448L56.2888 20.5399L57.4972 13.3494L52.3828 8.26009L59.4502 7.21287L62.6116 0.669434Z"
+                        fill="#FEA501"
+                        stroke="#C1942D"
+                        stroke-width="0.375"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M89.219 0.669434L92.3804 7.21287L99.4478 8.26009L94.3334 13.3494L95.5418 20.5399L89.219 17.1448L82.8962 20.5399L84.1046 13.3494L78.9902 8.26009L86.0576 7.21287L89.219 0.669434Z"
+                        fill="#FEA501"
+                        stroke="#C1942D"
+                        stroke-width="0.375"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M115.063 0.669434L118.224 7.21287L125.292 8.26009L120.177 13.3494L121.386 20.5399L115.063 17.1448L108.74 20.5399L109.948 13.3494L104.834 8.26009L111.901 7.21287L115.063 0.669434Z"
+                        fill="#FEA501"
+                        stroke="#C1942D"
+                        stroke-width="0.375"
+                        stroke-miterlimit="10" />
+                    </svg>
+                  </span>
+                  ({{ product.metafields.reviews.rating_count }} Reviews)
+                </div>
+                <div>{{ product.variants.title }}</div>
+              </div>
+
+              <div class="nasal-spray-type_item-text  mb-4">
+                {{ block.settings.product_text }}
+              </div>
+
+              <div class="d-flex justify-content-between  mb-4">
+                <div class="d-flex flex-wrap me-2">
+                  {% for label in product.metafields.custom.product_labels.value %}
+                    <div class="nasal-spray-type_item-labels mb-3 me-3">{{ label }}</div>
+                  {% endfor %}
+                </div>
+
+                <div>
+                  <div>
+                    {% form 'product', product %}
+                      <input
+                        type="hidden"
+                        name="id"
+                        value="{{ product.variants.first.id }}"
+                      >
+                      <input
+                        type="hidden"
+                        name="quantity"
+                        value="1"
+                      >
+                      <button class="btn nasal-spray-type_item-btn buy-now-button">+</button>
+                    {% endform %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  // .nasal-spray-types{
+  //   background-image: url("{{section.settings.bg_image | img_url: 'master'}}");
+  //   background-size: cover;
+  // }
+  .nasal-spray-types .owl-item .item {
+    margin: 0px auto;
+  }
+  .nasal-spray-types .owl-carousel .owl-item img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+  }
+  .nasal-spray-types .owl-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nasal-spray-types_main-title {
+    color: #000;
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 4px;
+    background: #cdece8;
+    width: fit-content;
+    margin: auto;
+    padding: 0 8px;
+  }
+  .nasal-spray-types_section-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 146.5%;
+    /* 55.67px */
+  }
+  .nasal-spray-types_section-title span {
+    border-radius: 8px;
+    border: 2.6px solid #18ecd2;
+    box-shadow: 3px 3px 17px 0 rgba(0, 0, 0, 0.25);
+    padding: 0 8px;
+    margin-right: 5px;
+  }
+  .nasal-spray-types_section-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .nasal-spray-types_section-sub-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #f4a26f;
+    width: fit-content;
+    padding: 0 8px;
+  }
+  .nasal-spray-types_section-sub-title b {
+    font-weight: 600;
+  }
+  .nasal-spray-type_item-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .nasal-spray-type_item-caption {
+    color: #5e5e5e;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 1px solid #bcbcbc;
+    padding: 10px 0;
+  }
+  .nasal-spray-type_item-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .nasal-spray-type_item-labels {
+    border-radius: 6px;
+    border: 1px solid #000;
+    color: #1b1b1b;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+  }
+
+  .nasal-spray-type_item-content {
+    border-left: 6px solid #eb752c;
+    height: fit-content;
+    padding-left: 10px;
+  }
+
+  .nasal-spray-type_item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .nasal-spray-type_item .card {
+    border-radius: 18.477px;
+    border: 2px solid #e9e6e6;
+    background: #fff;
+    box-shadow: 0 0 39px 0 rgba(102, 102, 102, 0.15);
+  }
+
+  .nasal-spray-type_item-btn {
+    border-radius: 8px;
+    background: #275c5c;
+    box-shadow: 0 4.00153px 10px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 50px;
+    height: 55px;
+  }
+  @media (min-width: 768px) {
+    .nasal-spray-type_item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .nasal-spray-types_main-title {
+      color: #000;
+      font-family: Urbanist;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border-radius: 4px;
+      background: #cdece8;
+      width: fit-content;
+      margin: auto;
+      padding: 0 8px;
+    }
+    .nasal-spray-types_section-title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 146.5%;
+      /* 55.67px */
+    }
+    .nasal-spray-types_section-title span {
+      border-radius: 8px;
+      border: 2.6px solid #18ecd2;
+      box-shadow: 3px 3px 17px 0 rgba(0, 0, 0, 0.25);
+      padding: 0 8px;
+    }
+    .nasal-spray-types_section-text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .nasal-spray-types_section-sub-title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: #f4a26f;
+      width: fit-content;
+      padding: 0 8px;
+    }
+    .nasal-spray-types_section-sub-title b {
+      font-weight: 600;
+    }
+    .nasal-spray-type_item-title {
+      color: #000;
+      font-family: Poppins;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .nasal-spray-type_item-caption {
+      color: #5e5e5e;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-top: 1px solid #bcbcbc;
+      padding: 10px 0;
+    }
+    .nasal-spray-type_item-text {
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .nasal-spray-type_item-labels {
+      border-radius: 6px;
+      border: 1px solid #000;
+      color: #1b1b1b;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 5px;
+      margin: 5px 5px 5px 0;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Nasal Spray Types",
+  "class": "nasal-spray-types",
+  "tag": "section",
+  "settings": [{
+    "type": "image_picker",
+    "id": "bg_image",
+    "label": "Background Image"
+  },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Types of nasal sprays",
+      "label": "Heading"
+    }
+
+  ],"blocks": [
+    {
+      "name": "block",
+      "type": "block",
+      "settings": [
+        {
+      "type": "text",
+      "id": "sub-heading",
+      "default": "Saline and natural nasal sprays:",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "text1",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "text2",
+      "label": "Text"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "product_text",
+      "label": "Product Card Text"
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Nasal Spray Types"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,36 @@
+<div class="container p-5">
+  <div class="webnair-section_content text-center my-5">
+    <div class="fs-1 text-dark fw-semibold">
+      By recognizing the vitality of respiratory health, BIBO.Health is driven by a mission to offer clear, clinically
+      <span class="custom-oval-border">proven knowledge</span>, products, and solutions for all respiratory concerns.
+    </div>
+  </div>
+</div>
+
+<style>
+  .webnair-section9{
+      background-image: url("{{section.settings.bg_image | img_url: 'master'}}");
+  background-size: cover;
+  }
+
+  .webnair-section9_content .display-5{
+      font-family: Poppins;
+  }
+</style>
+{% schema %}
+  {
+      "name": "Webnair Sec 9",
+      "class": "webnair-section9",
+      "tag": "section",
+      "settings": [
+          {
+  "type": "image_picker",
+  "id": "bg_image",
+  "label": "Background Image"
+}
+          ],
+          "presets": [{
+              "name": "Webnair Sec 9"
+          }]
+  }
+{% endschema %}

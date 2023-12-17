@@ -1,0 +1,151 @@
+{
+  "sections": {
+    "main": {
+      "type": "webnair-product",
+      "settings": {
+      }
+    },
+    "acc09ff5-b1af-4d39-8ce3-3c90e5098554": {
+      "type": "webnair-section1",
+      "settings": {
+      }
+    },
+    "e199a269-d5ba-425b-8e37-2f1f418b18b7": {
+      "type": "webnair-section2",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Group_14708.png"
+      }
+    },
+    "bbf63f6a-f2f0-48eb-917a-49555285e19c": {
+      "type": "webnair-section3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_80.webp"
+      }
+    },
+    "daa2abf5-a420-4abf-8ccc-e913b14e6715": {
+      "type": "webnair-section4",
+      "settings": {
+      }
+    },
+    "2d20b99e-96ee-450a-9188-de35770e2d5d": {
+      "type": "webnair-section5",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/doctor_image.webp"
+      }
+    },
+    "7f002390-75bf-4e20-8640-571804424803": {
+      "type": "webnair-section6",
+      "blocks": {
+        "c6ad2e47-5740-4e0a-be2c-1e38ffb5058c": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/wCi-Fo_0M_0-HD.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=wCi-Fo_0M_0"
+          }
+        },
+        "b01bae02-e2df-4fce-9aa8-46d860118a61": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/ZgWW5Xcujjw-HD.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ZgWW5Xcujjw"
+          }
+        }
+      },
+      "block_order": [
+        "c6ad2e47-5740-4e0a-be2c-1e38ffb5058c",
+        "b01bae02-e2df-4fce-9aa8-46d860118a61"
+      ],
+      "settings": {
+      }
+    },
+    "72e8113a-7241-40d3-8567-a00108b0a0c3": {
+      "type": "webnair-section7",
+      "settings": {
+        "svg": "shopify:\/\/shop_images\/Down_arrow.svg"
+      }
+    },
+    "4dac219e-2e08-4544-a173-51ca029d4674": {
+      "type": "webnair-section8",
+      "settings": {
+        "webnair_date": "5-6 pm, 22nd November, 2023."
+      }
+    },
+    "728c55b4-ebfe-419f-b989-f8cac280d573": {
+      "type": "webnair-section9",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Group_14708.png"
+      }
+    },
+    "040bfc76-2d12-43d9-a209-588a68ad62d6": {
+      "type": "webnair-reviews",
+      "blocks": {
+        "5274827d-3e59-4562-aa05-b9d38dfdf0d9": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Aditi",
+            "text": "<p>I had dry cough since a long time and it wasn’t going away. The first time I tried this syrup it gave me instant relief but I thought my cough will again start. After taking it for a week I got great results and haven’t looked back since then.<br\/><\/p>"
+          }
+        },
+        "2dc52370-ad91-45c9-a9e1-186ccaa5f879": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Saranya",
+            "text": "<p>I suffer from blocked nose every now and then. Doctors have suggested me to take different types of nasal sprays but after sometime these sprays were not effective. When I saw bibo nasal spray which claimed to be 100% natural I gave it a try. It worked really well. It helped me with my blocked nose<br\/><\/p>"
+          }
+        },
+        "3d138016-e6ff-41af-b791-3088668058aa": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Virat",
+            "text": "<p>I am really happy with this product. Never written any review but this product forced me to write it. I have cold allergy so winter is like nightmare to me but this product helps me a lot to fight with cold. Really happy with this.<br\/><\/p>"
+          }
+        },
+        "9219e1c8-06a3-492d-af76-8dca1b6208bb": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Priyanka",
+            "text": "<p>No More Harmful Ingredients and I appreciate that this patch doesn't contain petroleum jelly like other vapor rubs.<br\/><\/p>"
+          }
+        },
+        "08643723-1af3-4746-9738-939062777c45": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Mahesh",
+            "text": "<p>Bibo Nasal Spray is a must-have in my bag. It's so convenient to use and helps me breathe better whenever I need it.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5274827d-3e59-4562-aa05-b9d38dfdf0d9",
+        "2dc52370-ad91-45c9-a9e1-186ccaa5f879",
+        "3d138016-e6ff-41af-b791-3088668058aa",
+        "9219e1c8-06a3-492d-af76-8dca1b6208bb",
+        "08643723-1af3-4746-9738-939062777c45"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/bagckground.webp",
+        "heading": "Only the best is good enough!",
+        "subheading": "Quality is everything when it comes to ayurveda. Our ingredients are handled with care at every step to ensure you always receive the best quality products.",
+        "text": "DON’T BELIEVE US? HERE’S WHAT OUR CUSTOMERS HAVE TO SAY!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "acc09ff5-b1af-4d39-8ce3-3c90e5098554",
+    "e199a269-d5ba-425b-8e37-2f1f418b18b7",
+    "bbf63f6a-f2f0-48eb-917a-49555285e19c",
+    "daa2abf5-a420-4abf-8ccc-e913b14e6715",
+    "2d20b99e-96ee-450a-9188-de35770e2d5d",
+    "7f002390-75bf-4e20-8640-571804424803",
+    "72e8113a-7241-40d3-8567-a00108b0a0c3",
+    "4dac219e-2e08-4544-a173-51ca029d4674",
+    "728c55b4-ebfe-419f-b989-f8cac280d573",
+    "040bfc76-2d12-43d9-a209-588a68ad62d6"
+  ]
+}

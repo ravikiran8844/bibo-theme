@@ -1,0 +1,111 @@
+<div class="container my-5">
+  <div class="col-12 py-5">
+    {% comment %}
+      {% assign blog_handles = "asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness" | split: "," %}
+      {% assign limit = 4 %}
+      {% assign all_articles = "" | split: "" %}
+
+      {% for handle in blog_handles %}
+        {% assign articles = blogs[handle].articles | sort: 'published_at' | reverse %}
+        {% assign latest_articles = articles | slice: 0, limit %}
+        {% assign all_articles = all_articles | concat: latest_articles %}
+      {% endfor %}
+
+
+      {% assign sorted_articles = all_articles | sort: 'published_at' | reverse %}
+      {% assign display_articles = sorted_articles | slice: 0, limit %}
+    {% endcomment %}
+
+    <div class="row">
+      {% paginate blog.articles by 8 %}
+        {% for article in blog.articles %}
+          <div class="col-12 col-lg-6 mb-5">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a href="{{article.url}}">
+                    <img
+                      loading="lazy"
+                      class="img-fluid"
+                      src="{{article.image |  image_url: width:680 }}"
+                      class="img-fluid rounded-start"
+                      alt="{{article.title}}"
+                    >
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <a class="text-decoration-none" href="{{article.url}}">
+                      <div class="card-title mb-3">{{ article.title }}</div>
+                    </a>
+                    <p class="card-text">{{ article.excerpt | truncate: 120 }}</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">{{ article.published_at | date: '%b %d, %Y' }}</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+        {%- if paginate.pages > 1 -%}
+          {%- render 'pagination', paginate: paginate -%}
+        {%- endif -%}
+      {% endpaginate %}
+    </div>
+  </div>
+</div>
+
+<style>
+    .pagination__list{
+      margin: auto;
+    }
+    .custom-blog-section2 img{
+      object-fit: cover;
+      height: auto;
+      border-radius: 10px;
+    }
+    .custom-blog-section2 img:hover{
+      opacity: .8;
+    }
+      .custom-blog-section2 .card-title{
+        color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+    }
+
+    .custom-blog-section2 .card-title:hover{
+      color: #00A79D;
+    }
+    .custom-blog-section2 .card-text{
+      color: #6D6E76;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+    }
+    .custom-blog-section2 .card{
+  border: none;
+    }
+  .pagination__list>li:not(:last-child){
+    margin-right:0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Blog section 2",
+  "class": "custom-blog-section2",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Custom Blog section 2"
+    }
+  ]
+}
+{% endschema %}

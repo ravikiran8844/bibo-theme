@@ -1,0 +1,797 @@
+{
+  "layout": "theme.alternate",
+  "sections": {
+    "main": {
+      "type": "rk-main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "00f934ea-331c-42d8-a463-22b61581c53c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " Delivery Partner: Bluedart",
+            "text_style": "body"
+          }
+        },
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated delivery ",
+            "text_style": "uppercase"
+          }
+        },
+        "80205f9b-5cd0-4df0-8145-57b725854f1b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "1 day for Bengaluru (If order is booked before 10 am), 2 days for all metros  and 3 days for other cities",
+            "text_style": "body"
+          }
+        },
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients_multiline | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "4155a235-862b-4cd9-b990-a7715a33e7f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "330250f7-9942-4975-8448-2a6827679094": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "77cdd7c7-327d-4f7c-8775-9360cdabe6aa": {
+          "type": "logos",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "5a45973a-2908-4848-a91e-7ca65eb0f1d1",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "00f934ea-331c-42d8-a463-22b61581c53c",
+        "a9e7c34a-a11f-49f7-b067-c6012b0ba497",
+        "80205f9b-5cd0-4df0-8145-57b725854f1b",
+        "fa572af6-fc61-46df-84ab-becc74c5d9c6",
+        "4155a235-862b-4cd9-b990-a7715a33e7f2",
+        "330250f7-9942-4975-8448-2a6827679094",
+        "77cdd7c7-327d-4f7c-8775-9360cdabe6aa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "a65da06e-6a75-4dda-8d84-9417d43914bd": {
+      "type": "custom-img-text-blocks",
+      "blocks": {
+        "53798778-c1d9-4a9c-a93e-5b16440aa451": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_954.webp",
+            "text": "Relieve blocked nose"
+          }
+        },
+        "9bcbdbdb-27ee-4f7d-af22-c57f13c43d4b": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_917.webp",
+            "text": "Flush out pollutants & allergens"
+          }
+        },
+        "59a352aa-d571-4aff-959b-414b3f6f2bed": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_453.webp",
+            "text": "Eases pain and pressure ofsinusitis"
+          }
+        },
+        "68c7cad8-d7a0-45df-bdaf-15a8edc2dad0": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_918.webp",
+            "text": "Flush out mucus"
+          }
+        }
+      },
+      "block_order": [
+        "53798778-c1d9-4a9c-a93e-5b16440aa451",
+        "9bcbdbdb-27ee-4f7d-af22-c57f13c43d4b",
+        "59a352aa-d571-4aff-959b-414b3f6f2bed",
+        "68c7cad8-d7a0-45df-bdaf-15a8edc2dad0"
+      ],
+      "settings": {
+        "bgcolor": "#ffffff",
+        "heading": "Our Bibo Saline Nasal Spray helps you"
+      }
+    },
+    "description": {
+      "type": "description",
+      "blocks": {
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7e1b4433-69b5-4ea7-9d50-1d8bbf78528e"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main-product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "166692232334bcc7ad": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "14406abf-fd6f-48d7-a509-ed9e62d1a179": {
+      "type": "custom-img-text-blocks",
+      "blocks": {
+        "05c17642-d5a8-4b34-8601-8e2c1c78113e": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/49bae3638c00807929ca581bbc9c55ee_1_2.gif",
+            "text": "Relieve blocked nose"
+          }
+        },
+        "44a0d2d6-e1a4-4d1d-8483-d8f4e0c46ef6": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8f2060f34f1e2804b51c6026bd69e1b9_2.gif",
+            "text": "Flush out pollutants & allergens"
+          }
+        },
+        "a2952766-d4ad-41c7-ae96-4a2e623c8674": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/78b7357cbc8e376d932aa6186f807ae6_2.gif",
+            "text": "Eases pain and pressure of sinusitis"
+          }
+        }
+      },
+      "block_order": [
+        "05c17642-d5a8-4b34-8601-8e2c1c78113e",
+        "44a0d2d6-e1a4-4d1d-8483-d8f4e0c46ef6",
+        "a2952766-d4ad-41c7-ae96-4a2e623c8674"
+      ],
+      "disabled": true,
+      "settings": {
+        "bgcolor": "#ffffff",
+        "heading": "Our Bibo Saline Nasal Spray helps you"
+      }
+    },
+    "cbbafa95-fdbc-4fd5-9b23-c6b8ecf7d521": {
+      "type": "accordian-section",
+      "blocks": {
+        "3f3a413f-91dc-4bbf-9d79-5054d629e1dc": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/2_1_1.png",
+            "text": "<b>Tulsi<\/b> has proven anti-viral & anti-bacterial properties to counter infections."
+          }
+        },
+        "09ed91e4-6cae-44ea-b67c-6a2b4e84f3fb": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/xylitol-500x500-2_1_1.png",
+            "text": "<b>Xylitol<\/b> is a great non-drug nasal cleanser and moisturiser."
+          }
+        },
+        "50ad0f24-f0f3-4140-aad5-bbee1cc09b87": {
+          "type": "ingredient-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sal_1.png",
+            "text": "<b>Saline<\/b> thins down excess mucus & hydrated the nasal passage."
+          }
+        }
+      },
+      "block_order": [
+        "3f3a413f-91dc-4bbf-9d79-5054d629e1dc",
+        "09ed91e4-6cae-44ea-b67c-6a2b4e84f3fb",
+        "50ad0f24-f0f3-4140-aad5-bbee1cc09b87"
+      ],
+      "settings": {
+        "heading": "Ingredients",
+        "text": "<p>Bibo Saline Nasal Spray<\/p>"
+      }
+    },
+    "7c8ee5bd-2106-4e37-ada2-3f397eacc762": {
+      "type": "accordian-section",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "Benefits",
+        "text": "<ul><li>Instant relief from blocked nose and nasal congestion<\/li><li>Immunity builder<\/li><li>Irrigates nasal and sinus lining<\/li><li>Kills microbes responsible for common cold, sinusitis, rhinitis, etc.<\/li><\/ul>"
+      }
+    },
+    "67128949-f04c-4010-a6bf-c52bc9a61047": {
+      "type": "accordian-section",
+      "custom_css": [
+        ".accordion {margin-bottom: 40px !important;}"
+      ],
+      "settings": {
+        "heading": "Safety Precautions",
+        "text": "<ol><li>Read the label carefully before use<\/li><li>Keep out of reach of the children<\/li><li>Store in a cool dry place away from direct sunlight<\/li><li>This is an ayurvedic proprietary medicine and is generally considered safe<\/li><li>If you face any adverse symptoms or develop any allergy from the product, please discontinue and see a doctor<\/li><li>If problems persist see a doctor<\/li><\/ol>"
+      }
+    },
+    "e3d0f277-c9a0-4ef3-b81e-de40dbcad03b": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/nose_spray_combo.webp",
+        "mobile_bg": "shopify:\/\/shop_images\/1_51_8d0e2522-17dc-4a28-a845-c53ab32b9c05.webp",
+        "mobile_img": "shopify:\/\/shop_images\/2_79_1.webp",
+        "caption": "India’s first",
+        "title": "Saline nasal spray with tulsi & xylitoL!",
+        "text": "Your daily defence against pollutants and allergens",
+        "mobile_title": "India’s First Saline nasal spray with tulsi & xylitoL!"
+      }
+    },
+    "08b65193-9da2-4f1c-92db-3d46469a164c": {
+      "type": "logos",
+      "blocks": {
+        "2a4ca307-7da0-4714-857a-7df63e538717": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1573_3.png",
+            "title": "Fortified with Tulsi",
+            "text": "Tulsi fight bacterial and viral infections."
+          }
+        },
+        "9ccdc542-af9a-47d3-9f17-2a5be7bdc1e9": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_7.png",
+            "title": "Immuno-Modulatory Properties",
+            "text": "Tulsi has immuno-modulator that helps fight allergies."
+          }
+        },
+        "0fe8c30e-6ef2-4338-9b46-e1c7cd55bb1d": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/2_9_1.png",
+            "title": "Hydrated Nasal Passage",
+            "text": "Saline thins down excess mucus & hydrates the nasal passage."
+          }
+        },
+        "77941cbb-2262-4959-9529-b1cf49e26693": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/3_13_1.png",
+            "title": "Nasal Irrigation",
+            "text": "Xylitol helps irrigate the nasal lining and sinuses."
+          }
+        },
+        "8552b310-eea4-4b5a-90cb-bddaf67261bb": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1576_2.png",
+            "title": "Super convenient",
+            "text": "Pump Mist Bottle promotes convinience."
+          }
+        }
+      },
+      "block_order": [
+        "2a4ca307-7da0-4714-857a-7df63e538717",
+        "9ccdc542-af9a-47d3-9f17-2a5be7bdc1e9",
+        "0fe8c30e-6ef2-4338-9b46-e1c7cd55bb1d",
+        "77941cbb-2262-4959-9529-b1cf49e26693",
+        "8552b310-eea4-4b5a-90cb-bddaf67261bb"
+      ],
+      "settings": {
+      }
+    },
+    "3ae7f065-a280-41c9-abc5-149124dfbe2a": {
+      "type": "doctors-recommendation",
+      "blocks": {
+        "cc579475-b1b0-4bd9-934d-3941f22340b3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_933.png",
+            "name": "Dr. Vybhav Vijendra",
+            "caption": "Pulmonologist",
+            "text": "Saline nasal sprays help moisturize and rinse the nasal passages, promoting healthy nasal hygiene and reducing congestion. Healthy and free nasal passages ensure supply of clear air to lungs thereby reducing chance of infection."
+          }
+        },
+        "4e7462f3-330e-4559-a98f-b9b337560b32": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_10.png",
+            "name": "Dr. Adimalla Rajakumar",
+            "caption": "Pulmonologist",
+            "text": "Inhaling lipid-containing compounds, such as petroleum jelly, can result in conditions like exogenous lipoid pneumonia. Hence use of balms over a long time can be harmful to health."
+          }
+        },
+        "24da944f-e1f7-4cb0-89ae-a26085533d83": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_935.png",
+            "name": "Dr. Anju Balakrishnan",
+            "caption": "BAMS, MD in Ayurveda",
+            "text": "Saline nasal sprays infused with Tulsi can help enhance anti-inflammatory benefits. And further Tulsi is a proven immune-modulator which helps building immunity. Healthy nasal system helps correcting the kapha doshas in human body."
+          }
+        }
+      },
+      "block_order": [
+        "cc579475-b1b0-4bd9-934d-3941f22340b3",
+        "4e7462f3-330e-4559-a98f-b9b337560b32",
+        "24da944f-e1f7-4cb0-89ae-a26085533d83"
+      ],
+      "settings": {
+        "heading": "Doctor’s Recommendation",
+        "subheading": "On Using Nasal Sprays",
+        "bottom-text": ""
+      }
+    },
+    "27604f21-0544-4629-927d-1fc9b6a6a314": {
+      "type": "frequently-bought",
+      "settings": {
+      }
+    },
+    "9f230137-568e-4545-bb3c-f52f818c74be": {
+      "type": "video-slider",
+      "blocks": {
+        "d2c13177-6301-41cc-bb60-2dc8b1bda8f4": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/video_1.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=sWeesNJqH-U"
+          }
+        },
+        "01fb1c99-5bb8-4328-bd40-3ad691c6ad8e": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/bib2_1.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=LSjQbJNHFNM&feature=youtu.be"
+          }
+        },
+        "b7253cd6-5d18-4331-960d-c6ec528bb722": {
+          "type": "video-block",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/bib3_1.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=-wVvWegEnQQ&list=PLUph01sCe_4WdS6mgxgBheUZB7U3u78fx&index=3"
+          }
+        }
+      },
+      "block_order": [
+        "d2c13177-6301-41cc-bb60-2dc8b1bda8f4",
+        "01fb1c99-5bb8-4328-bd40-3ad691c6ad8e",
+        "b7253cd6-5d18-4331-960d-c6ec528bb722"
+      ],
+      "settings": {
+        "heading": "Hear what <b>our customers <\/b>have to say about us"
+      }
+    },
+    "263781bb-c651-4461-a395-edc41d77e9e9": {
+      "type": "faqs",
+      "blocks": {
+        "b7aafeea-7f43-4fc3-af5a-17773b064f64": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the indications of Bibo Saline Nasal Spray?",
+            "answer": "Bibo Saline Nasal Spray relieves common cold, blocked or runny nose, nasal congestion, sore throat and sinusitis. It relieves symptoms in people suffering from allergies, deviated nasal septum and nasal polyps.Add about ten sprays to a glass of water and use it as a gargle.Add 5ml of Bibo Saline Nasal Spray to sterilized water, and you can use it for Neti kriya. The Neti kriya can give instant relief to people having sinusitis."
+          }
+        },
+        "2778c6d8-b056-4151-8cf6-13cf4375eb08": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How is Bibo Saline Nasal Spray different from other Nasal Sprays?",
+            "answer": "Bibo Saline Nasal Spray is not an ordinary spray. It is enriched with Tulsi and Xylitol. Bibo Saline Nasal Spray has antibacterial, anti-inflammatory and immune-building properties. It is safe for all age groups and can also be used as a gargle and a solution for Neti kriya."
+          }
+        },
+        "7ba69984-211b-4193-8f8f-5b15543a4409": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Will Bibo Saline Nasal Spray cause nose bleeding or irritation?",
+            "answer": "No, Bibo Saline Nasal Spray will not cause nose bleeding or irritation when properly used. Use the spray up to 4-5 times a day."
+          }
+        },
+        "8855f391-d38d-47b8-8a84-0b91d685dc6d": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is Bibo Saline Nasal Spray safe for kids?",
+            "answer": "Yes, Bibo Saline Nasal Spray is safe for all age groups. It contains a saline solution with antimicrobial, anti-inflammatory, and immune-building herb Tulsi and Xylitol."
+          }
+        },
+        "a9291269-895e-48e3-b051-b8766a96c7fb": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Is Bibo Saline Nasal Spray addictive?",
+            "answer": "Bibo Saline Nasal Spray is non-addictive. It doesn’t contain any chemical that may be habit-forming."
+          }
+        },
+        "0217694a-6423-4aa4-81d8-936f4932c41d": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Are nasal sprays safe for children?",
+            "answer": "Saline nasal sprays are the safest nasal sprays for kids and adults. Bibo Saline Nasal Spray contains saline, Tulsi and Xylitol that helps to flush out the chemicals, microbes and dust responsible for the common cold, sneezing, blocked or runny nose, nasal congestion, sore throat, sinusitis and nasal polyps."
+          }
+        },
+        "c5cdca14-2eaa-41ca-926e-bac3605790cd": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What are the side effects of Bibo Saline Nasal Spray?",
+            "answer": "Bibo Saline Nasal Spray is safe. There are no side effects reported to date."
+          }
+        },
+        "64838408-94dc-4d13-91f3-b9e6e319e654": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Do I need to use this spray every day?",
+            "answer": "Use Bibo Saline Nasal Spray until the symptoms subside. For asthma and allergies, you can use the spray twice daily."
+          }
+        },
+        "2d24b017-4add-45e6-9e62-c1971ec47e84": {
+          "type": "faq-block",
+          "settings": {
+            "question": "What is the concentration of salt in Bibo Saline Nasal Spray?",
+            "answer": "Bibo Saline Nasal Spray contains 0.9% sodium chloride (salt), which is similar to the sodium concentration in our blood. Hence, it doesn’t cause any irritation to the nasal areas."
+          }
+        },
+        "e9591f01-7389-4f99-a870-1ad5672f258b": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use Bibo Saline Nasal Spray for my nasal polyps?",
+            "answer": "Nasal polyps could be due to chronic allergies, sinusitis or deviated nasal septum. Using Bibo Saline Nasal Spray may help flush out the dust and microbes from the nasal passage that may contribute to nasal polyps."
+          }
+        },
+        "25431a0b-b926-4b9a-a939-165d3eac407d": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Bibo Saline Nasal Spray prevent nasal polyps or sinusitis?",
+            "answer": "Bibo Saline Nasal Spray may help flush out the chemicals and microbes that may cause nasal polyps or sinusitis. Tulsi shows antimicrobial and immunity-building properties that may help kill the microbes causing sinusitis."
+          }
+        },
+        "b40e9ac7-e189-4d5e-a036-20f7fb1772b8": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Why should I use Bibo Saline Nasal Spray instead of other drug formulations?",
+            "answer": "Bibo Saline Nasal Spray provides quick relief with no side effects. Fortified with Tulsi and Xylitol, Bibo Saline Nasal Spray helps improve immunity. The other drug formulations like tablets and syrups show slower action and may cause side effects."
+          }
+        },
+        "cab40955-2dd9-453e-99ca-8688da673076": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Does Bibo Saline Nasal Spray contain camphor?",
+            "answer": "No, Bibo Saline Nasal Spray is free from camphor. It contains Saline, Tulsi and Xylitol as primary ingredients."
+          }
+        },
+        "d649fa3a-79f7-4364-8a92-5e5963c85705": {
+          "type": "faq-block",
+          "settings": {
+            "question": "Can I use Bibo Saline Nasal Spray for Neti kriya?",
+            "answer": "Yes, use Bibo Saline Nasal Spray as a solution for Neti kriya. Take about 5ml of the nasal spray in sterilized water and use it for nasal irrigation."
+          }
+        },
+        "6040aaff-f2b7-49e5-aa0d-bb8abea0914f": {
+          "type": "faq-block",
+          "settings": {
+            "question": "How can I use Bibo Saline Nasal Spray as a gargle?",
+            "answer": "Take ten sprays of Bibo Saline Nasal Spray in a glass of water and use it as a gargle. Tulsi and Xylitol help kill the microbes in the oral cavity and improves your overall immunity."
+          }
+        }
+      },
+      "block_order": [
+        "b7aafeea-7f43-4fc3-af5a-17773b064f64",
+        "2778c6d8-b056-4151-8cf6-13cf4375eb08",
+        "7ba69984-211b-4193-8f8f-5b15543a4409",
+        "8855f391-d38d-47b8-8a84-0b91d685dc6d",
+        "a9291269-895e-48e3-b051-b8766a96c7fb",
+        "0217694a-6423-4aa4-81d8-936f4932c41d",
+        "c5cdca14-2eaa-41ca-926e-bac3605790cd",
+        "64838408-94dc-4d13-91f3-b9e6e319e654",
+        "2d24b017-4add-45e6-9e62-c1971ec47e84",
+        "e9591f01-7389-4f99-a870-1ad5672f258b",
+        "25431a0b-b926-4b9a-a939-165d3eac407d",
+        "b40e9ac7-e189-4d5e-a036-20f7fb1772b8",
+        "cab40955-2dd9-453e-99ca-8688da673076",
+        "d649fa3a-79f7-4364-8a92-5e5963c85705",
+        "6040aaff-f2b7-49e5-aa0d-bb8abea0914f"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    },
+    "155dede0-2b7b-43c5-ad6f-d6d31ab20fae": {
+      "type": "logos-section",
+      "blocks": {
+        "51f4a206-c974-4e59-8c13-e8af6ac428ce": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14676.png",
+            "logo-text": "Backed by Ayurveda"
+          }
+        },
+        "6d312966-7154-4d1c-bdb8-252b9bd81eb6": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14681.png",
+            "logo-text": "Convenient to use"
+          }
+        },
+        "0a88c6d5-c821-4472-9cb9-205bb49de5b4": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14680.png",
+            "logo-text": "100% Natural"
+          }
+        },
+        "010a43a1-e3e0-4146-a6dd-8c44b5fd7d91": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14682.png",
+            "logo-text": "Helps with Easy Breathing"
+          }
+        },
+        "3c040456-02ab-42c2-aa23-b00f5636d0a9": {
+          "type": "logo-block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_14679.png",
+            "logo-text": "Doctor Recommended"
+          }
+        }
+      },
+      "block_order": [
+        "51f4a206-c974-4e59-8c13-e8af6ac428ce",
+        "6d312966-7154-4d1c-bdb8-252b9bd81eb6",
+        "0a88c6d5-c821-4472-9cb9-205bb49de5b4",
+        "010a43a1-e3e0-4146-a6dd-8c44b5fd7d91",
+        "3c040456-02ab-42c2-aa23-b00f5636d0a9"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9",
+        "heading": "We Promise You Easy Breathing!",
+        "text": "Our products are specially curated for a healthy respiratory care regime!"
+      }
+    },
+    "aaac3dda-924b-4cec-83f6-cf958abd6e6c": {
+      "type": "video-slides",
+      "blocks": {
+        "fbf5ef55-6d60-4735-ac04-412c08b6d67f": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/YouCut_20221113_192829173.mp4"
+          }
+        },
+        "10b406fc-c354-4e78-be14-4c25a743738c": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Bibo.mp4"
+          }
+        },
+        "74c993ef-75f9-457e-8ffc-9940dad577d4": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Rakshita Nasal Spray Interview (2F).mp4"
+          }
+        },
+        "998b1591-2c49-49b5-aa10-785a3c9e3aef": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Bibo Deepali 3.mp4"
+          }
+        },
+        "5c55fdc8-7797-4765-a32d-ebc4b8ddee72": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Bibo_Congestion & Sinus relief.mp4"
+          }
+        },
+        "ef60140d-6985-43d5-b8a4-309f65b6e0f7": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/bibo nasal review.mp4"
+          }
+        },
+        "48be3b79-baa9-4a27-aca0-fb1730207ee1": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Jaswinder Kaur .mp4"
+          }
+        },
+        "0f7c5951-8a66-49bd-a216-19e6d95cbcab": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/WhatsApp Video 2022-11-12 at 12.49.35 PM.mp4"
+          }
+        },
+        "8d289671-dace-472d-9946-0e80c7683279": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Annu Choudhury Banerjee.mp4"
+          }
+        },
+        "0daa1e51-ef32-44a8-94e2-f0e2a8a1113b": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Kavita Rawat .mp4"
+          }
+        },
+        "8285f110-f563-42e1-ac8b-713ecdd1e767": {
+          "type": "video-block",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Shakti dash.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "fbf5ef55-6d60-4735-ac04-412c08b6d67f",
+        "10b406fc-c354-4e78-be14-4c25a743738c",
+        "74c993ef-75f9-457e-8ffc-9940dad577d4",
+        "998b1591-2c49-49b5-aa10-785a3c9e3aef",
+        "5c55fdc8-7797-4765-a32d-ebc4b8ddee72",
+        "ef60140d-6985-43d5-b8a4-309f65b6e0f7",
+        "48be3b79-baa9-4a27-aca0-fb1730207ee1",
+        "0f7c5951-8a66-49bd-a216-19e6d95cbcab",
+        "8d289671-dace-472d-9946-0e80c7683279",
+        "0daa1e51-ef32-44a8-94e2-f0e2a8a1113b",
+        "8285f110-f563-42e1-ac8b-713ecdd1e767"
+      ],
+      "settings": {
+        "bg-color": "#f9f9f9"
+      }
+    },
+    "1654835162029de1b7": {
+      "type": "apps",
+      "blocks": {
+        "f642ad58-374e-4854-8eb8-a0146d98fd46": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "f642ad58-374e-4854-8eb8-a0146d98fd46"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "8d2374cf-6936-4335-a8b9-ec1a84e2a53b": {
+      "type": "things-to-note",
+      "blocks": {
+        "f8f2e9ef-e248-4b37-843f-fa24775e652f": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_13.png",
+            "title": "Expect overnight results.",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "022bfbb6-2a4d-46ee-9b66-58138915e8d1": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_63.png",
+            "title": "Got medicine! I can eat anything now",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        },
+        "a12c97ee-d5ad-4a18-9956-83310d629c18": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_92.png",
+            "title": "I will take medicine only SOS!",
+            "text": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+          }
+        }
+      },
+      "block_order": [
+        "f8f2e9ef-e248-4b37-843f-fa24775e652f",
+        "022bfbb6-2a4d-46ee-9b66-58138915e8d1",
+        "a12c97ee-d5ad-4a18-9956-83310d629c18"
+      ],
+      "settings": {
+        "title": "What it won’t do",
+        "caption": "THINGS TO NOTE"
+      }
+    },
+    "73f1b87e-10eb-4101-87c9-444fbcd554ff": {
+      "type": "subscribe",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a65da06e-6a75-4dda-8d84-9417d43914bd",
+    "description",
+    "main-product-recommendations",
+    "166692232334bcc7ad",
+    "14406abf-fd6f-48d7-a509-ed9e62d1a179",
+    "cbbafa95-fdbc-4fd5-9b23-c6b8ecf7d521",
+    "7c8ee5bd-2106-4e37-ada2-3f397eacc762",
+    "67128949-f04c-4010-a6bf-c52bc9a61047",
+    "e3d0f277-c9a0-4ef3-b81e-de40dbcad03b",
+    "08b65193-9da2-4f1c-92db-3d46469a164c",
+    "3ae7f065-a280-41c9-abc5-149124dfbe2a",
+    "27604f21-0544-4629-927d-1fc9b6a6a314",
+    "9f230137-568e-4545-bb3c-f52f818c74be",
+    "263781bb-c651-4461-a395-edc41d77e9e9",
+    "155dede0-2b7b-43c5-ad6f-d6d31ab20fae",
+    "aaac3dda-924b-4cec-83f6-cf958abd6e6c",
+    "1654835162029de1b7",
+    "8d2374cf-6936-4335-a8b9-ec1a84e2a53b",
+    "73f1b87e-10eb-4101-87c9-444fbcd554ff"
+  ]
+}

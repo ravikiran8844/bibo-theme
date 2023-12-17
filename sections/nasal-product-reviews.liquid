@@ -1,56 +1,58 @@
-{% assign product = all_products["bibo-saline-tulsi-nasal-spray"] %}
-
+{% assign product = all_products['bibo-saline-tulsi-nasal-spray'] %}
 
 <div class="container">
-  <div style='clear:both'></div>
+  <div style="clear:both"></div>
   <div
-    id='judgeme_product_reviews'
-    class='jdgm-widget jdgm-review-widget'
-    data-product-title='{{ product.title | escape }}'
-    data-id='{{ product.id }}'>
+    id="judgeme_product_reviews"
+    class="jdgm-widget jdgm-review-widget"
+    data-product-title="{{ product.title | escape }}"
+    data-id="{{ product.id }}"
+  >
     {{ product.metafields.judgeme.widget }}
   </div>
 </div>
 
-
 <style>
-  .jdgm-review-widget[data-from-snippet="true"] {
-    display: block !important;
-  }
+   .jdgm-review-widget[data-from-snippet="true"] {
+     display: block !important;
+   }
+   .jdgm-rev-widg__title{
+     color: #000;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 30px !important;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+   }
+
+   .jdgm-rev__icon{
+     border-radius: 100% !important;
+   }
+   @media(min-width:768px){
   .jdgm-rev-widg__title{
-    color: #000;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 30px !important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-  @media(min-width:768px){
- .jdgm-rev-widg__title{
-       color: #000;
-      text-align: center;
-      font-family: Poppins;
-      font-size: 54px !important;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }  
-  }
+        color: #000;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 54px !important;
+       font-style: normal;
+       font-weight: 600;
+       line-height: normal;
+     }
+   }
 </style>
 
-
 {% schema %}
-  {
-    "name": "Nasal Product Reviews",
-    "class": "section",
-    "tag": "section",
-    "settings": [],
-    "blocks": [],
-    "presets": [
-      {
-        "name": "Nasal Product Reviews"
-      }
-    ]
-  }
+{
+  "name": "Nasal Product Reviews",
+  "class": "section",
+  "tag": "section",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Nasal Product Reviews"
+    }
+  ]
+}
 {% endschema %}

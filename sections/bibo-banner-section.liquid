@@ -1,0 +1,277 @@
+<div class="fluid-container">
+  <div class="row g-0">
+    <div class="col-12 col-md-5 order-1 order-md-0 d-flex align-items-end">
+      <img class="img-fluid" src="{{section.settings.image |  image_url: width: 716 }}" alt="">
+    </div>
+    <div class="col-12 col-md-7 order-0 order-md-1 d-flex  justify-content-center align-items-center">
+      <div class="bibo-banner-section_content text-center my-5">
+        <div class="bibo-banner-section_title mb-4">
+          {{ section.settings.title }}
+        </div>
+        <div class="bibo-banner-section_text mb-5">
+          {{ section.settings.text }}
+        </div>
+        <div class="bibo-banner-section_btn">
+          <a class="custom-btn px-5 py-3" href="{{section.settings.btn_link}}">
+            {{ section.settings.btn_text }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<style>
+     .bibo-banner-section{
+      background-color: {{section.settings.bg_color}};
+    }
+    .bibo-banner-section_content{
+
+    {{section.settings.content_background}}
+
+    }
+  
+
+  .bibo-banner-section_content{
+    border-radius: 1008px;
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 1008px;
+  }
+
+  .bibo-banner-section_title p{
+      color:{{section.settings.title_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      text-transform: capitalize;
+    }
+    .bibo-banner-section_title p b{
+      color: {{section.settings.title_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      text-transform: capitalize;
+  }
+
+  .bibo-banner-section_text{
+    color: {{section.settings.text_color}};
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+    .bibo-banner-section_btn .custom-btn,  .bibo-banner-section_btn .custom-btn:hover{
+      border-radius: 8px;
+      background: {{section.settings.btn_bg_color}};
+      color: {{section.settings.btn_text_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+    }
+  @media (min-width:450px) {
+    .bibo-banner-section_title p{
+      color: {{section.settings.title_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      text-transform: capitalize;
+    }
+    .bibo-banner-section_title p b{
+      color: {{section.settings.title_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      text-transform: capitalize;
+  }
+
+  .bibo-banner-section_text{
+    color: {{section.settings.text_color}};
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+    .bibo-banner-section_btn .custom-btn,  .bibo-banner-section_btn .custom-btn:hover{
+      border-radius: 8px;
+      background: {{section.settings.btn_bg_color}};
+      color: {{section.settings.btn_text_color}};
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width:992px) {
+    .bibo-banner-section_content{
+    border-radius: 1008px;
+    max-width: 1020px;
+    margin: auto;
+    padding: 20px;
+  }
+
+    .bibo-banner-section_title p{
+      color: {{section.settings.title_color}};
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.25px;
+      text-transform: capitalize;
+           
+    }
+    .bibo-banner-section_title p b{
+        color: {{section.settings.title_color}};
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.25px;
+        text-transform: capitalize;
+  }
+
+  .bibo-banner-section_text{
+      color: {{section.settings.text_color}};
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 620px;
+      margin: auto;
+  }
+
+
+    .bibo-banner-section_btn .custom-btn,  .bibo-banner-section_btn .custom-btn:hover{
+      border-radius: 8px;
+      background: {{section.settings.btn_bg_color}};
+      color: {{section.settings.btn_text_color}};
+      text-align: center;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Bibo Banner Section",
+  "class": "bibo-banner-section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFC8A7",
+      "label": "Background Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Nasal Sprays Where Allergy Woes Find Their End.</p>"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#000",
+      "label": "Title Color"
+    }, {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Unmatched Coverage For All Your Needs.</p>"
+    }, {
+      "type": "color",
+      "id": "text_color",
+      "default": "#C25411",
+      "label": "Text Color"
+    }, {
+      "type": "color",
+      "id": "btn_bg_color",
+      "default": "#275C5C",
+      "label": "Button Bg color"
+    }, {
+      "type": "color",
+      "id": "btn_text_color",
+      "default": "#fff",
+      "label": "Button Text color"
+    },{
+      "type": "liquid",
+      "id": "content_background",
+      "label": "Content Overlay BG"
+    },
+    
+    {
+      "type": "text",
+      "default": "let’s get started",
+      "id": "btn_text",
+      "label": "Btn Text"
+    }, {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Btn Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bibo Banner Section"
+    }
+  ]
+}
+{% endschema %}

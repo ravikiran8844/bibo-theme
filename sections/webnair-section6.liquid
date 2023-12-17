@@ -1,0 +1,130 @@
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.4/dist/js/splide-extension-video.min.js"
+></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.4/dist/css/splide-extension-video.min.css"
+>
+
+<div class="container p-5">
+  <div class="col-12 text-center mb-5">
+    <div class="display-3 mb-3">
+      <span class="webnair-section6_red-text fw-bold">#MED</span><span class="webnair-section6_green-text">Talks</span>
+    </div>
+    <div class="fs-2 fw-semibold webnair-section6_green-text">
+      For insightful videos on lung health, explore the videos presented by Dr. Rajakumar.
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div id="webnair-slider-section" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            <li class="splide__slide" data-splide-youtube="{{block.settings.video_url}}">
+              <img
+                width="750"
+                height="421"
+                src="{{block.settings.cover_image |  img_url: 'master'}}"
+              >
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+    .webnair-section6 {
+      background: rgba(238, 239, 241, 0.3);
+    }
+    .webnair-section6_red-text {
+      color: #ea3323;
+    }
+    .webnair-section6_green-text {
+      color: #254e4e;
+    }
+
+       .webnair-section6 .splide__slide {
+    width: 100%;
+    height: 100%;
+  max-height: 357px;
+  max-width: 100%;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Webnair Sec 6",
+  "class": "webnair-section6",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+      {
+        "name": "video",
+        "type": "video-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "cover_image",
+            "label": "t:sections.video.settings.cover_image.label"
+          }, {
+            "type": "video_url",
+            "id": "video_url",
+            "accept": [
+              "youtube", "vimeo"
+            ],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "label": "t:sections.video.settings.video_url.label",
+            "placeholder": "t:sections.video.settings.video_url.placeholder",
+            "info": "t:sections.video.settings.video_url.info"
+          }
+        ]
+      }
+    ],
+  "presets": [
+    {
+      "name": "Webnair Sec 6"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new Splide('#webnair-slider-section', {
+      type: 'loop',
+      heightRatio: 0.5625,
+      cover: true,
+      updateOnMove: true,
+      pagination: false,
+      padding: {
+        left: 0,
+        right: 0
+      },
+      arrows: true,
+      width: '100%',
+    //   wheel: true,
+      gap: '2rem',
+      video: {
+        loop: false
+      },
+      perPage: 2,
+      breakpoints: {
+        1240: {
+          perPage: 2
+        },
+        760: {
+          perPage:1
+        },
+        560: {
+          perPage: 1
+        }
+      }
+    }).mount(window.splide.Extensions);
+  });
+</script>

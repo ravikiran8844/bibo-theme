@@ -1,0 +1,198 @@
+{% assign blog_handles = 'asthma-2,a-return-to-nature,pharma-blogs,respiratory-conditions,sinusitis-2,wellness'
+  | split: ','
+%}
+{% assign limit = 7 %}
+{% assign all_articles = '' | split: '' %}
+
+{% for handle in blog_handles %}
+  {% assign articles = blogs[handle].articles | sort: 'published_at' | reverse %}
+  {% assign latest_articles = articles | slice: 0, limit %}
+  {% assign all_articles = all_articles | concat: latest_articles %}
+{% endfor %}
+
+{% assign sorted_articles = all_articles | sort: 'published_at' | reverse %}
+{% assign display_articles = sorted_articles | slice: 0, limit %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-7 col-xl-8 pe-lg-4">
+      <div class="blog-page-section-title col-12 mb-5">
+        <div class="blog-page-section-title">Featured Posts</div>
+      </div>
+
+      <div class="row">
+        {% for article in display_articles %}
+          {% if forloop.first %}
+            <div class="col-12 mb-5">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-12">
+                    <a href="{{article.url}}">
+                      <img
+                        loading="lazy"
+
+                        height="476"
+                        class="img-fluid w-100 object-fit-cover main-post-img"
+                        src="{{article.image |  image_url: width:1080 }}"
+                        class="img-fluid rounded-start"
+                        alt="{{article.title}}"
+                      >
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <div class="card-body">
+                      <a class="text-decoration-none" href="{{article.url}}">
+                        <div class="card-title mb-2">{{ article.title }}</div>
+                      </a>
+                      <p class="card-text">{{ article.excerpt | truncate: 120 }}</p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">{{ article.published_at | date: '%b %d, %Y' }}</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <div class="col-xl-6 mb-5">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="{{article.url}}">
+                      <img
+                        loading="lazy"
+                        class="img-fluid object-fit-cover"
+                        src="{{article.image |  image_url: width:680 }}"
+                        class="img-fluid rounded-start"
+                        alt="{{ article.title }}"
+                      >
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body py-0">
+                      <a class="text-decoration-none" href="{{article.url}}">
+                        <div class="card-title mb-2">{{ article.title }}</div>
+                      </a>
+                      <p class="card-text">
+                        <small class="text-body-secondary">{{ article.published_at | date: '%b %d, %Y' }}</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 col-xl-4">
+      <div class="blog-page-section-title col-12 mb-5">
+        <div class="blog-page-section-title">MOST READ</div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          {% for article in blog.articles limit: 10 %}
+            <div class="mb-4 d-flex">
+              <div class="me-3">
+                <img
+                  width="100"
+                  height="100"
+                  class="recent-posts-img"
+                  src="{{article.image |  image_url: width:200 }}"
+                  alt=""
+                >
+              </div>
+              <div>
+                <a class="text-decoration-none" href="{{article.url}}">
+                  <div class="recent-posts_card-title mb-2">{{ article.title }}</div>
+                </a>
+                <p class="card-text">
+                  <small class="text-body-secondary">{{ article.published_at | date: '%b %d, %Y' }}</small>
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+      .blog-page-section-title{
+          color: #000;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      }
+        .custom-blog-section3 img{
+      object-fit: cover;
+      height: auto;
+      width:100%;
+      border-radius: 10px;
+    }
+       .custom-blog-section3 .recent-posts-img{
+      object-fit: cover;
+      height: auro;
+      width:100px;
+      border-radius: 10px;
+    }
+        .custom-blog-section3 .main-post-img{
+      object-fit: cover;
+      max-height: 476px;
+      height: auto;
+
+      width:100%;
+      border-radius: 10px;
+    }
+       .custom-blog-section3 .card-title{
+        color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+    }
+    .custom-blog-section3 .card-title:hover{
+      color: #00A79D;
+    }
+    .recent-posts_card-title{
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 133.333% */
+    }
+    .custom-blog-section3 .recent-posts_card-title:hover{
+      color: #00A79D;
+    }
+    .custom-blog-section3 .card-text{
+      color: #6D6E76;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+      }
+      .custom-blog-section3 .card{
+          border: none;
+          height: 100%;
+      }
+</style>
+{% schema %}
+{
+  "name": "Custom Blog Section 3",
+  "class": "custom-blog-section3",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Custom Blog Section 3"
+    }
+  ]
+}
+{% endschema %}

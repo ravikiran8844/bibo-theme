@@ -1,0 +1,51 @@
+<div class="container py-5">
+    <div class="col-12 text-center mb-5">
+        <div class="display-4 fw-medium">Why <span
+                class="custom-border2 fw-semibold">choose Bibo?</span> </div>
+    </div>
+    {% comment %} <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="text-center">
+                <div class="fs-2 mb-4">Bibo</div>
+            </div>
+
+            <ul class=" list-unstyled fs-4">
+                <li>Complete natural formulation.</li>
+                <li>Backed by expert consultation.</li>
+                <li>Proven to increase immunity along with treating your problem.</li>
+                <li>Safe for all age groups.</li>
+                <li>No side effects.</li>
+            </ul>
+
+        </div>
+
+    </div> {% endcomment %}
+
+
+    <div class="col-12">
+        <div class="text-center">
+            <img height="600" width="1000" class="img-fluid" src="{{section.settings.image |  image_url: width:1000 }}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+{% schema %}
+{
+    "name": "Why Choose Bibo",
+    "class": "why-choose-bibo",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label":"image"
+        }
+        ],
+        "presets": [{
+            "name": "Why Choose Bibo"
+        }]
+}
+{% endschema %}

@@ -1,0 +1,346 @@
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+<script defer src="{{'reviews-slider.js' | asset_url}}"></script>
+
+<div class="reviews-slider_wrapper container py-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="reviews-slider_heading mb-3">{{ section.settings.heading }}</div>
+      <div class="mb-4 reviews-slider_subheading">{{ section.settings.subheading }}</div>
+      <div class="mb-5 reviews-slider_text">{{ section.settings.text }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="owl-carousel owl-theme list-unstyled" id="reviews-slider">
+        {% for block in section.blocks %}
+          <div class="p-3 reviews-slider_item">
+            <div class="d-flex gap-2">
+              <div class="reviews-slider_item-img_wrapper">
+                <img
+                  loading="lazy"
+                  width="50"
+                  height="50"
+                  alt=""
+                  src="{{block.settings.img | img_url: 'master'}}"
+                  alt=""
+                >
+              </div>
+              <div>
+                <div class="reviews-slider_item-name">{{ block.settings.name }}</div>
+                <div>
+                  <span class="reviews-slider_item-caption">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_835_774)">
+                        <path d="M6.42092 11.8638C3.46605 11.8638 1.0708 9.46857 1.0708 6.5137C1.0708 3.55882 3.46605 1.16357 6.42092 1.16357C9.3758 1.16357 11.771 3.55882 11.771 6.5137C11.771 9.46857 9.3758 11.8638 6.42092 11.8638ZM5.88752 8.65375L9.67005 4.87067L8.91355 4.11417L5.88752 7.14073L4.37397 5.62718L3.61746 6.38369L5.88752 8.65375Z" fill="#666868" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_835_774">
+                          <rect
+                            width="12.8403"
+                            height="12.8403"
+                            fill="white"
+                            transform="translate(0.000488281 0.0935059)" />
+                        </clipPath>
+                      </defs>
+                    </svg></span
+                  >VERIFIED BUYER
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 mb-4">
+              <svg
+                width="100"
+                height="20"
+                viewBox="0 0 100 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_835_780)">
+                  <path d="M7.13865 6.6753L9.58848 1.75635L12.3323 6.6753L17.4279 7.70006L13.6062 11.6967L14.2921 17.4355L9.58848 14.8736L4.78681 17.4355L5.37477 11.6967L1.74902 7.70006L7.13865 6.6753Z" fill="#FFA944" />
+                  <path d="M27.0806 6.6753L29.5304 1.75635L32.2742 6.6753L37.3699 7.70009L33.5481 11.6967L34.2341 17.4355L29.5304 14.8735L24.7287 17.4355L25.3167 11.6967L21.6909 7.70009L27.0806 6.6753Z" fill="#FFA944" />
+                  <path d="M47.0224 6.6753L49.4723 1.75635L52.2161 6.6753L57.3117 7.70009L53.49 11.6967L54.1759 17.4355L49.4723 14.8735L44.6706 17.4355L45.2586 11.6967L41.6328 7.70009L47.0224 6.6753Z" fill="#FFA944" />
+                  <path d="M66.9643 6.6753L69.4139 1.75635L72.1581 6.6753L77.2536 7.70009L73.4319 11.6967L74.118 17.4355L69.4139 14.8735L64.6125 17.4355L65.2005 11.6967L61.5747 7.70009L66.9643 6.6753Z" fill="#FFA944" />
+                  <path d="M86.9055 6.6753L89.3558 1.75635L92.0993 6.6753L97.1954 7.70009L93.3731 11.6967L94.0592 17.4355L89.3558 14.8735L84.5542 17.4355L85.142 11.6967L81.5161 7.70009L86.9055 6.6753Z" fill="#FFA944" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_835_780">
+                    <rect
+                      width="98.8702"
+                      height="18.8327"
+                      fill="white"
+                      transform="translate(0.179688 0.187988)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="reviews-slider_item-text">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-12 text-center">
+      <div class="mb-4">
+        {% form 'product', product %}
+          <div>
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.variants.first.id }}"
+            >
+            <input
+              type="hidden"
+              name="quantity"
+              value="1"
+            >
+            <button onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();" class="btn buy-now-button">register now</button>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .reviews-slider  .owl-carousel .owl-stage{display: flex;}
+  .reviews-slider .owl-item{
+    padding:5px;
+  }
+
+  .reviews-slider  .owl-nav{
+    display: none;
+  }
+     .reviews-slider .owl-item{
+       padding:5px;
+     }
+  .reviews-slider{
+       background: url('{{section.settings.bg_image | img_url: 'master'}}');
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+   .reviews-slider  .splide__arrow--prev{
+       left:0;
+     }
+     .reviews-slider  .splide__arrow--next{
+       right:0;
+     }
+     .reviews-slider_heading {
+       color: #000;
+       font-family: Satisfy;
+       font-size: 25px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 128.5%; /* 32.125px */
+     }
+     .reviews-slider_subheading {
+       color: #000;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 13px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 159.5%; /* 20.735px */
+       max-width: 999px;
+       margin: auto;
+     }
+     .reviews-slider_text {
+       color: #00A79D;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 11px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 159.5%; /* 20.735px */
+       text-transform: uppercase;
+
+     }
+     .reviews-slider_item-img_wrapper {
+       width: 50px;
+       height: 50px;
+       flex-shrink: 0;
+     }
+     .reviews-slider_item-img_wrapper img {
+       max-width: 50px;
+       max-height: 50px;
+       width: 100%;
+       height: 100%;
+       border-radius: 50%;
+     }
+     .reviews-slider_item {
+       max-width: 300px;
+       height: 100%;
+       border-radius: 15.618px;
+       border: 0.951px solid #FF7C99;
+       background: #FFF;
+       padding: 30px 20px !important;
+       margin: auto !important;
+     }
+
+     .reviews-slider_item-name {
+       color: #2C2C2C;
+       font-family: Poppins;
+       font-size: 16px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 100%; /* 16px */
+     }
+     .reviews-slider_item-caption {
+       color: #2B2B2B;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 11.414px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 18.832px; /* 165% */
+     }
+     .reviews-slider_item-text {
+       color: #595959;
+       font-family: Poppins;
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 142%; /* 19.88px */
+     }
+
+     .reviews-slider .splide__pagination__page.is-active {
+       background: #000;
+     }
+
+     @media(min-width:768px) {
+       .reviews-slider_heading {
+         color: #000;
+         font-family: Satisfy;
+         font-size: 50px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 128.5%; /* 64.25px */
+       }
+       .reviews-slider_subheading {
+         color: #000;
+         text-align: center;
+         font-family: Poppins;
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 159.5%; /* 28.71px */
+       }
+       .reviews-slider_text {
+         color: #00A79D;
+         text-align: center;
+         font-family: Poppins;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 159.5%; /* 25.52px */
+
+       }
+
+     }
+</style>
+
+{% schema %}
+{
+  "name": "Webnair Reviews",
+  "class": "reviews-slider section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }, {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Only the best is good enough!"
+    }, {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub Heading",
+      "default": "Quality is everything when it comes to ayurveda. Our ingredients are handled with care at every step to ensure you always receive the best quality products."
+    }, {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "DON’T BELIEVE US? HERE’S WHAT OUR CUSTOMERS HAVE TO SAY!"
+    }
+
+  ],
+  "blocks": [
+    {
+      "name": "review",
+      "type": "review-block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "default": "Name",
+          "id": "name",
+          "label": "Name"
+        }, {
+          "type": "richtext",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Webnair Reviews"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('#reviews-slider', {
+      type: 'loop',
+      arrows: true,
+      autoplay: true,
+      pagination: false,
+      perPage: 4,
+      breakpoints: {
+        1240: {
+          perPage: 3
+        },
+        860: {
+          perPage: 2
+        },
+        560: {
+          perPage: 1
+        }
+      }
+    });
+    splide.mount();
+  });
+</script>

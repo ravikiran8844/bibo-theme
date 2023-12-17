@@ -1,0 +1,159 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<style>
+    .sinus-care-timeline_title{
+        color: #000;
+        font-family: Urbanist;
+    }
+    .sinus-care-timeline_text{
+        color: #5B5B5B;
+    }
+ 
+
+
+  .sinus-care-timeline .timeline-number {
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .sinus-care-timeline .step {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .sinus-care-timeline .timeline-number {
+        border-radius: 8px;
+        background-color: transparent;
+        border: 1px solid #EB752C;
+        color: #EB752C;
+        box-shadow: 0px 4.00153px 10px 0px rgba(0, 0, 0, 0.10);
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .sinus-care-timeline .timeline-number.active {
+        border-radius: 8px;
+        color: #fff;
+        background: #EB752C;
+        box-shadow: 0px 4.00153px 10px 0px rgba(0, 0, 0, 0.10);
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sinus-care-timeline .content {
+        color: #5B5B5B;
+        font-family: Poppins;
+    }
+</style>
+
+
+<div class="container py-5">
+    <div class="col-12 mb-5">
+        <div>
+            <div class="display-3 fw-medium sinus-care-timeline_title mb-3">Science vs Myth</div>
+            <div class="sinus-care-timeline_text fw-medium fs-2 col-12 col-lg-6">Sinusitis has stigma. We are here to provide the science-backed facts.</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="step" data-step="1">
+                <div class="timeline-number active">01</div>
+                <div>
+                    <div class="fs-2 fw-semibold text-black">Myth 1: Sinusitis is contagious.</div>
+                    <div class="content fs-5  fw-medium mt-2"><b>The Fact:</b> It’s not! Sinusitis arises from sinus inflammation or infection, typically not contagious. Allergies, irritants, or anatomical issues lead to sinusitis, which doesn't transmit between individuals. However, if the underlying cause of sinusitis is a contagious infection, then that specific infection can be contagious, but not sinusitis itself.</div>
+                </div>
+            </div>
+
+            <div class="step" data-step="2">
+                <div class="timeline-number">02</div>
+                <div>
+                    <div class="fs-2 fw-semibold text-black">Myth 2: Sinusitis is contagious.</div>
+                    <div class="content  fs-5  fw-medium mt-2 d-none"><b>The Fact:</b> It’s not! Sinusitis arises from sinus inflammation or infection, typically not contagious. Allergies, irritants, or anatomical issues lead to sinusitis, which doesn't transmit between individuals. However, if the underlying cause of sinusitis is a contagious infection, then that specific infection can be contagious, but not sinusitis itself.</div>
+                </div>
+            </div>
+
+            <div class="step" data-step="3">
+                <div class="timeline-number">03</div>
+                <div>
+                    <div class="fs-2 fw-semibold text-black">Myth 3: Sinusitis is contagious.</div>
+                    <div class="content fs-5  fw-medium mt-2 d-none"><b>The Fact:</b> It’s not! Sinusitis arises from sinus inflammation or infection, typically not contagious. Allergies, irritants, or anatomical issues lead to sinusitis, which doesn't transmit between individuals. However, if the underlying cause of sinusitis is a contagious infection, then that specific infection can be contagious, but not sinusitis itself.</div>
+                </div>
+            </div>
+
+            <div class="step" data-step="4">
+                <div class="timeline-number">04</div>
+                <div>
+                    <div class="fs-2 fw-semibold text-black">Myth 4: Sinusitis is contagious.</div>
+                    <div class="content fs-5  fw-medium mt-2 d-none"><b>The Fact:</b> It’s not! Sinusitis arises from sinus inflammation or infection, typically not contagious. Allergies, irritants, or anatomical issues lead to sinusitis, which doesn't transmit between individuals. However, if the underlying cause of sinusitis is a contagious infection, then that specific infection can be contagious, but not sinusitis itself.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="image" data-step="1">
+                <img width="884" height="645" class="img-fluid" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/bg-blank.webp?v=1699985533" alt="">
+            </div>
+            <div class="image d-none" data-step="2">
+                <img width="884" height="645" class="img-fluid" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/bg-blank.webp?v=1699985533" alt="">
+            </div>
+            <div class="image d-none" data-step="3">
+                <img width="884" height="645" class="img-fluid" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/bg-blank.webp?v=1699985533" alt="">
+            </div>
+            <div class="image d-none" data-step="4">
+                <img width="884" height="645" class="img-fluid" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/bg-blank.webp?v=1699985533" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Show content and image for Step 1 by default
+        showStep(1);
+
+        // Handle click on each step
+        $('.step').click(function () {
+            var stepNumber = $(this).data('step');
+            showStep(stepNumber);
+        });
+
+        function showStep(stepNumber) {
+            // Hide all content and images
+            $('.content').addClass('d-none');
+            $('.image').addClass('d-none');
+            $('.timeline-number').removeClass('active');
+
+            // Show content and image for the selected step
+            $('.step[data-step="' + stepNumber + '"] .content').removeClass('d-none');
+            $('.image[data-step="' + stepNumber + '"]').removeClass('d-none');
+            $('.step[data-step="' + stepNumber + '"] .timeline-number').addClass('active');
+        }
+    });
+</script>
+
+
+
+
+{% schema %}
+    {
+        "name": "Sinus care Timeline",
+        "class": "sinus-care-timeline",
+        "settings": [],
+
+        "presets": [{
+            "name": "Sinus care Timeline"
+        }]
+    }
+    {% endschema %}

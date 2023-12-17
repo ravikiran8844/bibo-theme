@@ -1,6 +1,29 @@
 {
   "layout": "theme.alternate",
   "sections": {
+    "f67b70b1-589c-47be-bf6b-9f8ffbf126fc": {
+      "type": "custom-blog-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Banner_Image.webp",
+        "title": "Latest News & Health Tips",
+        "text": "BY BIBO"
+      }
+    },
+    "6536e20c-ce95-4e7a-b5d6-f6f347a194d0": {
+      "type": "blog-section2",
+      "settings": {
+      }
+    },
+    "09827047-a11e-4c3c-9cc6-03bef6df701e": {
+      "type": "custom-blog-section2",
+      "settings": {
+      }
+    },
+    "0be489b1-b885-41d1-b30f-c2498684c3cc": {
+      "type": "custom-blog-section3",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-blog",
       "disabled": true,
@@ -44,29 +67,58 @@
     },
     "efe32be8-c350-48ec-b54d-16ed20435f3e": {
       "type": "blog-page-banner",
+      "disabled": true,
       "settings": {
         "banner": "shopify:\/\/shop_images\/2_79.webp",
-        "title": "Hey! We are <b>Bibo.<\/b>",
-        "sub-title": "A holistic <span>respiratory care<\/span> solution combating ailments while boosting immunity."
-      }
-    },
-    "6536e20c-ce95-4e7a-b5d6-f6f347a194d0": {
-      "type": "blog-section2",
-      "settings": {
+        "title": "Hey! We are Bibo.",
+        "sub-title": "A holistic respiratory care solution combating ailments while boosting immunity."
       }
     },
     "0f3939c0-973d-4f8f-b446-34d24560100f": {
       "type": "blog-section3",
+      "disabled": true,
       "settings": {
       }
     },
     "6b19ade8-8fd0-4656-8054-27e78d9a643f": {
       "type": "blog-section4",
+      "disabled": true,
       "settings": {
       }
     },
     "e80ef6d9-717a-45d8-8471-9cc89c71db70": {
       "type": "blog-section5",
+      "blocks": {
+        "b3f09e5a-1aee-4e27-8487-92e8c3999460": {
+          "type": "video",
+          "settings": {
+            "video_code": "nbS_vRyKH7Y",
+            "video_title": "Ayurvedic herbs for asthma",
+            "video_date": ""
+          }
+        },
+        "fb577d6a-faa7-4bb6-b780-e1cc4897b5ce": {
+          "type": "video",
+          "settings": {
+            "video_code": "I8E63ljb-64",
+            "video_title": "Understanding 'Cup Therapy' ",
+            "video_date": ""
+          }
+        },
+        "de7214ab-1318-4a6d-9a67-32ce2c4e4292": {
+          "type": "video",
+          "settings": {
+            "video_code": "_hBXpssGF6Y",
+            "video_title": "Lifestyle changes for 'Pneumonia'",
+            "video_date": ""
+          }
+        }
+      },
+      "block_order": [
+        "b3f09e5a-1aee-4e27-8487-92e8c3999460",
+        "fb577d6a-faa7-4bb6-b780-e1cc4897b5ce",
+        "de7214ab-1318-4a6d-9a67-32ce2c4e4292"
+      ],
       "settings": {
       }
     },
@@ -150,10 +202,13 @@
     }
   },
   "order": [
+    "f67b70b1-589c-47be-bf6b-9f8ffbf126fc",
+    "6536e20c-ce95-4e7a-b5d6-f6f347a194d0",
+    "09827047-a11e-4c3c-9cc6-03bef6df701e",
+    "0be489b1-b885-41d1-b30f-c2498684c3cc",
     "main",
     "45ef543c-1a0e-4848-9d1d-a8e4173273a7",
     "efe32be8-c350-48ec-b54d-16ed20435f3e",
-    "6536e20c-ce95-4e7a-b5d6-f6f347a194d0",
     "0f3939c0-973d-4f8f-b446-34d24560100f",
     "6b19ade8-8fd0-4656-8054-27e78d9a643f",
     "e80ef6d9-717a-45d8-8471-9cc89c71db70",

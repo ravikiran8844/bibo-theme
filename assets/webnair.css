@@ -1,0 +1,54 @@
+.zrx-sticky-atc-bar.zrx-sticky-atc-bar-top.zrx-sticky-atc-bar.zrx-sticky-atc-show {
+    display: none;
+}
+
+.font-urbanist{
+    font-family: Urbanist;
+}
+.webnair-title-color{
+    color:#101828;
+}
+.buy-now-button,.buy-now-button:hover{
+    border-radius: 8px;
+    background: #275C5C;
+    box-shadow: 0px 4.00153px 10px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    outline: none;
+ }
+
+ .webnair-section_content{
+    max-width: 1000px;
+    margin: auto;
+ }
+
+ body{
+    background-color: #fff !important;
+    font-weight: 400 !important;
+ }
+
+ .custom-border {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Adjust as needed for spacing */
+    background: url('https://cdn.shopify.com/s/files/1/0551/8157/4300/files/Vector_142.png?v=1699524455') center bottom no-repeat;
+    background-size: contain; /* or cover, based on your preference */
+}
+
+span{
+    white-space: nowrap;
+}
+
+.custom-oval-border{
+    border: 5px solid #EB752C;
+    border-radius: 50%;
+    padding: 5px 10px;
+    white-space: nowrap;
+ }

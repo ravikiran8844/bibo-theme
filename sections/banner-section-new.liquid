@@ -3,7 +3,6 @@
     <div class="col-12">
       <div class="banner-section-new_heading">
         {{ section.settings.heading }}
-
       </div>
       <div class="mb-3">
         <svg
@@ -11,7 +10,8 @@
           width="156"
           height="8"
           viewBox="0 0 156 8"
-          fill="none">
+          fill="none"
+        >
           <path
             d="M4 4H152"
             stroke="#54B5A9"
@@ -19,23 +19,29 @@
             stroke-linecap="round" />
         </svg>
       </div>
-
     </div>
     <div class="col-12 mb-5">
       <div class="banner-section-new_subheading">
         {{ section.settings.subtitle }}
-
       </div>
     </div>
     <div class="col-12">
       <div class="banner-section_img-wrapper position-relative">
-   {% assign mobile_img=section.settings.mobile_img | default: section.settings.img %}
-      {% render 'image', class: 'banner-section_img', mobileSrc: mobile_img, desktopSrc: section.settings.img %}
-        <div class="banner-section_overlay-content">We asked, you told us, we listened. We hung on to every word. Countless conversations later – asking our community what’s lacking in the respiratory space, what works, and what doesn’t – we learned from you. Bibo is proudly co-founded by you!</div>
+        {% assign mobile_img = section.settings.mobile_img | default: section.settings.img %}
+        {% render 'image',
+          class: 'banner-section_img',
+          mobileSrc: mobile_img,
+          desktopSrc: section.settings.img,
+          loading: 'lazy'
+        %}
+        <div class="banner-section_overlay-content">
+          We asked, you told us, we listened. We hung on to every word. Countless conversations later – asking our
+          community what’s lacking in the respiratory space, what works, and what doesn’t – we learned from you. Bibo is
+          proudly co-founded by you!
+        </div>
       </div>
     </div>
   </div>
-
 </div>
 
 <style>
@@ -138,37 +144,36 @@
   }
 </style>
 
-
 {% schema %}
-  {
-    "name": "Banner Section New",
-    "class": "banner-section-new section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "img",
-        "label": "BG Image"
-      }, 
-      {"type": "image_picker",
-      "id": "mobile_img",
-      "label": "Mobile BG Image"
-        },{
-        "type": "text",
-        "id": "heading",
-        "default": "Our community",
-        "label": "Heading"
-      }, {
-        "type": "text",
-        "id": "subtitle",
-        "default": "<i>You are our ‘Why?’</i>",
-        "label": "Sub Heading"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Banner Section New"
-      }
-    ]
-  }
+{
+  "name": "Banner Section New",
+  "class": "banner-section-new section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "BG Image"
+    },
+    {"type": "image_picker",
+    "id": "mobile_img",
+    "label": "Mobile BG Image"
+      },{
+      "type": "text",
+      "id": "heading",
+      "default": "Our community",
+      "label": "Heading"
+    }, {
+      "type": "text",
+      "id": "subtitle",
+      "default": "<i>You are our ‘Why?’</i>",
+      "label": "Sub Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Section New"
+    }
+  ]
+}
 {% endschema %}

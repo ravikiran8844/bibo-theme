@@ -1,0 +1,88 @@
+<div class="container p-5 pb-0">
+  <div class="col-12 webnair-section3-items">
+    <div class="webnair-section3-item_content">
+      <div class="mb-5">
+        <div class="display-3 fw-semibold text-dark custom-border">Who Should Attend?</div>
+      </div>
+
+      <ul class="mb-5 fs-3 text-dark">
+        <li>Anyone dealing with <b>respiratory issues</b>.</li>
+        <li>Anyone looking to <b>support</b> their loved ones in their respiratory health journey.</li>
+        <li>Anyone struggling with <b>daily rising pollution, allergies</b> and looking for a solution.</li>
+        <li>Anyone looking for <b>natural ways</b> to manage their respiratory issues.</li>
+        <li><b>Health enthusiasts</b> seeking a deeper understanding of the body's most vital system.</li>
+      </ul>
+
+      <div class="text-center text-md-start mb-5">
+        {% form 'product', product %}
+          <div>
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.variants.first.id }}"
+            >
+            <input
+              type="hidden"
+              name="quantity"
+              value="1"
+            >
+            <button
+              onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+              class="btn buy-now-button"
+            >
+              register now
+            </button>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+
+    <div class="webnair-section3-item_image">
+      <img height="488" width="711" loading="lazy" class="img-fluid" src="{{section.settings.image |  image_url: width:711 }}" alt="">
+    </div>
+  </div>
+</div>
+
+<style>
+  .webnair-section3-item_image img{
+      max-width: 100%;
+      height: 100%;
+      max-height: 488px;
+      object-fit: contain;
+      object-position: bottom;
+  }
+  .webnair-section3{
+      background: #EEEFF1;
+  }
+  .webnair-section3-items{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+  }
+
+  @media (min-width:768px) {
+      .webnair-section3-items{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+  }
+  }
+</style>
+{% schema %}
+{
+    "name": "Webnair Sec 3",
+    "class": "webnair-section3",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+
+        ],
+        "presets": [{
+            "name": "Webnair Sec 3"
+        }]
+}
+{% endschema %}

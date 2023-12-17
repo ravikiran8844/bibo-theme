@@ -1,0 +1,97 @@
+<div class="container-fluid p-5">
+  <div class="col-12">
+    <div class="webnair-section_content d-flex flex-column flex-sm-row align-items-center">
+      <div>
+        <img class="img-fluid" width="300" height="300" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/AMA_1.png?v=1699519266" alt=" Got questions">
+      </div>
+      
+
+      <div>
+        <div class=" display-3  text-dark  fw-semibold webnair-section7_title mb-3">
+        Got lingering questions?
+        </div>
+        <div class="fs-1 text-dark   fw-medium webnair-section7_title">
+        Ask the expert directly at  dedicated <span>30mins session</span> for addressing questions from you!
+        </div>
+      </div>
+
+
+      
+
+    </div>
+
+    <div class="mb-2 text-center">
+        <img height="100" src="{{section.settings.svg |  image_url: width:51 }}" alt="svg icon">
+      </div> 
+      <div class="webnair-section7_item p-5">
+        <div class="webnair-section7_item-title p-5 fs-2 fw-bold text-dark">Secure your spot at the webinar for just <span>₹99!</span></div>
+      </div>
+  </div>
+
+
+  <div class="col-12 mt-5">
+    <div class="text-center">
+        <div class="display-5 webnair-section7_light-color-text mb-3">50+ People Already Joined It!</div>
+        
+        <div class="d-flex flex-wrap justify-content-center align-items-center ">
+          <div class="me-3">
+          <img class="imf-fluid" height="50" width="auto" src="https://cdn.shopify.com/s/files/1/0551/8157/4300/files/Group_427318018.png?v=1699518445" alt="users">
+        </div>
+        <div class="display-2 text-dark fw-semibold">+50</div>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+
+  .webnair-section7_light-color-text{
+    color: #646363;
+
+
+  }
+     .webnair-section7_title span{
+        border-radius: 7px;
+      background: linear-gradient(90deg, #FD0 5.55%, #FF9453 69.68%);
+      padding: 0 5px;
+     }
+    .webnair-section7_item{
+        background: #FFC964;
+    }
+    .webnair-section7_item-title{
+        width: fit-content;
+        margin: auto;
+        border-radius: 16px;
+background:  #FFF;
+
+/* Shadow/xl */
+box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+    }
+
+    .webnair-section7_item-title span{
+        color: #EB752C !important;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Webnair Sec 7",
+  "class": "webnair-section7",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "svg",
+      "label": "SVG"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Webnair Sec 7"
+    }
+  ]
+}
+{% endschema %}

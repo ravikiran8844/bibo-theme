@@ -6,20 +6,12 @@
       <div class="nasal-img-text-section_text">{{ section.settings.text }}</div>
     </div>
     <div class="col-12 col-md-7 m-auto">
-
-     <div class="nasal-img-text-section_img-wrapper">
-        <img
-
-          loading="lazy" class="rounded img-fluid"
-        src="{{section.settings.img | img_url: 'master'}}"
-        alt="How  Bibo Nasal Sprays  Works">
-     </div>
+      <div class="nasal-img-text-section_img-wrapper">
+        {{ section.settings.video | video_tag: loop: 'loop', muted: true, playsinline: true, autoplay: true }}
+      </div>
     </div>
-
   </div>
 </div>
-
-
 
 <style>
   .nasal-img-text-section {
@@ -60,12 +52,14 @@
     max-height:415px;
     width:100%;
   }
-  .nasal-img-text-section_img-wrapper img{
+  .nasal-img-text-section_img-wrapper video{
      max-height:415px;
     width:100%;
     height:auto;
     border-radius: 12px;
     border: 2px solid #000;
+    aspect-ratio: 1;
+    object-fit: cover;
   }
   @media(min-width:768px) {
     .nasal-img-text-section_title {
@@ -98,38 +92,38 @@
 </style>
 
 {% schema %}
-  {
-    "name": "Nasal Img Text",
-    "tag": "section",
-    "class": "nasal-img-text-section section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "How  Bibo Nasal Sprays  Works?"
-      }, {
-        "type": "text",
-        "id": "caption",
-        "label": "Caption",
-        "default": "Direct pathway to deliver drug to lungs."
-      }, {
-        "type": "text",
-        "id": "text",
-        "label": "Text",
-        "default": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief."
-      }, {
-        "type": "image_picker",
-        "id": "img",
-        "label": "Image"
-      }
+{
+  "name": "Nasal Img Text",
+  "tag": "section",
+  "class": "nasal-img-text-section section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How  Bibo Nasal Sprays  Works?"
+    }, {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "Direct pathway to deliver drug to lungs."
+    }, {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Nasal sprays employ a molecular mechanism that directly treats damaged areas without liver metabolism. This precise topical application allows for quick absorption, reducing inflammation and promoting healing at the specific site of injury or irritation, providing effective local relief."
+    }, {
+       "type": "video",
+        "id": "video",
+        "label": "video"
+    }
 
-    ],
-    "blocks": [],
-    "presets": [
-      {
-        "name": "Nasal Img Text"
-      }
-    ]
-  }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Nasal Img Text"
+    }
+  ]
+}
 {% endschema %}

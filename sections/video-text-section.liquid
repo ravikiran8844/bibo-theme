@@ -1,0 +1,289 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="video-text-section_items">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'video-block' %}
+            <div class="video-text-section_item">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  class="youtubeVideo"
+                  data-english-link="{{ block.settings.youtube_link_english }}"
+                  data-hindi-link="{{ block.settings.youtube_link_hindi }}"
+                  title="YouTube video"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="mt-4 d-flex justify-content-end">
+                <!-- Replace the button with a switch -->
+                <div class="language-switch">
+                  <span class="switch-label-left">English</span>
+                  <label class="switch">
+                    <input type="checkbox" class="toggleVideoSwitch">
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="switch-label-right">Hindi</span>
+                </div>
+              </div>
+            </div>
+
+          {% when 'content' %}
+            <div class="video-text-section_item">
+              <div class="fs-2 fw-semibold mb-3 video-text-section_title">
+                {{ block.settings.title }}
+                {% if block.settings.highlight_title != blank %}
+                  <span>{{ block.settings.highlight_title }}</span>
+                {% endif %}
+              </div>
+              <div class="fs-4 fw-semibold mb-4 video-text-section_caption">{{ block.settings.caption }}</div>
+              <div class="fs-5 mb-4">
+                {{ block.settings.text }}
+              </div>
+              <div>
+                <a href="#" class="button text-white">BOOK CONSULTATION</a>
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const sectionContainers = document.querySelectorAll('.video-text-section_items');
+
+      sectionContainers.forEach(function (sectionContainer) {
+          const toggleVideoSwitch = sectionContainer.querySelector('.toggleVideoSwitch');
+          const toggleVideoLabels = sectionContainer.querySelectorAll('.switch-label-left, .switch-label-right');
+
+          function toggleVideo(videoContainer, youtubeVideo, switchLabelLeft, switchLabelRight) {
+              const englishLink = youtubeVideo.getAttribute('data-english-link');
+              const hindiLink = youtubeVideo.getAttribute('data-hindi-link');
+
+              if (toggleVideoSwitch.checked) {
+                  youtubeVideo.src = hindiLink;
+                  switchLabelLeft.style.opacity = '0.5';
+                  switchLabelRight.style.opacity = '1';
+              } else {
+                  youtubeVideo.src = englishLink;
+                  switchLabelLeft.style.opacity = '1';
+                  switchLabelRight.style.opacity = '0.5';
+              }
+          }
+
+          toggleVideoSwitch.addEventListener('change', function () {
+              const youtubeVideo = sectionContainer.querySelector('.youtubeVideo');
+              const switchLabelLeft = sectionContainer.querySelector('.switch-label-left');
+              const switchLabelRight = sectionContainer.querySelector('.switch-label-right');
+
+              toggleVideo(sectionContainer, youtubeVideo, switchLabelLeft, switchLabelRight);
+          });
+
+          toggleVideoLabels.forEach(function (toggleVideoLabel) {
+              toggleVideoLabel.addEventListener('click', function () {
+                  const youtubeVideo = sectionContainer.querySelector('.youtubeVideo');
+                  const switchLabelLeft = sectionContainer.querySelector('.switch-label-left');
+                  const switchLabelRight = sectionContainer.querySelector('.switch-label-right');
+
+                  // Toggle the switch
+                  toggleVideoSwitch.checked = !toggleVideoSwitch.checked;
+
+                  // Update the video and labels based on the switch state
+                  toggleVideo(sectionContainer, youtubeVideo, switchLabelLeft, switchLabelRight);
+              });
+          });
+
+          // Set the default video to English
+          const defaultYoutubeVideo = sectionContainer.querySelector('.youtubeVideo');
+          const defaultSwitchLabelLeft = sectionContainer.querySelector('.switch-label-left');
+          const defaultSwitchLabelRight = sectionContainer.querySelector('.switch-label-right');
+          const defaultEnglishLink = defaultYoutubeVideo.getAttribute('data-english-link');
+          defaultYoutubeVideo.src = defaultEnglishLink;
+          defaultSwitchLabelLeft.style.opacity = '1';
+          defaultSwitchLabelRight.style.opacity = '0.5';
+      });
+  });
+</script>
+
+<style>
+   .video-text-section_items {
+       display: grid;
+       grid-template-columns: 1fr;
+       row-gap:40px;
+       column-gap: 30px;
+   }
+
+
+   @media (min-width:992px) {
+       .video-text-section_items {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       row-gap:40px;
+       column-gap: 30px;
+   }
+   }
+
+       .video-text-section_title span {
+           border-radius: 8px;
+           border: 2.6px solid #18ECD2;
+           box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.25);
+           padding: 0 5px;
+           white-space: nowrap;
+       }
+
+       .video-text-section_caption {
+           background: #F4A26F;
+           padding: 0 5px;
+           width: fit-content;
+       }
+
+       .video-text-section iframe {
+           border-radius: 12px;
+           background: #FFF3EC;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* Style for the switch */
+   .video-text-section .switch {
+       position: relative;
+       display: inline-block;
+       width: 60px;
+       height: 34px;
+   }
+
+   .video-text-section .switch input {
+       opacity: 0;
+       width: 0;
+       height: 0;
+   }
+
+   .video-text-section .slider {
+       position: absolute;
+       cursor: pointer;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #18ECD2 !important;
+       -webkit-transition: .4s;
+       transition: .4s;
+   }
+
+  .video-text-section  .slider:before {
+       position: absolute;
+       content: "";
+       height: 26px;
+       width: 26px;
+       left: 4px;
+       bottom: 4px;
+       background-color: white;
+       -webkit-transition: .4s;
+       transition: .4s;
+   }
+
+   .video-text-section input:checked + .slider {
+       background-color: #2196F3;
+   }
+
+   .video-text-section input:focus + .slider {
+       box-shadow: 0 0 1px #2196F3;
+   }
+
+  .video-text-section  input:checked + .slider:before {
+       -webkit-transform: translateX(26px);
+       -ms-transform: translateX(26px);
+       transform: translateX(26px);
+   }
+
+   /* Rounded sliders */
+   .video-text-section .slider.round {
+       border-radius: 34px;
+   }
+
+   .video-text-section .slider.round:before {
+       border-radius: 50%;
+   }
+
+  .switch-label-left,.switch-label-right{
+    cursor:pointer;
+  }
+</style>
+
+{% schema %}
+{
+"name": "Video Text Section",
+"class": "video-text-section",
+"tag": "section",
+"settings": [
+
+
+],
+"blocks": [{
+"name": "video",
+"type": "video-block",
+"limit": 1,
+"settings": [
+{
+"type": "text",
+"id": "youtube_link_english",
+"label": "YouTube English Video Link",
+"default": "https://www.youtube.com/embed/wCi-Fo_0M_0?si=pgr6YBs3DN7EIEPq"
+},
+{
+"type": "text",
+"id": "youtube_link_hindi",
+"label": "YouTube Hindi Video Link",
+"default": "https://www.youtube.com/embed/wCi-Fo_0M_0?si=pgr6YBs3DN7EIEPq"
+}
+]
+},{
+"name": "content",
+"type": "content",
+"limit": 1,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"default": "Our expert talks about",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "highlight_title",
+"default": "Sinusitis",
+"label": "Highlight Title"
+},
+{
+"type": "text",
+"id": "caption",
+"default": "Causes | Symptoms | Diagnosis",
+"label": "Caption"
+},
+{
+"type": "text",
+"id": "text",
+"label": "Text"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Video Text Section"
+}
+]
+}
+{% endschema %}

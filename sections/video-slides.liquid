@@ -1,13 +1,12 @@
 <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
 
-
 <div id="video-slides" class="py-5 container splide">
- <div class="splide__track">
+  <div class="splide__track">
     <div class="video-items splide__list">
-    {% for block in section.blocks %}
-      <div class="video-item splide__slide">
-       {% if block.settings.video != blank %}
+      {% for block in section.blocks %}
+        <div class="video-item splide__slide">
+          {% if block.settings.video != blank %}
             {% for video in block.settings.video.sources %}
               {% if video.format == 'mp4' %}
                 <div class="">
@@ -18,12 +17,10 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-
-      </div>
-    {% endfor %}
-
+        </div>
+      {% endfor %}
+    </div>
   </div>
- </div>
 </div>
 
 <style>
@@ -51,57 +48,57 @@
 </style>
 
 {% schema %}
-  {
-    "name": "video slides",
-    "class": "section video-slides",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg-color",
-        "label": "Bg Color",
-        "default": "#F9F9F9"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "video",
-        "type": "video-block",
-        "settings": [
-          {
-            "type": "video",
-            "id": "video",
-            "label": "Video"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "video slides"
-      }
-    ]
-  }
+{
+  "name": "video slides",
+  "class": "section video-slides",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Bg Color",
+      "default": "#F9F9F9"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "video",
+      "type": "video-block",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "video slides"
+    }
+  ]
+}
 {% endschema %}
 
 <script>
-  document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '#video-slides',{
-            type: 'slide',
-        arrows: true,
-      pagination:false,
-  perPage: 4,
-  breakpoints: {
-      1040: {
-			perPage: 3,
-		},
-		720: {
-			perPage: 2,
-		},440: {
-			perPage: 1,
-		},
-  }
-} );
-    splide.mount();
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '#video-slides',{
+              type: 'slide',
+          arrows: true,
+        pagination:false,
+    perPage: 4,
+    breakpoints: {
+        1040: {
+  			perPage: 3,
+  		},
+  		720: {
+  			perPage: 2,
+  		},440: {
+  			perPage: 1,
+  		},
+    }
   } );
+      splide.mount();
+    } );
 </script>

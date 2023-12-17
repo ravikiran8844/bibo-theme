@@ -1,14 +1,16 @@
 <div class="fluid-container">
   <div class="col-12">
     {% assign mobile_img = section.settings.mobile_img | default: section.settings.img %}
-    {% render 'image', class: 'main-banner-section_image', mobileSrc: mobile_img, desktopSrc: section.settings.img %}
+    {% render 'image',
+      class: 'main-banner-section_image',
+      mobileSrc: mobile_img,
+      desktopSrc: section.settings.img,
+      loading: 'lazy'
+    %}
   </div>
 </div>
 
-
 <style>
-
-
   .main-banner-section_image img {
     width: 100%;
     height: auto;
@@ -17,27 +19,26 @@
   }
 </style>
 
-
 {% schema %}
-  {
-    "name": "Main Banner Section",
-    "class": "section main-banner-section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "img",
-        "label": "Desktop Image"
-      }, {
-        "type": "image_picker",
-        "id": "mobile_img",
-        "label": "Mobile Image"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Main Banner Section"
-      }
-    ]
-  }
+{
+  "name": "Main Banner Section",
+  "class": "section main-banner-section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Desktop Image"
+    }, {
+      "type": "image_picker",
+      "id": "mobile_img",
+      "label": "Mobile Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main Banner Section"
+    }
+  ]
+}
 {% endschema %}

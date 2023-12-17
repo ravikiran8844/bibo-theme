@@ -1,21 +1,28 @@
 <div class="cs-image-banner--{{ section.id }} p-5">
-<div class="container">
-  <div class="col-12 {{section.settings.width}} m-auto text-center">
-    <div class="cs-ib-title mb-4">{{ section.settings.heading }}</div>
-    <div>
-      {% assign mobile_img=section.settings.mobile_img | default: section.settings.img %}
-      {% render 'image', class: 'image-fluid', mobileSrc: mobile_img, desktopSrc: section.settings.img %}
+  <div class="container">
+    <div class="col-12 {{section.settings.width}} m-auto text-center">
+      <div class="cs-ib-title mb-4">{{ section.settings.heading }}</div>
+      <div>
+        {% assign mobile_img = section.settings.mobile_img | default: section.settings.img %}
+        {% render 'image',
+          class: 'image-fluid',
+          mobileSrc: mobile_img,
+          desktopSrc: section.settings.img,
+          loading: 'lazy'
+        %}
 
-<!--       <img
-        class="img-fluid"
-        loading="lazy"
-        height="515"
-        width="970"
-        src="{{section.settings.img | img_url: 'master'}}"
-        alt="why choose us"> -->
+        <!--
+          <img
+          class="img-fluid"
+          loading="lazy"
+          height="515"
+          width="970"
+          src="{{section.settings.img | img_url: 'master'}}"
+          alt="why choose us">
+        -->
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 {% style %}
@@ -29,105 +36,105 @@
 {% endstyle %}
 
 <style>
-  .cs-image-banner {
-  background-color: #f9f9f9 !important;
-}
+    .cs-image-banner {
+    background-color: #f9f9f9 !important;
+  }
 
-  .cs-image-banner img{
-    width:100%;
-    height:auto;
-  }
-  .cs-ib-title {
-  color: #275C5C;
-text-align: center;
-font-family: Poppins;
-font-size: 21px;
-font-style: normal;
-font-weight: 400;
-line-height: 115.523%; /* 24.26px */
-    max-width: 500px;
-    margin: auto;
-  }
-  .cs-ib-title b {
+    .cs-image-banner img{
+      width:100%;
+      height:auto;
+    }
+    .cs-ib-title {
     color: #275C5C;
-font-family: Poppins;
-font-size: 34px;
-font-style: normal;
-font-weight: 600;
-line-height: 115.523%;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.523%; /* 24.26px */
+      max-width: 500px;
+      margin: auto;
+    }
+    .cs-ib-title b {
+      color: #275C5C;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115.523%;
 
-  }
+    }
 
-  @media(min-width:768px){
-      .cs-ib-title {
-   color: #275C5C;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 115.523%; /* 34.657px */
-        max-width: 500px;
-    margin: auto;
-  }
-  .cs-ib-title b {
-    color: #275C5C;
-    font-family: Poppins;
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 115.523%;
+    @media(min-width:768px){
+        .cs-ib-title {
+     color: #275C5C;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 115.523%; /* 34.657px */
+          max-width: 500px;
+      margin: auto;
+    }
+    .cs-ib-title b {
+      color: #275C5C;
+      font-family: Poppins;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 115.523%;
 
-  }
-  }
+    }
+    }
 </style>
 
 {% schema %}
-  {
-    "name": "Custom Image Banner",
-    "class": "section cs-image-banner",
-    "tag": "section",
-    "settings": [{
-        "type": "select",
-        "id": "width",
-        "label": "Width",
-        "options": [
-          {
-            "label": "col-12",
-            "value": "col-lg-12"
-          }, {
-            "label": "col-10",
-            "value": "col-lg-10"
-          }, {
-            "label": "col-8",
-            "value": "col-lg-8"
-          }
-        ],
-        "default": "col-lg-8"
-      },
-      {
-        "type": "image_picker",
-        "id": "bg-img",
-        "label": "Background Image"
-      }, {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      }, {
-        "type": "image_picker",
-        "id": "img",
-        "label": "Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "mobile_img",
-        "label": "Mobile Image"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Custom Image Banner"
-      }
-    ]
-  }
+{
+  "name": "Custom Image Banner",
+  "class": "section cs-image-banner",
+  "tag": "section",
+  "settings": [{
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        {
+          "label": "col-12",
+          "value": "col-lg-12"
+        }, {
+          "label": "col-10",
+          "value": "col-lg-10"
+        }, {
+          "label": "col-8",
+          "value": "col-lg-8"
+        }
+      ],
+      "default": "col-lg-8"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg-img",
+      "label": "Background Image"
+    }, {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }, {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_img",
+      "label": "Mobile Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image Banner"
+    }
+  ]
+}
 {% endschema %}

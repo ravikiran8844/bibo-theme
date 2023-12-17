@@ -1,0 +1,372 @@
+{
+  "sections": {
+    "30619f3c-69f7-4594-ac26-b365ba94c904": {
+      "type": "bibo-banner-section",
+      "settings": {
+        "bg_color": "#bae9e3",
+        "image": "shopify:\/\/shop_images\/Sinus_1_1_1.webp",
+        "title": "<p><strong>Sinuses <\/strong>are the happy spaces created to cleanse the air and make us feel light.<\/p>",
+        "title_color": "#000000",
+        "text": "<p>When you have uncomfortable or chronic sinusitis, you need to treat it as early as possible to avoid further complications. Ask our experts for a quick response and suggestions for products tailored to your needs.<\/p>",
+        "text_color": "#000000",
+        "btn_bg_color": "#275c5c",
+        "btn_text_color": "#ffffff",
+        "content_background": "border-radius: 1008px;\nbackground: radial-gradient(50% 50% at 50% 50%, #DBFFFA 0%, rgba(219, 255, 250, 0.00) 100%);",
+        "btn_text": "let’s get started",
+        "btn_link": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7011389a-8f87-4c88-9c53-18bf316cfccf": {
+      "type": "sinus-section1",
+      "settings": {
+      }
+    },
+    "96faccdb-957b-4af3-9382-dc1fbb6092bc": {
+      "type": "sinus-section2",
+      "blocks": {
+        "1a67d3d0-c637-4a69-8b3a-727d5763dbce": {
+          "type": "block",
+          "settings": {
+            "title": "Nasal Congestion",
+            "text": "Feeling of fullness in the nose? It is a blocked nose due to inflamed sinus passages, causing difficulty breathing. Mucus might also drip down the nasal passage or out of the nose."
+          }
+        },
+        "35aa8c6a-8bf4-45c1-8030-888b8ce6d874": {
+          "type": "block",
+          "settings": {
+            "title": "Nasal Polyp",
+            "text": "Feeling like a small ball is stuck in your nose? These are polyps, harmless non-cancerous growths on the lining of the nose or sinuses."
+          }
+        },
+        "ceafaf61-a8a0-4251-865e-dcbda686e792": {
+          "type": "block",
+          "settings": {
+            "title": "Sinus Pressure",
+            "text": "Pain in cheeks and around the face? This discomfort and fullness in the face is due to the swollen sinus cavities."
+          }
+        },
+        "bf638824-71ce-47ca-8efa-c68af356fd1e": {
+          "type": "block",
+          "settings": {
+            "title": "Deviated Nasal Septum",
+            "text": "Nasal septum (the bone and cartilage that divide the nose in half) is crooked, making one nasal passage smaller?"
+          }
+        }
+      },
+      "block_order": [
+        "1a67d3d0-c637-4a69-8b3a-727d5763dbce",
+        "35aa8c6a-8bf4-45c1-8030-888b8ce6d874",
+        "ceafaf61-a8a0-4251-865e-dcbda686e792",
+        "bf638824-71ce-47ca-8efa-c68af356fd1e"
+      ],
+      "settings": {
+      }
+    },
+    "ba82e2ca-275b-48e2-a25e-74ff47261435": {
+      "type": "sinus-section3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_14796.webp",
+        "button_link": ""
+      }
+    },
+    "81224540-9bd3-4f6a-a6b8-230611cf618b": {
+      "type": "video-text-section",
+      "blocks": {
+        "22b56fa4-609a-4def-9f4d-2fda73e687f4": {
+          "type": "video-block",
+          "settings": {
+            "youtube_link_english": "https:\/\/www.youtube.com\/embed\/pYEa0269llU?controls=0 ",
+            "youtube_link_hindi": "https:\/\/www.youtube.com\/embed\/gaE9YTWZgNc?controls=0 "
+          }
+        },
+        "2549d662-aded-4434-b58b-cb590e0df848": {
+          "type": "content",
+          "settings": {
+            "title": "Our expert talks about",
+            "highlight_title": "Sinusitis",
+            "caption": "Causes | Symptoms | Diagnosis",
+            "text": "Sinusitis is sinus cavity inflammation due to infection, allergies, or irritants, leading to symptoms like facial pain, congestion, and discoloured mucus. If you are suffering from these persistent symptoms, our team is here to help you!"
+          }
+        }
+      },
+      "block_order": [
+        "22b56fa4-609a-4def-9f4d-2fda73e687f4",
+        "2549d662-aded-4434-b58b-cb590e0df848"
+      ],
+      "settings": {
+      }
+    },
+    "81ed4f16-127d-432d-89ca-0ca3236526a2": {
+      "type": "recommend-product-grid",
+      "blocks": {
+        "8cd3a0c3-b16a-4a21-86a1-ef03c98f4217": {
+          "type": "product-card",
+          "settings": {
+            "product": "bibo-saline-tulsi-nasal-spray",
+            "image": "shopify:\/\/shop_images\/ProdImages.jpg",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "2e6f50b4-eb9e-4ac9-9b1a-9afdb6a9e1e3": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathe-blend",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "13ae8ffe-4240-42e1-8691-709323d3cbe3": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathofy-syrup",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        }
+      },
+      "block_order": [
+        "8cd3a0c3-b16a-4a21-86a1-ef03c98f4217",
+        "2e6f50b4-eb9e-4ac9-9b1a-9afdb6a9e1e3",
+        "13ae8ffe-4240-42e1-8691-709323d3cbe3"
+      ],
+      "settings": {
+        "title": "Find relief for",
+        "highlight": "Sinus Pain & Pressure"
+      }
+    },
+    "38097948-1d2b-4b0d-b7cb-521197850c8e": {
+      "type": "video-text-section",
+      "blocks": {
+        "ca0f3006-fa2d-49d4-b2a1-70cab1785d11": {
+          "type": "content",
+          "settings": {
+            "title": "Our expert talks about",
+            "highlight_title": "Nasal polyps",
+            "caption": "Causes | Symptoms | Diagnosis",
+            "text": "Nasal polyps are benign growths in the nasal passages, often caused by chronic inflammation, and they result in nasal congestion, reduced smell, and facial pressure. If you are suffering from these symptoms and want to prevent that situation from worsening, ask our experts for a solution now!"
+          }
+        },
+        "abbeb971-29bf-4099-8441-f1b7dff12eca": {
+          "type": "video-block",
+          "settings": {
+            "youtube_link_english": "https:\/\/www.youtube.com\/embed\/zGlRHeBSydE?si=SVvVSkXy0vE245-N",
+            "youtube_link_hindi": "https:\/\/www.youtube.com\/embed\/ugGsv1sOf14?si=apa0tX1GqCeNKyTq"
+          }
+        }
+      },
+      "block_order": [
+        "ca0f3006-fa2d-49d4-b2a1-70cab1785d11",
+        "abbeb971-29bf-4099-8441-f1b7dff12eca"
+      ],
+      "settings": {
+      }
+    },
+    "e26dec4a-464a-4b13-bd56-13786bd0ba2b": {
+      "type": "recommend-product-grid",
+      "blocks": {
+        "0f2dfaa0-15f8-43d7-9012-39a6624fb1c0": {
+          "type": "product-card",
+          "settings": {
+            "product": "bibo-saline-tulsi-nasal-spray",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "78a1b219-258a-4b23-92b1-e43a61c6dc8a": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathe-blend",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "5b4b1e6f-8f22-4a99-87c7-7f346638aafb": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathofy-syrup",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        }
+      },
+      "block_order": [
+        "0f2dfaa0-15f8-43d7-9012-39a6624fb1c0",
+        "78a1b219-258a-4b23-92b1-e43a61c6dc8a",
+        "5b4b1e6f-8f22-4a99-87c7-7f346638aafb"
+      ],
+      "settings": {
+        "title": "Find relief for",
+        "highlight": "Nasal Polyp"
+      }
+    },
+    "3b71fa32-0021-43a3-be63-075bc0904307": {
+      "type": "video-text-section",
+      "blocks": {
+        "3b41b610-fe99-4e08-ad8e-f2562fbc501c": {
+          "type": "video-block",
+          "settings": {
+            "youtube_link_english": "https:\/\/www.youtube.com\/embed\/yBORhsbdbSw?si=zMU7jE7_0K2X1CZd",
+            "youtube_link_hindi": "https:\/\/www.youtube.com\/embed\/JbeNz3jmY5U?si=iMnR3jdRfEnvdCrM"
+          }
+        },
+        "ecc21bf4-8085-42f6-85a7-d751e309cb92": {
+          "type": "content",
+          "settings": {
+            "title": "Our expert talks about",
+            "highlight_title": "DNS.",
+            "caption": "Causes | Symptoms | Diagnosis",
+            "text": "A deviated nasal septum is a displacement of the nasal wall, typically caused by injury or genetics. The symptoms include congestion, difficulty breathing, snoring, and recurrent sinus issues. If you observe these symptoms and want to avoid further complications, consult our experts now!"
+          }
+        }
+      },
+      "block_order": [
+        "3b41b610-fe99-4e08-ad8e-f2562fbc501c",
+        "ecc21bf4-8085-42f6-85a7-d751e309cb92"
+      ],
+      "settings": {
+      }
+    },
+    "84e20158-801c-40d9-bc25-42f9c508eaad": {
+      "type": "recommend-product-grid",
+      "blocks": {
+        "27aefdde-4804-44e9-8b9b-de0018761ebf": {
+          "type": "product-card",
+          "settings": {
+            "product": "bibo-saline-tulsi-nasal-spray",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "f9463d31-bdd0-41a7-9105-fb5fbd51c6a4": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathe-blend",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        },
+        "e9f97b29-927f-47f7-ba7c-95c55288bcdc": {
+          "type": "product-card",
+          "settings": {
+            "product": "breathofy-syrup",
+            "product_text": "For daily nasal rinse to wash away allergens and keep the nasal passage clean."
+          }
+        }
+      },
+      "block_order": [
+        "27aefdde-4804-44e9-8b9b-de0018761ebf",
+        "f9463d31-bdd0-41a7-9105-fb5fbd51c6a4",
+        "e9f97b29-927f-47f7-ba7c-95c55288bcdc"
+      ],
+      "settings": {
+        "title": "Find relief for",
+        "highlight": "Deviated Nasal Septum"
+      }
+    },
+    "0510d33b-c064-4b91-8f22-d1da4e8fc2ac": {
+      "type": "sinus-care-timeline",
+      "settings": {
+      }
+    },
+    "1102cb91-6298-4d91-a855-fb69e5d5becc": {
+      "type": "multi-tab-faqs",
+      "settings": {
+        "heading": "",
+        "tab1": "Nasal Polyp",
+        "tab2": "Sinus Pain",
+        "tab3": "Inflammation"
+      }
+    },
+    "ef602c46-718d-4d0a-ad30-cfec8d443b6e": {
+      "type": "why-choose",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/why_choose_bibo.webp"
+      }
+    },
+    "4cdf7bb4-c6be-4d49-8579-ae02151123ec": {
+      "type": "reviews-section",
+      "blocks": {
+        "9d5b3555-591c-48a7-b8a2-279b752a5bdf": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Aditi",
+            "text": "<p>I had dry cough since a long time and it wasn’t going away. The first time I tried this syrup it gave me instant relief but I thought my cough will again start. After taking it for a week I got great results and haven’t looked back since then.<\/p>"
+          }
+        },
+        "1432abd1-ba5e-440c-bdd6-bdcb860b75b2": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Sudhakar",
+            "text": "<p>I suffer from blocked nose every now and then. Doctors have suggested me to take different types of nasal sprays but after sometime these sprays were not effective. When I saw bibo nasal spray which claimed to be 100% natural I gave it a try. It worked really well. It helped me with my blocked nose<\/p>"
+          }
+        },
+        "36dfc747-d3d8-4fee-ada0-983653feb82f": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Dilip",
+            "text": "<p>I am really happy with this product. Never written any review but this product forced me to write it. I have cold allergy so winter is like nightmare to me but this product helps me a lot to fight with cold. Really happy with this.<\/p>"
+          }
+        },
+        "3650fdd9-5af2-48d4-857b-48b28ea32f49": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Vijay",
+            "text": "<p>No More Harmful Ingredients and I appreciate that this patch doesn't contain petroleum jelly like other vapor rubs.<\/p>"
+          }
+        },
+        "01516fea-c2b7-42a1-bea0-0cabc980385b": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Samantha",
+            "text": "<p>Bibo Nasal Spray is a must-have in my bag. It's so convenient to use and helps me breathe better whenever I need it.<\/p>"
+          }
+        },
+        "4901d6f5-9b0e-4ec4-b21c-95a701e2d7bb": {
+          "type": "review-block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/NicePng_gray-circle-png_1366211.png",
+            "name": "Priyanka",
+            "text": "<p>Would surely recommend this product to all my friends and family.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9d5b3555-591c-48a7-b8a2-279b752a5bdf",
+        "1432abd1-ba5e-440c-bdd6-bdcb860b75b2",
+        "36dfc747-d3d8-4fee-ada0-983653feb82f",
+        "3650fdd9-5af2-48d4-857b-48b28ea32f49",
+        "01516fea-c2b7-42a1-bea0-0cabc980385b",
+        "4901d6f5-9b0e-4ec4-b21c-95a701e2d7bb"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Banner.webp",
+        "heading": "Only the best is good enough!",
+        "subheading": "Quality is everything when it comes to ayurveda. Our ingredients are handled with care at every step to ensure you always receive the best quality products.",
+        "text": "DON’T BELIEVE US? HERE’S WHAT OUR CUSTOMERS HAVE TO SAY!"
+      }
+    }
+  },
+  "order": [
+    "30619f3c-69f7-4594-ac26-b365ba94c904",
+    "main",
+    "7011389a-8f87-4c88-9c53-18bf316cfccf",
+    "96faccdb-957b-4af3-9382-dc1fbb6092bc",
+    "ba82e2ca-275b-48e2-a25e-74ff47261435",
+    "81224540-9bd3-4f6a-a6b8-230611cf618b",
+    "81ed4f16-127d-432d-89ca-0ca3236526a2",
+    "38097948-1d2b-4b0d-b7cb-521197850c8e",
+    "e26dec4a-464a-4b13-bd56-13786bd0ba2b",
+    "3b71fa32-0021-43a3-be63-075bc0904307",
+    "84e20158-801c-40d9-bc25-42f9c508eaad",
+    "0510d33b-c064-4b91-8f22-d1da4e8fc2ac",
+    "1102cb91-6298-4d91-a855-fb69e5d5becc",
+    "ef602c46-718d-4d0a-ad30-cfec8d443b6e",
+    "4cdf7bb4-c6be-4d49-8579-ae02151123ec"
+  ]
+}

@@ -1,10 +1,8 @@
 <div class="container py-5">
-
   <div class="things-to-note_section-wrapper p-4">
     <div class="col-12 text-center mt-5">
       <div class="things-to-note_title">{{ section.settings.title }}</div>
       <div class="things-to-note_caption">{{ section.settings.caption }}</div>
-
     </div>
     <div class="row my-5">
       {% for block in section.blocks %}
@@ -12,26 +10,24 @@
           <div class="text-center">
             <div class="things-to-note_img-wrapper">
               <img
+                loading="lazy"
                 class="img-fluid"
                 height="143"
                 width="143"
                 src="{{block.settings.img | img_url: 'master'}}"
-                alt="">
+                alt=""
+              >
             </div>
             <div class="things-to-note_item-title mb-4">{{ block.settings.title }}</div>
             <div class="things-to-note_item-text">
               {{ block.settings.text }}
             </div>
           </div>
-
         </div>
-
       {% endfor %}
-
     </div>
   </div>
 </div>
-
 
 <style>
   .things-to-note {
@@ -139,51 +135,51 @@
   }
 </style>
 {% schema %}
-  {
-    "name": "Things to Note",
-    "class": "section things-to-note",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "What it won’t do"
-      }, {
-        "type": "text",
-        "id": "caption",
-        "label": "Caption",
-        "default": "THINGS TO NOTE"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "block",
-        "type": "block",
-        "limit": 3,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "img",
-            "label": "Image"
-          }, {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Expect overnight results."
-          }, {
-            "type": "text",
-            "id": "text",
-            "label": "Text",
-            "default": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Things to Note"
-      }
-    ]
-  }
+{
+  "name": "Things to Note",
+  "class": "section things-to-note",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "What it won’t do"
+    }, {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "THINGS TO NOTE"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block",
+      "type": "block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Expect overnight results."
+        }, {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Ayurveda is best to use right from first symptoms. Early & and frequent dosage is important"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Things to Note"
+    }
+  ]
+}
 {% endschema %}

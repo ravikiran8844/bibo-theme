@@ -1,0 +1,102 @@
+<div class="container p-5">
+  <div class="col-12 text-center mb-5">
+    <div class="webnair-section4_title display-2 text-dark fw-semibold">KEY TAKEAWAYS</div>
+  </div>
+
+  <div class="col-12">
+    <ul class="webnair-section_content mb-5">
+      <li class="fs-2 text-dark mb-3">
+        🫁 <span class="fw-bold">Respiratory Insights:</span> Dr. Rajakumar unveils the inner workings of your lungs,
+        helping you grasp the fundamentals of respiratory health.
+      </li>
+      <li class="fs-2 text-dark mb-3">
+        🌬️ <span class="fw-bold">Empowering Knowledge:</span> Gain a deeper understanding of common respiratory
+        challenges, from asthma to allergies, and learn to spot early warning signs.
+      </li>
+
+      <li class="fs-2 text-dark mb-3">
+        🌟 <span class="fw-bold">Expert Guidance:</span> Receive valuable advice from Dr. Rajakumar on managing chronic
+        respiratory conditions, reducing stress, and improving overall well-being.
+      </li>
+
+      <li class="fs-2 text-dark mb-3">
+        📚 <span class="fw-bold">Health Education:</span> Access a wealth of knowledge and resources to help you and
+        your loved ones breathe easier and live life to the fullest.
+      </li>
+
+      <li class="fs-2 text-dark mb-3">
+        📚 <span class="fw-bold">AMA Session:</span> Join Dr. Rajakumar for an interactive Q&A session, where you can
+        get personalised insights and answers to their respiratory health concerns.
+      </li>
+    </ul>
+
+    <div class="mb-5 text-center">
+      {% form 'product', product %}
+        <div>
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}"
+          >
+          <input
+            type="hidden"
+            name="quantity"
+            value="1"
+          >
+          <button
+            onclick="window.zecpeCheckFunctionAndCall ? window.zecpeCheckFunctionAndCall('ZecpeCheckVariant', this) : window.location.href = '/cart/checkout'; event.stopPropagation(); event.stopImmediatePropagation();"
+            class="btn buy-now-button"
+          >
+            Reserve Your Seat Now!
+          </button>
+        </div>
+      {% endform %}
+      <div class="text-dark fs-4 mt-2 fw-medium">{{ product.metafields.custom.webnair_date_time }}</div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="webnair-section_content text-center">
+      <div class="fs-1 text-dark fw-semibold webnair-section4_title-bg">
+        To <span>bridge this gap</span> and promote a healthier community, BIBO Health is hosting a webinar featuring
+        <span>Dr. Rajkumar</span>, a renowned expert in pulmonary health.
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .webnair-section4 ul {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 40 40' fill='none'%3E%3Ccircle cx='21' cy='21' r='21' fill='%23FFF2EB'/%3E%3Cpath d='M7 23.5L14.5 31C20.5123 21.6493 25.1236 17.234 35 10.5' stroke='%23EB752C' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  }
+  .webnair-section4_title {
+    background: linear-gradient(89.79deg, #ffdd00 5.55%, #ff9453 69.68%);
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border-radius: 8px;
+
+  }
+
+  .webnair-section4_title-bg span {
+    border-radius: 7px;
+    background: linear-gradient(90deg, #fd0 5.55%, #ff9453 69.68%);
+    padding: 0 5px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Webnair Sec 4",
+  "class": "webnair-section4",
+  "tag": "section",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Webnair Sec 4"
+    }
+  ]
+}
+{% endschema %}

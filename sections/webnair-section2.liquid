@@ -1,0 +1,57 @@
+<div class="container p-5">
+    <div class="webnair-section_content text-center my-5">
+        <div class="webnair-section2_title display-3 text-dark fw-semibold mb-5">ASTHMA. COPD. SINUSITIS ISSUES?</div>
+
+        <div class="fs-1 text-dark fw-semibold webnair-section2_text">Are you or your loved ones battling 
+            <span class="custom-oval-border">daily respiratory</span>
+        concerns like Asthma, COPD, Sinusitis etc? Join our webinar to breathe easier with Dr. Rajakumar, a highly experienced expert of pulmonary health!</div>
+
+
+
+    </div>
+</div>
+
+
+<style>
+    
+     .webnair-section2_text{
+        position: relative;
+     }
+
+
+ 
+ 
+    .webnair-section2_title{
+        background: linear-gradient(89.79deg, #ffdd00 5.55%, #ff9453 69.68%);
+        width: fit-content;
+        margin: auto;
+        padding: 5px;
+        border-radius: 8px;
+
+    }
+    .webnair-section2{
+        background-image: url("{{section.settings.bg_image | img_url: 'master'}}");
+    background-size: cover;
+    }
+
+    .webnair-section2_content .display-5{
+        font-family: Poppins;
+    }
+</style>
+{% schema %}
+    {
+        "name": "Webnair Sec 2",
+        "class": "webnair-section2",
+        "tag": "section",
+        "settings": [
+            {
+    "type": "image_picker",
+    "id": "bg_image",
+    "label": "Background Image"
+  }
+            ],
+            "presets": [{
+                "name": "Webnair Sec 2"
+            }]
+    }
+    {% endschema %}

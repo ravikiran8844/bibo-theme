@@ -1,0 +1,31 @@
+body{
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+
+.custom-border {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Adjust as needed for spacing */
+    background: url('https://cdn.shopify.com/s/files/1/0551/8157/4300/files/Vector_142_1.png?v=1699629639') center bottom no-repeat;
+    background-size: contain; /* or cover, based on your preference */
+}
+
+
+.custom-border2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Adjust as needed for spacing */
+    background: url('https://cdn.shopify.com/s/files/1/0551/8157/4300/files/Vector_146.png?v=1699789634') center bottom no-repeat;
+    background-size: contain; /* or cover, based on your preference */
+}
+
+.custom-blue-text{
+    color: #00A79D;
+    font-family: Satisfy;
+}
+
+.reviews-slider .owl-nav{
+    display: none;
+}
